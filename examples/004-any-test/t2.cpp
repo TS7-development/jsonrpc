@@ -2,13 +2,21 @@
 
 #include <boost/any.hpp>
 
-void any() {
-  std::cout <<"Any print" << std::endl;
-  boost::any a = A();
-  boost::any_cast<A>(a).print();
+namespace ts7 {
+  namespace jsonrpc {
+    namespace examples {
+      namespace any_collection {
+        void any() {
+          std::cout <<"Any print" << std::endl;
+          boost::any a = A();
+          boost::any_cast<A>(a).print();
 
-  boost::any ci = C<int>();
-  boost::any_cast<C<int>>(ci).print();
+          boost::any ci = C<int>();
+          boost::any_cast<C<int>>(ci).print();
 
-  std::cout << std::endl;
+          std::cout << std::endl;
+        }
+      }
+    }
+  }
 }

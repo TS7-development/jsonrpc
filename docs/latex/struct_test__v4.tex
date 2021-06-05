@@ -1,0 +1,112 @@
+\hypertarget{struct_test__v4}{}\doxysection{Test\+\_\+v4$<$ TReturn, T1, T2 $>$ Struct Template Reference}
+\label{struct_test__v4}\index{Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}}
+
+
+{\ttfamily \#include $<$t4.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_test__v4_1_1_optional_parameter}{Optional\+Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_test__v4_1_1_parameter}{Parameter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_test__v4_a08f8c71bb01f2f741116721977106272}{callback\+\_\+t}} = std\+::function$<$ TReturn(T1, T2)$>$
+\item 
+{\footnotesize template$<$typename U $>$ }\\using \mbox{\hyperlink{struct_test__v4_a89a0dff32b9e2f44bfecd11ad4aa5252}{remove\+\_\+cref}} = typename std\+::remove\+\_\+const$<$ typename std\+::remove\+\_\+reference$<$ U $>$\+::type $>$\+::type
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U1 , typename U2 $>$ }\\\mbox{\hyperlink{struct_test__v4_a09ef7e8b975a14db7e14596a0a5782f4}{Test\+\_\+v4}} (\mbox{\hyperlink{struct_test__v4_a08f8c71bb01f2f741116721977106272}{callback\+\_\+t}} \mbox{\hyperlink{struct_test__v4_aa64cd92697a2b273da7395989922714a}{fn}}, const U1 \&\mbox{\hyperlink{struct_test__v4_ae58c8ca0e649a1666fb7c7df5ec86b74}{p1}}, const U2 \&\mbox{\hyperlink{struct_test__v4_a959ec4244ee25adea3133b011b1da021}{p2}})
+\item 
+TReturn \mbox{\hyperlink{struct_test__v4_abeaa7ffd84d1cd6f978ce4e001b25e84}{operator()}} (const boost\+::json\+::object \&o)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_test__v4_a08f8c71bb01f2f741116721977106272}{callback\+\_\+t}} \mbox{\hyperlink{struct_test__v4_aa64cd92697a2b273da7395989922714a}{fn}}
+\item 
+\mbox{\hyperlink{struct_test__v4_1_1_parameter}{Parameter}}$<$ T1 $>$ \mbox{\hyperlink{struct_test__v4_ae58c8ca0e649a1666fb7c7df5ec86b74}{p1}}
+\item 
+\mbox{\hyperlink{struct_test__v4_1_1_parameter}{Parameter}}$<$ T2 $>$ \mbox{\hyperlink{struct_test__v4_a959ec4244ee25adea3133b011b1da021}{p2}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_test__v4_a08f8c71bb01f2f741116721977106272}\label{struct_test__v4_a08f8c71bb01f2f741116721977106272}} 
+\index{Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}!callback\_t@{callback\_t}}
+\index{callback\_t@{callback\_t}!Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{callback\_t}{callback\_t}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+using \mbox{\hyperlink{struct_test__v4}{Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{struct_test__v4_a08f8c71bb01f2f741116721977106272}{callback\+\_\+t}} =  std\+::function$<$TReturn(T1, T2)$>$}
+
+\mbox{\Hypertarget{struct_test__v4_a89a0dff32b9e2f44bfecd11ad4aa5252}\label{struct_test__v4_a89a0dff32b9e2f44bfecd11ad4aa5252}} 
+\index{Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}!remove\_cref@{remove\_cref}}
+\index{remove\_cref@{remove\_cref}!Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{remove\_cref}{remove\_cref}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U $>$ \\
+using \mbox{\hyperlink{struct_test__v4}{Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{struct_test__v4_a89a0dff32b9e2f44bfecd11ad4aa5252}{remove\+\_\+cref}} =  typename std\+::remove\+\_\+const$<$typename std\+::remove\+\_\+reference$<$U$>$\+::type$>$\+::type}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_test__v4_a09ef7e8b975a14db7e14596a0a5782f4}\label{struct_test__v4_a09ef7e8b975a14db7e14596a0a5782f4}} 
+\index{Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}!Test\_v4@{Test\_v4}}
+\index{Test\_v4@{Test\_v4}!Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{Test\_v4()}{Test\_v4()}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U1 , typename U2 $>$ \\
+\mbox{\hyperlink{struct_test__v4}{Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{struct_test__v4}{Test\+\_\+v4}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_test__v4_a08f8c71bb01f2f741116721977106272}{callback\+\_\+t}}}]{fn,  }\item[{const U1 \&}]{p1,  }\item[{const U2 \&}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_test__v4_abeaa7ffd84d1cd6f978ce4e001b25e84}\label{struct_test__v4_abeaa7ffd84d1cd6f978ce4e001b25e84}} 
+\index{Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+TReturn \mbox{\hyperlink{struct_test__v4}{Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_test__v4_abeaa7ffd84d1cd6f978ce4e001b25e84_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_test__v4_aa64cd92697a2b273da7395989922714a}\label{struct_test__v4_aa64cd92697a2b273da7395989922714a}} 
+\index{Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}!fn@{fn}}
+\index{fn@{fn}!Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{fn}{fn}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+\mbox{\hyperlink{struct_test__v4_a08f8c71bb01f2f741116721977106272}{callback\+\_\+t}} \mbox{\hyperlink{struct_test__v4}{Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::fn}
+
+\mbox{\Hypertarget{struct_test__v4_ae58c8ca0e649a1666fb7c7df5ec86b74}\label{struct_test__v4_ae58c8ca0e649a1666fb7c7df5ec86b74}} 
+\index{Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}!p1@{p1}}
+\index{p1@{p1}!Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{p1}{p1}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+\mbox{\hyperlink{struct_test__v4_1_1_parameter}{Parameter}}$<$T1$>$ \mbox{\hyperlink{struct_test__v4}{Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::p1}
+
+\mbox{\Hypertarget{struct_test__v4_a959ec4244ee25adea3133b011b1da021}\label{struct_test__v4_a959ec4244ee25adea3133b011b1da021}} 
+\index{Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}!p2@{p2}}
+\index{p2@{p2}!Test\_v4$<$ TReturn, T1, T2 $>$@{Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{p2}{p2}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+\mbox{\hyperlink{struct_test__v4_1_1_parameter}{Parameter}}$<$T2$>$ \mbox{\hyperlink{struct_test__v4}{Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::p2}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+examples/003-\/json-\/call/\mbox{\hyperlink{t4_8h}{t4.\+h}}\end{DoxyCompactItemize}

@@ -14,4 +14,5 @@ SOURCES += \
 
 HEADERS += \
     t4.h \
+    t5.h \
     test.h

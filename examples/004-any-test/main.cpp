@@ -5,6 +5,7 @@
 
 int main()
 {
+  using namespace ts7::jsonrpc::examples::any_collection;
   simple();
   any();
   storage();

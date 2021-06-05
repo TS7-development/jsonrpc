@@ -1,0 +1,48 @@
+\hypertarget{003-json-call_2main_8cpp}{}\doxysection{examples/003-\/json-\/call/main.cpp File Reference}
+\label{003-json-call_2main_8cpp}\index{examples/003-\/json-\/call/main.cpp@{examples/003-\/json-\/call/main.cpp}}
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$boost/json.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/json/src.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}test.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}t4.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}t5.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{003-json-call_2main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{003-json-call_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Json RPC call. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{003-json-call_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{003-json-call_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Json RPC call. 
+
+Goal of this test is to design a system, that is capable of storing converting a Json RPC request with the parameter value1 (string) and value2 (int) to a matching C++ function. What shall be avoided is constantly passing around Json RPC requests when calling sub request handlers. This was how the old system worked, which was technically working but was brought some disadvantages. As side of the fact that it was always extra code to create the request, the main problem was that there was no compiler checking for changing function signatures. Every mismatch had to be found at runtime, mostly with an expensive amount of debugging time.
+
+For testing the function signature was forced to be just a 2 parameter function with string and int. Later thanks to templates also other parameter types are possible. To see how the process went of designing it and being able to understand it later, every design step was saved as own test.
+
+\begin{DoxyReturn}{Returns}
+Returns the exit code of the example. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{003-json-call_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
