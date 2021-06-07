@@ -6,6 +6,19 @@ namespace ts7 {
   namespace jsonrpc {
     namespace examples {
       namespace any_collection {
+        /**
+         * @brief any
+         *
+         * This example is now using boost:any to store different instances. After that those get casted back to
+         * their original type and print get called on it.
+         *
+         * @note This example does not about storing the boost:any, it only meant to play around with boost:any to
+         * get a feeling for how to use it.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         void any() {
           std::cout <<"Any print" << std::endl;
           boost::any a = A();

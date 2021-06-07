@@ -4,11 +4,11 @@
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1}{Test\+\_\+v1}}
-\item 
+\begin{DoxyCompactList}\small\item\em First version. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v2}{Test\+\_\+v2}}
-\item 
+\begin{DoxyCompactList}\small\item\em Test version 2. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v3}{Test\+\_\+v3}}
-\item 
+\begin{DoxyCompactList}\small\item\em Test version 3. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v4}{Test\+\_\+v4}}
 \item 
 struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_vector3d}{Vector3d}}
@@ -38,13 +38,13 @@ struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_from_
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_ad3df8a1f05d2cfd0ef071f8a976c0a18}{test\+Func}} (const std\+::string \&value1, int value2)
-\begin{DoxyCompactList}\small\item\em Simple test function, which just dumps both parameters. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Demo Function. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_a107b2acb7de6d4ae26ef53451ebce9d0}{example1}} (const boost\+::json\+::object \&test)
-\item 
+\begin{DoxyCompactList}\small\item\em example1 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_a3984507a0ede5d35aefca192068efe48}{example2}} (const boost\+::json\+::object \&test)
-\item 
+\begin{DoxyCompactList}\small\item\em example2 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_a5d86a4d9e743271596fcd47e53566084}{example3}} (const boost\+::json\+::object \&test)
-\item 
+\begin{DoxyCompactList}\small\item\em example3 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_ac21df2aaded1da5cc3db0c6a97dbfaeb}{example4}} (const boost\+::json\+::object \&test, const boost\+::json\+::object \&test2)
 \item 
 std\+::ostream \& \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_a321fcb0d4987fbf908da7b05a6f01a62}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_vector3d}{Vector3d}} \&v)
@@ -81,6 +81,26 @@ using \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_adcdd77
 \doxysubsubsection{\texorpdfstring{example1()}{example1()}}
 {\footnotesize\ttfamily void ts7\+::jsonrpc\+::examples\+::json\+\_\+call\+::example1 (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{test }\end{DoxyParamCaption})}
 
+
+
+example1 
+
+Example that gets a read-\/only reference to the {\ttfamily params} object of a json rpc request. Then it creates a json rpc request handler \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1}{Test\+\_\+v1}} that stores test\+Func as respective function pointer. This gets then internally converted to the matching function call of test\+Func, when the function call operator of the \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1}{Test\+\_\+v1}} instance is excecuted.
+
+\begin{DoxyNote}{Note}
+In this example the parameter count, types and names are fixed to keep things simple.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em test} & The {\ttfamily params} object of a json rpc request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -101,6 +121,26 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{example2()}{example2()}}
 {\footnotesize\ttfamily void ts7\+::jsonrpc\+::examples\+::json\+\_\+call\+::example2 (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{test }\end{DoxyParamCaption})}
 
+
+
+example2 
+
+This example uses \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v2}{Test\+\_\+v2}} with the same function signature as \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1}{Test\+\_\+v1}}, but this time provided as template parameters. This test is still limited to 2 paramters and still uses fixed names for the paramter. The provided callback is again test\+Func as in example1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_a107b2acb7de6d4ae26ef53451ebce9d0}{example1}}
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -121,6 +161,28 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{example3()}{example3()}}
 {\footnotesize\ttfamily void ts7\+::jsonrpc\+::examples\+::json\+\_\+call\+::example3 (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{test }\end{DoxyParamCaption})}
 
+
+
+example3 
+
+This example uses the improved json callback \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v3}{Test\+\_\+v3}}. This new version is now capable of getting the parameter names configured. To keep things as simple as possible the parameter amount is still fixed to 2. In this example there is also now type checking of even existance checking for the required parameter.
+
+This example is still using the same function signature and parameter names as \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_a107b2acb7de6d4ae26ef53451ebce9d0}{example1}} and \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_a3984507a0ede5d35aefca192068efe48}{example2}}. Also the \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_ad3df8a1f05d2cfd0ef071f8a976c0a18}{test\+Func}} callback is still used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & The json object that contains the required parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_a107b2acb7de6d4ae26ef53451ebce9d0}{example1}}, \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_a3984507a0ede5d35aefca192068efe48}{example2}}, \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1json__call_ad3df8a1f05d2cfd0ef071f8a976c0a18}{test\+Func}}
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -207,8 +269,25 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Simple test function, which just dumps both parameters. 
+Demo Function. 
 
+Simple test function, which just dumps both parameters.
+
+Simple demonstration, that is just dumping the provided variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value1} & Just a string to be dumped. \\
+\hline
+{\em value2} & Just an integer to be dumped.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}

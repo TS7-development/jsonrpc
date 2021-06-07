@@ -1,8 +1,8 @@
 <map id="ts7::jsonrpc::examples::json_basics::t2" name="ts7::jsonrpc::examples::json_basics::t2">
 <area shape="rect" id="node1" title="Requesting object reference." alt="" coords="325,129,495,171"/>
-<area shape="rect" id="node2" href="$namespacets7_1_1jsonrpc_1_1examples_1_1json__call.html#a3984507a0ede5d35aefca192068efe48" title=" " alt="" coords="108,5,277,47"/>
+<area shape="rect" id="node2" href="$namespacets7_1_1jsonrpc_1_1examples_1_1json__call.html#a3984507a0ede5d35aefca192068efe48" title="example2" alt="" coords="108,5,277,47"/>
 <area shape="rect" id="node4" href="$001-json-basics_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="JSON basics." alt="" coords="165,71,220,98"/>
-<area shape="rect" id="node5" href="$structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v3.html#afcf44ed8f32f9b18754d4b35b5dec57c" title=" " alt="" coords="108,122,277,178"/>
+<area shape="rect" id="node5" href="$structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v3.html#afcf44ed8f32f9b18754d4b35b5dec57c" title="Call operator." alt="" coords="108,122,277,178"/>
 <area shape="rect" id="node6" href="$structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v4.html#a892b22438d13b9ca602675a375fcad91" title=" " alt="" coords="108,202,277,258"/>
 <area shape="rect" id="node7" href="$structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v6.html#a4f39610f143b168a41f7d6e079725755" title=" " alt="" coords="108,282,277,338"/>
 <area shape="rect" id="node3" href="$003-json-call_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Json RPC call." alt="" coords="5,13,60,39"/>

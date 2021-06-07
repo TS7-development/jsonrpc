@@ -74,20 +74,33 @@ $(function() {
 <div class="title">ts7::jsonrpc::examples::json_call::Test_v1 Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>First version.  
+ <a href="structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab12573f4ef384ce323feba0a5d2578ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1.html#ab12573f4ef384ce323feba0a5d2578ac">Test_v1</a> (std::function&lt; void(const std::string &amp;, int)&gt; <a class="el" href="structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1.html#a2ecc2145e1c6313ad29e232cc2f73c54">fn</a>)</td></tr>
+<tr class="memdesc:ab12573f4ef384ce323feba0a5d2578ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1.html#ab12573f4ef384ce323feba0a5d2578ac">More...</a><br /></td></tr>
 <tr class="separator:ab12573f4ef384ce323feba0a5d2578ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a228d65819829fe6039e150a500406c33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1.html#a228d65819829fe6039e150a500406c33">operator()</a> (const boost::json::object &amp;o)</td></tr>
+<tr class="memdesc:a228d65819829fe6039e150a500406c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">call operator  <a href="structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1.html#a228d65819829fe6039e150a500406c33">More...</a><br /></td></tr>
 <tr class="separator:a228d65819829fe6039e150a500406c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a2ecc2145e1c6313ad29e232cc2f73c54"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const std::string &amp;, int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1.html#a2ecc2145e1c6313ad29e232cc2f73c54">fn</a></td></tr>
+<tr class="memdesc:a2ecc2145e1c6313ad29e232cc2f73c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stored function pointer.  <a href="structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1.html#a2ecc2145e1c6313ad29e232cc2f73c54">More...</a><br /></td></tr>
 <tr class="separator:a2ecc2145e1c6313ad29e232cc2f73c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>First version. </p>
+<p>This is the first version of how to implement a function call with a json object, that will be converted to a function call with the original function parameter (string, int).</p>
+<p>The Idea is to save a function pointer with the matching signature and provide a call operator with that accepts a json object. In this example to keep it simple and focus on the idea the parameter amount, the parameter types and the paramater names are fixed.</p>
+<p>This has worked quite good on the first glance.</p>
+<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Tarek Schwarzinger <a href="#" onclick="location.href='mai'+'lto:'+'tar'+'ek'+'.sc'+'hw'+'arz'+'in'+'ger'+'@g'+'oog'+'le'+'mai'+'l.'+'com'; return false;">tarek<span style="display: none;">.nosp@m.</span>.sch<span style="display: none;">.nosp@m.</span>warzi<span style="display: none;">.nosp@m.</span>nger<span style="display: none;">.nosp@m.</span>@goog<span style="display: none;">.nosp@m.</span>lema<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab12573f4ef384ce323feba0a5d2578ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab12573f4ef384ce323feba0a5d2578ac">&#9670;&nbsp;</a></span>Test_v1()</h2>
 
@@ -111,6 +124,17 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>constructor </p>
+<p>Constructor that just stores the provided function pointer. Needs to be called explicitly to avoid uncontrolled implicit conversions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>Function pointer that shall be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Tarek Schwarzinger <a href="#" onclick="location.href='mai'+'lto:'+'tar'+'ek'+'.sc'+'hw'+'arz'+'in'+'ger'+'@g'+'oog'+'le'+'mai'+'l.'+'com'; return false;">tarek<span style="display: none;">.nosp@m.</span>.sch<span style="display: none;">.nosp@m.</span>warzi<span style="display: none;">.nosp@m.</span>nger<span style="display: none;">.nosp@m.</span>@goog<span style="display: none;">.nosp@m.</span>lema<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 
 </div>
 </div>
@@ -139,6 +163,17 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>call operator </p>
+<p>Call operator that allows the object to act like a function call, that just takes a json object and will collect all required entries to call the stored function pointer. In this case those are <code>value1</code> as string and <code>value</code> 2 as int.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>Json object that contains the call parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Tarek Schwarzinger <a href="#" onclick="location.href='mai'+'lto:'+'tar'+'ek'+'.sc'+'hw'+'arz'+'in'+'ger'+'@g'+'oog'+'le'+'mai'+'l.'+'com'; return false;">tarek<span style="display: none;">.nosp@m.</span>.sch<span style="display: none;">.nosp@m.</span>warzi<span style="display: none;">.nosp@m.</span>nger<span style="display: none;">.nosp@m.</span>@goog<span style="display: none;">.nosp@m.</span>lema<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -153,6 +188,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Stored function pointer. </p>
 
 </div>
 </div>
