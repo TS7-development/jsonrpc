@@ -42,7 +42,7 @@ namespace ts7 {
         /**
          * @brief The VariantStorage struct
          *
-         * Storage class for supported types of the \ref variant_type.
+         * %Storage class for supported types of the \ref variant_type.
          *
          * @since 1.0
          *
