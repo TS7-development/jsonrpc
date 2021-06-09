@@ -1,13 +1,13 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title=" " alt="" coords="5,145,60,171"/>
-<area shape="rect" id="node2" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#a804d7728e4474916ecb21e2de32a10f6" title=" " alt="" coords="645,43,815,84"/>
-<area shape="rect" id="node4" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#a26060fa61cccf7366d46c7603bda1ec5" title=" " alt="" coords="111,72,287,113"/>
-<area shape="rect" id="node5" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#a69a2fe8952fdd0d2de1790af65310c95" title=" " alt="" coords="108,137,289,179"/>
-<area shape="rect" id="node8" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#ae2555879e47a9b0e0af4d84fdabc92cf" title=" " alt="" coords="109,203,288,244"/>
-<area shape="rect" id="node9" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#a05cc21c1cad5ed602cd60a132eb17109" title=" " alt="" coords="109,269,288,325"/>
-<area shape="rect" id="node3" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#acddc8063bbe80f29991686ad83e70378" title=" " alt="" coords="863,43,1032,84"/>
-<area shape="rect" id="node6" href="$structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage.html#a1c577edbc97bc32bff08285bbbec0af8" title=" " alt="" coords="360,72,575,113"/>
-<area shape="rect" id="node7" href="$structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage.html#ab54bf847d8143b028e051db2e756487d" title=" " alt="" coords="376,138,559,194"/>
-<area shape="rect" id="node10" href="$structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage.html#a18a12101e8c50e678f971fa896128a02" title=" " alt="" coords="337,247,597,288"/>
-<area shape="rect" id="node11" href="$structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage.html#ae197b9ae506145001badc9bbfbb7b2d4" title=" " alt="" coords="353,313,581,369"/>
+<area shape="rect" id="node2" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#a804d7728e4474916ecb21e2de32a10f6" title="any" alt="" coords="645,43,815,84"/>
+<area shape="rect" id="node4" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#a26060fa61cccf7366d46c7603bda1ec5" title="simple" alt="" coords="111,72,287,113"/>
+<area shape="rect" id="node5" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#a69a2fe8952fdd0d2de1790af65310c95" title="storage example" alt="" coords="108,137,289,179"/>
+<area shape="rect" id="node8" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#ae2555879e47a9b0e0af4d84fdabc92cf" title="variant example" alt="" coords="109,203,288,244"/>
+<area shape="rect" id="node9" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#a05cc21c1cad5ed602cd60a132eb17109" title="variant_storage example" alt="" coords="109,269,288,325"/>
+<area shape="rect" id="node3" href="$namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#acddc8063bbe80f29991686ad83e70378" title="Create a default instance of T and calls print on it." alt="" coords="863,43,1032,84"/>
+<area shape="rect" id="node6" href="$structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage.html#a1c577edbc97bc32bff08285bbbec0af8" title="Add any type." alt="" coords="360,72,575,113"/>
+<area shape="rect" id="node7" href="$structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage.html#ab54bf847d8143b028e051db2e756487d" title="print" alt="" coords="376,138,559,194"/>
+<area shape="rect" id="node10" href="$structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage.html#a18a12101e8c50e678f971fa896128a02" title="add" alt="" coords="337,247,597,288"/>
+<area shape="rect" id="node11" href="$structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage.html#ae197b9ae506145001badc9bbfbb7b2d4" title="print" alt="" coords="353,313,581,369"/>
 </map>

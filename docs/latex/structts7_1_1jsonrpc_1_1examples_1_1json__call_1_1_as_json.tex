@@ -2,20 +2,49 @@
 \label{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as_json}\index{ts7::jsonrpc::examples::json\_call::AsJson$<$ T $>$@{ts7::jsonrpc::examples::json\_call::AsJson$<$ T $>$}}
 
 
+Convert to json.  
+
+
+
+
 {\ttfamily \#include $<$t5.\+h$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as_json_a1a815bd6a98144a2930979bd148d219c}{As\+Json}} (const T \&\mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as_json_aff1f875659d299b9b48f0fda7383bffb}{ref}})
-\item 
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as_json_a7d7687148217f11889405868c1a31c94}{operator boost\+::json\+::value}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Cast operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 const T \& \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as_json_aff1f875659d299b9b48f0fda7383bffb}{ref}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stored const reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+struct ts7\+::jsonrpc\+::examples\+::json\+\_\+call\+::\+As\+Json$<$ T $>$}
+
+Convert to json. 
+
+Converts any type to a json.
+
+\begin{DoxyNote}{Note}
+This version does not contain the static\+\_\+assert. Check \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_from_json}{From\+Json}}, to see how this can be achieved.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type that shall be converted to a json value.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -28,6 +57,23 @@ constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as
 
 
 
+constructor 
+
+Creates an instance that stores the const reference to the provided variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & Const reference that shall be used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as_json_a7d7687148217f11889405868c1a31c94}\label{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as_json_a7d7687148217f11889405868c1a31c94}} 
 \index{ts7::jsonrpc::examples::json\_call::AsJson$<$ T $>$@{ts7::jsonrpc::examples::json\_call::AsJson$<$ T $>$}!operator boost::json::value@{operator boost::json::value}}
@@ -38,6 +84,21 @@ constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as
 
 
 
+Cast operator. 
+
+Casts the provided const reference to a json value.
+
+\begin{DoxyAttention}{Attention}
+This operator is not implemented and will cause a linker error. For any type that shall be supported a corresponding template specialization needs to be created.
+\end{DoxyAttention}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as_json_aff1f875659d299b9b48f0fda7383bffb}\label{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as_json_aff1f875659d299b9b48f0fda7383bffb}} 
 \index{ts7::jsonrpc::examples::json\_call::AsJson$<$ T $>$@{ts7::jsonrpc::examples::json\_call::AsJson$<$ T $>$}!ref@{ref}}
@@ -45,6 +106,10 @@ constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as
 \doxysubsubsection{\texorpdfstring{ref}{ref}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 const T\& \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_as_json}{ts7\+::jsonrpc\+::examples\+::json\+\_\+call\+::\+As\+Json}}$<$ T $>$\+::ref}
+
+
+
+Stored const reference. 
 
 
 

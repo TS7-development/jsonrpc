@@ -1,17 +1,35 @@
 \hypertarget{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage}{}\doxysection{ts7\+::jsonrpc\+::examples\+::any\+\_\+collection\+::Variant\+Storage Struct Reference}
 \label{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage}\index{ts7::jsonrpc::examples::any\_collection::VariantStorage@{ts7::jsonrpc::examples::any\_collection::VariantStorage}}
+
+
+The \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage}{Variant\+Storage}} struct.  
+
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 {\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage_a18a12101e8c50e678f971fa896128a02}{add}} (const std\+::string \&name, T \&\&t)
-\item 
+\begin{DoxyCompactList}\small\item\em add \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage_ae197b9ae506145001badc9bbfbb7b2d4}{print}} (const std\+::string \&name)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em print \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\+::map$<$ std\+::string, \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1any__collection_ad04effe47face3f4ae870582cb91ef8b}{variant\+\_\+type}} $>$ \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage_ac41ddc968231619255f42c0ed628c36b}{callbacks}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Variant storage map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage}{Variant\+Storage}} struct. 
+
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage}{Storage}} class for supported types of the \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1any__collection_ad04effe47face3f4ae870582cb91ef8b}{variant\+\_\+type}}.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 
 
 \doxysubsection{Member Function Documentation}
@@ -22,7 +40,32 @@ std\+::map$<$ std\+::string, \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1example
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 void ts7\+::jsonrpc\+::examples\+::any\+\_\+collection\+::\+Variant\+Storage\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{T \&\&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Here is the caller graph for this function\+:\nopagebreak
+
+
+add 
+
+Adds an instance of a type that is supported by \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1any__collection_ad04effe47face3f4ae870582cb91ef8b}{variant\+\_\+type}}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the instance that shall be added.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the element that shall be added. \\
+\hline
+{\em t} & Forward reference of the instance that shall be added.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -35,7 +78,28 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{print()}{print()}}
 {\footnotesize\ttfamily void ts7\+::jsonrpc\+::examples\+::any\+\_\+collection\+::\+Variant\+Storage\+::print (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Here is the caller graph for this function\+:\nopagebreak
+
+
+print 
+
+Calls the \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_variant_storage_ae197b9ae506145001badc9bbfbb7b2d4}{print()}} member function of the under {\ttfamily name} stored element.
+
+\begin{DoxyNote}{Note}
+This requires the usage of \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1variant__visitor}{variant\+\_\+visitor}}.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -50,6 +114,10 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{callbacks@{callbacks}!ts7::jsonrpc::examples::any\_collection::VariantStorage@{ts7::jsonrpc::examples::any\_collection::VariantStorage}}
 \doxysubsubsection{\texorpdfstring{callbacks}{callbacks}}
 {\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1examples_1_1any__collection_ad04effe47face3f4ae870582cb91ef8b}{variant\+\_\+type}}$>$ ts7\+::jsonrpc\+::examples\+::any\+\_\+collection\+::\+Variant\+Storage\+::callbacks}
+
+
+
+Variant storage map. 
 
 
 

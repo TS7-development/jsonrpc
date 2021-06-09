@@ -6,13 +6,42 @@ namespace ts7 {
   namespace jsonrpc {
     namespace examples {
       namespace any_collection {
+        /**
+         * @brief variant_visitor
+         *
+         * Visitor that calls the print() member function on the stored variant type.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         struct variant_visitor : public boost::static_visitor<> {
+            /**
+             * @brief Print call
+             *
+             * Calls the print() member function on the variant.
+             *
+             * @tparam T The original type of the stored variant.
+             *
+             * @since 1.0
+             *
+             * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+             */
             template<typename  T>
             void operator()(const T& t) const {
               t.print();
             }
         };
 
+        /**
+         * @brief variant example
+         *
+         * Example to demonstrate simple usage of the boost variant type.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         void variant() {
           using variant_type = boost::variant<A, B, C<int>, C<double>, C<A>>;
 

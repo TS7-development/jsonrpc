@@ -1,29 +1,47 @@
 \hypertarget{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage}{}\doxysection{ts7\+::jsonrpc\+::examples\+::any\+\_\+collection\+::Storage Struct Reference}
 \label{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage}\index{ts7::jsonrpc::examples::any\_collection::Storage@{ts7::jsonrpc::examples::any\_collection::Storage}}
+
+
+boost\+::any storage  
+
+
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_1_1node__t}{node\+\_\+t}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage}{Storage}} entry node. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
 using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_adfc7f95174345d36a99794a63f0dae37}{print\+\_\+t}} = std\+::function$<$ void(const boost\+::any \&)$>$
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Function pointer to call print on a boost\+::any. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 {\footnotesize template$<$typename U $>$ }\\void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_a1c577edbc97bc32bff08285bbbec0af8}{add}} (const std\+::string \&name, U \&\&u)
-\item 
+\begin{DoxyCompactList}\small\item\em Add any type. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_ab54bf847d8143b028e051db2e756487d}{print}} (const std\+::string \&name)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em print \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\+::map$<$ std\+::string, \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_1_1node__t}{node\+\_\+t}} $>$ \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_ab85a36bc26376bd5f84bfce14b152da9}{elements}}
-\item 
+\begin{DoxyCompactList}\small\item\em Stored elements map. \end{DoxyCompactList}\item 
 std\+::map$<$ std\+::size\+\_\+t, \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_adfc7f95174345d36a99794a63f0dae37}{print\+\_\+t}} $>$ \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_a06dbf5c0a1316b8a9d682288383060f6}{types}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stored type cast lambda\textquotesingle{}s to call \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_ab54bf847d8143b028e051db2e756487d}{print()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+boost\+::any storage 
+
+Stores instances of boost\+:any and is capable of calling member functions to those.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 
 
 \doxysubsection{Member Typedef Documentation}
@@ -35,6 +53,10 @@ std\+::map$<$ std\+::size\+\_\+t, \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examp
 
 
 
+Function pointer to call print on a boost\+::any. 
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_a1c577edbc97bc32bff08285bbbec0af8}\label{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_a1c577edbc97bc32bff08285bbbec0af8}} 
 \index{ts7::jsonrpc::examples::any\_collection::Storage@{ts7::jsonrpc::examples::any\_collection::Storage}!add@{add}}
@@ -43,14 +65,43 @@ std\+::map$<$ std\+::size\+\_\+t, \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examp
 {\footnotesize\ttfamily template$<$typename U $>$ \\
 void ts7\+::jsonrpc\+::examples\+::any\+\_\+collection\+::\+Storage\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{U \&\&}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Here is the call graph for this function\+:\nopagebreak
+
+
+Add any type. 
+
+Adds an instance of any type, defined by {\ttfamily U}.
+
+\begin{DoxyNote}{Note}
+This function is not only the instance under it\textquotesingle{}s name in a map. Also a lambda is created that casts the any type to it\textquotesingle{}s original type and calls the member function \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_ab54bf847d8143b028e051db2e756487d}{print()}} on it, stored by it\textquotesingle{}s type id hash.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & The type of the instance that shall be stored.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the element to store, like a JSON RPC method name. \\
+\hline
+{\em u} & The forward reference of an instance, that shall be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_a1c577edbc97bc32bff08285bbbec0af8_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -63,7 +114,25 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{print()}{print()}}
 {\footnotesize\ttfamily void ts7\+::jsonrpc\+::examples\+::any\+\_\+collection\+::\+Storage\+::print (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Here is the caller graph for this function\+:\nopagebreak
+
+
+print 
+
+Calls the print function on the instance stored with under {\ttfamily name}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the element, that shall be used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -79,11 +148,19 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{elements}{elements}}
 {\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_1_1node__t}{node\+\_\+t}}$>$ ts7\+::jsonrpc\+::examples\+::any\+\_\+collection\+::\+Storage\+::elements}
 
+
+
+Stored elements map. 
+
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_a06dbf5c0a1316b8a9d682288383060f6}\label{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_a06dbf5c0a1316b8a9d682288383060f6}} 
 \index{ts7::jsonrpc::examples::any\_collection::Storage@{ts7::jsonrpc::examples::any\_collection::Storage}!types@{types}}
 \index{types@{types}!ts7::jsonrpc::examples::any\_collection::Storage@{ts7::jsonrpc::examples::any\_collection::Storage}}
 \doxysubsubsection{\texorpdfstring{types}{types}}
 {\footnotesize\ttfamily std\+::map$<$std\+::size\+\_\+t, \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_adfc7f95174345d36a99794a63f0dae37}{print\+\_\+t}}$>$ ts7\+::jsonrpc\+::examples\+::any\+\_\+collection\+::\+Storage\+::types}
+
+
+
+Stored type cast lambda\textquotesingle{}s to call \mbox{\hyperlink{structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage_ab54bf847d8143b028e051db2e756487d}{print()}} 
 
 
 
