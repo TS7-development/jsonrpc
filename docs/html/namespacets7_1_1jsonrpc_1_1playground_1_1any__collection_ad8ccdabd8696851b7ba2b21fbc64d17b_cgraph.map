@@ -1,0 +1,7 @@
+<map id="ts7::jsonrpc::playground::any_collection::storage" name="ts7::jsonrpc::playground::any_collection::storage">
+<area shape="rect" id="node1" title="storage example" alt="" coords="5,39,187,80"/>
+<area shape="rect" id="node2" href="$structts7_1_1jsonrpc_1_1playground_1_1any__collection_1_1_storage.html#af221aca9be3313d77bfe9104bc6efeb4" title="Add any type." alt="" coords="237,5,452,47"/>
+<area shape="rect" id="node5" href="$structts7_1_1jsonrpc_1_1playground_1_1any__collection_1_1_storage.html#aa16812579563206a91682898018ca5e7" title="print" alt="" coords="235,71,455,112"/>
+<area shape="rect" id="node3" href="$namespacets7_1_1jsonrpc_1_1playground_1_1any__collection.html#a2add5909bae333e589ca94d72e444940" title="any" alt="" coords="503,5,681,47"/>
+<area shape="rect" id="node4" href="$namespacets7_1_1jsonrpc_1_1playground_1_1any__collection.html#a37b355c874c833f64105938cd38d0025" title="Create a default instance of T and calls print on it." alt="" coords="729,5,908,47"/>
+</map>

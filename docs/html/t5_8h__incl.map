@@ -1,11 +1,11 @@
-<map id="examples/003&#45;json&#45;call/t5.h" name="examples/003&#45;json&#45;call/t5.h">
-<area shape="rect" id="node1" title=" " alt="" coords="52,5,255,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,229,64,256"/>
-<area shape="rect" id="node3" title=" " alt="" coords="320,229,437,256"/>
-<area shape="rect" id="node4" href="$003-json-call_2test_8h.html" title=" " alt="" coords="93,155,152,181"/>
-<area shape="rect" id="node7" href="$t4_8h.html" title=" " alt="" coords="161,80,207,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="88,229,157,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="181,229,259,256"/>
-<area shape="rect" id="node8" title=" " alt="" coords="177,155,263,181"/>
-<area shape="rect" id="node9" title=" " alt="" coords="287,155,379,181"/>
+<map id="playground/003&#45;json&#45;call/t5.h" name="playground/003&#45;json&#45;call/t5.h">
+<area shape="rect" id="node1" title=" " alt="" coords="76,5,231,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,244,64,271"/>
+<area shape="rect" id="node3" title=" " alt="" coords="320,244,437,271"/>
+<area shape="rect" id="node4" href="$003-json-call_2test_8h.html" title=" " alt="" coords="93,169,152,196"/>
+<area shape="rect" id="node7" href="$t4_8h.html" title=" " alt="" coords="161,95,207,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="88,244,157,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="181,244,259,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="177,169,263,196"/>
+<area shape="rect" id="node9" title=" " alt="" coords="287,169,379,196"/>
 </map>

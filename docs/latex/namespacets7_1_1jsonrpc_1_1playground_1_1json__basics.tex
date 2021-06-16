@@ -1,0 +1,113 @@
+\hypertarget{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics}{}\doxysection{ts7\+::jsonrpc\+::playground\+::json\+\_\+basics Namespace Reference}
+\label{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics}\index{ts7::jsonrpc::playground::json\_basics@{ts7::jsonrpc::playground::json\_basics}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_ae355eb80ae917f3302638930b5bf59eb}{t1}} (boost\+::json\+::object \&request, boost\+::json\+::object \&params)
+\begin{DoxyCompactList}\small\item\em Basic object update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_a998d9174d6944e4b62d18fe8849d5091}{t2}} (boost\+::json\+::object \&request)
+\begin{DoxyCompactList}\small\item\em Requesting object reference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_a820b118354a05aaa827302569edddfa3}{t3}} (boost\+::json\+::object \&request)
+\begin{DoxyCompactList}\small\item\em Convert to string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_ae355eb80ae917f3302638930b5bf59eb}\label{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_ae355eb80ae917f3302638930b5bf59eb}} 
+\index{ts7::jsonrpc::playground::json\_basics@{ts7::jsonrpc::playground::json\_basics}!t1@{t1}}
+\index{t1@{t1}!ts7::jsonrpc::playground::json\_basics@{ts7::jsonrpc::playground::json\_basics}}
+\doxysubsubsection{\texorpdfstring{t1()}{t1()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+::playground\+::json\+\_\+basics\+::t1 (\begin{DoxyParamCaption}\item[{boost\+::json\+::object \&}]{request,  }\item[{boost\+::json\+::object \&}]{params }\end{DoxyParamCaption})}
+
+
+
+Basic object update. 
+
+Updating the originally create parameter object and check, if it will be updated in the request as well by internally knowing it\textquotesingle{}s parent.
+
+This is not the case, so unfortunately this hasn\textquotesingle{}t worked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The request object. \\
+\hline
+{\em params} & The parameter object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_ae355eb80ae917f3302638930b5bf59eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_a998d9174d6944e4b62d18fe8849d5091}\label{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_a998d9174d6944e4b62d18fe8849d5091}} 
+\index{ts7::jsonrpc::playground::json\_basics@{ts7::jsonrpc::playground::json\_basics}!t2@{t2}}
+\index{t2@{t2}!ts7::jsonrpc::playground::json\_basics@{ts7::jsonrpc::playground::json\_basics}}
+\doxysubsubsection{\texorpdfstring{t2()}{t2()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+::playground\+::json\+\_\+basics\+::t2 (\begin{DoxyParamCaption}\item[{boost\+::json\+::object \&}]{request }\end{DoxyParamCaption})}
+
+
+
+Requesting object reference. 
+
+This test requests an object reference to the parameter from the request object. Updating the received parameter object will now update the internal object of the request, which leads as expected to automatically updating the request, which makes it not necessary to re-\/assign the parameter object to the request object.
+
+This has worked perfectly as intended.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & A reference to the request object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_a998d9174d6944e4b62d18fe8849d5091_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_a820b118354a05aaa827302569edddfa3}\label{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_a820b118354a05aaa827302569edddfa3}} 
+\index{ts7::jsonrpc::playground::json\_basics@{ts7::jsonrpc::playground::json\_basics}!t3@{t3}}
+\index{t3@{t3}!ts7::jsonrpc::playground::json\_basics@{ts7::jsonrpc::playground::json\_basics}}
+\doxysubsubsection{\texorpdfstring{t3()}{t3()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+::playground\+::json\+\_\+basics\+::t3 (\begin{DoxyParamCaption}\item[{boost\+::json\+::object \&}]{request }\end{DoxyParamCaption})}
+
+
+
+Convert to string. 
+
+Simple test to see how to convert a JSON object to a string, that can be used for later transmission.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Reference to the request object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacets7_1_1jsonrpc_1_1playground_1_1json__basics_a820b118354a05aaa827302569edddfa3_icgraph}
+\end{center}
+\end{figure}

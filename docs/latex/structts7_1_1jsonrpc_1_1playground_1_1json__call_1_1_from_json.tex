@@ -1,0 +1,69 @@
+\hypertarget{structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_from_json}{}\doxysection{ts7\+::jsonrpc\+::playground\+::json\+\_\+call\+::From\+Json$<$ T $>$ Struct Template Reference}
+\label{structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_from_json}\index{ts7::jsonrpc::playground::json\_call::FromJson$<$ T $>$@{ts7::jsonrpc::playground::json\_call::FromJson$<$ T $>$}}
+
+
+From Json Converter.  
+
+
+
+
+{\ttfamily \#include $<$test.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_from_json_a091433bef3e04a61d2d8b62134527026}{From\+Json}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+struct ts7\+::jsonrpc\+::playground\+::json\+\_\+call\+::\+From\+Json$<$ T $>$}
+
+From Json Converter. 
+
+This template is meant to convert from a json value to any other type. Every supported type needs it\textquotesingle{}s own specialization. All unsupported types will use the unspecialized template, which will fail a static\+\_\+assert in its constructor. This way you will see at compile time, that the software does not know how to convert from json value to your specific type.
+
+\begin{DoxyNote}{Note}
+The error message will anywhere contain \char`\"{}\mbox{[}\+T = Dummy\mbox{]}\char`\"{} (assuming the type was \mbox{\hyperlink{structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_dummy}{Dummy}}). The exact wording and format is compiler dependend.
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Find a way to embedded the typename into the error message. Already tried\+:
+\begin{DoxyItemize}
+\item \href{https://akrzemi1.wordpress.com/2017/06/28/compile-time-string-concatenation/}{\texttt{ https\+://akrzemi1.\+wordpress.\+com/2017/06/28/compile-\/time-\/string-\/concatenation/}}
+\end{DoxyItemize}\end{DoxyRefDesc}
+
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_from_json_a091433bef3e04a61d2d8b62134527026}\label{structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_from_json_a091433bef3e04a61d2d8b62134527026}} 
+\index{ts7::jsonrpc::playground::json\_call::FromJson$<$ T $>$@{ts7::jsonrpc::playground::json\_call::FromJson$<$ T $>$}!FromJson@{FromJson}}
+\index{FromJson@{FromJson}!ts7::jsonrpc::playground::json\_call::FromJson$<$ T $>$@{ts7::jsonrpc::playground::json\_call::FromJson$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FromJson()}{FromJson()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_from_json}{ts7\+::jsonrpc\+::playground\+::json\+\_\+call\+::\+From\+Json}}$<$ T $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_from_json}{From\+Json}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+constructor 
+
+This constructor will always fail at compile time. The error message depends in wording and format on the compiler, but should always anywhere contain, for which type T it has failed. This means that this type has not specialized conversion, which needs to be done to support it.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/003-\/json-\/call/\mbox{\hyperlink{003-json-call_2test_8h}{test.\+h}}\end{DoxyCompactItemize}

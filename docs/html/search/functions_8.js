@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['t1_155',['t1',['../namespacets7_1_1jsonrpc_1_1examples_1_1json__basics.html#ad8e9576c89eed4857a944bf59908b885',1,'ts7::jsonrpc::examples::json_basics']]],
-  ['t2_156',['t2',['../namespacets7_1_1jsonrpc_1_1examples_1_1json__basics.html#a0ef1c69b66c431e5e9516e213320d370',1,'ts7::jsonrpc::examples::json_basics']]],
-  ['t3_157',['t3',['../namespacets7_1_1jsonrpc_1_1examples_1_1json__basics.html#a8d5a65645b52d6cf8d3859498ca9e8c3',1,'ts7::jsonrpc::examples::json_basics']]],
-  ['test_5fv1_158',['Test_v1',['../structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v1.html#ab12573f4ef384ce323feba0a5d2578ac',1,'ts7::jsonrpc::examples::json_call::Test_v1']]],
-  ['test_5fv2_159',['Test_v2',['../structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v2.html#a3f96ea06c10f1deb42f567c082f2bce0',1,'ts7::jsonrpc::examples::json_call::Test_v2']]],
-  ['test_5fv3_160',['Test_v3',['../structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v3.html#a62aa58e4ec1094bf25735bbb65518b9b',1,'ts7::jsonrpc::examples::json_call::Test_v3']]],
-  ['test_5fv4_161',['Test_v4',['../structts7_1_1jsonrpc_1_1examples_1_1json__call_1_1_test__v4.html#a94ff1c44068fb281fa29838627d75595',1,'ts7::jsonrpc::examples::json_call::Test_v4']]],
-  ['testfunc_162',['testFunc',['../namespacets7_1_1jsonrpc_1_1examples_1_1json__call.html#ad3df8a1f05d2cfd0ef071f8a976c0a18',1,'ts7::jsonrpc::examples::json_call']]],
-  ['type_5fname_163',['type_name',['../namespacets7_1_1jsonrpc_1_1examples_1_1any__collection.html#a3c6b20589d7534dd267f4573da1619d1',1,'ts7::jsonrpc::examples::any_collection']]]
+  ['t1_155',['t1',['../namespacets7_1_1jsonrpc_1_1playground_1_1json__basics.html#ae355eb80ae917f3302638930b5bf59eb',1,'ts7::jsonrpc::playground::json_basics']]],
+  ['t2_156',['t2',['../namespacets7_1_1jsonrpc_1_1playground_1_1json__basics.html#a998d9174d6944e4b62d18fe8849d5091',1,'ts7::jsonrpc::playground::json_basics']]],
+  ['t3_157',['t3',['../namespacets7_1_1jsonrpc_1_1playground_1_1json__basics.html#a820b118354a05aaa827302569edddfa3',1,'ts7::jsonrpc::playground::json_basics']]],
+  ['test_5fv1_158',['Test_v1',['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v1.html#a5d5d72902253270c06a7b93deb65f593',1,'ts7::jsonrpc::playground::json_call::Test_v1']]],
+  ['test_5fv2_159',['Test_v2',['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v2.html#a02e5900eef19bc3a82cba86df1edbaf2',1,'ts7::jsonrpc::playground::json_call::Test_v2']]],
+  ['test_5fv3_160',['Test_v3',['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v3.html#aa3e8346b08ac0c06177570cff505cd72',1,'ts7::jsonrpc::playground::json_call::Test_v3']]],
+  ['test_5fv4_161',['Test_v4',['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v4.html#a21f41d1823f4bcd78ccf67f1aad227d0',1,'ts7::jsonrpc::playground::json_call::Test_v4']]],
+  ['testfunc_162',['testFunc',['../namespacets7_1_1jsonrpc_1_1playground_1_1json__call.html#a73880adab0da96f078cc615f6153b0aa',1,'ts7::jsonrpc::playground::json_call']]],
+  ['type_5fname_163',['type_name',['../namespacets7_1_1jsonrpc_1_1playground_1_1any__collection.html#a14e0e02bc3ecd48a258b61e97a5917d2',1,'ts7::jsonrpc::playground::any_collection']]]
 ];

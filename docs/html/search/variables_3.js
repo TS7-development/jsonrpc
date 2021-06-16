@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['elements_169',['elements',['../structts7_1_1jsonrpc_1_1examples_1_1any__collection_1_1_storage.html#ab85a36bc26376bd5f84bfce14b152da9',1,'ts7::jsonrpc::examples::any_collection::Storage']]]
+  ['elements_169',['elements',['../structts7_1_1jsonrpc_1_1playground_1_1any__collection_1_1_storage.html#a86a6196efeab348f04834d769d922d84',1,'ts7::jsonrpc::playground::any_collection::Storage']]]
 ];
