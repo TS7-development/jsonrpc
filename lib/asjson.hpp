@@ -33,7 +33,9 @@ namespace ts7 {
        */
       constexpr inline explicit AsJson(const T& ref)
         : ref(ref)
-      {}
+      {
+        static_assert(always_false<T>, "Type not supported");
+      }
 
       /// Stored const reference
       const T& ref;
