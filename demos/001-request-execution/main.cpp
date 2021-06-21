@@ -11,6 +11,7 @@ int testFunc(int a, int b) {
 
 int main()
 { 
+
   ts7::jsonrpc::Request<int> request = ts7::jsonrpc::Request<int>::Create(
     "testFunc",
     1,
@@ -18,9 +19,10 @@ int main()
     "b", 7
   );
 
-  ts7::jsonrpc::Procedure<int, ts7::jsonrpc::CallFromJson<int, int, int>> p(
-    ts7::jsonrpc::CallFromJson<int, int, int>(testFunc, "a", "b")
-  );
+  auto p = ts7::jsonrpc::make_request_handler<int>(ts7::jsonrpc::CallFromJson<int, int, int>(testFunc, "a", "b"));
+//  ts7::jsonrpc::Procedure<int, ts7::jsonrpc::CallFromJson<int, int, int>> p(
+//    ts7::jsonrpc::CallFromJson<int, int, int>(testFunc, "a", "b")
+//  );
 
   std::cout << "<- " << request << std::endl;
   auto c = p.onRequest(request);

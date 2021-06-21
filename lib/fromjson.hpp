@@ -49,10 +49,22 @@ namespace ts7 {
      */
     template <>
     struct FromJson<std::string> {
+        FromJson() = default;
+
+        inline FromJson(const boost::json::value& v)
+          : value(v.as_string().c_str())
+        {}
+
         std::string operator()(const boost::json::value& v) const {
           assert(v.is_string());
           return v.as_string().c_str();
         }
+
+        operator std::string() const {
+          return value;
+        }
+
+        std::string value;
     };
 
     template <>

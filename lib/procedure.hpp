@@ -3,6 +3,7 @@
 #include "asjson.hpp"
 #include "callfromjson.hpp"
 #include "error.hpp"
+#include "response.hpp"
 
 namespace ts7 {
   namespace jsonrpc {
@@ -40,27 +41,25 @@ namespace ts7 {
           }
 
           if (!req.contains("params")) {
-            return Error<TId>(req.at("method").as_string().data(), FromJson<TId>(req.at("id")), ErrorCodes::PARAMS_MISSING);
+            return Error<TId>(FromJson<std::string>(req.at("method")), FromJson<TId>(req.at("id")), ErrorCodes::PARAMS_MISSING);
           }
 
           if (!req.at("params").is_object()) {
-            return Error<TId>(req.at("method").as_string().data(), FromJson<TId>(req.at("id")), ErrorCodes::PARAMS_NOT_AN_OBJECT);
+            return Error<TId>(FromJson<std::string>(req.at("method")), FromJson<TId>(req.at("id")), ErrorCodes::PARAMS_NOT_AN_OBJECT);
           }
 
           boost::json::object params = req.at("params").as_object();
           typename TOnRequest::return_t x = onRequestHandler(params);
-
-          boost::json::object response;
-          response["jsonrpc"] = "2.0";
-          response["id"] = req.at("id");
-          response["method"] = req.at("method");
-          response["result"] = AsJson<typename TOnRequest::return_t>(x);
-
-          return response;
+          return Response<TId>(FromJson<std::string>(req.at("method")), FromJson<TId>(req.at("id")), x);;
         }
 
       protected:
         TOnRequest onRequestHandler;
     };
+
+    template <typename TId, typename TOnRequest>
+    inline Procedure<TId, TOnRequest> make_request_handler(const TOnRequest& onRequest) {
+      return Procedure<TId, TOnRequest>(onRequest);
+    }
   }
 }
