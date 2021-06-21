@@ -17,6 +17,7 @@ HEADERS += \
     error.hpp \
     errorcodes.hpp \
     fromjson.hpp \
+    jsonrpc.hpp \
     notification.hpp \
     procedure.hpp \
     request.hpp \

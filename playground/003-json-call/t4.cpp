@@ -12,7 +12,7 @@ namespace ts7 {
        * with both parameter provided. The second time with \p value2 missing to force the usage of the default
        * value.
        *
-       * @note This test is still using \ref testFun to dump the provided values.
+       * @note This test is still using \ref testFunc to dump the provided values.
        *
        * @param test Json object that contains \p value1 and \p value2.
        * @param test2 Json object that only contains \p value2.
