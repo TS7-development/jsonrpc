@@ -1,0 +1,67 @@
+\hypertarget{playground_2001-json-basics_2main_8cpp}{}\doxysection{playground/001-\/json-\/basics/main.cpp File Reference}
+\label{playground_2001-json-basics_2main_8cpp}\index{playground/001-\/json-\/basics/main.cpp@{playground/001-\/json-\/basics/main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$boost/json.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/json/src.\+hpp$>$}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{playground_2001-json-basics_2main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacets7}{ts7}}
+\item 
+ \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground}{ts7\+::jsonrpc\+\_\+playground}}
+\item 
+ \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1json__basics}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+basics}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1json__basics_a9bcaef0ca02d45e2fda2c08e42bf0d55}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+basics\+::t1}} (boost\+::json\+::object \&request, boost\+::json\+::object \&params)
+\begin{DoxyCompactList}\small\item\em Basic object update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1json__basics_a7d35181451d07b6e2af8b7ce1f80cbaa}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+basics\+::t2}} (boost\+::json\+::object \&request)
+\begin{DoxyCompactList}\small\item\em Requesting object reference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1json__basics_a3e116e8cf2570fc039d80ed1971ea5c1}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+basics\+::t3}} (boost\+::json\+::object \&request)
+\begin{DoxyCompactList}\small\item\em Convert to string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{playground_2001-json-basics_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em JSON basics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{playground_2001-json-basics_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{playground_2001-json-basics_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+JSON basics. 
+
+Goal of this example is to figure, how to use the boost\+::json library. Most crucial information is the capability of providing object references, to avoid constantly updating parents when an object has changed. This was required in Qt 5.\+11 and was super annoying and has lead to a lot of avoidable errors.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}}
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+t1, t2, t3
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Returns the application exit code. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{playground_2001-json-basics_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}

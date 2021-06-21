@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['example1_136',['example1',['../namespacets7_1_1jsonrpc_1_1playground_1_1json__call.html#ad3740e858ae496b59e91f79e2ddd826b',1,'ts7::jsonrpc::playground::json_call']]],
-  ['example2_137',['example2',['../namespacets7_1_1jsonrpc_1_1playground_1_1json__call.html#a154f7baf5625453623eddc7fbd4d555b',1,'ts7::jsonrpc::playground::json_call']]],
-  ['example3_138',['example3',['../namespacets7_1_1jsonrpc_1_1playground_1_1json__call.html#a583be95111f8e97e959a73baf959ca79',1,'ts7::jsonrpc::playground::json_call']]],
-  ['example4_139',['example4',['../namespacets7_1_1jsonrpc_1_1playground_1_1json__call.html#ad7e3a3d03450328cf9a37daf632789d1',1,'ts7::jsonrpc::playground::json_call']]],
-  ['example5_140',['example5',['../namespacets7_1_1jsonrpc_1_1playground_1_1json__call.html#a43bcca1f2da7fdb0e22a53c5c6212eb5',1,'ts7::jsonrpc::playground::json_call']]],
-  ['example6_141',['example6',['../namespacets7_1_1jsonrpc_1_1playground_1_1json__call.html#ab5b520b2c0b492ae5df15ab2c267c9a7',1,'ts7::jsonrpc::playground::json_call::example6([[maybe_unused]] const boost::json::object &amp;test3)'],['../namespacets7_1_1jsonrpc_1_1playground_1_1json__call.html#a2bafd03928a52a0c0f53c9549f747b13',1,'ts7::jsonrpc::playground::json_call::example6(const boost::json::object &amp;test3)']]]
+  ['callfromjson_227',['CallFromJson',['../structts7_1_1jsonrpc_1_1_call_from_json.html#a654708e42ce0d046702a85781ea6dfdd',1,'ts7::jsonrpc::CallFromJson']]],
+  ['create_228',['Create',['../classts7_1_1jsonrpc_1_1_notification.html#aa40259b372c96df2afdbb921eb2098b6',1,'ts7::jsonrpc::Notification::Create()'],['../classts7_1_1jsonrpc_1_1_request.html#a277149704d72b08dba9a911edfddcbbc',1,'ts7::jsonrpc::Request::Create()'],['../class_tcp_connection.html#ac7f30a6e3d059d262cd05d21deeca205',1,'TcpConnection::Create()']]]
 ];

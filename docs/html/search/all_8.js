@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['name_27',['name',['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v3_1_1_parameter.html#ae4bff69f23f9ea12f88d4edf81f1e500',1,'ts7::jsonrpc::playground::json_call::Test_v3::Parameter::name()'],['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v4_1_1_parameter.html#a99b271be671a07130350238dbc69c4cb',1,'ts7::jsonrpc::playground::json_call::Test_v4::Parameter::name()'],['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v4_1_1_optional_parameter.html#a4db0867865e3c9d0196db4d092ce1d1b',1,'ts7::jsonrpc::playground::json_call::Test_v4::OptionalParameter::name()']]],
-  ['node_5ft_28',['node_t',['../structts7_1_1jsonrpc_1_1playground_1_1any__collection_1_1_storage_1_1node__t.html',1,'ts7::jsonrpc::playground::any_collection::Storage']]]
+  ['id_51',['id',['../classts7_1_1jsonrpc_1_1_error.html#abbb1dee0c0053307517ca507767ccf3a',1,'ts7::jsonrpc::Error::id()'],['../classts7_1_1jsonrpc_1_1_request.html#a9627b9a8ae63efcd224f74a06b3fa76c',1,'ts7::jsonrpc::Request::id()'],['../classts7_1_1jsonrpc_1_1_response.html#ad247e449c93ceb9cf4af62a66b9f5c20',1,'ts7::jsonrpc::Response::id()']]],
+  ['id_5fmissing_52',['ID_MISSING',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2a976ae9331ca74356a59cb2239111e4ee',1,'ts7::jsonrpc']]],
+  ['int_53',['int',['../namespacetest.html#a02f234a0e0ba9fa6dab66f15e9047217',1,'test']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['c_94',['C',['../structts7_1_1jsonrpc_1_1playground_1_1any__collection_1_1_c.html',1,'ts7::jsonrpc::playground::any_collection']]]
+  ['c_165',['C',['../structts7_1_1jsonrpc__playground_1_1any__collection_1_1_c.html',1,'ts7::jsonrpc_playground::any_collection']]],
+  ['callfromjson_166',['CallFromJson',['../structts7_1_1jsonrpc_1_1_call_from_json.html',1,'ts7::jsonrpc']]]
 ];

@@ -1,12 +1,159 @@
 \hypertarget{namespacets7_1_1jsonrpc}{}\doxysection{ts7\+::jsonrpc Namespace Reference}
 \label{namespacets7_1_1jsonrpc}\index{ts7::jsonrpc@{ts7::jsonrpc}}
-\doxysubsection*{Namespaces}
-\begin{DoxyCompactItemize}
-\item 
- \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1playground}{playground}}
-\end{DoxyCompactItemize}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_as_json}{As\+Json}}
+\begin{DoxyCompactList}\small\item\em Convert to json. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4}{As\+Json$<$ int $>$}}
+\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json}{Call\+From\+Json}}
+\begin{DoxyCompactList}\small\item\em Test version 4. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}}
+\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_from_json}{From\+Json}}
+\begin{DoxyCompactList}\small\item\em From Json Converter. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_from_json_3_01std_1_1string_01_4}{From\+Json$<$ std\+::string $>$}}
+\begin{DoxyCompactList}\small\item\em Json value to String. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_from_json_3_01int_01_4}{From\+Json$<$ int $>$}}
+\item 
+class \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification}{Notification}}
+\item 
+class \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_procedure}{Procedure}}
+\item 
 class \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{Request}}
+\item 
+class \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response}{Response}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U $>$ }\\using \mbox{\hyperlink{namespacets7_1_1jsonrpc_a6fd9681887578c65e158c71b22d46818}{remove\+\_\+cref}} = typename std\+::remove\+\_\+const$<$ typename std\+::remove\+\_\+reference$<$ U $>$\+::type $>$\+::type
+\begin{DoxyCompactList}\small\item\em Const reference remover. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2}{Error\+Codes}} \+: std\+::int32\+\_\+t \{ \newline
+\mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a61ad6e10d43954243bc356d2157d06c3}{JSONRPC\+\_\+\+MISSING}} = 1
+, \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a4af1104fd6989c6dba5eb33a141a9e4f}{JSONRPC\+\_\+\+NOT\+\_\+\+A\+\_\+\+STRING}}
+, \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2ad4a80ae16b0f3791a795d785e8a2dbb7}{JSONRPC\+\_\+\+UNKNOWN\+\_\+\+SPECIFICATION}}
+, \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2adc1b4a620a191d101ebc6c684beb25b5}{METHOD\+\_\+\+MISSING}}
+, \newline
+\mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2ac05403a42dcc7bbe3c30007d22deed25}{METHOD\+\_\+\+NOT\+\_\+\+A\+\_\+\+STRING}}
+, \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a976ae9331ca74356a59cb2239111e4ee}{ID\+\_\+\+MISSING}}
+, \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a0d64c99346964a5d394d24ff32fafeea}{PARAMS\+\_\+\+MISSING}}
+, \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2ac8d76f4e411486aa7d3f3ccec6f1bd92}{PARAMS\+\_\+\+NOT\+\_\+\+AN\+\_\+\+OBJECT}}
+, \newline
+\mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a1973447772e5d96b2325f0e85cd2ce8a}{PARAMETER\+\_\+\+MISSING}}
+, \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a6eae8f65210600f05f84e61232359736}{PARAMETER\+\_\+\+WRONG\+\_\+\+TYPE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename TId , typename TOn\+Request $>$ }\\\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_procedure}{Procedure}}$<$ TId, TOn\+Request $>$ \mbox{\hyperlink{namespacets7_1_1jsonrpc_aed7f204747436d306326e36e5e87e565}{make\+\_\+request\+\_\+handler}} (const TOn\+Request \&on\+Request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename ... T$>$ }\\constexpr bool \mbox{\hyperlink{namespacets7_1_1jsonrpc_a0cb3a0f583255f2faaaec214c3de45aa}{always\+\_\+false}} = false
+\begin{DoxyCompactList}\small\item\em Always false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a6fd9681887578c65e158c71b22d46818}\label{namespacets7_1_1jsonrpc_a6fd9681887578c65e158c71b22d46818}} 
+\index{ts7::jsonrpc@{ts7::jsonrpc}!remove\_cref@{remove\_cref}}
+\index{remove\_cref@{remove\_cref}!ts7::jsonrpc@{ts7::jsonrpc}}
+\doxysubsubsection{\texorpdfstring{remove\_cref}{remove\_cref}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+using \mbox{\hyperlink{namespacets7_1_1jsonrpc_a6fd9681887578c65e158c71b22d46818}{ts7\+::jsonrpc\+::remove\+\_\+cref}} = typedef typename std\+::remove\+\_\+const$<$typename std\+::remove\+\_\+reference$<$U$>$\+::type$>$\+::type}
+
+
+
+Const reference remover. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2}} 
+\index{ts7::jsonrpc@{ts7::jsonrpc}!ErrorCodes@{ErrorCodes}}
+\index{ErrorCodes@{ErrorCodes}!ts7::jsonrpc@{ts7::jsonrpc}}
+\doxysubsubsection{\texorpdfstring{ErrorCodes}{ErrorCodes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2}{ts7\+::jsonrpc\+::\+Error\+Codes}} \+: std\+::int32\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JSONRPC\_MISSING@{JSONRPC\_MISSING}!ts7::jsonrpc@{ts7::jsonrpc}}\index{ts7::jsonrpc@{ts7::jsonrpc}!JSONRPC\_MISSING@{JSONRPC\_MISSING}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a61ad6e10d43954243bc356d2157d06c3}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a61ad6e10d43954243bc356d2157d06c3}} 
+JSONRPC\+\_\+\+MISSING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JSONRPC\_NOT\_A\_STRING@{JSONRPC\_NOT\_A\_STRING}!ts7::jsonrpc@{ts7::jsonrpc}}\index{ts7::jsonrpc@{ts7::jsonrpc}!JSONRPC\_NOT\_A\_STRING@{JSONRPC\_NOT\_A\_STRING}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a4af1104fd6989c6dba5eb33a141a9e4f}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a4af1104fd6989c6dba5eb33a141a9e4f}} 
+JSONRPC\+\_\+\+NOT\+\_\+\+A\+\_\+\+STRING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JSONRPC\_UNKNOWN\_SPECIFICATION@{JSONRPC\_UNKNOWN\_SPECIFICATION}!ts7::jsonrpc@{ts7::jsonrpc}}\index{ts7::jsonrpc@{ts7::jsonrpc}!JSONRPC\_UNKNOWN\_SPECIFICATION@{JSONRPC\_UNKNOWN\_SPECIFICATION}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2ad4a80ae16b0f3791a795d785e8a2dbb7}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2ad4a80ae16b0f3791a795d785e8a2dbb7}} 
+JSONRPC\+\_\+\+UNKNOWN\+\_\+\+SPECIFICATION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{METHOD\_MISSING@{METHOD\_MISSING}!ts7::jsonrpc@{ts7::jsonrpc}}\index{ts7::jsonrpc@{ts7::jsonrpc}!METHOD\_MISSING@{METHOD\_MISSING}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2adc1b4a620a191d101ebc6c684beb25b5}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2adc1b4a620a191d101ebc6c684beb25b5}} 
+METHOD\+\_\+\+MISSING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{METHOD\_NOT\_A\_STRING@{METHOD\_NOT\_A\_STRING}!ts7::jsonrpc@{ts7::jsonrpc}}\index{ts7::jsonrpc@{ts7::jsonrpc}!METHOD\_NOT\_A\_STRING@{METHOD\_NOT\_A\_STRING}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2ac05403a42dcc7bbe3c30007d22deed25}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2ac05403a42dcc7bbe3c30007d22deed25}} 
+METHOD\+\_\+\+NOT\+\_\+\+A\+\_\+\+STRING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ID\_MISSING@{ID\_MISSING}!ts7::jsonrpc@{ts7::jsonrpc}}\index{ts7::jsonrpc@{ts7::jsonrpc}!ID\_MISSING@{ID\_MISSING}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a976ae9331ca74356a59cb2239111e4ee}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a976ae9331ca74356a59cb2239111e4ee}} 
+ID\+\_\+\+MISSING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PARAMS\_MISSING@{PARAMS\_MISSING}!ts7::jsonrpc@{ts7::jsonrpc}}\index{ts7::jsonrpc@{ts7::jsonrpc}!PARAMS\_MISSING@{PARAMS\_MISSING}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a0d64c99346964a5d394d24ff32fafeea}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a0d64c99346964a5d394d24ff32fafeea}} 
+PARAMS\+\_\+\+MISSING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PARAMS\_NOT\_AN\_OBJECT@{PARAMS\_NOT\_AN\_OBJECT}!ts7::jsonrpc@{ts7::jsonrpc}}\index{ts7::jsonrpc@{ts7::jsonrpc}!PARAMS\_NOT\_AN\_OBJECT@{PARAMS\_NOT\_AN\_OBJECT}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2ac8d76f4e411486aa7d3f3ccec6f1bd92}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2ac8d76f4e411486aa7d3f3ccec6f1bd92}} 
+PARAMS\+\_\+\+NOT\+\_\+\+AN\+\_\+\+OBJECT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PARAMETER\_MISSING@{PARAMETER\_MISSING}!ts7::jsonrpc@{ts7::jsonrpc}}\index{ts7::jsonrpc@{ts7::jsonrpc}!PARAMETER\_MISSING@{PARAMETER\_MISSING}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a1973447772e5d96b2325f0e85cd2ce8a}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a1973447772e5d96b2325f0e85cd2ce8a}} 
+PARAMETER\+\_\+\+MISSING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PARAMETER\_WRONG\_TYPE@{PARAMETER\_WRONG\_TYPE}!ts7::jsonrpc@{ts7::jsonrpc}}\index{ts7::jsonrpc@{ts7::jsonrpc}!PARAMETER\_WRONG\_TYPE@{PARAMETER\_WRONG\_TYPE}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a6eae8f65210600f05f84e61232359736}\label{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2a6eae8f65210600f05f84e61232359736}} 
+PARAMETER\+\_\+\+WRONG\+\_\+\+TYPE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacets7_1_1jsonrpc_aed7f204747436d306326e36e5e87e565}\label{namespacets7_1_1jsonrpc_aed7f204747436d306326e36e5e87e565}} 
+\index{ts7::jsonrpc@{ts7::jsonrpc}!make\_request\_handler@{make\_request\_handler}}
+\index{make\_request\_handler@{make\_request\_handler}!ts7::jsonrpc@{ts7::jsonrpc}}
+\doxysubsubsection{\texorpdfstring{make\_request\_handler()}{make\_request\_handler()}}
+{\footnotesize\ttfamily template$<$typename TId , typename TOn\+Request $>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_procedure}{Procedure}}$<$TId, TOn\+Request$>$ ts7\+::jsonrpc\+::make\+\_\+request\+\_\+handler (\begin{DoxyParamCaption}\item[{const TOn\+Request \&}]{on\+Request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacets7_1_1jsonrpc_a0cb3a0f583255f2faaaec214c3de45aa}\label{namespacets7_1_1jsonrpc_a0cb3a0f583255f2faaaec214c3de45aa}} 
+\index{ts7::jsonrpc@{ts7::jsonrpc}!always\_false@{always\_false}}
+\index{always\_false@{always\_false}!ts7::jsonrpc@{ts7::jsonrpc}}
+\doxysubsubsection{\texorpdfstring{always\_false}{always\_false}}
+{\footnotesize\ttfamily template$<$typename ... T$>$ \\
+constexpr bool ts7\+::jsonrpc\+::always\+\_\+false = false\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Always false. 
+
+This bool is a evaluated at compile time and will be always false no matter which and how many types are provided to the variadic template. This is required for static\+\_\+assert. If you just pass false to it, the compiler will optimize it and directly fail, because it will be false no matter which type is provided. This bool on the other hand requires the types to be evaluated to it can\textquotesingle{}t be directly optimized away and will only lead to the static\+\_\+assert fail, if a certain type is used.
+
+This approach is decribed in\+: \href{https://artificial-mind.net/blog/2020/10/03/always-false}{\texttt{ https\+://artificial-\/mind.\+net/blog/2020/10/03/always-\/false}}
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}

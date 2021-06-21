@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['elements_169',['elements',['../structts7_1_1jsonrpc_1_1playground_1_1any__collection_1_1_storage.html#a86a6196efeab348f04834d769d922d84',1,'ts7::jsonrpc::playground::any_collection::Storage']]]
+  ['elements_289',['elements',['../structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage.html#a4117c0a7c526d3c0aa4174e2530112fb',1,'ts7::jsonrpc_playground::any_collection::Storage']]],
+  ['error_290',['error',['../classts7_1_1jsonrpc_1_1_error.html#ac25f34d20b7268ac9caf771f197664de',1,'ts7::jsonrpc::Error']]]
 ];

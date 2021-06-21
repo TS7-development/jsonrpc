@@ -1,0 +1,106 @@
+\hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::Test\+\_\+v1 Struct Reference}
+\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1}\index{ts7::jsonrpc\_playground::json\_call::Test\_v1@{ts7::jsonrpc\_playground::json\_call::Test\_v1}}
+
+
+First version.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1_a6befcf4868b60d14207e4db5a0843de2}{Test\+\_\+v1}} (std\+::function$<$ void(const std\+::string \&, int)$>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1_ada11e58c1430652436a8d68fec67b553}{fn}})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1_a204cb57d01f4510ed1539bd72fd5a3c6}{operator()}} (const boost\+::json\+::object \&o)
+\begin{DoxyCompactList}\small\item\em call operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void(const std\+::string \&, int)$>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1_ada11e58c1430652436a8d68fec67b553}{fn}}
+\begin{DoxyCompactList}\small\item\em Stored function pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+First version. 
+
+This is the first version of how to implement a function call with a json object, that will be converted to a function call with the original function parameter (string, int).
+
+The Idea is to save a function pointer with the matching signature and provide a call operator with that accepts a json object. In this example to keep it simple and focus on the idea the parameter amount, the parameter types and the paramater names are fixed.
+
+This has worked quite good on the first glance.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1_a6befcf4868b60d14207e4db5a0843de2}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1_a6befcf4868b60d14207e4db5a0843de2}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v1@{ts7::jsonrpc\_playground::json\_call::Test\_v1}!Test\_v1@{Test\_v1}}
+\index{Test\_v1@{Test\_v1}!ts7::jsonrpc\_playground::json\_call::Test\_v1@{ts7::jsonrpc\_playground::json\_call::Test\_v1}}
+\doxysubsubsection{\texorpdfstring{Test\_v1()}{Test\_v1()}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v1\+::\+Test\+\_\+v1 (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(const std\+::string \&, int)$>$}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+constructor 
+
+Constructor that just stores the provided function pointer. Needs to be called explicitly to avoid uncontrolled implicit conversions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & Function pointer that shall be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1_a204cb57d01f4510ed1539bd72fd5a3c6}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1_a204cb57d01f4510ed1539bd72fd5a3c6}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v1@{ts7::jsonrpc\_playground::json\_call::Test\_v1}!operator()@{operator()}}
+\index{operator()@{operator()}!ts7::jsonrpc\_playground::json\_call::Test\_v1@{ts7::jsonrpc\_playground::json\_call::Test\_v1}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v1\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+call operator 
+
+Call operator that allows the object to act like a function call, that just takes a json object and will collect all required entries to call the stored function pointer. In this case those are {\ttfamily value1} as string and {\ttfamily value} 2 as int.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Json object that contains the call parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1_ada11e58c1430652436a8d68fec67b553}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1_ada11e58c1430652436a8d68fec67b553}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v1@{ts7::jsonrpc\_playground::json\_call::Test\_v1}!fn@{fn}}
+\index{fn@{fn}!ts7::jsonrpc\_playground::json\_call::Test\_v1@{ts7::jsonrpc\_playground::json\_call::Test\_v1}}
+\doxysubsubsection{\texorpdfstring{fn}{fn}}
+{\footnotesize\ttfamily std\+::function$<$void(const std\+::string\&, int)$>$ ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v1\+::fn}
+
+
+
+Stored function pointer. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/003-\/json-\/call/\mbox{\hyperlink{003-json-call_2t1_8cpp}{t1.\+cpp}}\end{DoxyCompactItemize}

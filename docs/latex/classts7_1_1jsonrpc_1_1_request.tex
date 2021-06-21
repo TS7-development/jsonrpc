@@ -1,26 +1,168 @@
-\hypertarget{classts7_1_1jsonrpc_1_1_request}{}\doxysection{ts7\+::jsonrpc\+::Request Class Reference}
-\label{classts7_1_1jsonrpc_1_1_request}\index{ts7::jsonrpc::Request@{ts7::jsonrpc::Request}}
+\hypertarget{classts7_1_1jsonrpc_1_1_request}{}\doxysection{ts7\+::jsonrpc\+::Request$<$ TId $>$ Class Template Reference}
+\label{classts7_1_1jsonrpc_1_1_request}\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
 
 
-{\ttfamily \#include $<$request.\+h$>$}
+{\ttfamily \#include $<$request.\+hpp$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_a174d61a6ed758ffe471f8ea935e51cbd}{Request}} ()
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_a0e7fa77adc452a4598c4627e46905e39}{Request}} (const std\+::string \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_ab365ba80ea3dee1bd75eaf702a99a320}{method}}, const TId \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_a9627b9a8ae63efcd224f74a06b3fa76c}{id}})
+\item 
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_ade1aea6983f5cb3c6b3a9da57c2fcb4e}{get\+Method}} () const
+\item 
+const TId \& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_aa5249dd1c37fa99a8c3e5f030275ebd1}{get\+ID}} () const
+\item 
+boost\+::json\+::value \& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_af6315052d3fb5d6bf23516e8b13ffa19}{operator\mbox{[}$\,$\mbox{]}}} (std\+::string\+\_\+view key)
+\item 
+const boost\+::json\+::value \& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_a97980093e09d93d0d979e46c8e283e79}{operator\mbox{[}$\,$\mbox{]}}} (std\+::string\+\_\+view key) const
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_ac52594a2e364270c269edb7552517525}{operator boost\+::json\+::object}} () const
+\item 
+{\footnotesize template$<$typename TName , typename TValue $>$ }\\void \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_a1223d7b773e2bb10126d2c6c0bdc1730}{add\+Argument}} (const TName \&name, const TValue \&value)
+\item 
+{\footnotesize template$<$typename TName , typename TValue , typename ... TArgs$>$ }\\void \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_a01bc3584fd505220ad3ec4865f829eba}{add\+Argument}} (const TName \&name, const TValue \&value, TArgs... args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... TArgs$>$ }\\static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{Request}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc}{Create}} (const std\+::string \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_ab365ba80ea3dee1bd75eaf702a99a320}{method}}, const TId \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_a9627b9a8ae63efcd224f74a06b3fa76c}{id}}, TArgs... args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_ab365ba80ea3dee1bd75eaf702a99a320}{method}}
+\item 
+TId \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_a9627b9a8ae63efcd224f74a06b3fa76c}{id}}
+\item 
+boost\+::json\+::object \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request_a9e77b7485b085b1eaf7c3d4b1e40214b}{params}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_a174d61a6ed758ffe471f8ea935e51cbd}\label{classts7_1_1jsonrpc_1_1_request_a174d61a6ed758ffe471f8ea935e51cbd}} 
-\index{ts7::jsonrpc::Request@{ts7::jsonrpc::Request}!Request@{Request}}
-\index{Request@{Request}!ts7::jsonrpc::Request@{ts7::jsonrpc::Request}}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_a0e7fa77adc452a4598c4627e46905e39}\label{classts7_1_1jsonrpc_1_1_request_a0e7fa77adc452a4598c4627e46905e39}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!Request@{Request}}
+\index{Request@{Request}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
 \doxysubsubsection{\texorpdfstring{Request()}{Request()}}
-{\footnotesize\ttfamily ts7\+::jsonrpc\+::\+Request\+::\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{Request}} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{method,  }\item[{const TId \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_a1223d7b773e2bb10126d2c6c0bdc1730}\label{classts7_1_1jsonrpc_1_1_request_a1223d7b773e2bb10126d2c6c0bdc1730}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!addArgument@{addArgument}}
+\index{addArgument@{addArgument}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{addArgument()}{addArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+template$<$typename TName , typename TValue $>$ \\
+void \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::add\+Argument (\begin{DoxyParamCaption}\item[{const TName \&}]{name,  }\item[{const TValue \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1_request_a1223d7b773e2bb10126d2c6c0bdc1730_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_a01bc3584fd505220ad3ec4865f829eba}\label{classts7_1_1jsonrpc_1_1_request_a01bc3584fd505220ad3ec4865f829eba}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!addArgument@{addArgument}}
+\index{addArgument@{addArgument}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{addArgument()}{addArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+template$<$typename TName , typename TValue , typename ... TArgs$>$ \\
+void \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::add\+Argument (\begin{DoxyParamCaption}\item[{const TName \&}]{name,  }\item[{const TValue \&}]{value,  }\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1_request_a01bc3584fd505220ad3ec4865f829eba_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc}\label{classts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!Create@{Create}}
+\index{Create@{Create}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+template$<$typename... TArgs$>$ \\
+static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{Request}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::Create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{method,  }\item[{const TId \&}]{id,  }\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_aa5249dd1c37fa99a8c3e5f030275ebd1}\label{classts7_1_1jsonrpc_1_1_request_aa5249dd1c37fa99a8c3e5f030275ebd1}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!getID@{getID}}
+\index{getID@{getID}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+const TId\& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_ade1aea6983f5cb3c6b3a9da57c2fcb4e}\label{classts7_1_1jsonrpc_1_1_request_ade1aea6983f5cb3c6b3a9da57c2fcb4e}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!getMethod@{getMethod}}
+\index{getMethod@{getMethod}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{getMethod()}{getMethod()}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::get\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_ac52594a2e364270c269edb7552517525}\label{classts7_1_1jsonrpc_1_1_request_ac52594a2e364270c269edb7552517525}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!operator boost::json::object@{operator boost::json::object}}
+\index{operator boost::json::object@{operator boost::json::object}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{operator boost::json::object()}{operator boost::json::object()}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::operator boost\+::json\+::object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_af6315052d3fb5d6bf23516e8b13ffa19}\label{classts7_1_1jsonrpc_1_1_request_af6315052d3fb5d6bf23516e8b13ffa19}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+boost\+::json\+::value\& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_a97980093e09d93d0d979e46c8e283e79}\label{classts7_1_1jsonrpc_1_1_request_a97980093e09d93d0d979e46c8e283e79}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+const boost\+::json\+::value\& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_a9627b9a8ae63efcd224f74a06b3fa76c}\label{classts7_1_1jsonrpc_1_1_request_a9627b9a8ae63efcd224f74a06b3fa76c}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!id@{id}}
+\index{id@{id}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+TId \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_ab365ba80ea3dee1bd75eaf702a99a320}\label{classts7_1_1jsonrpc_1_1_request_ab365ba80ea3dee1bd75eaf702a99a320}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!method@{method}}
+\index{method@{method}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::method\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_request_a9e77b7485b085b1eaf7c3d4b1e40214b}\label{classts7_1_1jsonrpc_1_1_request_a9e77b7485b085b1eaf7c3d4b1e40214b}} 
+\index{ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}!params@{params}}
+\index{params@{params}!ts7::jsonrpc::Request$<$ TId $>$@{ts7::jsonrpc::Request$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+boost\+::json\+::object \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{ts7\+::jsonrpc\+::\+Request}}$<$ TId $>$\+::params\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-lib/\mbox{\hyperlink{request_8h}{request.\+h}}\item 
-lib/\mbox{\hyperlink{request_8cpp}{request.\+cpp}}\end{DoxyCompactItemize}
+lib/\mbox{\hyperlink{request_8hpp}{request.\+hpp}}\end{DoxyCompactItemize}

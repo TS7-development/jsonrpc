@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['simple_153',['simple',['../namespacets7_1_1jsonrpc_1_1playground_1_1any__collection.html#ab3dc6faa6cea12a48642683d89526131',1,'ts7::jsonrpc::playground::any_collection']]],
-  ['storage_154',['storage',['../namespacets7_1_1jsonrpc_1_1playground_1_1any__collection.html#ad8ccdabd8696851b7ba2b21fbc64d17b',1,'ts7::jsonrpc::playground::any_collection']]]
+  ['notification_245',['Notification',['../classts7_1_1jsonrpc_1_1_notification.html#a8757d36447481d4f1d82678dc9e2f69c',1,'ts7::jsonrpc::Notification']]]
 ];

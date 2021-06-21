@@ -1,0 +1,126 @@
+\hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::Test\+\_\+v3$<$ TReturn, T1, T2 $>$\+::Parameter$<$ U $>$ Struct Template Reference}
+\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter}\index{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}}
+
+
+Paramater.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter_a0e28282ca34bf197242432cf4db9ec6e}{Parameter}} (const std\+::string \&\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter_a94c967fbbea8e4e5c46b45fd0f4d5a68}{name}})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_a0b87233c094dc17f48f07e244d90ec18}{remove\+\_\+cref}}$<$ U $>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter_af55ef92efa873ade51fb5092acf25926}{operator()}} (const boost\+::json\+::object \&o)
+\begin{DoxyCompactList}\small\item\em Call operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter_a94c967fbbea8e4e5c46b45fd0f4d5a68}{name}}
+\begin{DoxyCompactList}\small\item\em The parameter name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TReturn, typename T1, typename T2$>$\newline
+template$<$typename U$>$\newline
+struct ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v3$<$ TReturn, T1, T2 $>$\+::\+Parameter$<$ U $>$}
+
+Paramater. 
+
+Class that stores the name and type of a paramter for later usage.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & The parameter type.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter_a0e28282ca34bf197242432cf4db9ec6e}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter_a0e28282ca34bf197242432cf4db9ec6e}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}!Parameter@{Parameter}}
+\index{Parameter@{Parameter}!ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{Parameter()}{Parameter()}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U $>$ \\
+constexpr \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v3}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter}{Parameter}}$<$ U $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter}{Parameter}} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [constexpr]}}
+
+
+
+constructor 
+
+Explicit constructor that just stores the parameter name as copy.
+
+\begin{DoxyNote}{Note}
+A copy should be fine here, since we expect quite short parameter names (max. 100 characters).
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The parameter name that shall be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter_af55ef92efa873ade51fb5092acf25926}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter_af55ef92efa873ade51fb5092acf25926}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_a0b87233c094dc17f48f07e244d90ec18}{remove\+\_\+cref}}$<$U$>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v3}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter}{Parameter}}$<$ U $>$\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Call operator. 
+
+Enables the call operation on instances of this class. Therefore it takes a json object is using the povided name to retrieve the corresponding value.
+
+\begin{DoxyAttention}{Attention}
+In this test there is no checking, if the parameter exists or if the type matches. This decision was made to keep the test for now as simple as possible.
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The provided json object that contains the parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the retrieved value.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter_a94c967fbbea8e4e5c46b45fd0f4d5a68}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter_a94c967fbbea8e4e5c46b45fd0f4d5a68}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}!name@{name}}
+\index{name@{name}!ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v3$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U $>$ \\
+std\+::string \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v3}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3_1_1_parameter}{Parameter}}$<$ U $>$\+::name}
+
+
+
+The parameter name. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/003-\/json-\/call/\mbox{\hyperlink{003-json-call_2t3_8cpp}{t3.\+cpp}}\end{DoxyCompactItemize}

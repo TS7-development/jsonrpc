@@ -1,0 +1,187 @@
+\hypertarget{class_tcp_connection}{}\doxysection{Tcp\+Connection Class Reference}
+\label{class_tcp_connection}\index{TcpConnection@{TcpConnection}}
+
+
+Inheritance diagram for Tcp\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_tcp_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tcp\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_tcp_connection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_tcp_connection}{Tcp\+Connection}} $>$ \mbox{\hyperlink{class_tcp_connection_a56d562e0f2e1b96c4d326fb66aeb520c}{Ptr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::asio\+::ip\+::tcp\+::socket \& \mbox{\hyperlink{class_tcp_connection_aca03121a2d7d758ca8e5068c41a8064c}{socket}} ()
+\item 
+void \mbox{\hyperlink{class_tcp_connection_aa6ce5699680c335044ea5d7a5cca8738}{echo}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_tcp_connection_a56d562e0f2e1b96c4d326fb66aeb520c}{Ptr}} \mbox{\hyperlink{class_tcp_connection_ac7f30a6e3d059d262cd05d21deeca205}{Create}} (boost\+::asio\+::io\+\_\+context \&io\+\_\+context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tcp_connection_ae1fc12295a484df5d0300ba8b987a4c1}{Tcp\+Connection}} (boost\+::asio\+::io\+\_\+context \&ctx)
+\item 
+void \mbox{\hyperlink{class_tcp_connection_a583b1e767b972d8b26f67f27f6affd60}{handle\+\_\+read}} (const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t bytes\+\_\+transferred)
+\item 
+void \mbox{\hyperlink{class_tcp_connection_a3dcd152871d943e0cb19111b95d29789}{handle\+\_\+write}} (const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t bytes\+\_\+transferred)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::asio\+::ip\+::tcp\+::socket \mbox{\hyperlink{class_tcp_connection_a198385b0b7056b505f57e4791cbf33cc}{sock}}
+\item 
+char \mbox{\hyperlink{class_tcp_connection_aee3a58411c567421b490a16d227a0946}{msg}} \mbox{[}1024\mbox{]} = \{0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_tcp_connection_a56d562e0f2e1b96c4d326fb66aeb520c}\label{class_tcp_connection_a56d562e0f2e1b96c4d326fb66aeb520c}} 
+\index{TcpConnection@{TcpConnection}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!TcpConnection@{TcpConnection}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef boost\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_tcp_connection}{Tcp\+Connection}}$>$ \mbox{\hyperlink{class_tcp_connection_a56d562e0f2e1b96c4d326fb66aeb520c}{Tcp\+Connection\+::\+Ptr}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tcp_connection_ae1fc12295a484df5d0300ba8b987a4c1}\label{class_tcp_connection_ae1fc12295a484df5d0300ba8b987a4c1}} 
+\index{TcpConnection@{TcpConnection}!TcpConnection@{TcpConnection}}
+\index{TcpConnection@{TcpConnection}!TcpConnection@{TcpConnection}}
+\doxysubsubsection{\texorpdfstring{TcpConnection()}{TcpConnection()}}
+{\footnotesize\ttfamily Tcp\+Connection\+::\+Tcp\+Connection (\begin{DoxyParamCaption}\item[{boost\+::asio\+::io\+\_\+context \&}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_connection_ae1fc12295a484df5d0300ba8b987a4c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tcp_connection_ac7f30a6e3d059d262cd05d21deeca205}\label{class_tcp_connection_ac7f30a6e3d059d262cd05d21deeca205}} 
+\index{TcpConnection@{TcpConnection}!Create@{Create}}
+\index{Create@{Create}!TcpConnection@{TcpConnection}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_tcp_connection_a56d562e0f2e1b96c4d326fb66aeb520c}{Ptr}} Tcp\+Connection\+::\+Create (\begin{DoxyParamCaption}\item[{boost\+::asio\+::io\+\_\+context \&}]{io\+\_\+context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_connection_ac7f30a6e3d059d262cd05d21deeca205_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_connection_ac7f30a6e3d059d262cd05d21deeca205_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_tcp_connection_aa6ce5699680c335044ea5d7a5cca8738}\label{class_tcp_connection_aa6ce5699680c335044ea5d7a5cca8738}} 
+\index{TcpConnection@{TcpConnection}!echo@{echo}}
+\index{echo@{echo}!TcpConnection@{TcpConnection}}
+\doxysubsubsection{\texorpdfstring{echo()}{echo()}}
+{\footnotesize\ttfamily void Tcp\+Connection\+::echo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_connection_aa6ce5699680c335044ea5d7a5cca8738_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_connection_aa6ce5699680c335044ea5d7a5cca8738_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_tcp_connection_a583b1e767b972d8b26f67f27f6affd60}\label{class_tcp_connection_a583b1e767b972d8b26f67f27f6affd60}} 
+\index{TcpConnection@{TcpConnection}!handle\_read@{handle\_read}}
+\index{handle\_read@{handle\_read}!TcpConnection@{TcpConnection}}
+\doxysubsubsection{\texorpdfstring{handle\_read()}{handle\_read()}}
+{\footnotesize\ttfamily void Tcp\+Connection\+::handle\+\_\+read (\begin{DoxyParamCaption}\item[{const boost\+::system\+::error\+\_\+code \&}]{error,  }\item[{size\+\_\+t}]{bytes\+\_\+transferred }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_connection_a583b1e767b972d8b26f67f27f6affd60_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_connection_a583b1e767b972d8b26f67f27f6affd60_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_tcp_connection_a3dcd152871d943e0cb19111b95d29789}\label{class_tcp_connection_a3dcd152871d943e0cb19111b95d29789}} 
+\index{TcpConnection@{TcpConnection}!handle\_write@{handle\_write}}
+\index{handle\_write@{handle\_write}!TcpConnection@{TcpConnection}}
+\doxysubsubsection{\texorpdfstring{handle\_write()}{handle\_write()}}
+{\footnotesize\ttfamily void Tcp\+Connection\+::handle\+\_\+write (\begin{DoxyParamCaption}\item[{const boost\+::system\+::error\+\_\+code \&}]{error,  }\item[{size\+\_\+t}]{bytes\+\_\+transferred }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_connection_a3dcd152871d943e0cb19111b95d29789_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_connection_a3dcd152871d943e0cb19111b95d29789_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_tcp_connection_aca03121a2d7d758ca8e5068c41a8064c}\label{class_tcp_connection_aca03121a2d7d758ca8e5068c41a8064c}} 
+\index{TcpConnection@{TcpConnection}!socket@{socket}}
+\index{socket@{socket}!TcpConnection@{TcpConnection}}
+\doxysubsubsection{\texorpdfstring{socket()}{socket()}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::tcp\+::socket\& Tcp\+Connection\+::socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tcp_connection_aee3a58411c567421b490a16d227a0946}\label{class_tcp_connection_aee3a58411c567421b490a16d227a0946}} 
+\index{TcpConnection@{TcpConnection}!msg@{msg}}
+\index{msg@{msg}!TcpConnection@{TcpConnection}}
+\doxysubsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily char Tcp\+Connection\+::msg\mbox{[}1024\mbox{]} = \{0\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_tcp_connection_a198385b0b7056b505f57e4791cbf33cc}\label{class_tcp_connection_a198385b0b7056b505f57e4791cbf33cc}} 
+\index{TcpConnection@{TcpConnection}!sock@{sock}}
+\index{sock@{sock}!TcpConnection@{TcpConnection}}
+\doxysubsubsection{\texorpdfstring{sock}{sock}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::tcp\+::socket Tcp\+Connection\+::sock\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/005-\/echo-\/server/\mbox{\hyperlink{playground_2005-echo-server_2main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

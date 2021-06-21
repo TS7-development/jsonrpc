@@ -1,0 +1,133 @@
+\hypertarget{classts7_1_1jsonrpc_1_1_notification}{}\doxysection{ts7\+::jsonrpc\+::Notification Class Reference}
+\label{classts7_1_1jsonrpc_1_1_notification}\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+
+
+{\ttfamily \#include $<$notification.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_a8757d36447481d4f1d82678dc9e2f69c}{Notification}} (const std\+::string \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_a034e4b0cbd4d90e21c4abe5969f2f0f3}{method}})
+\item 
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_a104689d438ca24171426d5e96f73d0b0}{get\+Method}} () const
+\item 
+boost\+::json\+::value \& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_a4a4991f5b35e44063472ef9fbdd98db9}{operator\mbox{[}$\,$\mbox{]}}} (std\+::string\+\_\+view key)
+\item 
+const boost\+::json\+::value \& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_aeba53a1a1c7bad08e1e609ab31b39524}{operator\mbox{[}$\,$\mbox{]}}} (std\+::string\+\_\+view key) const
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_a0d27cd110d02078f073f0c7b5530b3c5}{operator boost\+::json\+::object}} () const
+\item 
+{\footnotesize template$<$typename TName , typename TValue $>$ }\\void \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_a7fddc8c663d5795e7aac06c455090c1b}{add\+Argument}} (const TName \&name, const TValue \&value)
+\item 
+{\footnotesize template$<$typename TName , typename TValue , typename ... TArgs$>$ }\\void \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_a013fb6ba2e1fd4ece47110b38e473220}{add\+Argument}} (const TName \&name, const TValue \&value, TArgs... args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... TArgs$>$ }\\static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification}{Notification}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_aa40259b372c96df2afdbb921eb2098b6}{Create}} (const std\+::string \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_a034e4b0cbd4d90e21c4abe5969f2f0f3}{method}}, TArgs... args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_a034e4b0cbd4d90e21c4abe5969f2f0f3}{method}}
+\item 
+boost\+::json\+::object \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_a58b689bd79b1a315d16f6594eaf9694a}{params}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_a8757d36447481d4f1d82678dc9e2f69c}\label{classts7_1_1jsonrpc_1_1_notification_a8757d36447481d4f1d82678dc9e2f69c}} 
+\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}!Notification@{Notification}}
+\index{Notification@{Notification}!ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+\doxysubsubsection{\texorpdfstring{Notification()}{Notification()}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+::\+Notification\+::\+Notification (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_a7fddc8c663d5795e7aac06c455090c1b}\label{classts7_1_1jsonrpc_1_1_notification_a7fddc8c663d5795e7aac06c455090c1b}} 
+\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}!addArgument@{addArgument}}
+\index{addArgument@{addArgument}!ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+\doxysubsubsection{\texorpdfstring{addArgument()}{addArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename TName , typename TValue $>$ \\
+void ts7\+::jsonrpc\+::\+Notification\+::add\+Argument (\begin{DoxyParamCaption}\item[{const TName \&}]{name,  }\item[{const TValue \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1_notification_a7fddc8c663d5795e7aac06c455090c1b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_a013fb6ba2e1fd4ece47110b38e473220}\label{classts7_1_1jsonrpc_1_1_notification_a013fb6ba2e1fd4ece47110b38e473220}} 
+\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}!addArgument@{addArgument}}
+\index{addArgument@{addArgument}!ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+\doxysubsubsection{\texorpdfstring{addArgument()}{addArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename TName , typename TValue , typename ... TArgs$>$ \\
+void ts7\+::jsonrpc\+::\+Notification\+::add\+Argument (\begin{DoxyParamCaption}\item[{const TName \&}]{name,  }\item[{const TValue \&}]{value,  }\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1_notification_a013fb6ba2e1fd4ece47110b38e473220_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_aa40259b372c96df2afdbb921eb2098b6}\label{classts7_1_1jsonrpc_1_1_notification_aa40259b372c96df2afdbb921eb2098b6}} 
+\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}!Create@{Create}}
+\index{Create@{Create}!ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification}{Notification}} ts7\+::jsonrpc\+::\+Notification\+::\+Create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{method,  }\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1_notification_aa40259b372c96df2afdbb921eb2098b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_a104689d438ca24171426d5e96f73d0b0}\label{classts7_1_1jsonrpc_1_1_notification_a104689d438ca24171426d5e96f73d0b0}} 
+\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}!getMethod@{getMethod}}
+\index{getMethod@{getMethod}!ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+\doxysubsubsection{\texorpdfstring{getMethod()}{getMethod()}}
+{\footnotesize\ttfamily std\+::string ts7\+::jsonrpc\+::\+Notification\+::get\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_a0d27cd110d02078f073f0c7b5530b3c5}\label{classts7_1_1jsonrpc_1_1_notification_a0d27cd110d02078f073f0c7b5530b3c5}} 
+\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}!operator boost::json::object@{operator boost::json::object}}
+\index{operator boost::json::object@{operator boost::json::object}!ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+\doxysubsubsection{\texorpdfstring{operator boost::json::object()}{operator boost::json::object()}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+::\+Notification\+::operator boost\+::json\+::object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_a4a4991f5b35e44063472ef9fbdd98db9}\label{classts7_1_1jsonrpc_1_1_notification_a4a4991f5b35e44063472ef9fbdd98db9}} 
+\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boost\+::json\+::value\& ts7\+::jsonrpc\+::\+Notification\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_aeba53a1a1c7bad08e1e609ab31b39524}\label{classts7_1_1jsonrpc_1_1_notification_aeba53a1a1c7bad08e1e609ab31b39524}} 
+\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const boost\+::json\+::value\& ts7\+::jsonrpc\+::\+Notification\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_a034e4b0cbd4d90e21c4abe5969f2f0f3}\label{classts7_1_1jsonrpc_1_1_notification_a034e4b0cbd4d90e21c4abe5969f2f0f3}} 
+\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}!method@{method}}
+\index{method@{method}!ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+\doxysubsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily std\+::string ts7\+::jsonrpc\+::\+Notification\+::method\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_a58b689bd79b1a315d16f6594eaf9694a}\label{classts7_1_1jsonrpc_1_1_notification_a58b689bd79b1a315d16f6594eaf9694a}} 
+\index{ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}!params@{params}}
+\index{params@{params}!ts7::jsonrpc::Notification@{ts7::jsonrpc::Notification}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily boost\+::json\+::object ts7\+::jsonrpc\+::\+Notification\+::params\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{notification_8hpp}{notification.\+hpp}}\end{DoxyCompactItemize}

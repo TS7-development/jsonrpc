@@ -1,6 +1,7 @@
 <map id="ts7::jsonrpc::playground::json_basics::t1" name="ts7::jsonrpc::playground::json_basics::t1">
-<area shape="rect" id="node1" title="Basic object update." alt="" coords="271,57,449,98"/>
-<area shape="rect" id="node2" href="$001-json-basics_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="JSON basics." alt="" coords="87,5,141,32"/>
-<area shape="rect" id="node3" href="$structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v3.html#a4bdea5175b53d9f677c2bb0fd6baa732" title="Call operator." alt="" coords="5,57,223,98"/>
-<area shape="rect" id="node4" href="$structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v4.html#a3a1383a288ae50774a1fc65cabd5137b" title="Call operator." alt="" coords="5,122,223,163"/>
+<area shape="rect" id="node1" title="Basic object update." alt="" coords="271,90,449,131"/>
+<area shape="rect" id="node2" href="$playground_2001-json-basics_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="JSON basics." alt="" coords="87,5,141,32"/>
+<area shape="rect" id="node3" href="$structts7_1_1jsonrpc_1_1_call_from_json.html#a72f2fe729d0131dfd2bd7d4787382a55" title="Call operator." alt="" coords="19,57,209,98"/>
+<area shape="rect" id="node4" href="$structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v3.html#a4bdea5175b53d9f677c2bb0fd6baa732" title="Call operator." alt="" coords="5,122,223,163"/>
+<area shape="rect" id="node5" href="$structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v4.html#a3a1383a288ae50774a1fc65cabd5137b" title="Call operator." alt="" coords="5,187,223,229"/>
 </map>

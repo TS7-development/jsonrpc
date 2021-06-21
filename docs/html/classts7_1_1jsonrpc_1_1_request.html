@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>JSON RPC: ts7::jsonrpc::Request Class Reference</title>
+<title>JSON RPC: ts7::jsonrpc::Request&lt; TId &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,40 +68,474 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classts7_1_1jsonrpc_1_1_request-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ts7::jsonrpc::Request Class Reference</div>  </div>
+<div class="title">ts7::jsonrpc::Request&lt; TId &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="request_8h_source.html">request.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="request_8hpp_source.html">request.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a174d61a6ed758ffe471f8ea935e51cbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#a174d61a6ed758ffe471f8ea935e51cbd">Request</a> ()</td></tr>
-<tr class="separator:a174d61a6ed758ffe471f8ea935e51cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7fa77adc452a4598c4627e46905e39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#a0e7fa77adc452a4598c4627e46905e39">Request</a> (const std::string &amp;<a class="el" href="classts7_1_1jsonrpc_1_1_request.html#ab365ba80ea3dee1bd75eaf702a99a320">method</a>, const TId &amp;<a class="el" href="classts7_1_1jsonrpc_1_1_request.html#a9627b9a8ae63efcd224f74a06b3fa76c">id</a>)</td></tr>
+<tr class="separator:a0e7fa77adc452a4598c4627e46905e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1aea6983f5cb3c6b3a9da57c2fcb4e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#ade1aea6983f5cb3c6b3a9da57c2fcb4e">getMethod</a> () const</td></tr>
+<tr class="separator:ade1aea6983f5cb3c6b3a9da57c2fcb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5249dd1c37fa99a8c3e5f030275ebd1"><td class="memItemLeft" align="right" valign="top">const TId &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#aa5249dd1c37fa99a8c3e5f030275ebd1">getID</a> () const</td></tr>
+<tr class="separator:aa5249dd1c37fa99a8c3e5f030275ebd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6315052d3fb5d6bf23516e8b13ffa19"><td class="memItemLeft" align="right" valign="top">boost::json::value &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#af6315052d3fb5d6bf23516e8b13ffa19">operator[]</a> (std::string_view key)</td></tr>
+<tr class="separator:af6315052d3fb5d6bf23516e8b13ffa19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97980093e09d93d0d979e46c8e283e79"><td class="memItemLeft" align="right" valign="top">const boost::json::value &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#a97980093e09d93d0d979e46c8e283e79">operator[]</a> (std::string_view key) const</td></tr>
+<tr class="separator:a97980093e09d93d0d979e46c8e283e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52594a2e364270c269edb7552517525"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#ac52594a2e364270c269edb7552517525">operator boost::json::object</a> () const</td></tr>
+<tr class="separator:ac52594a2e364270c269edb7552517525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1223d7b773e2bb10126d2c6c0bdc1730"><td class="memTemplParams" colspan="2">template&lt;typename TName , typename TValue &gt; </td></tr>
+<tr class="memitem:a1223d7b773e2bb10126d2c6c0bdc1730"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#a1223d7b773e2bb10126d2c6c0bdc1730">addArgument</a> (const TName &amp;name, const TValue &amp;value)</td></tr>
+<tr class="separator:a1223d7b773e2bb10126d2c6c0bdc1730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01bc3584fd505220ad3ec4865f829eba"><td class="memTemplParams" colspan="2">template&lt;typename TName , typename TValue , typename ... TArgs&gt; </td></tr>
+<tr class="memitem:a01bc3584fd505220ad3ec4865f829eba"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#a01bc3584fd505220ad3ec4865f829eba">addArgument</a> (const TName &amp;name, const TValue &amp;value, TArgs... args)</td></tr>
+<tr class="separator:a01bc3584fd505220ad3ec4865f829eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a277149704d72b08dba9a911edfddcbbc"><td class="memTemplParams" colspan="2">template&lt;typename... TArgs&gt; </td></tr>
+<tr class="memitem:a277149704d72b08dba9a911edfddcbbc"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">Request</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#a277149704d72b08dba9a911edfddcbbc">Create</a> (const std::string &amp;<a class="el" href="classts7_1_1jsonrpc_1_1_request.html#ab365ba80ea3dee1bd75eaf702a99a320">method</a>, const TId &amp;<a class="el" href="classts7_1_1jsonrpc_1_1_request.html#a9627b9a8ae63efcd224f74a06b3fa76c">id</a>, TArgs... args)</td></tr>
+<tr class="separator:a277149704d72b08dba9a911edfddcbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab365ba80ea3dee1bd75eaf702a99a320"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#ab365ba80ea3dee1bd75eaf702a99a320">method</a></td></tr>
+<tr class="separator:ab365ba80ea3dee1bd75eaf702a99a320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9627b9a8ae63efcd224f74a06b3fa76c"><td class="memItemLeft" align="right" valign="top">TId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#a9627b9a8ae63efcd224f74a06b3fa76c">id</a></td></tr>
+<tr class="separator:a9627b9a8ae63efcd224f74a06b3fa76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e77b7485b085b1eaf7c3d4b1e40214b"><td class="memItemLeft" align="right" valign="top">boost::json::object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html#a9e77b7485b085b1eaf7c3d4b1e40214b">params</a></td></tr>
+<tr class="separator:a9e77b7485b085b1eaf7c3d4b1e40214b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a174d61a6ed758ffe471f8ea935e51cbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a174d61a6ed758ffe471f8ea935e51cbd">&#9670;&nbsp;</a></span>Request()</h2>
+<a id="a0e7fa77adc452a4598c4627e46905e39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7fa77adc452a4598c4627e46905e39">&#9670;&nbsp;</a></span>Request()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ts7::jsonrpc::Request::Request </td>
+          <td class="memname"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::<a class="el" href="classts7_1_1jsonrpc_1_1_request.html">Request</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const TId &amp;&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>lib/<a class="el" href="request_8h_source.html">request.h</a></li>
-<li>lib/<a class="el" href="request_8cpp.html">request.cpp</a></li>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1223d7b773e2bb10126d2c6c0bdc1730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1223d7b773e2bb10126d2c6c0bdc1730">&#9670;&nbsp;</a></span>addArgument() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<div class="memtemplate">
+template&lt;typename TName , typename TValue &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::addArgument </td>
+          <td>(</td>
+          <td class="paramtype">const TName &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TValue &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classts7_1_1jsonrpc_1_1_request_a1223d7b773e2bb10126d2c6c0bdc1730_icgraph.png" border="0" usemap="#aclassts7_1_1jsonrpc_1_1_request_a1223d7b773e2bb10126d2c6c0bdc1730_icgraph" alt=""/></div>
+<map name="aclassts7_1_1jsonrpc_1_1_request_a1223d7b773e2bb10126d2c6c0bdc1730_icgraph" id="aclassts7_1_1jsonrpc_1_1_request_a1223d7b773e2bb10126d2c6c0bdc1730_icgraph">
+<area shape="rect" title=" " alt="" coords="315,39,473,80"/>
+<area shape="rect" href="classts7_1_1jsonrpc_1_1_request.html#a01bc3584fd505220ad3ec4865f829eba" title=" " alt="" coords="108,5,267,47"/>
+<area shape="rect" href="classts7_1_1jsonrpc_1_1_request.html#a277149704d72b08dba9a911edfddcbbc" title=" " alt="" coords="108,71,267,112"/>
+<area shape="rect" href="examples_2001-request-execution_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,78,60,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a01bc3584fd505220ad3ec4865f829eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01bc3584fd505220ad3ec4865f829eba">&#9670;&nbsp;</a></span>addArgument() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<div class="memtemplate">
+template&lt;typename TName , typename TValue , typename ... TArgs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::addArgument </td>
+          <td>(</td>
+          <td class="paramtype">const TName &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TValue &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TArgs...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classts7_1_1jsonrpc_1_1_request_a01bc3584fd505220ad3ec4865f829eba_cgraph.png" border="0" usemap="#aclassts7_1_1jsonrpc_1_1_request_a01bc3584fd505220ad3ec4865f829eba_cgraph" alt=""/></div>
+<map name="aclassts7_1_1jsonrpc_1_1_request_a01bc3584fd505220ad3ec4865f829eba_cgraph" id="aclassts7_1_1jsonrpc_1_1_request_a01bc3584fd505220ad3ec4865f829eba_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,164,47"/>
+<area shape="rect" href="classts7_1_1jsonrpc_1_1_request.html#a1223d7b773e2bb10126d2c6c0bdc1730" title=" " alt="" coords="212,5,371,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a277149704d72b08dba9a911edfddcbbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277149704d72b08dba9a911edfddcbbc">&#9670;&nbsp;</a></span>Create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<div class="memtemplate">
+template&lt;typename... TArgs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">Request</a> <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::Create </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TId &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TArgs...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc_cgraph.png" border="0" usemap="#aclassts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc_cgraph" alt=""/></div>
+<map name="aclassts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc_cgraph" id="aclassts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,164,47"/>
+<area shape="rect" href="classts7_1_1jsonrpc_1_1_request.html#a1223d7b773e2bb10126d2c6c0bdc1730" title=" " alt="" coords="212,5,371,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc_icgraph.png" border="0" usemap="#aclassts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc_icgraph" alt=""/></div>
+<map name="aclassts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc_icgraph" id="aclassts7_1_1jsonrpc_1_1_request_a277149704d72b08dba9a911edfddcbbc_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,267,47"/>
+<area shape="rect" href="examples_2001-request-execution_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa5249dd1c37fa99a8c3e5f030275ebd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5249dd1c37fa99a8c3e5f030275ebd1">&#9670;&nbsp;</a></span>getID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const TId&amp; <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::getID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade1aea6983f5cb3c6b3a9da57c2fcb4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1aea6983f5cb3c6b3a9da57c2fcb4e">&#9670;&nbsp;</a></span>getMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::getMethod </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac52594a2e364270c269edb7552517525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52594a2e364270c269edb7552517525">&#9670;&nbsp;</a></span>operator boost::json::object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::operator boost::json::object </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6315052d3fb5d6bf23516e8b13ffa19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6315052d3fb5d6bf23516e8b13ffa19">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::json::value&amp; <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97980093e09d93d0d979e46c8e283e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97980093e09d93d0d979e46c8e283e79">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const boost::json::value&amp; <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9627b9a8ae63efcd224f74a06b3fa76c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9627b9a8ae63efcd224f74a06b3fa76c">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TId <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab365ba80ea3dee1bd75eaf702a99a320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab365ba80ea3dee1bd75eaf702a99a320">&#9670;&nbsp;</a></span>method</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::method</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e77b7485b085b1eaf7c3d4b1e40214b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e77b7485b085b1eaf7c3d4b1e40214b">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::json::object <a class="el" href="classts7_1_1jsonrpc_1_1_request.html">ts7::jsonrpc::Request</a>&lt; TId &gt;::params</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>lib/<a class="el" href="request_8hpp_source.html">request.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

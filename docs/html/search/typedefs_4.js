@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variant_5ftype_187',['variant_type',['../namespacets7_1_1jsonrpc_1_1playground_1_1any__collection.html#a8a31e82446264021c7fcd0dcfc9f1879',1,'ts7::jsonrpc::playground::any_collection']]]
+  ['variant_5ftype_323',['variant_type',['../namespacets7_1_1jsonrpc__playground_1_1any__collection.html#a1952527e0e9ddd1de23aa6442bd7916e',1,'ts7::jsonrpc_playground::any_collection']]]
 ];

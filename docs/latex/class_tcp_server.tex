@@ -1,0 +1,93 @@
+\hypertarget{class_tcp_server}{}\doxysection{Tcp\+Server Class Reference}
+\label{class_tcp_server}\index{TcpServer@{TcpServer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tcp_server_aef8ccdbb33aa31a8d356173b2baaa29c}{Tcp\+Server}} (boost\+::asio\+::io\+\_\+context \&\mbox{\hyperlink{class_tcp_server_a36531fa4da7bdfab04eb4a2ec3b69246}{ctx}})
+\item 
+void \mbox{\hyperlink{class_tcp_server_ab974b762334c0cdff317ac7c1a770542}{start\+Accept}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tcp_server_aaa71a88b9a8872869a76e2e03f2047db}{handle\+Accept}} (\mbox{\hyperlink{class_tcp_connection_a56d562e0f2e1b96c4d326fb66aeb520c}{Tcp\+Connection\+::\+Ptr}} conn, const boost\+::system\+::error\+\_\+code \&error)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::asio\+::io\+\_\+context \& \mbox{\hyperlink{class_tcp_server_a36531fa4da7bdfab04eb4a2ec3b69246}{ctx}}
+\item 
+boost\+::asio\+::ip\+::tcp\+::acceptor \mbox{\hyperlink{class_tcp_server_a2cc07c20db63741dca4da097bb9024f0}{acceptor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tcp_server_aef8ccdbb33aa31a8d356173b2baaa29c}\label{class_tcp_server_aef8ccdbb33aa31a8d356173b2baaa29c}} 
+\index{TcpServer@{TcpServer}!TcpServer@{TcpServer}}
+\index{TcpServer@{TcpServer}!TcpServer@{TcpServer}}
+\doxysubsubsection{\texorpdfstring{TcpServer()}{TcpServer()}}
+{\footnotesize\ttfamily Tcp\+Server\+::\+Tcp\+Server (\begin{DoxyParamCaption}\item[{boost\+::asio\+::io\+\_\+context \&}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tcp_server_aaa71a88b9a8872869a76e2e03f2047db}\label{class_tcp_server_aaa71a88b9a8872869a76e2e03f2047db}} 
+\index{TcpServer@{TcpServer}!handleAccept@{handleAccept}}
+\index{handleAccept@{handleAccept}!TcpServer@{TcpServer}}
+\doxysubsubsection{\texorpdfstring{handleAccept()}{handleAccept()}}
+{\footnotesize\ttfamily void Tcp\+Server\+::handle\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tcp_connection_a56d562e0f2e1b96c4d326fb66aeb520c}{Tcp\+Connection\+::\+Ptr}}}]{conn,  }\item[{const boost\+::system\+::error\+\_\+code \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_server_aaa71a88b9a8872869a76e2e03f2047db_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_server_aaa71a88b9a8872869a76e2e03f2047db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_tcp_server_ab974b762334c0cdff317ac7c1a770542}\label{class_tcp_server_ab974b762334c0cdff317ac7c1a770542}} 
+\index{TcpServer@{TcpServer}!startAccept@{startAccept}}
+\index{startAccept@{startAccept}!TcpServer@{TcpServer}}
+\doxysubsubsection{\texorpdfstring{startAccept()}{startAccept()}}
+{\footnotesize\ttfamily void Tcp\+Server\+::start\+Accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_server_ab974b762334c0cdff317ac7c1a770542_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tcp_server_ab974b762334c0cdff317ac7c1a770542_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tcp_server_a2cc07c20db63741dca4da097bb9024f0}\label{class_tcp_server_a2cc07c20db63741dca4da097bb9024f0}} 
+\index{TcpServer@{TcpServer}!acceptor@{acceptor}}
+\index{acceptor@{acceptor}!TcpServer@{TcpServer}}
+\doxysubsubsection{\texorpdfstring{acceptor}{acceptor}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::tcp\+::acceptor Tcp\+Server\+::acceptor\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_tcp_server_a36531fa4da7bdfab04eb4a2ec3b69246}\label{class_tcp_server_a36531fa4da7bdfab04eb4a2ec3b69246}} 
+\index{TcpServer@{TcpServer}!ctx@{ctx}}
+\index{ctx@{ctx}!TcpServer@{TcpServer}}
+\doxysubsubsection{\texorpdfstring{ctx}{ctx}}
+{\footnotesize\ttfamily boost\+::asio\+::io\+\_\+context\& Tcp\+Server\+::ctx\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/005-\/echo-\/server/\mbox{\hyperlink{playground_2005-echo-server_2main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

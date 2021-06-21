@@ -1,0 +1,13 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,145,60,172"/>
+<area shape="rect" id="node2" href="$namespacets7_1_1jsonrpc__playground_1_1any__collection.html#a6cfcc180dbe86204912d9b0a3fc0218e" title="any" alt="" coords="645,43,823,84"/>
+<area shape="rect" id="node4" href="$namespacets7_1_1jsonrpc__playground_1_1any__collection.html#a0fb9385280124ccbb7cd2af6c61ea441" title="simple" alt="" coords="110,72,287,114"/>
+<area shape="rect" id="node5" href="$namespacets7_1_1jsonrpc__playground_1_1any__collection.html#adebca8aed5c653ed2b12db146d38fee6" title="storage example" alt="" coords="108,138,289,179"/>
+<area shape="rect" id="node8" href="$namespacets7_1_1jsonrpc__playground_1_1any__collection.html#a4a59a627c9b6c94c91b556f25e1705f1" title="variant example" alt="" coords="109,203,288,244"/>
+<area shape="rect" id="node9" href="$namespacets7_1_1jsonrpc__playground_1_1any__collection.html#a86b52815b49072048df54d0e2c292433" title="variant_storage example" alt="" coords="109,269,288,325"/>
+<area shape="rect" id="node3" href="$namespacets7_1_1jsonrpc__playground_1_1any__collection.html#acd713d39cdfb43fd28d8337aa7a58c44" title="Create a default instance of T and calls print on it." alt="" coords="871,43,1048,84"/>
+<area shape="rect" id="node6" href="$structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage.html#a66a210b62a6c2cc7db4b09933cf47e54" title="Add any type." alt="" coords="360,72,575,114"/>
+<area shape="rect" id="node7" href="$structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage.html#a4a0c181747341e611c64f68d46ed5a6c" title="print" alt="" coords="376,138,559,194"/>
+<area shape="rect" id="node10" href="$structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage.html#aa2dd0fad402de17c93354eadd57f0c85" title="add" alt="" coords="337,247,597,288"/>
+<area shape="rect" id="node11" href="$structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage.html#a30113aed484338734fa4d9a9993a16f5" title="print" alt="" coords="353,313,581,369"/>
+</map>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['optionalparameter_101',['OptionalParameter',['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v4_1_1_optional_parameter.html',1,'ts7::jsonrpc::playground::json_call::Test_v4']]]
+  ['node_5ft_173',['node_t',['../structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_1_1node__t.html',1,'ts7::jsonrpc_playground::any_collection::Storage']]],
+  ['notification_174',['Notification',['../classts7_1_1jsonrpc_1_1_notification.html',1,'ts7::jsonrpc']]]
 ];

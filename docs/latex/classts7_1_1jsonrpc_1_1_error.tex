@@ -1,0 +1,166 @@
+\hypertarget{classts7_1_1jsonrpc_1_1_error}{}\doxysection{ts7\+::jsonrpc\+::Error$<$ TId $>$ Class Template Reference}
+\label{classts7_1_1jsonrpc_1_1_error}\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+
+
+{\ttfamily \#include $<$error.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_a062c1baee790a9c9fb9687c5ed841d43}{Error}} (const std\+::string \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_abbca2682a8f2438592916bb54ae2ce1f}{method}}, const TId \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_abbb1dee0c0053307517ca507767ccf3a}{id}}, std\+::int32\+\_\+t code, std\+::string\+\_\+view message)
+\item 
+{\footnotesize template$<$typename TArg $>$ }\\\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_a4d7a83e88bf2ee0ecf761d8648235a7e}{Error}} (const std\+::string \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_abbca2682a8f2438592916bb54ae2ce1f}{method}}, const TId \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_abbb1dee0c0053307517ca507767ccf3a}{id}}, const TArg \&arg)
+\item 
+{\footnotesize template$<$typename ... TArgs$>$ }\\\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_a11cc952b7f6a60f5272fc8112f195041}{Error}} (const std\+::string \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_abbca2682a8f2438592916bb54ae2ce1f}{method}}, const TId \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_abbb1dee0c0053307517ca507767ccf3a}{id}}, \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2}{Error\+Codes}} error\+Code, TArgs... args)
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_ad90ea6ee6e6746cd60c370aeb637f16f}{Error}} (const \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{Request}}$<$ TId $>$ \&req, std\+::int32\+\_\+t code, std\+::string\+\_\+view message)
+\item 
+{\footnotesize template$<$typename TArg $>$ }\\\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_a64bb18c3166219e553b50d2af63cc251}{Error}} (const \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{Request}}$<$ TId $>$ \&req, const TArg \&arg)
+\item 
+{\footnotesize template$<$typename ... TArgs$>$ }\\\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_a9340da40a706081402598cda477e7b24}{Error}} (const \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{Request}}$<$ TId $>$ \&req, \mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2}{Error\+Codes}} error\+Code, TArgs... args)
+\item 
+{\footnotesize template$<$typename ... TArgs$>$ }\\\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_aea22ab202bb997db646c73811450bbe2}{Error}} (\mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2}{Error\+Codes}} error\+Code, TArgs... args)
+\item 
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_aef84c80feec5092c62982c578c222525}{get\+Method}} () const
+\item 
+const TId \& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_ad120067699e9f6640dcdb7f9a420ee18}{get\+ID}} () const
+\item 
+boost\+::json\+::value \& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_ab436a2ea6cc0ff2e157e4826e0cd8395}{operator\mbox{[}$\,$\mbox{]}}} (std\+::string\+\_\+view key)
+\item 
+const boost\+::json\+::value \& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_a05f2309de31e1ddcded733c28b069c56}{operator\mbox{[}$\,$\mbox{]}}} (std\+::string\+\_\+view key) const
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_afd8b2c88f26de0211ca40a046796d28d}{operator boost\+::json\+::object}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_abbca2682a8f2438592916bb54ae2ce1f}{method}}
+\item 
+TId \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_abbb1dee0c0053307517ca507767ccf3a}{id}}
+\item 
+boost\+::json\+::value \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_ac25f34d20b7268ac9caf771f197664de}{error}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_a062c1baee790a9c9fb9687c5ed841d43}\label{classts7_1_1jsonrpc_1_1_error_a062c1baee790a9c9fb9687c5ed841d43}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!Error@{Error}}
+\index{Error@{Error}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{method,  }\item[{const TId \&}]{id,  }\item[{std\+::int32\+\_\+t}]{code,  }\item[{std\+::string\+\_\+view}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_a4d7a83e88bf2ee0ecf761d8648235a7e}\label{classts7_1_1jsonrpc_1_1_error_a4d7a83e88bf2ee0ecf761d8648235a7e}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!Error@{Error}}
+\index{Error@{Error}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+template$<$typename TArg $>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{method,  }\item[{const TId \&}]{id,  }\item[{const TArg \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_a11cc952b7f6a60f5272fc8112f195041}\label{classts7_1_1jsonrpc_1_1_error_a11cc952b7f6a60f5272fc8112f195041}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!Error@{Error}}
+\index{Error@{Error}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+template$<$typename ... TArgs$>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{method,  }\item[{const TId \&}]{id,  }\item[{\mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2}{Error\+Codes}}}]{error\+Code,  }\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_ad90ea6ee6e6746cd60c370aeb637f16f}\label{classts7_1_1jsonrpc_1_1_error_ad90ea6ee6e6746cd60c370aeb637f16f}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!Error@{Error}}
+\index{Error@{Error}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{Request}}$<$ TId $>$ \&}]{req,  }\item[{std\+::int32\+\_\+t}]{code,  }\item[{std\+::string\+\_\+view}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_a64bb18c3166219e553b50d2af63cc251}\label{classts7_1_1jsonrpc_1_1_error_a64bb18c3166219e553b50d2af63cc251}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!Error@{Error}}
+\index{Error@{Error}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+template$<$typename TArg $>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{Request}}$<$ TId $>$ \&}]{req,  }\item[{const TArg \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_a9340da40a706081402598cda477e7b24}\label{classts7_1_1jsonrpc_1_1_error_a9340da40a706081402598cda477e7b24}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!Error@{Error}}
+\index{Error@{Error}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+template$<$typename ... TArgs$>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_request}{Request}}$<$ TId $>$ \&}]{req,  }\item[{\mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2}{Error\+Codes}}}]{error\+Code,  }\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_aea22ab202bb997db646c73811450bbe2}\label{classts7_1_1jsonrpc_1_1_error_aea22ab202bb997db646c73811450bbe2}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!Error@{Error}}
+\index{Error@{Error}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+template$<$typename ... TArgs$>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacets7_1_1jsonrpc_a901f4611d9f427175067ed6dab2f3dc2}{Error\+Codes}}}]{error\+Code,  }\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_ad120067699e9f6640dcdb7f9a420ee18}\label{classts7_1_1jsonrpc_1_1_error_ad120067699e9f6640dcdb7f9a420ee18}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!getID@{getID}}
+\index{getID@{getID}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+const TId\& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_aef84c80feec5092c62982c578c222525}\label{classts7_1_1jsonrpc_1_1_error_aef84c80feec5092c62982c578c222525}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!getMethod@{getMethod}}
+\index{getMethod@{getMethod}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{getMethod()}{getMethod()}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::get\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_afd8b2c88f26de0211ca40a046796d28d}\label{classts7_1_1jsonrpc_1_1_error_afd8b2c88f26de0211ca40a046796d28d}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!operator boost::json::object@{operator boost::json::object}}
+\index{operator boost::json::object@{operator boost::json::object}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{operator boost::json::object()}{operator boost::json::object()}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::operator boost\+::json\+::object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_ab436a2ea6cc0ff2e157e4826e0cd8395}\label{classts7_1_1jsonrpc_1_1_error_ab436a2ea6cc0ff2e157e4826e0cd8395}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+boost\+::json\+::value\& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_a05f2309de31e1ddcded733c28b069c56}\label{classts7_1_1jsonrpc_1_1_error_a05f2309de31e1ddcded733c28b069c56}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+const boost\+::json\+::value\& \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_ac25f34d20b7268ac9caf771f197664de}\label{classts7_1_1jsonrpc_1_1_error_ac25f34d20b7268ac9caf771f197664de}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!error@{error}}
+\index{error@{error}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+boost\+::json\+::value \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::error\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_abbb1dee0c0053307517ca507767ccf3a}\label{classts7_1_1jsonrpc_1_1_error_abbb1dee0c0053307517ca507767ccf3a}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!id@{id}}
+\index{id@{id}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+TId \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_abbca2682a8f2438592916bb54ae2ce1f}\label{classts7_1_1jsonrpc_1_1_error_abbca2682a8f2438592916bb54ae2ce1f}} 
+\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!method@{method}}
+\index{method@{method}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
+\doxysubsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily template$<$typename TId $>$ \\
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::method\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{error_8hpp}{error.\+hpp}}\end{DoxyCompactItemize}

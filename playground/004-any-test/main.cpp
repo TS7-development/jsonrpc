@@ -5,7 +5,7 @@
 
 int main()
 {
-  using namespace ts7::jsonrpc::playground::any_collection;
+  using namespace ts7::jsonrpc_playground::any_collection;
   simple();
   any();
   storage();

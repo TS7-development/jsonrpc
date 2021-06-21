@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['hasdefault_24',['hasDefault',['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v4_1_1_parameter.html#a84dd747875313ce41b95ae121e7b5493',1,'ts7::jsonrpc::playground::json_call::Test_v4::Parameter']]]
+  ['getid_44',['getID',['../classts7_1_1jsonrpc_1_1_error.html#ad120067699e9f6640dcdb7f9a420ee18',1,'ts7::jsonrpc::Error::getID()'],['../classts7_1_1jsonrpc_1_1_request.html#aa5249dd1c37fa99a8c3e5f030275ebd1',1,'ts7::jsonrpc::Request::getID()'],['../classts7_1_1jsonrpc_1_1_response.html#a40bb2854b99206f299ecb910c79d1fda',1,'ts7::jsonrpc::Response::getID()']]],
+  ['getmethod_45',['getMethod',['../classts7_1_1jsonrpc_1_1_error.html#aef84c80feec5092c62982c578c222525',1,'ts7::jsonrpc::Error::getMethod()'],['../classts7_1_1jsonrpc_1_1_notification.html#a104689d438ca24171426d5e96f73d0b0',1,'ts7::jsonrpc::Notification::getMethod()'],['../classts7_1_1jsonrpc_1_1_request.html#ade1aea6983f5cb3c6b3a9da57c2fcb4e',1,'ts7::jsonrpc::Request::getMethod()'],['../classts7_1_1jsonrpc_1_1_response.html#a85fffd2c4b1794ac8877f1e93d4d7ec8',1,'ts7::jsonrpc::Response::getMethod()']]]
 ];

@@ -25,7 +25,7 @@
  */
 int main()
 {
-  using namespace ts7::jsonrpc::playground::json_call;
+  using namespace ts7::jsonrpc_playground::json_call;
 
   boost::json::object test;
   test["value1"] = "Hallo Welt";

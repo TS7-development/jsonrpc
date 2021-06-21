@@ -1,0 +1,169 @@
+\hypertarget{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::any\+\_\+collection\+::Storage Struct Reference}
+\label{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage}\index{ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}}
+
+
+boost\+::any storage  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_1_1node__t}{node\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage}{Storage}} entry node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a9f20028fb08264f3bb992445db60bf0e}{print\+\_\+t}} = std\+::function$<$ void(const boost\+::any \&)$>$
+\begin{DoxyCompactList}\small\item\em Function pointer to call print on a boost\+::any. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U $>$ }\\void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a66a210b62a6c2cc7db4b09933cf47e54}{add}} (const std\+::string \&name, U \&\&u)
+\begin{DoxyCompactList}\small\item\em Add any type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a4a0c181747341e611c64f68d46ed5a6c}{print}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em print \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_1_1node__t}{node\+\_\+t}} $>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a4117c0a7c526d3c0aa4174e2530112fb}{elements}}
+\begin{DoxyCompactList}\small\item\em Stored elements map. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::size\+\_\+t, \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a9f20028fb08264f3bb992445db60bf0e}{print\+\_\+t}} $>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a94259a91e762919a23547c95128d0486}{types}}
+\begin{DoxyCompactList}\small\item\em Stored type cast lambda\textquotesingle{}s to call \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a4a0c181747341e611c64f68d46ed5a6c}{print()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+boost\+::any storage 
+
+Stores instances of boost\+:any and is capable of calling member functions to those.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a9f20028fb08264f3bb992445db60bf0e}\label{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a9f20028fb08264f3bb992445db60bf0e}} 
+\index{ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}!print\_t@{print\_t}}
+\index{print\_t@{print\_t}!ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}}
+\doxysubsubsection{\texorpdfstring{print\_t}{print\_t}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a9f20028fb08264f3bb992445db60bf0e}{ts7\+::jsonrpc\+\_\+playground\+::any\+\_\+collection\+::\+Storage\+::print\+\_\+t}} =  std\+::function$<$void(const boost\+::any\&)$>$}
+
+
+
+Function pointer to call print on a boost\+::any. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a66a210b62a6c2cc7db4b09933cf47e54}\label{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a66a210b62a6c2cc7db4b09933cf47e54}} 
+\index{ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}!add@{add}}
+\index{add@{add}!ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+void ts7\+::jsonrpc\+\_\+playground\+::any\+\_\+collection\+::\+Storage\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{U \&\&}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add any type. 
+
+Adds an instance of any type, defined by {\ttfamily U}.
+
+\begin{DoxyNote}{Note}
+This function is not only the instance under it\textquotesingle{}s name in a map. Also a lambda is created that casts the any type to it\textquotesingle{}s original type and calls the member function \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a4a0c181747341e611c64f68d46ed5a6c}{print()}} on it, stored by it\textquotesingle{}s type id hash.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & The type of the instance that shall be stored.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the element to store, like a JSON RPC method name. \\
+\hline
+{\em u} & The forward reference of an instance, that shall be stored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a66a210b62a6c2cc7db4b09933cf47e54_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a66a210b62a6c2cc7db4b09933cf47e54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a4a0c181747341e611c64f68d46ed5a6c}\label{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a4a0c181747341e611c64f68d46ed5a6c}} 
+\index{ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}!print@{print}}
+\index{print@{print}!ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+\_\+playground\+::any\+\_\+collection\+::\+Storage\+::print (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+print 
+
+Calls the print function on the instance stored with under {\ttfamily name}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the element, that shall be used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a4a0c181747341e611c64f68d46ed5a6c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a4117c0a7c526d3c0aa4174e2530112fb}\label{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a4117c0a7c526d3c0aa4174e2530112fb}} 
+\index{ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}!elements@{elements}}
+\index{elements@{elements}!ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}}
+\doxysubsubsection{\texorpdfstring{elements}{elements}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_1_1node__t}{node\+\_\+t}}$>$ ts7\+::jsonrpc\+\_\+playground\+::any\+\_\+collection\+::\+Storage\+::elements}
+
+
+
+Stored elements map. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a94259a91e762919a23547c95128d0486}\label{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a94259a91e762919a23547c95128d0486}} 
+\index{ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}!types@{types}}
+\index{types@{types}!ts7::jsonrpc\_playground::any\_collection::Storage@{ts7::jsonrpc\_playground::any\_collection::Storage}}
+\doxysubsubsection{\texorpdfstring{types}{types}}
+{\footnotesize\ttfamily std\+::map$<$std\+::size\+\_\+t, \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a9f20028fb08264f3bb992445db60bf0e}{print\+\_\+t}}$>$ ts7\+::jsonrpc\+\_\+playground\+::any\+\_\+collection\+::\+Storage\+::types}
+
+
+
+Stored type cast lambda\textquotesingle{}s to call \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage_a4a0c181747341e611c64f68d46ed5a6c}{print()}} 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/004-\/any-\/test/\mbox{\hyperlink{004-any-test_2t3_8cpp}{t3.\+cpp}}\end{DoxyCompactItemize}

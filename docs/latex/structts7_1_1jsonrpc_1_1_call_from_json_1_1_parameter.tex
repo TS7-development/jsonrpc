@@ -1,0 +1,162 @@
+\hypertarget{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{}\doxysection{ts7\+::jsonrpc\+::Call\+From\+Json$<$ TReturn, T1, T2 $>$\+::Parameter$<$ U $>$ Struct Template Reference}
+\label{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}\index{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}}
+
+
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}}.  
+
+
+
+
+{\ttfamily \#include $<$callfromjson.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a11be674a1ad240fec2a747f1608da696}{Parameter}} (const std\+::string \&\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a64afbd0eb6e1281ef4979722bfe09a49}{name}}, bool \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a68f96a3698a2bdf3c367984c53b905f0}{has\+Default}}=false, const U \&\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a4d243739c2f5f286bae2193ab9e11168}{default\+Value}}=\mbox{\hyperlink{namespacets7_1_1jsonrpc_a6fd9681887578c65e158c71b22d46818}{remove\+\_\+cref}}$<$ U $>$())
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacets7_1_1jsonrpc_a6fd9681887578c65e158c71b22d46818}{remove\+\_\+cref}}$<$ U $>$ \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a11014453fe89c570a5a29c712399562f}{operator()}} (const boost\+::json\+::object \&o)
+\begin{DoxyCompactList}\small\item\em Call operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a64afbd0eb6e1281ef4979722bfe09a49}{name}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}} name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a68f96a3698a2bdf3c367984c53b905f0}{has\+Default}}
+\begin{DoxyCompactList}\small\item\em Is default value allowed. \end{DoxyCompactList}\item 
+U \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a4d243739c2f5f286bae2193ab9e11168}{default\+Value}}
+\begin{DoxyCompactList}\small\item\em Default value, that shall be used if \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a68f96a3698a2bdf3c367984c53b905f0}{has\+Default}} is true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TReturn, typename T1, typename T2$>$\newline
+template$<$typename U$>$\newline
+struct ts7\+::jsonrpc\+::\+Call\+From\+Json$<$ TReturn, T1, T2 $>$\+::\+Parameter$<$ U $>$}
+
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}}. 
+
+Extended version of Test\+\_\+v3\+::\+Parameter. Now has the capability of storing a default value, if wished.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & Type of the parameter.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a11be674a1ad240fec2a747f1608da696}\label{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a11be674a1ad240fec2a747f1608da696}} 
+\index{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}!Parameter@{Parameter}}
+\index{Parameter@{Parameter}!ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{Parameter()}{Parameter()}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U $>$ \\
+constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json}{ts7\+::jsonrpc\+::\+Call\+From\+Json}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}}$<$ U $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{bool}]{has\+Default = {\ttfamily false},  }\item[{const U \&}]{default\+Value = {\ttfamily \mbox{\hyperlink{namespacets7_1_1jsonrpc_a6fd9681887578c65e158c71b22d46818}{remove\+\_\+cref}}$<$U$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [constexpr]}}
+
+
+
+constructor 
+
+Creates a parameter with its type, name and the information if the parameter has a default value and what it is.
+
+\begin{DoxyNote}{Note}
+Perhaps it would be a good idea to use std\+::optional for the default value.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the parameter. \\
+\hline
+{\em has\+Default} & If the true, the parameter has a default value. The parameter does not have a default value, if it is false. \\
+\hline
+{\em default\+Value} & The provided default value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a11014453fe89c570a5a29c712399562f}\label{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a11014453fe89c570a5a29c712399562f}} 
+\index{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{namespacets7_1_1jsonrpc_a6fd9681887578c65e158c71b22d46818}{remove\+\_\+cref}}$<$U$>$ \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json}{ts7\+::jsonrpc\+::\+Call\+From\+Json}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}}$<$ U $>$\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Call operator. 
+
+Retrieves the required parameter from the json object, if the json object contains it. Otherwise it is returning the default value, if the parameter has a default value.
+
+\begin{DoxyAttention}{Attention}
+If the object does not contain the parameter and has no default value, there should be an error handling any how. This was omitted to keep the example simple. There is still no type checking for the parameter.
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Json object that contains the provided parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the retrieved value, if the parameter was present in the json object. If not the default value will be returned, if available. Otherwise it will for now just return the default constructor.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a4d243739c2f5f286bae2193ab9e11168}\label{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a4d243739c2f5f286bae2193ab9e11168}} 
+\index{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}!defaultValue@{defaultValue}}
+\index{defaultValue@{defaultValue}!ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{defaultValue}{defaultValue}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U $>$ \\
+U \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json}{ts7\+::jsonrpc\+::\+Call\+From\+Json}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}}$<$ U $>$\+::default\+Value}
+
+
+
+Default value, that shall be used if \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a68f96a3698a2bdf3c367984c53b905f0}{has\+Default}} is true. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a68f96a3698a2bdf3c367984c53b905f0}\label{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a68f96a3698a2bdf3c367984c53b905f0}} 
+\index{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}!hasDefault@{hasDefault}}
+\index{hasDefault@{hasDefault}!ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{hasDefault}{hasDefault}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U $>$ \\
+bool \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json}{ts7\+::jsonrpc\+::\+Call\+From\+Json}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}}$<$ U $>$\+::has\+Default}
+
+
+
+Is default value allowed. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a64afbd0eb6e1281ef4979722bfe09a49}\label{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter_a64afbd0eb6e1281ef4979722bfe09a49}} 
+\index{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}!name@{name}}
+\index{name@{name}!ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U $>$ \\
+std\+::string \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json}{ts7\+::jsonrpc\+::\+Call\+From\+Json}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}}$<$ U $>$\+::name}
+
+
+
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}} name. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{callfromjson_8hpp}{callfromjson.\+hpp}}\end{DoxyCompactItemize}

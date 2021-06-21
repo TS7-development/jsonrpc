@@ -1,0 +1,204 @@
+\hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::Test\+\_\+v4$<$ TReturn, T1, T2 $>$ Struct Template Reference}
+\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4}\index{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}}
+
+
+Test version 4.  
+
+
+
+
+{\ttfamily \#include $<$t4.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_1_1_optional_parameter}{Optional\+Parameter}}
+\begin{DoxyCompactList}\small\item\em Optional parameter. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_1_1_parameter}{Parameter}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_1_1_parameter}{Parameter}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a24e390e96063c5cd0de428f01e430aa9}{callback\+\_\+t}} = std\+::function$<$ TReturn(T1, T2)$>$
+\begin{DoxyCompactList}\small\item\em Callback type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_acbefee3f79edc5c1c99fcd3d044d6ac8}{remove\+\_\+cref}} = typename std\+::remove\+\_\+const$<$ typename std\+::remove\+\_\+reference$<$ U $>$\+::type $>$\+::type
+\begin{DoxyCompactList}\small\item\em Const reference remover. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U1 , typename U2 $>$ }\\\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a5d47b0aa5224550ab965044c636ad04a}{Test\+\_\+v4}} (\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a24e390e96063c5cd0de428f01e430aa9}{callback\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a8e6a6600b8a84e97cc3a6f0086b74941}{fn}}, const U1 \&\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a8d34c79a96d67e127489df5b84328b09}{p1}}, const U2 \&\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a973b7845436733e0a1245d02c5cf5174}{p2}})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+TReturn \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_aaae823e2920b1b4bcc5e0b3e48983ead}{operator()}} (const boost\+::json\+::object \&o)
+\begin{DoxyCompactList}\small\item\em Call operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a24e390e96063c5cd0de428f01e430aa9}{callback\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a8e6a6600b8a84e97cc3a6f0086b74941}{fn}}
+\begin{DoxyCompactList}\small\item\em Provided callback. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_1_1_parameter}{Parameter}}$<$ T1 $>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a8d34c79a96d67e127489df5b84328b09}{p1}}
+\begin{DoxyCompactList}\small\item\em First parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_1_1_parameter}{Parameter}}$<$ T2 $>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a973b7845436733e0a1245d02c5cf5174}{p2}}
+\begin{DoxyCompactList}\small\item\em Second parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TReturn, typename T1, typename T2$>$\newline
+struct ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v4$<$ TReturn, T1, T2 $>$}
+
+Test version 4. 
+
+This test is now extending the parameter functionality to also provide default values, if the parameter is missing and if the parameter was not mandatory. Everything else is based on \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3}{Test\+\_\+v3}}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TReturn} & Return type of the call back. \\
+\hline
+{\em T1} & Type of the first parameter. \\
+\hline
+{\em T2} & Type of the second parameter.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3}{Test\+\_\+v3}}
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a24e390e96063c5cd0de428f01e430aa9}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a24e390e96063c5cd0de428f01e430aa9}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}!callback\_t@{callback\_t}}
+\index{callback\_t@{callback\_t}!ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{callback\_t}{callback\_t}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a24e390e96063c5cd0de428f01e430aa9}{callback\+\_\+t}} =  std\+::function$<$TReturn(T1, T2)$>$}
+
+
+
+Callback type. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_acbefee3f79edc5c1c99fcd3d044d6ac8}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_acbefee3f79edc5c1c99fcd3d044d6ac8}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}!remove\_cref@{remove\_cref}}
+\index{remove\_cref@{remove\_cref}!ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{remove\_cref}{remove\_cref}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U $>$ \\
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_acbefee3f79edc5c1c99fcd3d044d6ac8}{remove\+\_\+cref}} =  typename std\+::remove\+\_\+const$<$typename std\+::remove\+\_\+reference$<$U$>$\+::type$>$\+::type}
+
+
+
+Const reference remover. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a5d47b0aa5224550ab965044c636ad04a}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a5d47b0aa5224550ab965044c636ad04a}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}!Test\_v4@{Test\_v4}}
+\index{Test\_v4@{Test\_v4}!ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{Test\_v4()}{Test\_v4()}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+template$<$typename U1 , typename U2 $>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4}{Test\+\_\+v4}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a24e390e96063c5cd0de428f01e430aa9}{callback\+\_\+t}}}]{fn,  }\item[{const U1 \&}]{p1,  }\item[{const U2 \&}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+constructor 
+
+Creates the test with the provided parameter.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U1} & Type info to create the first parameter. This can be a string (name), a parameter or an optional parameter. \\
+\hline
+{\em U2} & Type info to create the second parameter, which behaves like {\ttfamily U1}.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_aaae823e2920b1b4bcc5e0b3e48983ead}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_aaae823e2920b1b4bcc5e0b3e48983ead}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+TReturn \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Call operator. 
+
+Enables call operations on instances of this class. This will require a json object that internally gets converted to the corresponding values from the json object for the parameters. Afterwards the stored callback is executed with the retrieved parameter values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The json object that provides the parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whatever the callback returned.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger $<$tarek.\+schwarzinger@ŋooglemail.\+com$>$ 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_aaae823e2920b1b4bcc5e0b3e48983ead_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a8e6a6600b8a84e97cc3a6f0086b74941}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a8e6a6600b8a84e97cc3a6f0086b74941}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}!fn@{fn}}
+\index{fn@{fn}!ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{fn}{fn}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a24e390e96063c5cd0de428f01e430aa9}{callback\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::fn}
+
+
+
+Provided callback. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a8d34c79a96d67e127489df5b84328b09}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a8d34c79a96d67e127489df5b84328b09}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}!p1@{p1}}
+\index{p1@{p1}!ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{p1}{p1}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_1_1_parameter}{Parameter}}$<$T1$>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::p1}
+
+
+
+First parameter. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a973b7845436733e0a1245d02c5cf5174}\label{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_a973b7845436733e0a1245d02c5cf5174}} 
+\index{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}!p2@{p2}}
+\index{p2@{p2}!ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc\_playground::json\_call::Test\_v4$<$ TReturn, T1, T2 $>$}}
+\doxysubsubsection{\texorpdfstring{p2}{p2}}
+{\footnotesize\ttfamily template$<$typename TReturn , typename T1 , typename T2 $>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_1_1_parameter}{Parameter}}$<$T2$>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4}{ts7\+::jsonrpc\+\_\+playground\+::json\+\_\+call\+::\+Test\+\_\+v4}}$<$ TReturn, T1, T2 $>$\+::p2}
+
+
+
+Second parameter. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/003-\/json-\/call/\mbox{\hyperlink{t4_8h}{t4.\+h}}\end{DoxyCompactItemize}

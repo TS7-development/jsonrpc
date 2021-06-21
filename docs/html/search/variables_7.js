@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['p1_173',['p1',['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v3.html#ad78054796350ef6179ecd35487ffd7f2',1,'ts7::jsonrpc::playground::json_call::Test_v3::p1()'],['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v4.html#ac27ad2d754ff66ad81d2f40ae2899d1e',1,'ts7::jsonrpc::playground::json_call::Test_v4::p1()']]],
-  ['p2_174',['p2',['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v3.html#af98708658004db87630d342ee7ab0498',1,'ts7::jsonrpc::playground::json_call::Test_v3::p2()'],['../structts7_1_1jsonrpc_1_1playground_1_1json__call_1_1_test__v4.html#a7edca1750b696b8f295ebb1e9d7c376d',1,'ts7::jsonrpc::playground::json_call::Test_v4::p2()']]]
+  ['method_297',['method',['../classts7_1_1jsonrpc_1_1_error.html#abbca2682a8f2438592916bb54ae2ce1f',1,'ts7::jsonrpc::Error::method()'],['../classts7_1_1jsonrpc_1_1_notification.html#a034e4b0cbd4d90e21c4abe5969f2f0f3',1,'ts7::jsonrpc::Notification::method()'],['../classts7_1_1jsonrpc_1_1_request.html#ab365ba80ea3dee1bd75eaf702a99a320',1,'ts7::jsonrpc::Request::method()'],['../classts7_1_1jsonrpc_1_1_response.html#a3bb52012c72e8220204102d581bb76c5',1,'ts7::jsonrpc::Response::method()']]],
+  ['msg_298',['msg',['../class_tcp_connection.html#aee3a58411c567421b490a16d227a0946',1,'TcpConnection']]]
 ];

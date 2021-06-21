@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['main_25',['main',['../001-json-basics_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../002-json-conversion_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../003-json-call_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../004-any-test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp']]],
-  ['main_2ecpp_26',['main.cpp',['../001-json-basics_2main_8cpp.html',1,'(Global Namespace)'],['../002-json-conversion_2main_8cpp.html',1,'(Global Namespace)'],['../003-json-call_2main_8cpp.html',1,'(Global Namespace)'],['../004-any-test_2main_8cpp.html',1,'(Global Namespace)']]]
+  ['handle_5fread_46',['handle_read',['../class_tcp_connection.html#a583b1e767b972d8b26f67f27f6affd60',1,'TcpConnection']]],
+  ['handle_5fwrite_47',['handle_write',['../class_tcp_connection.html#a3dcd152871d943e0cb19111b95d29789',1,'TcpConnection']]],
+  ['handleaccept_48',['handleAccept',['../class_tcp_server.html#aaa71a88b9a8872869a76e2e03f2047db',1,'TcpServer']]],
+  ['hasdefault_49',['hasDefault',['../structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter.html#a68f96a3698a2bdf3c367984c53b905f0',1,'ts7::jsonrpc::CallFromJson::Parameter::hasDefault()'],['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4_1_1_parameter.html#a271b093a931aa3be949ce1603cdb0275',1,'ts7::jsonrpc_playground::json_call::Test_v4::Parameter::hasDefault()']]],
+  ['help_50',['help',['../namespacetest.html#ae07aa539fc28078762bd459af906f5e0',1,'test']]]
 ];

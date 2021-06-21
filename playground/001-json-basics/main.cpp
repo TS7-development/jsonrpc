@@ -4,13 +4,11 @@
 #include <boost/json/src.hpp>
 
 namespace ts7 {
-  namespace jsonrpc {
-    namespace playground {
-      namespace json_basics {
-        void t1(boost::json::object& request, boost::json::object& params);
-        void t2(boost::json::object& request);
-        void t3(boost::json::object& request);
-      }
+  namespace jsonrpc_playground {
+    namespace json_basics {
+      void t1(boost::json::object& request, boost::json::object& params);
+      void t2(boost::json::object& request);
+      void t3(boost::json::object& request);
     }
   }
 }
@@ -50,7 +48,7 @@ int main()
     std::cout << request << std::endl;
 
     // run tests
-    using namespace ts7::jsonrpc::playground::json_basics;
+    using namespace ts7::jsonrpc_playground::json_basics;
     t1(request, params);
     t2(request);
     t3(request);

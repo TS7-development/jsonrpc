@@ -1,0 +1,126 @@
+\hypertarget{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::any\+\_\+collection\+::Variant\+Storage Struct Reference}
+\label{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage}\index{ts7::jsonrpc\_playground::any\_collection::VariantStorage@{ts7::jsonrpc\_playground::any\_collection::VariantStorage}}
+
+
+The \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage}{Variant\+Storage}} struct.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_aa2dd0fad402de17c93354eadd57f0c85}{add}} (const std\+::string \&name, T \&\&t)
+\begin{DoxyCompactList}\small\item\em add \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_a30113aed484338734fa4d9a9993a16f5}{print}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em print \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1any__collection_a1952527e0e9ddd1de23aa6442bd7916e}{variant\+\_\+type}} $>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_ad7a78ae69c9675fda83e76c71d8dd61a}{callbacks}}
+\begin{DoxyCompactList}\small\item\em Variant storage map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage}{Variant\+Storage}} struct. 
+
+Storage class for supported types of the \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1any__collection_a1952527e0e9ddd1de23aa6442bd7916e}{variant\+\_\+type}}.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_aa2dd0fad402de17c93354eadd57f0c85}\label{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_aa2dd0fad402de17c93354eadd57f0c85}} 
+\index{ts7::jsonrpc\_playground::any\_collection::VariantStorage@{ts7::jsonrpc\_playground::any\_collection::VariantStorage}!add@{add}}
+\index{add@{add}!ts7::jsonrpc\_playground::any\_collection::VariantStorage@{ts7::jsonrpc\_playground::any\_collection::VariantStorage}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void ts7\+::jsonrpc\+\_\+playground\+::any\+\_\+collection\+::\+Variant\+Storage\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{T \&\&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+add 
+
+Adds an instance of a type that is supported by \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1any__collection_a1952527e0e9ddd1de23aa6442bd7916e}{variant\+\_\+type}}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the instance that shall be added.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the element that shall be added. \\
+\hline
+{\em t} & Forward reference of the instance that shall be added.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_aa2dd0fad402de17c93354eadd57f0c85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_a30113aed484338734fa4d9a9993a16f5}\label{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_a30113aed484338734fa4d9a9993a16f5}} 
+\index{ts7::jsonrpc\_playground::any\_collection::VariantStorage@{ts7::jsonrpc\_playground::any\_collection::VariantStorage}!print@{print}}
+\index{print@{print}!ts7::jsonrpc\_playground::any\_collection::VariantStorage@{ts7::jsonrpc\_playground::any\_collection::VariantStorage}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+\_\+playground\+::any\+\_\+collection\+::\+Variant\+Storage\+::print (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+print 
+
+Calls the \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_a30113aed484338734fa4d9a9993a16f5}{print()}} member function of the under {\ttfamily name} stored element.
+
+\begin{DoxyNote}{Note}
+This requires the usage of \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1any__collection_1_1variant__visitor}{variant\+\_\+visitor}}.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_a30113aed484338734fa4d9a9993a16f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_ad7a78ae69c9675fda83e76c71d8dd61a}\label{structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage_ad7a78ae69c9675fda83e76c71d8dd61a}} 
+\index{ts7::jsonrpc\_playground::any\_collection::VariantStorage@{ts7::jsonrpc\_playground::any\_collection::VariantStorage}!callbacks@{callbacks}}
+\index{callbacks@{callbacks}!ts7::jsonrpc\_playground::any\_collection::VariantStorage@{ts7::jsonrpc\_playground::any\_collection::VariantStorage}}
+\doxysubsubsection{\texorpdfstring{callbacks}{callbacks}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1any__collection_a1952527e0e9ddd1de23aa6442bd7916e}{variant\+\_\+type}}$>$ ts7\+::jsonrpc\+\_\+playground\+::any\+\_\+collection\+::\+Variant\+Storage\+::callbacks}
+
+
+
+Variant storage map. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/004-\/any-\/test/\mbox{\hyperlink{004-any-test_2t5_8cpp}{t5.\+cpp}}\end{DoxyCompactItemize}
