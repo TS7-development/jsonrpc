@@ -10,10 +10,18 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    request.cpp
 
 HEADERS += \
-    request.h
+    asjson.hpp \
+    callfromjson.hpp \
+    error.hpp \
+    errorcodes.hpp \
+    fromjson.hpp \
+    notification.hpp \
+    procedure.hpp \
+    request.hpp \
+    response.hpp \
+    util.hpp
 
 # Default rules for deployment.
 unix {
