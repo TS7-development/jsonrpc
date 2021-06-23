@@ -9,9 +9,6 @@ namespace ts7 {
      *
      * Converts any type to a json.
      *
-     * @note This version does not contain the static_assert. Check \ref FromJson, to see how this can be
-     * achieved.
-     *
      * @tparam T The type that shall be converted to a json value.
      *
      * @since 1.0
@@ -25,46 +22,54 @@ namespace ts7 {
        *
        * Creates an instance that stores the const reference to the provided variable.
        *
+       * @attention Using the templated version instead of a fully specialized version will cause a static_assert
+       * fail in the constructor. It is mandatory to specialize this template for new types, that shall be supported.
+       *
        * @param ref Const reference that shall be used.
        *
        * @since 1.0
        *
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
-      constexpr inline explicit AsJson(const T& ref)
-        : ref(ref)
-      {
+      constexpr inline explicit AsJson(const T&) {
         static_assert(always_false<T>, "Type not supported");
       }
-
-      /// Stored const reference
-      const T& ref;
-
-      /**
-       * @brief Cast operator
-       *
-       * Casts the provided const reference to a json value.
-       *
-       * @attention This operator is not implemented and will cause a linker error. For any type that shall be
-       * supported a corresponding template specialization needs to be created.
-       *
-       * @since 1.0
-       *
-       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
-       */
-      operator boost::json::value() const;
     };
 
+    /**
+     * @brief Convert int to json
+     *
+     * Converts an integer to a json value.
+     *
+     * @note This is the template specialization of \ref AsJson.
+     *
+     * @since 1.0
+     *
+     * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+     */
     template<>
     struct AsJson<int> {
+        /**
+         * @brief constructor
+         *
+         * Stores the provided integer value for later conversion.
+         *
+         * @param n The integer value that shall be converted.
+         */
         constexpr inline explicit AsJson(int n)
           : value(n)
         {}
 
+        /**
+         * @brief Json value cast
+         *
+         * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+         */
         operator boost::json::value() const {
           return value;
         }
 
+        /// THe stored value
         int value;
     };
   }

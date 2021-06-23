@@ -40,7 +40,13 @@ int main()
   );
 
   // Create the procedure to handle the request
-  auto p = ts7::jsonrpc::make_request_handler<int>(ts7::jsonrpc::CallFromJson<int, int, int>(ts7::jsonrpc_examples::request_exexution::testFunc, "a", "b"));
+  auto p = ts7::jsonrpc::make_request_handler<int>(
+    ts7::jsonrpc::CallFromJson<int, int, int>(
+      ts7::jsonrpc_examples::request_exexution::testFunc,
+      "a",
+      "b"
+    )
+  );
 
   // Dump the request and the corresponding result
   std::cout << "<- " << request << std::endl;

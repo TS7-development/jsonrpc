@@ -8,16 +8,16 @@
 namespace ts7 {
   namespace jsonrpc {
     /**
-     * @brief Test version 4
+     * @brief Call from json object
      *
-     * This test is now extending the parameter functionality to also provide default values, if the parameter is
-     * missing and if the parameter was not mandatory. Everything else is based on \ref Test_v3.
+     * This class provides a call operator that takes a json object which contains the required parameter to execute
+     * the provided callback. The result of the callback will then be returned as result of the whole call.
      *
      * @tparam TReturn Return type of the call back.
      * @tparam T1 Type of the first parameter.
      * @tparam T2 Type of the second parameter.
      *
-     * @see Test_v3
+     * @todo This class needs to support a variadic template, instead of \ref T1 and \ref T2.
      *
      * @since 1.0
      *
@@ -33,7 +33,8 @@ namespace ts7 {
         /**
          * @brief Parameter
          *
-         * Extended version of Test_v3::Parameter. Now has the capability of storing a default value, if wished.
+         * Stores the type and name of a required parameter. In addition this class can store, if the the parameter
+         * has a default value that shall be used, if the parameter is missing in the json object.
          *
          * @tparam U Type of the parameter.
          *
@@ -71,9 +72,8 @@ namespace ts7 {
              * Retrieves the required parameter from the json object, if the json object contains it. Otherwise
              * it is returning the default value, if the parameter has a default value.
              *
-             * @attention If the object does not contain the parameter and has no default value, there should be
-             * an error handling any how. This was omitted to keep the example simple. There is still no type
-             * checking for the parameter.
+             * @todo If the object does not contain the parameter and has no default value, there should be
+             * an error handling any how.
              *
              * @param o Json object that contains the provided parameter.
              *
@@ -88,10 +88,12 @@ namespace ts7 {
             remove_cref<U> operator()(const boost::json::object& o) {
               FromJson<remove_cref<U>> v;
               if (o.contains(name)) {
+                // json object contains the parameter
                 return v(o.at(name));
               }
 
               if (hasDefault) {
+                // json object does not contain the parameter, but a default value was defined
                 return defaultValue;
               }
 
@@ -166,9 +168,11 @@ namespace ts7 {
          *
          * Creates the test with the provided parameter.
          *
-         * @tparam U1 Type info to create the first parameter. This can be a string (name), a parameter or an
-         * optional parameter.
+         * @tparam U1 Type info to create the first parameter. This can be a string (name), a \ref Parameter or an
+         * \ref OptionalParameter.
          * @tparam U2 Type info to create the second parameter, which behaves like \p U1.
+         *
+         * @todo This should use a variadic template to support multiple amounts of arguments.
          *
          * @since 1.0
          *
@@ -192,6 +196,9 @@ namespace ts7 {
          *
          * @return Returns whatever the callback returned.
          *
+         * @todo This should use the variadic template of the class to determine which and how many parameter are
+         * required.
+         *
          * @since 1.0
          *
          * @author Tarek Schwarzinger <tarek.schwarzinger@ŋooglemail.com>
@@ -204,6 +211,8 @@ namespace ts7 {
 
         /// Provided callback
         callback_t fn;
+
+        /// @todo Create parameter based on the variadic class template.
 
         /// First parameter
         Parameter<T1> p1;
