@@ -77,7 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Test version 4.  
+<p>Call from json object.  
  <a href="structts7_1_1jsonrpc_1_1_call_from_json.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="callfromjson_8hpp_source.html">callfromjson.hpp</a>&gt;</code></p>
@@ -86,7 +86,7 @@ Collaboration diagram for ts7::jsonrpc::CallFromJson&lt; TReturn, T1, T2 &gt;:</
 <div class="dyncontent">
 <div class="center"><img src="structts7_1_1jsonrpc_1_1_call_from_json__coll__graph.png" border="0" usemap="#ats7_1_1jsonrpc_1_1_call_from_json_3_01_t_return_00_01_t1_00_01_t2_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="ats7_1_1jsonrpc_1_1_call_from_json_3_01_t_return_00_01_t1_00_01_t2_01_4_coll__map" id="ats7_1_1jsonrpc_1_1_call_from_json_3_01_t_return_00_01_t1_00_01_t2_01_4_coll__map">
-<area shape="rect" title="Test version 4." alt="" coords="347,39,537,80"/>
+<area shape="rect" title="Call from json object." alt="" coords="347,39,537,80"/>
 <area shape="rect" href="structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter.html" title=" " alt="" coords="5,5,277,47"/>
 <area shape="rect" href="structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter.html" title=" " alt="" coords="5,71,277,112"/>
 </map>
@@ -135,8 +135,8 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename TReturn, typename T1, typename T2&gt;<br />
 struct ts7::jsonrpc::CallFromJson&lt; TReturn, T1, T2 &gt;</h3>
 
-<p>Test version 4. </p>
-<p>This test is now extending the parameter functionality to also provide default values, if the parameter is missing and if the parameter was not mandatory. Everything else is based on Test_v3.</p>
+<p>Call from json object. </p>
+<p>This class provides a call operator that takes a json object which contains the required parameter to execute the provided callback. The result of the callback will then be returned as result of the whole call.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TReturn</td><td>Return type of the call back. </td></tr>
@@ -145,7 +145,7 @@ struct ts7::jsonrpc::CallFromJson&lt; TReturn, T1, T2 &gt;</h3>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>Test_v3</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>This class needs to support a variadic template, instead of T1 and T2.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Tarek Schwarzinger <a href="#" onclick="location.href='mai'+'lto:'+'tar'+'ek'+'.sc'+'hw'+'arz'+'in'+'ger'+'@g'+'oog'+'le'+'mai'+'l.'+'com'; return false;">tarek<span style="display: none;">.nosp@m.</span>.sch<span style="display: none;">.nosp@m.</span>warzi<span style="display: none;">.nosp@m.</span>nger<span style="display: none;">.nosp@m.</span>@goog<span style="display: none;">.nosp@m.</span>lema<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -232,11 +232,12 @@ template&lt;typename U1 , typename U2 &gt; </div>
 <p>Creates the test with the provided parameter.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">U1</td><td>Type info to create the first parameter. This can be a string (name), a parameter or an optional parameter. </td></tr>
+    <tr><td class="paramname">U1</td><td>Type info to create the first parameter. This can be a string (name), a <a class="el" href="structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter.html">Parameter</a> or an <a class="el" href="structts7_1_1jsonrpc_1_1_call_from_json_1_1_optional_parameter.html">OptionalParameter</a>. </td></tr>
     <tr><td class="paramname">U2</td><td>Type info to create the second parameter, which behaves like <code>U1</code>.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>This should use a variadic template to support multiple amounts of arguments.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Tarek Schwarzinger <a href="#" onclick="location.href='mai'+'lto:'+'tar'+'ek'+'.sc'+'hw'+'arz'+'in'+'ger'+'@g'+'oog'+'le'+'mai'+'l.'+'com'; return false;">tarek<span style="display: none;">.nosp@m.</span>.sch<span style="display: none;">.nosp@m.</span>warzi<span style="display: none;">.nosp@m.</span>nger<span style="display: none;">.nosp@m.</span>@goog<span style="display: none;">.nosp@m.</span>lema<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 
@@ -278,6 +279,7 @@ template&lt;typename TReturn , typename T1 , typename T2 &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns whatever the callback returned.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>This should use the variadic template of the class to determine which and how many parameter are required.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Tarek Schwarzinger &lt;tarek.schwarzinger@ŋooglemail.com&gt; </dd></dl>
 <div class="dynheader">
@@ -327,6 +329,7 @@ template&lt;typename TReturn , typename T1 , typename T2 &gt; </div>
 </div><div class="memdoc">
 
 <p>First parameter. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Create parameter based on the variadic class template. </dd></dl>
 
 </div>
 </div>

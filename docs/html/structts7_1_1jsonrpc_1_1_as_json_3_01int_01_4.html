@@ -75,21 +75,33 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Convert int to json.  
+ <a href="structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="asjson_8hpp_source.html">asjson.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ace3dfa421c3e9c01f2b2dcbd37a7878c"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4.html#ace3dfa421c3e9c01f2b2dcbd37a7878c">AsJson</a> (int n)</td></tr>
+<tr class="memdesc:ace3dfa421c3e9c01f2b2dcbd37a7878c"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4.html#ace3dfa421c3e9c01f2b2dcbd37a7878c">More...</a><br /></td></tr>
 <tr class="separator:ace3dfa421c3e9c01f2b2dcbd37a7878c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde1d262285e8c79e2133da78eacbcb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4.html#acde1d262285e8c79e2133da78eacbcb6">operator boost::json::value</a> () const</td></tr>
+<tr class="memdesc:acde1d262285e8c79e2133da78eacbcb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Json value cast.  <a href="structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4.html#acde1d262285e8c79e2133da78eacbcb6">More...</a><br /></td></tr>
 <tr class="separator:acde1d262285e8c79e2133da78eacbcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a37fe7540e67e4ea21c24c02561557f00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4.html#a37fe7540e67e4ea21c24c02561557f00">value</a></td></tr>
+<tr class="memdesc:a37fe7540e67e4ea21c24c02561557f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">THe stored value.  <a href="structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4.html#a37fe7540e67e4ea21c24c02561557f00">More...</a><br /></td></tr>
 <tr class="separator:a37fe7540e67e4ea21c24c02561557f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Convert int to json. </p>
+<p>Converts an integer to a json value.</p>
+<dl class="section note"><dt>Note</dt><dd>This is the template specialization of <a class="el" href="structts7_1_1jsonrpc_1_1_as_json.html">AsJson</a>.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Tarek Schwarzinger <a href="#" onclick="location.href='mai'+'lto:'+'tar'+'ek'+'.sc'+'hw'+'arz'+'in'+'ger'+'@g'+'oog'+'le'+'mai'+'l.'+'com'; return false;">tarek<span style="display: none;">.nosp@m.</span>.sch<span style="display: none;">.nosp@m.</span>warzi<span style="display: none;">.nosp@m.</span>nger<span style="display: none;">.nosp@m.</span>@goog<span style="display: none;">.nosp@m.</span>lema<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ace3dfa421c3e9c01f2b2dcbd37a7878c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace3dfa421c3e9c01f2b2dcbd37a7878c">&#9670;&nbsp;</a></span>AsJson()</h2>
 
@@ -113,6 +125,15 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>constructor </p>
+<p>Stores the provided integer value for later conversion.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>The integer value that shall be converted. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -140,6 +161,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Json value cast. </p>
+<p>Casts the instance to a json value. In this case to a number with the !value stored in <a class="el" href="structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4.html#a37fe7540e67e4ea21c24c02561557f00">value</a>. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -154,6 +178,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>THe stored value. </p>
 
 </div>
 </div>

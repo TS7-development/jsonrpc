@@ -1,13 +1,21 @@
 var searchData=
 [
-  ['any_5fcollection_194',['any_collection',['../namespacets7_1_1jsonrpc__playground_1_1any__collection.html',1,'ts7::jsonrpc_playground']]],
-  ['json_5fbasics_195',['json_basics',['../namespacets7_1_1jsonrpc__playground_1_1json__basics.html',1,'ts7::jsonrpc_playground']]],
-  ['json_5fcall_196',['json_call',['../namespacets7_1_1jsonrpc__playground_1_1json__call.html',1,'ts7::jsonrpc_playground']]],
-  ['json_5fconversion_197',['json_conversion',['../namespacets7_1_1jsonrpc__playground_1_1json__conversion.html',1,'ts7::jsonrpc_playground']]],
-  ['jsonrpc_198',['jsonrpc',['../namespacets7_1_1jsonrpc.html',1,'ts7']]],
-  ['jsonrpc_5fexamples_199',['jsonrpc_examples',['../namespacets7_1_1jsonrpc__examples.html',1,'ts7']]],
-  ['jsonrpc_5fplayground_200',['jsonrpc_playground',['../namespacets7_1_1jsonrpc__playground.html',1,'ts7']]],
-  ['request_5fexexution_201',['request_exexution',['../namespacets7_1_1jsonrpc__examples_1_1request__exexution.html',1,'ts7::jsonrpc_examples']]],
-  ['test_202',['test',['../namespacetest.html',1,'']]],
-  ['ts7_203',['ts7',['../namespacets7.html',1,'']]]
+  ['any_5fcollection_266',['any_collection',['../namespacets7_1_1jsonrpc__playground_1_1any__collection.html',1,'ts7::jsonrpc_playground']]],
+  ['echo_267',['echo',['../namespacets7_1_1jsonrpc__playground_1_1echo.html',1,'ts7::jsonrpc_playground']]],
+  ['ini_268',['ini',['../namespacets7_1_1jsonrpc__playground_1_1ini.html',1,'ts7::jsonrpc_playground']]],
+  ['json_5fbasics_269',['json_basics',['../namespacets7_1_1jsonrpc__playground_1_1json__basics.html',1,'ts7::jsonrpc_playground']]],
+  ['json_5fcall_270',['json_call',['../namespacets7_1_1jsonrpc__playground_1_1json__call.html',1,'ts7::jsonrpc_playground']]],
+  ['json_5fconversion_271',['json_conversion',['../namespacets7_1_1jsonrpc__playground_1_1json__conversion.html',1,'ts7::jsonrpc_playground']]],
+  ['jsonrpc_272',['jsonrpc',['../namespacets7_1_1jsonrpc.html',1,'ts7']]],
+  ['jsonrpc_5fexamples_273',['jsonrpc_examples',['../namespacets7_1_1jsonrpc__examples.html',1,'ts7']]],
+  ['jsonrpc_5fplayground_274',['jsonrpc_playground',['../namespacets7_1_1jsonrpc__playground.html',1,'ts7']]],
+  ['logging_275',['logging',['../namespacets7_1_1jsonrpc__playground_1_1logging.html',1,'ts7::jsonrpc_playground']]],
+  ['request_276',['request',['../namespacets7_1_1jsonrpc__playground_1_1request.html',1,'ts7::jsonrpc_playground']]],
+  ['request_5fexexution_277',['request_exexution',['../namespacets7_1_1jsonrpc__examples_1_1request__exexution.html',1,'ts7::jsonrpc_examples']]],
+  ['test_278',['test',['../namespacetest.html',1,'']]],
+  ['ts7_279',['ts7',['../namespacets7.html',1,'']]],
+  ['v1_280',['v1',['../namespacets7_1_1jsonrpc__playground_1_1ini_1_1v1.html',1,'ts7::jsonrpc_playground::ini']]],
+  ['v2_281',['v2',['../namespacets7_1_1jsonrpc__playground_1_1ini_1_1v2.html',1,'ts7::jsonrpc_playground::ini']]],
+  ['v3_282',['v3',['../namespacets7_1_1jsonrpc__playground_1_1ini_1_1v3.html',1,'ts7::jsonrpc_playground::ini']]],
+  ['variadic_5fmember_283',['variadic_member',['../namespacets7_1_1jsonrpc__playground_1_1variadic__member.html',1,'ts7::jsonrpc_playground']]]
 ];

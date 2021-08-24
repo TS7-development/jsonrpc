@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['main_246',['main',['../examples_2001-request-execution_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../playground_2001-json-basics_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../playground_2002-json-conversion_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../playground_2003-json-call_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../playground_2004-any-test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../playground_2005-echo-server_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp']]],
-  ['make_5frequest_5fhandler_247',['make_request_handler',['../namespacets7_1_1jsonrpc.html#aed7f204747436d306326e36e5e87e565',1,'ts7::jsonrpc']]]
+  ['handle_5fread_342',['handle_read',['../classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection.html#adf863ec54bb75e321d7280ca7d0d708e',1,'ts7::jsonrpc_playground::echo::TcpConnection']]],
+  ['handle_5fwrite_343',['handle_write',['../classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection.html#a92e5ff23daf0114f703e3dfbda8fb208',1,'ts7::jsonrpc_playground::echo::TcpConnection']]],
+  ['handleaccept_344',['handleAccept',['../classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server.html#a37c0accfd7e5ff7ac233b0601e9faeeb',1,'ts7::jsonrpc_playground::echo::TcpServer']]]
 ];

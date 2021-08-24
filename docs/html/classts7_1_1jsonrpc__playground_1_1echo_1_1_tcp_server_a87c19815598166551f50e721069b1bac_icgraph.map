@@ -1,0 +1,5 @@
+<map id="ts7::jsonrpc_playground::echo::TcpServer::startAccept" name="ts7::jsonrpc_playground::echo::TcpServer::startAccept">
+<area shape="rect" id="node1" title="Start accept." alt="" coords="281,5,496,47"/>
+<area shape="rect" id="node2" href="$classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server.html#a37c0accfd7e5ff7ac233b0601e9faeeb" title="Handle new client." alt="" coords="5,5,233,47"/>
+<area shape="rect" id="node3" href="$playground_2005-echo-server_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="92,71,147,98"/>
+</map>

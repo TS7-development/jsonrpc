@@ -1,15 +1,12 @@
 var searchData=
 [
-  ['a_0',['A',['../structts7_1_1jsonrpc__playground_1_1any__collection_1_1_a.html',1,'ts7::jsonrpc_playground::any_collection']]],
-  ['acceptor_1',['acceptor',['../class_tcp_server.html#a2cc07c20db63741dca4da097bb9024f0',1,'TcpServer']]],
-  ['action_2',['action',['../namespacetest.html#afd7cbaa24b9a76b11854a2d239deb753',1,'test']]],
-  ['add_3',['add',['../structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage.html#a66a210b62a6c2cc7db4b09933cf47e54',1,'ts7::jsonrpc_playground::any_collection::Storage::add()'],['../structts7_1_1jsonrpc__playground_1_1any__collection_1_1_variant_storage.html#aa2dd0fad402de17c93354eadd57f0c85',1,'ts7::jsonrpc_playground::any_collection::VariantStorage::add()']]],
-  ['addargument_4',['addArgument',['../classts7_1_1jsonrpc_1_1_request.html#a01bc3584fd505220ad3ec4865f829eba',1,'ts7::jsonrpc::Request::addArgument(const TName &amp;name, const TValue &amp;value, TArgs... args)'],['../classts7_1_1jsonrpc_1_1_request.html#a1223d7b773e2bb10126d2c6c0bdc1730',1,'ts7::jsonrpc::Request::addArgument(const TName &amp;name, const TValue &amp;value)'],['../classts7_1_1jsonrpc_1_1_notification.html#a7fddc8c663d5795e7aac06c455090c1b',1,'ts7::jsonrpc::Notification::addArgument(const TName &amp;name, const TValue &amp;value)'],['../classts7_1_1jsonrpc_1_1_notification.html#a013fb6ba2e1fd4ece47110b38e473220',1,'ts7::jsonrpc::Notification::addArgument(const TName &amp;name, const TValue &amp;value, TArgs... args)']]],
-  ['always_5ffalse_5',['always_false',['../namespacets7_1_1jsonrpc__playground_1_1json__call.html#ac267292b533bfd7dc670b9bac7931ac0',1,'ts7::jsonrpc_playground::json_call::always_false()'],['../namespacets7_1_1jsonrpc.html#a0cb3a0f583255f2faaaec214c3de45aa',1,'ts7::jsonrpc::always_false()']]],
-  ['any_6',['any',['../namespacets7_1_1jsonrpc__playground_1_1any__collection.html#a6cfcc180dbe86204912d9b0a3fc0218e',1,'ts7::jsonrpc_playground::any_collection']]],
-  ['args_7',['args',['../namespacetest.html#a83037eb0720ea16e6653fa2a016b3eba',1,'test']]],
-  ['asjson_8',['AsJson',['../structts7_1_1jsonrpc_1_1_as_json.html#a901d6eca509b6a698c4cbbc1dd8d945c',1,'ts7::jsonrpc::AsJson::AsJson()'],['../structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4.html#ace3dfa421c3e9c01f2b2dcbd37a7878c',1,'ts7::jsonrpc::AsJson&lt; int &gt;::AsJson()'],['../structts7_1_1jsonrpc__playground_1_1json__conversion_1_1_as_json.html#a815b2ea139abbc4fdd95ad9552034b93',1,'ts7::jsonrpc_playground::json_conversion::AsJson::AsJson()'],['../structts7_1_1jsonrpc__playground_1_1json__conversion_1_1_as_json_3_01_vector3d_01_4.html#ad569dd9b2e45829a4761c9a0c21ffdab',1,'ts7::jsonrpc_playground::json_conversion::AsJson&lt; Vector3d &gt;::AsJson()'],['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_as_json.html#a0b4692ef749dbd0621ba94b4a14dbf21',1,'ts7::jsonrpc_playground::json_call::AsJson::AsJson()'],['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_as_json_3_01_vector3d_01_4.html#a5faabe509bbdd8a2760e2fea4df86f1c',1,'ts7::jsonrpc_playground::json_call::AsJson&lt; Vector3d &gt;::AsJson()'],['../structts7_1_1jsonrpc_1_1_as_json.html',1,'ts7::jsonrpc::AsJson&lt; T &gt;'],['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_as_json.html',1,'ts7::jsonrpc_playground::json_call::AsJson&lt; T &gt;'],['../structts7_1_1jsonrpc__playground_1_1json__conversion_1_1_as_json.html',1,'ts7::jsonrpc_playground::json_conversion::AsJson&lt; T &gt;']]],
-  ['asjson_2ehpp_9',['asjson.hpp',['../asjson_8hpp.html',1,'']]],
-  ['asjson_3c_20int_20_3e_10',['AsJson&lt; int &gt;',['../structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4.html',1,'ts7::jsonrpc']]],
-  ['asjson_3c_20vector3d_20_3e_11',['AsJson&lt; Vector3d &gt;',['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_as_json_3_01_vector3d_01_4.html',1,'ts7::jsonrpc_playground::json_call::AsJson&lt; Vector3d &gt;'],['../structts7_1_1jsonrpc__playground_1_1json__conversion_1_1_as_json_3_01_vector3d_01_4.html',1,'ts7::jsonrpc_playground::json_conversion::AsJson&lt; Vector3d &gt;']]]
+  ['01_2ddump_2ecpp_0',['01-dump.cpp',['../01-dump_8cpp.html',1,'']]],
+  ['01_2dsimple_2ecpp_1',['01-simple.cpp',['../01-simple_8cpp.html',1,'']]],
+  ['01_2dtrivial_2ecpp_2',['01-trivial.cpp',['../01-trivial_8cpp.html',1,'']]],
+  ['02_2dfunction_2dcall_2ecpp_3',['02-function-call.cpp',['../02-function-call_8cpp.html',1,'']]],
+  ['02_2dstructured_2ecpp_4',['02-structured.cpp',['../02-structured_8cpp.html',1,'']]],
+  ['02_2dtrivial_2dfilter_2ecpp_5',['02-trivial-filter.cpp',['../02-trivial-filter_8cpp.html',1,'']]],
+  ['03_2dsinks_2ecpp_6',['03-sinks.cpp',['../03-sinks_8cpp.html',1,'']]],
+  ['03_2dstructured_2dvariant_2ecpp_7',['03-structured-variant.cpp',['../03-structured-variant_8cpp.html',1,'']]],
+  ['04_2dscopes_2ecpp_8',['04-scopes.cpp',['../04-scopes_8cpp.html',1,'']]]
 ];

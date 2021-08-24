@@ -1,0 +1,6 @@
+<map id="ts7::jsonrpc_playground::variadic_member::functionCall" name="ts7::jsonrpc_playground::variadic_member::functionCall">
+<area shape="rect" id="node1" title="Function Call example." alt="" coords="5,71,236,112"/>
+<area shape="rect" id="node2" href="$namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#aecc5fc37a13fd4f9dab1ca8fb3b3c025" title="Dummy function that sums up 1 integer." alt="" coords="284,5,472,47"/>
+<area shape="rect" id="node3" href="$namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#a2f6dffd75e8c67e0607412a506b02987" title="Dummy function that sums up 2 integers." alt="" coords="284,71,472,112"/>
+<area shape="rect" id="node4" href="$namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#aec58bd5b99c3f9f02aec2015b67b2e48" title="Dummy function that sums up 3 integer." alt="" coords="284,136,472,177"/>
+</map>

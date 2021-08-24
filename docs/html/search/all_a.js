@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['main_58',['main',['../playground_2005-echo-server_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../playground_2004-any-test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../playground_2003-json-call_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../examples_2001-request-execution_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../playground_2001-json-basics_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../playground_2002-json-conversion_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp']]],
-  ['main_2ecpp_59',['main.cpp',['../playground_2001-json-basics_2main_8cpp.html',1,'(Global Namespace)'],['../playground_2002-json-conversion_2main_8cpp.html',1,'(Global Namespace)'],['../playground_2003-json-call_2main_8cpp.html',1,'(Global Namespace)'],['../playground_2004-any-test_2main_8cpp.html',1,'(Global Namespace)'],['../playground_2005-echo-server_2main_8cpp.html',1,'(Global Namespace)'],['../examples_2001-request-execution_2main_8cpp.html',1,'(Global Namespace)']]],
-  ['make_5frequest_5fhandler_60',['make_request_handler',['../namespacets7_1_1jsonrpc.html#aed7f204747436d306326e36e5e87e565',1,'ts7::jsonrpc']]],
-  ['method_61',['method',['../classts7_1_1jsonrpc_1_1_response.html#a3bb52012c72e8220204102d581bb76c5',1,'ts7::jsonrpc::Response::method()'],['../classts7_1_1jsonrpc_1_1_request.html#ab365ba80ea3dee1bd75eaf702a99a320',1,'ts7::jsonrpc::Request::method()'],['../classts7_1_1jsonrpc_1_1_notification.html#a034e4b0cbd4d90e21c4abe5969f2f0f3',1,'ts7::jsonrpc::Notification::method()'],['../classts7_1_1jsonrpc_1_1_error.html#abbca2682a8f2438592916bb54ae2ce1f',1,'ts7::jsonrpc::Error::method()']]],
-  ['method_5fmissing_62',['METHOD_MISSING',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2adc1b4a620a191d101ebc6c684beb25b5',1,'ts7::jsonrpc']]],
-  ['method_5fnot_5fa_5fstring_63',['METHOD_NOT_A_STRING',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2ac05403a42dcc7bbe3c30007d22deed25',1,'ts7::jsonrpc']]],
-  ['msg_64',['msg',['../class_tcp_connection.html#aee3a58411c567421b490a16d227a0946',1,'TcpConnection']]]
+  ['jsonrpc_2ehpp_78',['jsonrpc.hpp',['../jsonrpc_8hpp.html',1,'']]],
+  ['jsonrpc_5fmissing_79',['JSONRPC_MISSING',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2a61ad6e10d43954243bc356d2157d06c3',1,'ts7::jsonrpc']]],
+  ['jsonrpc_5fnot_5fa_5fstring_80',['JSONRPC_NOT_A_STRING',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2a4af1104fd6989c6dba5eb33a141a9e4f',1,'ts7::jsonrpc']]],
+  ['jsonrpc_5funknown_5fspecification_81',['JSONRPC_UNKNOWN_SPECIFICATION',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2ad4a80ae16b0f3791a795d785e8a2dbb7',1,'ts7::jsonrpc']]]
 ];

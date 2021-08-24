@@ -1,0 +1,6 @@
+<map id="ts7::jsonrpc_playground::echo::TcpConnection::Create" name="ts7::jsonrpc_playground::echo::TcpConnection::Create">
+<area shape="rect" id="node1" title="Create." alt="" coords="544,5,721,61"/>
+<area shape="rect" id="node2" href="$classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server.html#a87c19815598166551f50e721069b1bac" title="Start accept." alt="" coords="281,13,496,54"/>
+<area shape="rect" id="node3" href="$classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server.html#a37c0accfd7e5ff7ac233b0601e9faeeb" title="Handle new client." alt="" coords="5,13,233,54"/>
+<area shape="rect" id="node4" href="$playground_2005-echo-server_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="92,79,147,105"/>
+</map>

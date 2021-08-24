@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['print_5ft_320',['print_t',['../structts7_1_1jsonrpc__playground_1_1any__collection_1_1_storage.html#a9f20028fb08264f3bb992445db60bf0e',1,'ts7::jsonrpc_playground::any_collection::Storage']]],
-  ['ptr_321',['Ptr',['../class_tcp_connection.html#a56d562e0f2e1b96c4d326fb66aeb520c',1,'TcpConnection']]]
+  ['fn_5ft_446',['fn_t',['../structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn.html#aad29a29bc9392b7422ec963c01af4cc7',1,'ts7::jsonrpc_playground::variadic_member::MyFn']]]
 ];

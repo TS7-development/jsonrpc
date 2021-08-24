@@ -67,13 +67,23 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt>Class <a class="el" href="structts7_1_1jsonrpc_1_1_call_from_json.html">ts7::jsonrpc::CallFromJson&lt; TReturn, T1, T2 &gt;</a>  </dt>
+<dd><a class="anchor" id="_todo000001"></a>This class needs to support a variadic template, instead of T1 and T2. </dd>
+<dt>Member <a class="el" href="structts7_1_1jsonrpc_1_1_call_from_json.html#a654708e42ce0d046702a85781ea6dfdd">ts7::jsonrpc::CallFromJson&lt; TReturn, T1, T2 &gt;::CallFromJson</a>  (callback_t fn, const U1 &amp;p1, const U2 &amp;p2)</dt>
+<dd><a class="anchor" id="_todo000002"></a>This should use a variadic template to support multiple amounts of arguments. </dd>
+<dt>Member <a class="el" href="structts7_1_1jsonrpc_1_1_call_from_json.html#a72f2fe729d0131dfd2bd7d4787382a55">ts7::jsonrpc::CallFromJson&lt; TReturn, T1, T2 &gt;::operator()</a>  (const boost::json::object &amp;o)</dt>
+<dd><a class="anchor" id="_todo000003"></a>This should use the variadic template of the class to determine which and how many parameter are required. </dd>
+<dt>Member <a class="el" href="structts7_1_1jsonrpc_1_1_call_from_json.html#a0257d4dc2ea2b0ee0b13df20d6970ade">ts7::jsonrpc::CallFromJson&lt; TReturn, T1, T2 &gt;::p1</a>  </dt>
+<dd><a class="anchor" id="_todo000004"></a>Create parameter based on the variadic class template.  </dd>
+<dt>Member <a class="el" href="structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter.html#a11014453fe89c570a5a29c712399562f">ts7::jsonrpc::CallFromJson&lt; TReturn, T1, T2 &gt;::Parameter&lt; U &gt;::operator()</a>  (const boost::json::object &amp;o)</dt>
+<dd><a class="anchor" id="_todo000005"></a>If the object does not contain the parameter and has no default value, there should be an error handling any how. </dd>
 <dt>Class <a class="el" href="structts7_1_1jsonrpc_1_1_from_json.html">ts7::jsonrpc::FromJson&lt; T &gt;</a>  </dt>
-<dd><a class="anchor" id="_todo000001"></a>Find a way to embedded the typename into the error message. Already tried:<ul>
+<dd><a class="anchor" id="_todo000006"></a>Find a way to embedded the typename into the error message. Already tried:<ul>
 <li><a href="https://akrzemi1.wordpress.com/2017/06/28/compile-time-string-concatenation/">https://akrzemi1.wordpress.com/2017/06/28/compile-time-string-concatenation/</a> </li>
 </ul>
 </dd>
 <dt>Class <a class="el" href="structts7_1_1jsonrpc__playground_1_1json__call_1_1_from_json.html">ts7::jsonrpc_playground::json_call::FromJson&lt; T &gt;</a>  </dt>
-<dd><a class="anchor" id="_todo000002"></a>Find a way to embedded the typename into the error message. Already tried:<ul>
+<dd><a class="anchor" id="_todo000007"></a>Find a way to embedded the typename into the error message. Already tried:<ul>
 <li><a href="https://akrzemi1.wordpress.com/2017/06/28/compile-time-string-concatenation/">https://akrzemi1.wordpress.com/2017/06/28/compile-time-string-concatenation/</a></li>
 </ul>
 </dd>

@@ -107,7 +107,7 @@ template&lt;typename U&gt;<br />
 struct ts7::jsonrpc::CallFromJson&lt; TReturn, T1, T2 &gt;::Parameter&lt; U &gt;</h3>
 
 <p><a class="el" href="structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter.html" title="Parameter.">Parameter</a>. </p>
-<p>Extended version of Test_v3::Parameter. Now has the capability of storing a default value, if wished.</p>
+<p>Stores the type and name of a required parameter. In addition this class can store, if the the parameter has a default value that shall be used, if the parameter is missing in the json object.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">U</td><td>Type of the parameter.</td></tr>
@@ -208,7 +208,7 @@ template&lt;typename U &gt; </div>
 
 <p>Call operator. </p>
 <p>Retrieves the required parameter from the json object, if the json object contains it. Otherwise it is returning the default value, if the parameter has a default value.</p>
-<dl class="section attention"><dt>Attention</dt><dd>If the object does not contain the parameter and has no default value, there should be an error handling any how. This was omitted to keep the example simple. There is still no type checking for the parameter.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>If the object does not contain the parameter and has no default value, there should be an error handling any how.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">o</td><td>Json object that contains the provided parameter.</td></tr>

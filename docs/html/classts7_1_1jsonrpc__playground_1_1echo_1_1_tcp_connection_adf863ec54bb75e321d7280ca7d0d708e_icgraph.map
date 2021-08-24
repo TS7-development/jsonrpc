@@ -1,0 +1,5 @@
+<map id="ts7::jsonrpc_playground::echo::TcpConnection::handle_read" name="ts7::jsonrpc_playground::echo::TcpConnection::handle_read">
+<area shape="rect" id="node1" title="read callback" alt="" coords="481,5,659,61"/>
+<area shape="rect" id="node2" href="$classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection.html#abcd73ccbdd326e369421c6711c4e42a3" title="echo" alt="" coords="231,13,433,54"/>
+<area shape="rect" id="node3" href="$classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection.html#a92e5ff23daf0114f703e3dfbda8fb208" title="write callback" alt="" coords="5,35,183,91"/>
+</map>

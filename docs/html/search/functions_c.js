@@ -1,14 +1,16 @@
 var searchData=
 [
-  ['t1_270',['t1',['../namespacets7_1_1jsonrpc__playground_1_1json__basics.html#a9bcaef0ca02d45e2fda2c08e42bf0d55',1,'ts7::jsonrpc_playground::json_basics']]],
-  ['t2_271',['t2',['../namespacets7_1_1jsonrpc__playground_1_1json__basics.html#a7d35181451d07b6e2af8b7ce1f80cbaa',1,'ts7::jsonrpc_playground::json_basics']]],
-  ['t3_272',['t3',['../namespacets7_1_1jsonrpc__playground_1_1json__basics.html#a3e116e8cf2570fc039d80ed1971ea5c1',1,'ts7::jsonrpc_playground::json_basics']]],
-  ['tcpconnection_273',['TcpConnection',['../class_tcp_connection.html#ae1fc12295a484df5d0300ba8b987a4c1',1,'TcpConnection']]],
-  ['tcpserver_274',['TcpServer',['../class_tcp_server.html#aef8ccdbb33aa31a8d356173b2baaa29c',1,'TcpServer']]],
-  ['test_5fv1_275',['Test_v1',['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v1.html#a6befcf4868b60d14207e4db5a0843de2',1,'ts7::jsonrpc_playground::json_call::Test_v1']]],
-  ['test_5fv2_276',['Test_v2',['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v2.html#a5002766e4eba8226c228aab8c6b97b27',1,'ts7::jsonrpc_playground::json_call::Test_v2']]],
-  ['test_5fv3_277',['Test_v3',['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3.html#a655dd13f8d1abd79a13010b94c93abf5',1,'ts7::jsonrpc_playground::json_call::Test_v3']]],
-  ['test_5fv4_278',['Test_v4',['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4.html#a5d47b0aa5224550ab965044c636ad04a',1,'ts7::jsonrpc_playground::json_call::Test_v4']]],
-  ['testfunc_279',['testFunc',['../namespacets7_1_1jsonrpc__examples_1_1request__exexution.html#a7c0ac52012b8745e5ca8cb050c5381e8',1,'ts7::jsonrpc_examples::request_exexution::testFunc()'],['../namespacets7_1_1jsonrpc__playground_1_1json__call.html#a806d96e392168eccdb9e1f392e7251bd',1,'ts7::jsonrpc_playground::json_call::testFunc()']]],
-  ['type_5fname_280',['type_name',['../namespacets7_1_1jsonrpc__playground_1_1any__collection.html#a1ed1ff7b9cca36cead75f18e463be7e2',1,'ts7::jsonrpc_playground::any_collection']]]
+  ['scopes_369',['scopes',['../namespacets7_1_1jsonrpc__playground_1_1logging.html#a8bf6fdc790d5ca649886b39ed99b10f1',1,'ts7::jsonrpc_playground::logging']]],
+  ['simple_370',['simple',['../namespacets7_1_1jsonrpc__playground_1_1any__collection.html#a0fb9385280124ccbb7cd2af6c61ea441',1,'ts7::jsonrpc_playground::any_collection::simple()'],['../namespacets7_1_1jsonrpc__playground_1_1ini_1_1v1.html#ae102426e907b289c587ced426702a6f5',1,'ts7::jsonrpc_playground::ini::v1::simple()']]],
+  ['sink_371',['sink',['../namespacets7_1_1jsonrpc__playground_1_1logging.html#a92e4232db9858bee3e2bda8f7ba65751',1,'ts7::jsonrpc_playground::logging']]],
+  ['socket_372',['socket',['../classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection.html#a0c13cbef4df18c4a3cd228f18a7d3384',1,'ts7::jsonrpc_playground::echo::TcpConnection']]],
+  ['startaccept_373',['startAccept',['../classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server.html#a87c19815598166551f50e721069b1bac',1,'ts7::jsonrpc_playground::echo::TcpServer']]],
+  ['storage_374',['storage',['../namespacets7_1_1jsonrpc__playground_1_1any__collection.html#adebca8aed5c653ed2b12db146d38fee6',1,'ts7::jsonrpc_playground::any_collection']]],
+  ['store_375',['store',['../structts7_1_1jsonrpc__playground_1_1request_1_1_request_1_1_parameter.html#a8da924a2cf073969ac9769cb09bb384d',1,'ts7::jsonrpc_playground::request::Request::Parameter']]],
+  ['structured_376',['structured',['../namespacets7_1_1jsonrpc__playground_1_1ini_1_1v2.html#abfa2fe0ea48480bf7501e88554d9e960',1,'ts7::jsonrpc_playground::ini::v2']]],
+  ['structuredvariant_377',['structuredVariant',['../namespacets7_1_1jsonrpc__playground_1_1ini_1_1v3.html#a7c87219893359ac65928d4be6ec6ab38',1,'ts7::jsonrpc_playground::ini::v3']]],
+  ['sum1_378',['sum1',['../namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#aecc5fc37a13fd4f9dab1ca8fb3b3c025',1,'ts7::jsonrpc_playground::variadic_member']]],
+  ['sum2_379',['sum2',['../namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#a2f6dffd75e8c67e0607412a506b02987',1,'ts7::jsonrpc_playground::variadic_member']]],
+  ['sum3_380',['sum3',['../namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#aec58bd5b99c3f9f02aec2015b67b2e48',1,'ts7::jsonrpc_playground::variadic_member']]],
+  ['sumn_381',['sumN',['../namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#accad7f0fc933bfd815f1eacd14e8d646',1,'ts7::jsonrpc_playground::variadic_member::sumN(T1 t1, T2 t2)'],['../namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#a098520d1a2630e7f2558884565f02b11',1,'ts7::jsonrpc_playground::variadic_member::sumN(T t, TArgs... args)']]]
 ];

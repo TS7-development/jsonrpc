@@ -1,7 +1,12 @@
 <map id="ts7::jsonrpc_playground::json_basics::t1" name="ts7::jsonrpc_playground::json_basics::t1">
-<area shape="rect" id="node1" title="Basic object update." alt="" coords="244,94,421,135"/>
-<area shape="rect" id="node2" href="$playground_2001-json-basics_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="JSON basics." alt="" coords="73,5,128,32"/>
-<area shape="rect" id="node3" href="$structts7_1_1jsonrpc_1_1_call_from_json.html#a72f2fe729d0131dfd2bd7d4787382a55" title="Call operator." alt="" coords="5,57,196,98"/>
-<area shape="rect" id="node4" href="$structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3.html#a1ae617bf48c121c7c08658cc91092e1b" title="Call operator." alt="" coords="12,123,189,179"/>
-<area shape="rect" id="node5" href="$structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4.html#aaae823e2920b1b4bcc5e0b3e48983ead" title="Call operator." alt="" coords="12,203,189,259"/>
+<area shape="rect" id="node1" title="Basic object update." alt="" coords="483,210,660,251"/>
+<area shape="rect" id="node2" href="$playground_2001-json-basics_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="JSON basics." alt="" coords="312,5,367,32"/>
+<area shape="rect" id="node3" href="$structts7_1_1jsonrpc_1_1_call_from_json.html#a72f2fe729d0131dfd2bd7d4787382a55" title="Call operator." alt="" coords="244,57,435,98"/>
+<area shape="rect" id="node4" href="$structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3.html#a1ae617bf48c121c7c08658cc91092e1b" title="Call operator." alt="" coords="251,123,428,179"/>
+<area shape="rect" id="node5" href="$structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4.html#aaae823e2920b1b4bcc5e0b3e48983ead" title="Call operator." alt="" coords="251,203,428,259"/>
+<area shape="rect" id="node6" href="$namespacets7_1_1jsonrpc__playground_1_1ini_1_1v2.html#abfa2fe0ea48480bf7501e88554d9e960" title="Read to struct." alt="" coords="251,283,428,325"/>
+<area shape="rect" id="node8" href="$namespacets7_1_1jsonrpc__playground_1_1ini_1_1v3.html#a7c87219893359ac65928d4be6ec6ab38" title="Read to struct." alt="" coords="244,349,435,390"/>
+<area shape="rect" id="node9" href="$namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#accad7f0fc933bfd815f1eacd14e8d646" title="Dummy function that sums to operands." alt="" coords="244,414,435,455"/>
+<area shape="rect" id="node7" href="$playground_2007-ini-files_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="73,324,128,351"/>
+<area shape="rect" id="node10" href="$namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#a098520d1a2630e7f2558884565f02b11" title="DUmmy function that sums any amount of operands." alt="" coords="5,414,196,455"/>
 </map>

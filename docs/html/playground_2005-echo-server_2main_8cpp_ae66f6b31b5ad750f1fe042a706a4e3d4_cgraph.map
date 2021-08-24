@@ -1,7 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,60,83"/>
-<area shape="rect" id="node2" href="$class_tcp_server.html#ab974b762334c0cdff317ac7c1a770542" title=" " alt="" coords="108,56,275,83"/>
-<area shape="rect" id="node3" href="$class_tcp_connection.html#ac7f30a6e3d059d262cd05d21deeca205" title=" " alt="" coords="330,5,497,32"/>
-<area shape="rect" id="node5" href="$class_tcp_server.html#aaa71a88b9a8872869a76e2e03f2047db" title=" " alt="" coords="323,56,504,83"/>
-<area shape="rect" id="node4" href="$class_tcp_connection.html#ae1fc12295a484df5d0300ba8b987a4c1" title=" " alt="" coords="552,5,771,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,60,120"/>
+<area shape="rect" id="node2" href="$classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server.html#a87c19815598166551f50e721069b1bac" title="Start accept." alt="" coords="108,86,323,127"/>
+<area shape="rect" id="node3" href="$classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection.html#addf462163bcc82803d76b76cad719ede" title="Create." alt="" coords="396,5,573,61"/>
+<area shape="rect" id="node5" href="$classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server.html#a37c0accfd7e5ff7ac233b0601e9faeeb" title="Handle new client." alt="" coords="371,86,599,127"/>
+<area shape="rect" id="node4" href="$classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection.html#ae047ede0cb3c11e1b1300907caf4bafa" title="constructor" alt="" coords="647,5,824,61"/>
 </map>
