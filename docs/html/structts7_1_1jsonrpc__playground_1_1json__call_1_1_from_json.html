@@ -92,7 +92,7 @@ struct ts7::jsonrpc_playground::json_call::FromJson&lt; T &gt;</h3>
 <p>From Json Converter. </p>
 <p>This template is meant to convert from a json value to any other type. Every supported type needs it's own specialization. All unsupported types will use the unspecialized template, which will fail a static_assert in its constructor. This way you will see at compile time, that the software does not know how to convert from json value to your specific type.</p>
 <dl class="section note"><dt>Note</dt><dd>The error message will anywhere contain "[T = Dummy]" (assuming the type was <a class="el" href="structts7_1_1jsonrpc__playground_1_1json__call_1_1_dummy.html">Dummy</a>). The exact wording and format is compiler dependend.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Find a way to embedded the typename into the error message. Already tried:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Find a way to embedded the typename into the error message. Already tried:<ul>
 <li><a href="https://akrzemi1.wordpress.com/2017/06/28/compile-time-string-concatenation/">https://akrzemi1.wordpress.com/2017/06/28/compile-time-string-concatenation/</a></li>
 </ul>
 </dd></dl>

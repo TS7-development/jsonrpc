@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['id_5ft_368',['id_t',['../structts7_1_1jsonrpc__playground_1_1request_1_1request__id.html#abf09289ddb79e07eac6e7c5a66a275c3',1,'ts7::jsonrpc_playground::request::request_id']]]
+  ['failed_5ffn_557',['failed_fn',['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed.html#a0ca9aa61ab8e114e03e851280e1b2da5',1,'ts7::jsonrpc::error::maybe_failed::failed_fn()'],['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed_3_01_t_success_00_01void_01_4.html#a0e99473f47567f86255a43af6c1b3b08',1,'ts7::jsonrpc::error::maybe_failed&lt; TSuccess, void &gt;::failed_fn()'],['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed_3_01void_00_01_t_failed_01_4.html#ae31780ab2c8682de59cd700367366e26',1,'ts7::jsonrpc::error::maybe_failed&lt; void, TFailed &gt;::failed_fn()']]],
+  ['failed_5ft_558',['failed_t',['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed.html#a74d2c3c7db8a3faf795165550730d6db',1,'ts7::jsonrpc::error::maybe_failed::failed_t()'],['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed_3_01_t_success_00_01void_01_4.html#af0fef52797037a58ccf464f260a635ac',1,'ts7::jsonrpc::error::maybe_failed&lt; TSuccess, void &gt;::failed_t()'],['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed_3_01void_00_01_t_failed_01_4.html#a7fe76750ad75b8913d7f4c38fa26507e',1,'ts7::jsonrpc::error::maybe_failed&lt; void, TFailed &gt;::failed_t()']]],
+  ['fn_5ft_559',['fn_t',['../structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn.html#aad29a29bc9392b7422ec963c01af4cc7',1,'ts7::jsonrpc_playground::variadic_member::MyFn']]]
 ];

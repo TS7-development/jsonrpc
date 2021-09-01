@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jsonrpc_2ehpp_299',['jsonrpc.hpp',['../jsonrpc_8hpp.html',1,'']]]
+  ['logging_2eh_383',['logging.h',['../logging_8h.html',1,'']]]
 ];

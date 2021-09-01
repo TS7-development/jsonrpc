@@ -1,0 +1,72 @@
+\hypertarget{structts7_1_1jsonrpc_1_1util_1_1_as_json}{}\doxysection{ts7\+::jsonrpc\+::util\+::As\+Json$<$ T $>$ Struct Template Reference}
+\label{structts7_1_1jsonrpc_1_1util_1_1_as_json}\index{ts7::jsonrpc::util::AsJson$<$ T $>$@{ts7::jsonrpc::util::AsJson$<$ T $>$}}
+
+
+Convert to json.  
+
+
+
+
+{\ttfamily \#include $<$asjson.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1util_1_1_as_json_a05fb4c8012a8be4bf829a3ae4f9c1f7a}{As\+Json}} (const T \&)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+struct ts7\+::jsonrpc\+::util\+::\+As\+Json$<$ T $>$}
+
+Convert to json. 
+
+Converts any type to a json.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type that shall be converted to a json value.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1util_1_1_as_json_a05fb4c8012a8be4bf829a3ae4f9c1f7a}\label{structts7_1_1jsonrpc_1_1util_1_1_as_json_a05fb4c8012a8be4bf829a3ae4f9c1f7a}} 
+\index{ts7::jsonrpc::util::AsJson$<$ T $>$@{ts7::jsonrpc::util::AsJson$<$ T $>$}!AsJson@{AsJson}}
+\index{AsJson@{AsJson}!ts7::jsonrpc::util::AsJson$<$ T $>$@{ts7::jsonrpc::util::AsJson$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AsJson()}{AsJson()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1util_1_1_as_json}{ts7\+::jsonrpc\+::util\+::\+As\+Json}}$<$ T $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1util_1_1_as_json}{As\+Json}} (\begin{DoxyParamCaption}\item[{const T \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [constexpr]}}
+
+
+
+constructor 
+
+Creates an instance that stores the const reference to the provided variable.
+
+\begin{DoxyAttention}{Attention}
+Using the templated version instead of a fully specialized version will cause a static\+\_\+assert fail in the constructor. It is mandatory to specialize this template for new types, that shall be supported.
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & Const reference that shall be used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+jsonrpc/util/\mbox{\hyperlink{asjson_8hpp}{asjson.\+hpp}}\end{DoxyCompactItemize}

@@ -1,8 +1,12 @@
-<map id="lib/errorcodes.hpp" name="lib/errorcodes.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="145,5,284,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,72,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="96,80,157,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="181,80,248,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="272,80,331,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="355,80,490,107"/>
+<map id="jsonrpc/error/errorcodes.hpp" name="jsonrpc/error/errorcodes.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="169,5,374,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="222,229,289,256"/>
+<area shape="rect" id="node3" title=" " alt="" coords="30,80,92,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="116,80,182,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="218,155,277,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="258,80,392,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="530,229,648,256"/>
+<area shape="rect" id="node8" href="$asjson_8hpp.html" title=" " alt="" coords="416,80,546,107"/>
+<area shape="rect" id="node10" href="$jsontype_8hpp.html" title=" " alt="" coords="490,155,597,181"/>
+<area shape="rect" id="node9" href="$always__false_8hpp.html" title=" " alt="" coords="331,155,466,181"/>
 </map>

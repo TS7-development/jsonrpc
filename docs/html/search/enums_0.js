@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['errorcodes_458',['ErrorCodes',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2',1,'ts7::jsonrpc']]]
+  ['errorcodes_577',['ErrorCodes',['../namespacets7_1_1jsonrpc_1_1error.html#af4e364e1121411dd0c2d9fce053aeaa6',1,'ts7::jsonrpc::error']]]
 ];

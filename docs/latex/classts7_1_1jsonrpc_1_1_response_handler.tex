@@ -1,0 +1,85 @@
+\hypertarget{classts7_1_1jsonrpc_1_1_response_handler}{}\doxysection{ts7\+::jsonrpc\+::Response\+Handler$<$ TId, TResult $>$ Class Template Reference}
+\label{classts7_1_1jsonrpc_1_1_response_handler}\index{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}}
+
+
+{\ttfamily \#include $<$response\+\_\+handler.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a15f6b454da65b4c0a088be954ad08764}{maybe\+\_\+failed}} = \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{error\+::maybe\+\_\+failed}}$<$ void, \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}} $>$
+\item 
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a032fec1e2389c3ee9b01e2026a9f6091}{callback\+\_\+t}} = std\+::function$<$ \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a15f6b454da65b4c0a088be954ad08764}{maybe\+\_\+failed}}(const TId \&, const TResult \&)$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a69fb0f00669076dd09271e5a6ce9cbd5}{Response\+Handler}} (\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a032fec1e2389c3ee9b01e2026a9f6091}{callback\+\_\+t}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_ab8c68eaeadafc94c87825a81d93fb503}{callback}})
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a15f6b454da65b4c0a088be954ad08764}{maybe\+\_\+failed}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a6f79eaaa515ef7ce5b4c5404c7bd349d}{operator()}} (const boost\+::json\+::object \&object)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a032fec1e2389c3ee9b01e2026a9f6091}{callback\+\_\+t}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_ab8c68eaeadafc94c87825a81d93fb503}{callback}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_response_handler_a032fec1e2389c3ee9b01e2026a9f6091}\label{classts7_1_1jsonrpc_1_1_response_handler_a032fec1e2389c3ee9b01e2026a9f6091}} 
+\index{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}!callback\_t@{callback\_t}}
+\index{callback\_t@{callback\_t}!ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}}
+\doxysubsubsection{\texorpdfstring{callback\_t}{callback\_t}}
+{\footnotesize\ttfamily template$<$typename TId , typename TResult $>$ \\
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler}{ts7\+::jsonrpc\+::\+Response\+Handler}}$<$ TId, TResult $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a032fec1e2389c3ee9b01e2026a9f6091}{callback\+\_\+t}} =  std\+::function$<$\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a15f6b454da65b4c0a088be954ad08764}{maybe\+\_\+failed}}(const TId\&, const TResult\&)$>$}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_response_handler_a15f6b454da65b4c0a088be954ad08764}\label{classts7_1_1jsonrpc_1_1_response_handler_a15f6b454da65b4c0a088be954ad08764}} 
+\index{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}!maybe\_failed@{maybe\_failed}}
+\index{maybe\_failed@{maybe\_failed}!ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}}
+\doxysubsubsection{\texorpdfstring{maybe\_failed}{maybe\_failed}}
+{\footnotesize\ttfamily template$<$typename TId , typename TResult $>$ \\
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler}{ts7\+::jsonrpc\+::\+Response\+Handler}}$<$ TId, TResult $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a15f6b454da65b4c0a088be954ad08764}{maybe\+\_\+failed}} =  \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{error\+::maybe\+\_\+failed}}$<$void, \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}}$>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_response_handler_a69fb0f00669076dd09271e5a6ce9cbd5}\label{classts7_1_1jsonrpc_1_1_response_handler_a69fb0f00669076dd09271e5a6ce9cbd5}} 
+\index{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}!ResponseHandler@{ResponseHandler}}
+\index{ResponseHandler@{ResponseHandler}!ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}}
+\doxysubsubsection{\texorpdfstring{ResponseHandler()}{ResponseHandler()}}
+{\footnotesize\ttfamily template$<$typename TId , typename TResult $>$ \\
+constexpr \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler}{ts7\+::jsonrpc\+::\+Response\+Handler}}$<$ TId, TResult $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler}{Response\+Handler}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a032fec1e2389c3ee9b01e2026a9f6091}{callback\+\_\+t}}}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_response_handler_a6f79eaaa515ef7ce5b4c5404c7bd349d}\label{classts7_1_1jsonrpc_1_1_response_handler_a6f79eaaa515ef7ce5b4c5404c7bd349d}} 
+\index{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename TId , typename TResult $>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a15f6b454da65b4c0a088be954ad08764}{maybe\+\_\+failed}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler}{ts7\+::jsonrpc\+::\+Response\+Handler}}$<$ TId, TResult $>$\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1_response_handler_a6f79eaaa515ef7ce5b4c5404c7bd349d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_response_handler_ab8c68eaeadafc94c87825a81d93fb503}\label{classts7_1_1jsonrpc_1_1_response_handler_ab8c68eaeadafc94c87825a81d93fb503}} 
+\index{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}!callback@{callback}}
+\index{callback@{callback}!ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$@{ts7::jsonrpc::ResponseHandler$<$ TId, TResult $>$}}
+\doxysubsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily template$<$typename TId , typename TResult $>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler_a032fec1e2389c3ee9b01e2026a9f6091}{callback\+\_\+t}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_response_handler}{ts7\+::jsonrpc\+::\+Response\+Handler}}$<$ TId, TResult $>$\+::callback\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+jsonrpc/\mbox{\hyperlink{response__handler_8hpp}{response\+\_\+handler.\+hpp}}\end{DoxyCompactItemize}

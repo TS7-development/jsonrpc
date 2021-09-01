@@ -1,6 +1,5 @@
-<map id="lib/error.hpp" name="lib/error.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="66,5,166,32"/>
-<area shape="rect" id="node2" href="$jsonrpc_8hpp.html" title=" " alt="" coords="5,162,123,189"/>
-<area shape="rect" id="node3" href="$procedure_8hpp.html" title=" " alt="" coords="102,80,237,107"/>
-<area shape="rect" id="node4" href="$examples_2001-request-execution_2main_8cpp.html" title=" " alt="" coords="147,155,315,196"/>
+<map id="jsonrpc/error.hpp" name="jsonrpc/error.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="101,5,231,32"/>
+<area shape="rect" id="node2" href="$jsonrpc_8hpp.html" title=" " alt="" coords="5,87,153,114"/>
+<area shape="rect" id="node3" href="$examples_2003-error-creation_2main_8cpp.html" title=" " alt="" coords="177,80,328,121"/>
 </map>

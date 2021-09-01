@@ -1,0 +1,159 @@
+\hypertarget{classts7_1_1jsonrpc_1_1_notification_handler}{}\doxysection{ts7\+::jsonrpc\+::Notification\+Handler$<$ TArgs $>$ Class Template Reference}
+\label{classts7_1_1jsonrpc_1_1_notification_handler}\index{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}}
+
+
+{\ttfamily \#include $<$notification\+\_\+handler.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a99e13d077b95f4c5cc8911f16d6800fd}{maybe\+\_\+failed}} = \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{error\+::maybe\+\_\+failed}}$<$ void, \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}} $>$
+\item 
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a530d0e116cd87a5f86325eaed6c29d24}{spec\+\_\+failure}} = \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{error\+::maybe\+\_\+failed}}$<$ std\+::string, \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}} $>$
+\item 
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a5cc4abd9b23b3de0d27e3dbd957e8bd4}{callback\+\_\+t}} = std\+::function$<$ \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a99e13d077b95f4c5cc8911f16d6800fd}{maybe\+\_\+failed}}(TArgs... args)$>$
+\item 
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a1acd2b40414265960f7b71942393605d}{tuple\+\_\+t}} = std\+::tuple$<$ \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{Parameter}}$<$ TArgs $>$... $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... UArgs$>$ }\\\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a6051807ab850a6037b85133397f8504b}{Notification\+Handler}} (\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a5cc4abd9b23b3de0d27e3dbd957e8bd4}{callback\+\_\+t}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_aae34dc1e758a22bb1d031ef92f38a001}{callback}}, UArgs... args)
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a99e13d077b95f4c5cc8911f16d6800fd}{maybe\+\_\+failed}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a5b726afc7f7c8cd6a6e6c06f8ed48f27}{operator()}} (const boost\+::json\+::object \&notification)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t... Is$>$ }\\\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a99e13d077b95f4c5cc8911f16d6800fd}{maybe\+\_\+failed}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_afd4511388152db8128a8962f4d8aedeb}{apply}} (const boost\+::json\+::object \&o, std\+::index\+\_\+sequence$<$ Is... $>$)
+\begin{DoxyCompactList}\small\item\em Function pointer execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a5cc4abd9b23b3de0d27e3dbd957e8bd4}{callback\+\_\+t}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_aae34dc1e758a22bb1d031ef92f38a001}{callback}}
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a1acd2b40414265960f7b71942393605d}{tuple\+\_\+t}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_acefe440ef6d85311771470c66c1563ea}{parameter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_handler_a5cc4abd9b23b3de0d27e3dbd957e8bd4}\label{classts7_1_1jsonrpc_1_1_notification_handler_a5cc4abd9b23b3de0d27e3dbd957e8bd4}} 
+\index{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}!callback\_t@{callback\_t}}
+\index{callback\_t@{callback\_t}!ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{callback\_t}{callback\_t}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler}{ts7\+::jsonrpc\+::\+Notification\+Handler}}$<$ TArgs $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a5cc4abd9b23b3de0d27e3dbd957e8bd4}{callback\+\_\+t}} =  std\+::function$<$\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a99e13d077b95f4c5cc8911f16d6800fd}{maybe\+\_\+failed}}(TArgs... args)$>$}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_handler_a99e13d077b95f4c5cc8911f16d6800fd}\label{classts7_1_1jsonrpc_1_1_notification_handler_a99e13d077b95f4c5cc8911f16d6800fd}} 
+\index{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}!maybe\_failed@{maybe\_failed}}
+\index{maybe\_failed@{maybe\_failed}!ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{maybe\_failed}{maybe\_failed}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler}{ts7\+::jsonrpc\+::\+Notification\+Handler}}$<$ TArgs $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a99e13d077b95f4c5cc8911f16d6800fd}{maybe\+\_\+failed}} =  \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{error\+::maybe\+\_\+failed}}$<$void, \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}}$>$}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_handler_a530d0e116cd87a5f86325eaed6c29d24}\label{classts7_1_1jsonrpc_1_1_notification_handler_a530d0e116cd87a5f86325eaed6c29d24}} 
+\index{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}!spec\_failure@{spec\_failure}}
+\index{spec\_failure@{spec\_failure}!ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{spec\_failure}{spec\_failure}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler}{ts7\+::jsonrpc\+::\+Notification\+Handler}}$<$ TArgs $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a530d0e116cd87a5f86325eaed6c29d24}{spec\+\_\+failure}} =  \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{error\+::maybe\+\_\+failed}}$<$std\+::string, \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}}$>$}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_handler_a1acd2b40414265960f7b71942393605d}\label{classts7_1_1jsonrpc_1_1_notification_handler_a1acd2b40414265960f7b71942393605d}} 
+\index{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}!tuple\_t@{tuple\_t}}
+\index{tuple\_t@{tuple\_t}!ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{tuple\_t}{tuple\_t}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+using \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler}{ts7\+::jsonrpc\+::\+Notification\+Handler}}$<$ TArgs $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a1acd2b40414265960f7b71942393605d}{tuple\+\_\+t}} =  std\+::tuple$<$\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{Parameter}}$<$TArgs$>$...$>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_handler_a6051807ab850a6037b85133397f8504b}\label{classts7_1_1jsonrpc_1_1_notification_handler_a6051807ab850a6037b85133397f8504b}} 
+\index{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}!NotificationHandler@{NotificationHandler}}
+\index{NotificationHandler@{NotificationHandler}!ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{NotificationHandler()}{NotificationHandler()}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+template$<$typename... UArgs$>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler}{ts7\+::jsonrpc\+::\+Notification\+Handler}}$<$ TArgs $>$\+::\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler}{Notification\+Handler}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a5cc4abd9b23b3de0d27e3dbd957e8bd4}{callback\+\_\+t}}}]{callback,  }\item[{UArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_handler_afd4511388152db8128a8962f4d8aedeb}\label{classts7_1_1jsonrpc_1_1_notification_handler_afd4511388152db8128a8962f4d8aedeb}} 
+\index{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}!apply@{apply}}
+\index{apply@{apply}!ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+template$<$std\+::size\+\_\+t... Is$>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a99e13d077b95f4c5cc8911f16d6800fd}{maybe\+\_\+failed}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler}{ts7\+::jsonrpc\+::\+Notification\+Handler}}$<$ TArgs $>$\+::apply (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{o,  }\item[{std\+::index\+\_\+sequence$<$ Is... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Function pointer execution. 
+
+Parses all parameter and executes the stored function pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Is} & Index sequence.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Const reference to the JSON object that shall be parsed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the result of the stored function pointer.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1_notification_handler_afd4511388152db8128a8962f4d8aedeb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_handler_a5b726afc7f7c8cd6a6e6c06f8ed48f27}\label{classts7_1_1jsonrpc_1_1_notification_handler_a5b726afc7f7c8cd6a6e6c06f8ed48f27}} 
+\index{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a99e13d077b95f4c5cc8911f16d6800fd}{maybe\+\_\+failed}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler}{ts7\+::jsonrpc\+::\+Notification\+Handler}}$<$ TArgs $>$\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{notification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1_notification_handler_a5b726afc7f7c8cd6a6e6c06f8ed48f27_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_handler_aae34dc1e758a22bb1d031ef92f38a001}\label{classts7_1_1jsonrpc_1_1_notification_handler_aae34dc1e758a22bb1d031ef92f38a001}} 
+\index{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}!callback@{callback}}
+\index{callback@{callback}!ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a5cc4abd9b23b3de0d27e3dbd957e8bd4}{callback\+\_\+t}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler}{ts7\+::jsonrpc\+::\+Notification\+Handler}}$<$ TArgs $>$\+::callback\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_notification_handler_acefe440ef6d85311771470c66c1563ea}\label{classts7_1_1jsonrpc_1_1_notification_handler_acefe440ef6d85311771470c66c1563ea}} 
+\index{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}!parameter@{parameter}}
+\index{parameter@{parameter}!ts7::jsonrpc::NotificationHandler$<$ TArgs $>$@{ts7::jsonrpc::NotificationHandler$<$ TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{parameter}{parameter}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler_a1acd2b40414265960f7b71942393605d}{tuple\+\_\+t}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_notification_handler}{ts7\+::jsonrpc\+::\+Notification\+Handler}}$<$ TArgs $>$\+::parameter\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+jsonrpc/\mbox{\hyperlink{notification__handler_8hpp}{notification\+\_\+handler.\+hpp}}\end{DoxyCompactItemize}

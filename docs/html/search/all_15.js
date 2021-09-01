@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['z_181',['z',['../structts7_1_1jsonrpc__playground_1_1json__conversion_1_1_vector3d.html#a32b4a1dc2b1032f2ebda617d58139040',1,'ts7::jsonrpc_playground::json_conversion::Vector3d::z()'],['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_vector3d.html#adf030c0fbfe61859f3274907a0223aa1',1,'ts7::jsonrpc_playground::json_call::Vector3d::z()'],['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_dummy.html#a65a76cc789a92d972750cab4b750e8f9',1,'ts7::jsonrpc_playground::json_call::Dummy::z()']]]
+  ['wrongparametertype_289',['WrongParameterType',['../classts7_1_1jsonrpc_1_1error_1_1_error_code.html#afb86181e7dfab37d398343d14e8e1759',1,'ts7::jsonrpc::error::ErrorCode']]],
+  ['wrongtype_290',['WrongType',['../classts7_1_1jsonrpc_1_1error_1_1_error_code.html#ab0d8dc1526ed59395a531a7931dddf9a',1,'ts7::jsonrpc::error::ErrorCode']]]
 ];

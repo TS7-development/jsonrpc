@@ -1,0 +1,612 @@
+\hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code}{}\doxysection{ts7\+::jsonrpc\+::error\+::Error\+Code Class Reference}
+\label{classts7_1_1jsonrpc_1_1error_1_1_error_code}\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+
+
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} code.  
+
+
+
+
+{\ttfamily \#include $<$errorcodes.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a8e1343b6cb1384d7f0c7596490ba0439}{Error\+Code}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a4736d471240f5ae78dfc483eff385a54}{Error\+Code}} (std\+::int32\+\_\+t \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a570720fc8c0f5c1ebf8a6da48ff151c3}{code}}, std\+::string \&\&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a9630e90c3cb0b195fa740a631fb566c7}{message}})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_ab1b318d8735454b67c49b7aab0e1bac0}{Error\+Code}} (std\+::int32\+\_\+t \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a570720fc8c0f5c1ebf8a6da48ff151c3}{code}}, std\+::string \&\&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a9630e90c3cb0b195fa740a631fb566c7}{message}}, const boost\+::json\+::value \&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a185ca90da2c1c7ef44597084a4dc9075}{data}})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... TArgs$>$ }\\\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a701ea520d59933744c3badf68af056aa}{Error\+Code}} (std\+::int32\+\_\+t \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a570720fc8c0f5c1ebf8a6da48ff151c3}{code}}, std\+::string \&\&\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a9630e90c3cb0b195fa740a631fb566c7}{message}}, TArgs... args)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_aa9a0b3c0dfa6c0b71ca8b837abb281fc}{operator boost\+::json\+::value}} () const
+\begin{DoxyCompactList}\small\item\em Convert to JSON value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_ad61ba029bfba4c9279fa335181653056}{operator boost\+::json\+::object}} () const
+\begin{DoxyCompactList}\small\item\em Convert to JSON object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a9d844b77216fc73b7f3173e135478c87}{operator std\+::int32\+\_\+t}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} code cast operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_aae6ff39155fdb4187c1c3600bfd8d3bf}{operator std\+::string}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} message cast operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a08420eab7a8d3ef9cb8a445189ca1a46}{Missing\+Field}} (std\+::int32\+\_\+t \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a570720fc8c0f5c1ebf8a6da48ff151c3}{code}}, const std\+::string \&field, const std\+::string \&format=\char`\"{}Missing field \textbackslash{}\char`\"{}\%1\%\textbackslash{}\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Missing field. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_ab0d8dc1526ed59395a531a7931dddf9a}{Wrong\+Type}} (std\+::int32\+\_\+t \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a570720fc8c0f5c1ebf8a6da48ff151c3}{code}}, const std\+::string \&field, \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{util\+::\+Json\+Type}} actual, \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{util\+::\+Json\+Type}} expected, const std\+::string \&format=\char`\"{}Field \textbackslash{}\char`\"{}\%1\%\textbackslash{}\char`\"{} is of type \textbackslash{}\char`\"{}\%2\%\textbackslash{}\char`\"{}, expected \textbackslash{}\char`\"{}\%3\%\textbackslash{}\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Wrong type. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_ae5a48b6b060d5584f6ef7d1eae7c17b6}{Missing\+Parameter}} (std\+::int32\+\_\+t \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a570720fc8c0f5c1ebf8a6da48ff151c3}{code}}, const std\+::string \&field)
+\begin{DoxyCompactList}\small\item\em Missing parameter. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}} \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_afb86181e7dfab37d398343d14e8e1759}{Wrong\+Parameter\+Type}} (std\+::int32\+\_\+t \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a570720fc8c0f5c1ebf8a6da48ff151c3}{code}}, const std\+::string \&field, \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{util\+::\+Json\+Type}} actual, \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{util\+::\+Json\+Type}} expected)
+\begin{DoxyCompactList}\small\item\em Wrong parameter type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename TData $>$ }\\void \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_acb562ef7798b9c749697ebcd4400f319}{apply}} (boost\+::json\+::object \&o, const std\+::string \&name, const TData \&value)
+\begin{DoxyCompactList}\small\item\em Apply json entry. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename TData , typename... TArgs$>$ }\\void \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a661c4e453996e32c048c329f59ac590f}{apply}} (boost\+::json\+::object \&o, const std\+::string \&name, const TData \&value, TArgs... args)
+\begin{DoxyCompactList}\small\item\em Apply json entry. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... TArgs$>$ }\\void \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a373716d5b914191df5c4c614d693a10c}{apply\+\_\+args}} (boost\+::json\+::object \&o, TArgs... args)
+\begin{DoxyCompactList}\small\item\em Apply json entries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::int32\+\_\+t \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a570720fc8c0f5c1ebf8a6da48ff151c3}{code}}
+\begin{DoxyCompactList}\small\item\em The error code. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a9630e90c3cb0b195fa740a631fb566c7}{message}}
+\begin{DoxyCompactList}\small\item\em The error message. \end{DoxyCompactList}\item 
+boost\+::json\+::value \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code_a185ca90da2c1c7ef44597084a4dc9075}{data}}
+\begin{DoxyCompactList}\small\item\em Additional information. Those are optional and can be omitted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} code. 
+
+Represents everything that is required to create a JSON-\/\+RPC error message. This includes the code, the message and any additional data.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_a8e1343b6cb1384d7f0c7596490ba0439}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_a8e1343b6cb1384d7f0c7596490ba0439}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!ErrorCode@{ErrorCode}}
+\index{ErrorCode@{ErrorCode}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{ErrorCode()}{ErrorCode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::\+Error\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+Default constructor which should never be used. Required to exist for {\ttfamily util\+::maybe\+\_\+failed}.
+
+\begin{DoxyNote}{Note}
+This should be the only way to create an {\ttfamily \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1error_af4e364e1121411dd0c2d9fce053aeaa6a9a10f345b0f755d461a8673a5e9ef6b4}{Error\+Codes\+::\+UNKNOWN\+\_\+\+ERROR}}}.
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_a8e1343b6cb1384d7f0c7596490ba0439_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_a4736d471240f5ae78dfc483eff385a54}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_a4736d471240f5ae78dfc483eff385a54}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!ErrorCode@{ErrorCode}}
+\index{ErrorCode@{ErrorCode}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{ErrorCode()}{ErrorCode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::\+Error\+Code (\begin{DoxyParamCaption}\item[{std\+::int32\+\_\+t}]{code,  }\item[{std\+::string \&\&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+Creates an error with the provided error code as well as the message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The error code that shall be provided. \\
+\hline
+{\em message} & The corresponding message to the error code.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_ab1b318d8735454b67c49b7aab0e1bac0}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_ab1b318d8735454b67c49b7aab0e1bac0}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!ErrorCode@{ErrorCode}}
+\index{ErrorCode@{ErrorCode}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{ErrorCode()}{ErrorCode()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::\+Error\+Code (\begin{DoxyParamCaption}\item[{std\+::int32\+\_\+t}]{code,  }\item[{std\+::string \&\&}]{message,  }\item[{const boost\+::json\+::value \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+Creates an error with code, message and a JSON object that shall be provided as data field.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The error code. \\
+\hline
+{\em message} & The corresponding message to the error code. \\
+\hline
+{\em data} & Additional data that shall be provided with the error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_a701ea520d59933744c3badf68af056aa}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_a701ea520d59933744c3badf68af056aa}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!ErrorCode@{ErrorCode}}
+\index{ErrorCode@{ErrorCode}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{ErrorCode()}{ErrorCode()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::\+Error\+Code (\begin{DoxyParamCaption}\item[{std\+::int32\+\_\+t}]{code,  }\item[{std\+::string \&\&}]{message,  }\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+Creates an error with a code and the corresponding message. Additional data can be added as pairs of key and value.
+
+\begin{DoxyNote}{Note}
+The parameter args needs to be a list of two always. The key always needs to be a string and the value can be any type as long as it can be converted to a JSON value by {\ttfamily \mbox{\hyperlink{structts7_1_1jsonrpc_1_1util_1_1_as_json}{util\+::\+As\+Json}}}.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TArgs} & List of parameter data types.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The error of the error. \\
+\hline
+{\em message} & The corresponding error message. \\
+\hline
+{\em args} & List of keys and values to be stored as additional data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_a701ea520d59933744c3badf68af056aa_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_acb562ef7798b9c749697ebcd4400f319}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_acb562ef7798b9c749697ebcd4400f319}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!apply@{apply}}
+\index{apply@{apply}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+void ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::apply (\begin{DoxyParamCaption}\item[{boost\+::json\+::object \&}]{o,  }\item[{const std\+::string \&}]{name,  }\item[{const TData \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Apply json entry. 
+
+Adds additional information to the JSON object.
+
+\begin{DoxyNote}{Note}
+This function is only called for the very last key value pair.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TData} & The data type that shall be added.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The JSON object that shall be extended by the additional information. \\
+\hline
+{\em name} & The key of the entry. \\
+\hline
+{\em value} & The value that shall be added.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_acb562ef7798b9c749697ebcd4400f319_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_a661c4e453996e32c048c329f59ac590f}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_a661c4e453996e32c048c329f59ac590f}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!apply@{apply}}
+\index{apply@{apply}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename TData , typename... TArgs$>$ \\
+void ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::apply (\begin{DoxyParamCaption}\item[{boost\+::json\+::object \&}]{o,  }\item[{const std\+::string \&}]{name,  }\item[{const TData \&}]{value,  }\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Apply json entry. 
+
+Adds additional information to the JSON object.
+
+\begin{DoxyNote}{Note}
+This function is called for every key value pair, except the very last one.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TData} & The data type that shall be added. \\
+\hline
+{\em TArgs} & The list of key value pairs that shall be added.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The JSON object that shall be extended by the additional information. \\
+\hline
+{\em name} & The key of the entry. \\
+\hline
+{\em value} & The value that shall be added. \\
+\hline
+{\em agrs} & The list of remaining key value pairs that shall be added.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_a661c4e453996e32c048c329f59ac590f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_a373716d5b914191df5c4c614d693a10c}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_a373716d5b914191df5c4c614d693a10c}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!apply\_args@{apply\_args}}
+\index{apply\_args@{apply\_args}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{apply\_args()}{apply\_args()}}
+{\footnotesize\ttfamily template$<$typename... TArgs$>$ \\
+void ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::apply\+\_\+args (\begin{DoxyParamCaption}\item[{boost\+::json\+::object \&}]{o,  }\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Apply json entries. 
+
+Adds additional information to the JSON object.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TArgs} & The list of key value pairs that shall be added.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The JSON object that shall be extended by the additional information. \\
+\hline
+{\em agrs} & The list of key value pairs that shall be added.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_a373716d5b914191df5c4c614d693a10c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_a373716d5b914191df5c4c614d693a10c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_a08420eab7a8d3ef9cb8a445189ca1a46}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_a08420eab7a8d3ef9cb8a445189ca1a46}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!MissingField@{MissingField}}
+\index{MissingField@{MissingField}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{MissingField()}{MissingField()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}} ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::\+Missing\+Field (\begin{DoxyParamCaption}\item[{std\+::int32\+\_\+t}]{code,  }\item[{const std\+::string \&}]{field,  }\item[{const std\+::string \&}]{format = {\ttfamily \char`\"{}Missing~field~\textbackslash{}\char`\"{}\%1\%\textbackslash{}\char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Missing field. 
+
+Factory method to create a missing field {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}}.
+
+\begin{DoxyNote}{Note}
+This adds the fieldnam as additional information to the {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}} object.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The error code that needs to be stored. \\
+\hline
+{\em field} & The name of the field that is missing. \\
+\hline
+{\em format} & The format specifier for the error message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the created {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}}.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_a08420eab7a8d3ef9cb8a445189ca1a46_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_a08420eab7a8d3ef9cb8a445189ca1a46_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_ae5a48b6b060d5584f6ef7d1eae7c17b6}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_ae5a48b6b060d5584f6ef7d1eae7c17b6}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!MissingParameter@{MissingParameter}}
+\index{MissingParameter@{MissingParameter}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{MissingParameter()}{MissingParameter()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}} ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::\+Missing\+Parameter (\begin{DoxyParamCaption}\item[{std\+::int32\+\_\+t}]{code,  }\item[{const std\+::string \&}]{field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Missing parameter. 
+
+Creates an {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}}, whenever a parameter is missing.
+
+\begin{DoxyNote}{Note}
+This calls internally {\ttfamily Missing\+Field} factory method.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The provided error code. \\
+\hline
+{\em field} & The name of the parameter, that is missing.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the created {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}}.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_ae5a48b6b060d5584f6ef7d1eae7c17b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_ad61ba029bfba4c9279fa335181653056}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_ad61ba029bfba4c9279fa335181653056}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!operator boost::json::object@{operator boost::json::object}}
+\index{operator boost::json::object@{operator boost::json::object}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{operator boost::json::object()}{operator boost::json::object()}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::operator boost\+::json\+::object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convert to JSON object. 
+
+Converts the {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}} object to a JSON object.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_aa9a0b3c0dfa6c0b71ca8b837abb281fc}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_aa9a0b3c0dfa6c0b71ca8b837abb281fc}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!operator boost::json::value@{operator boost::json::value}}
+\index{operator boost::json::value@{operator boost::json::value}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{operator boost::json::value()}{operator boost::json::value()}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::operator boost\+::json\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convert to JSON value. 
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_a9d844b77216fc73b7f3173e135478c87}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_a9d844b77216fc73b7f3173e135478c87}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!operator std::int32\_t@{operator std::int32\_t}}
+\index{operator std::int32\_t@{operator std::int32\_t}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{operator std::int32\_t()}{operator std::int32\_t()}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::operator std\+::int32\+\_\+t (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} code cast operator. 
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_aae6ff39155fdb4187c1c3600bfd8d3bf}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_aae6ff39155fdb4187c1c3600bfd8d3bf}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!operator std::string@{operator std::string}}
+\index{operator std::string@{operator std::string}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{operator std::string()}{operator std::string()}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} message cast operator. 
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_afb86181e7dfab37d398343d14e8e1759}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_afb86181e7dfab37d398343d14e8e1759}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!WrongParameterType@{WrongParameterType}}
+\index{WrongParameterType@{WrongParameterType}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{WrongParameterType()}{WrongParameterType()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}} ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::\+Wrong\+Parameter\+Type (\begin{DoxyParamCaption}\item[{std\+::int32\+\_\+t}]{code,  }\item[{const std\+::string \&}]{field,  }\item[{\mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{util\+::\+Json\+Type}}}]{actual,  }\item[{\mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{util\+::\+Json\+Type}}}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Wrong parameter type. 
+
+Factory method to create an {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}} object, whenever an unexpected parameter type is found.
+
+\begin{DoxyNote}{Note}
+This adds the fieldname, its actual data type and the expected data type as additional information. This calls internally {\ttfamily Wrong\+Type}.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The error code provided. \\
+\hline
+{\em field} & The parameter name. \\
+\hline
+{\em actual} & Its actual data type. \\
+\hline
+{\em expected} & The expected data type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the created {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}} object.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_afb86181e7dfab37d398343d14e8e1759_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_ab0d8dc1526ed59395a531a7931dddf9a}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_ab0d8dc1526ed59395a531a7931dddf9a}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!WrongType@{WrongType}}
+\index{WrongType@{WrongType}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{WrongType()}{WrongType()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}} ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::\+Wrong\+Type (\begin{DoxyParamCaption}\item[{std\+::int32\+\_\+t}]{code,  }\item[{const std\+::string \&}]{field,  }\item[{\mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{util\+::\+Json\+Type}}}]{actual,  }\item[{\mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{util\+::\+Json\+Type}}}]{expected,  }\item[{const std\+::string \&}]{format = {\ttfamily \char`\"{}Field~\textbackslash{}\char`\"{}\%1\%\textbackslash{}\char`\"{}~is~of~type~\textbackslash{}\char`\"{}\%2\%\textbackslash{}\char`\"{},~expected~\textbackslash{}\char`\"{}\%3\%\textbackslash{}\char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Wrong type. 
+
+Factory method to create an {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}}, if a field or parameter has an unexpected data type.
+
+\begin{DoxyNote}{Note}
+Adds the fieldname, its actual data type and the expected data type as additional information to the {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}}.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The error code. \\
+\hline
+{\em field} & The name of the field or parameter. \\
+\hline
+{\em actual} & The actual data type of the field. \\
+\hline
+{\em expected} & The expected data type of the field. \\
+\hline
+{\em format} & The format specifier to generate the error message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the created {\ttfamily \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{Error\+Code}}}.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_ab0d8dc1526ed59395a531a7931dddf9a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc_1_1error_1_1_error_code_ab0d8dc1526ed59395a531a7931dddf9a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_a570720fc8c0f5c1ebf8a6da48ff151c3}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_a570720fc8c0f5c1ebf8a6da48ff151c3}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!code@{code}}
+\index{code@{code}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{code}{code}}
+{\footnotesize\ttfamily std\+::int32\+\_\+t ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::code\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The error code. 
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_a185ca90da2c1c7ef44597084a4dc9075}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_a185ca90da2c1c7ef44597084a4dc9075}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!data@{data}}
+\index{data@{data}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily boost\+::json\+::value ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::data\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Additional information. Those are optional and can be omitted. 
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1error_1_1_error_code_a9630e90c3cb0b195fa740a631fb566c7}\label{classts7_1_1jsonrpc_1_1error_1_1_error_code_a9630e90c3cb0b195fa740a631fb566c7}} 
+\index{ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}!message@{message}}
+\index{message@{message}!ts7::jsonrpc::error::ErrorCode@{ts7::jsonrpc::error::ErrorCode}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily std\+::string ts7\+::jsonrpc\+::error\+::\+Error\+Code\+::message\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The error message. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+jsonrpc/error/\mbox{\hyperlink{errorcodes_8hpp}{errorcodes.\+hpp}}\end{DoxyCompactItemize}

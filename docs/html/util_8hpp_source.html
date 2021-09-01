@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>JSON RPC: lib/util.hpp Source File</title>
+<title>JSON RPC: jsonrpc/util/util.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b68d9a6b332b84f515486581812b1e75.html">jsonrpc</a></li><li class="navelem"><a class="el" href="dir_c4ee2ae655efa0a1ed69ffe4730cc58e.html">util</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,19 +75,19 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;boost/json.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;boost/json/src.hpp&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacets7.html">ts7</a> {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="keyword">namespace </span>jsonrpc {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> ... T&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespacets7_1_1jsonrpc.html#a0cb3a0f583255f2faaaec214c3de45aa">   25</a></span>&#160;    constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacets7_1_1jsonrpc.html#a0cb3a0f583255f2faaaec214c3de45aa">always_false</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespacets7_1_1jsonrpc.html#a6fd9681887578c65e158c71b22d46818">   29</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacets7_1_1jsonrpc.html#a6fd9681887578c65e158c71b22d46818">remove_cref</a> = <span class="keyword">typename</span> <a class="code" href="namespacetest.html#aa5babada9ae94655f1c280efba7fc6f9">std::remove_const&lt;typename std::remove_reference&lt;U&gt;::type</a>&gt;<a class="code" href="namespacetest.html#aa5babada9ae94655f1c280efba7fc6f9">::type</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="ttc" id="anamespacetest_html_aa5babada9ae94655f1c280efba7fc6f9"><div class="ttname"><a href="namespacetest.html#aa5babada9ae94655f1c280efba7fc6f9">test.type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> test.py:29</div></div>
-<div class="ttc" id="anamespacets7_1_1jsonrpc_html_a0cb3a0f583255f2faaaec214c3de45aa"><div class="ttname"><a href="namespacets7_1_1jsonrpc.html#a0cb3a0f583255f2faaaec214c3de45aa">ts7::jsonrpc::always_false</a></div><div class="ttdeci">constexpr bool always_false</div><div class="ttdoc">Always false.</div><div class="ttdef"><b>Definition:</b> util.hpp:25</div></div>
-<div class="ttc" id="anamespacets7_1_1jsonrpc_html_a6fd9681887578c65e158c71b22d46818"><div class="ttname"><a href="namespacets7_1_1jsonrpc.html#a6fd9681887578c65e158c71b22d46818">ts7::jsonrpc::remove_cref</a></div><div class="ttdeci">typename std::remove_const&lt; typename std::remove_reference&lt; U &gt;::type &gt;::type remove_cref</div><div class="ttdoc">Const reference remover.</div><div class="ttdef"><b>Definition:</b> util.hpp:29</div></div>
-<div class="ttc" id="anamespacets7_html"><div class="ttname"><a href="namespacets7.html">ts7</a></div><div class="ttdef"><b>Definition:</b> asjson.hpp:5</div></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="always__false_8hpp.html">always_false.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="asjson_8hpp.html">asjson.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// #include &quot;callfromjson.hpp&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="errorcodes_8hpp.html">errorcodes.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fromjson_8hpp.html">fromjson.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="maybe__failed_8hpp.html">maybe_failed.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="remove__cref_8hpp.html">remove_cref.hpp</a>&quot;</span></div>
+<div class="ttc" id="aalways__false_8hpp_html"><div class="ttname"><a href="always__false_8hpp.html">always_false.hpp</a></div></div>
+<div class="ttc" id="aasjson_8hpp_html"><div class="ttname"><a href="asjson_8hpp.html">asjson.hpp</a></div></div>
+<div class="ttc" id="aerrorcodes_8hpp_html"><div class="ttname"><a href="errorcodes_8hpp.html">errorcodes.hpp</a></div></div>
+<div class="ttc" id="afromjson_8hpp_html"><div class="ttname"><a href="fromjson_8hpp.html">fromjson.hpp</a></div></div>
+<div class="ttc" id="amaybe__failed_8hpp_html"><div class="ttname"><a href="maybe__failed_8hpp.html">maybe_failed.hpp</a></div></div>
+<div class="ttc" id="aremove__cref_8hpp_html"><div class="ttname"><a href="remove__cref_8hpp.html">remove_cref.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

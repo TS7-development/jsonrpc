@@ -1,0 +1,192 @@
+\hypertarget{structts7_1_1jsonrpc_1_1_parameter}{}\doxysection{ts7\+::jsonrpc\+::Parameter$<$ U $>$ Struct Template Reference}
+\label{structts7_1_1jsonrpc_1_1_parameter}\index{ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}}
+
+
+{\ttfamily \#include $<$parameter.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ae06027b238685ca5e27e82723ce19285}{datatype\+\_\+t}} = \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_adf60968c0145a676eff36af890f8b1be}{util\+::remove\+\_\+cref}}$<$ U $>$
+\item 
+using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ac60ddaa551822c3b29ad374285842ec0}{maybe\+\_\+failed}} = \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{error\+::maybe\+\_\+failed}}$<$ \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ae06027b238685ca5e27e82723ce19285}{datatype\+\_\+t}}, \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_a3594a75489e5ef086b24d0830c7b0a27}{Parameter}} (const std\+::string \&\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_a5421a6640265f6edad0b2a439bff7578}{name}}, bool \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_acbf365c4c5cb24d2f2c3c29f8b93f0ca}{has\+Default}}=false, const U \&\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_acfc5b6e73a51cda95698bfedb078a8a3}{default\+Value}}=\mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_adf60968c0145a676eff36af890f8b1be}{util\+::remove\+\_\+cref}}$<$ U $>$())
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ac60ddaa551822c3b29ad374285842ec0}{maybe\+\_\+failed}} \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_af8a4c769d2e8b650358202ff26bc38c4}{load}} (const boost\+::json\+::object \&o) const
+\begin{DoxyCompactList}\small\item\em Call operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ac60ddaa551822c3b29ad374285842ec0}{maybe\+\_\+failed}} \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_aea0b0f57883bb923315b1119b9a361cb}{store}} (boost\+::json\+::object \&o, \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ae06027b238685ca5e27e82723ce19285}{datatype\+\_\+t}} value) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{Parameter}} \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_a6019cb23a07ccbc0d15b1ae8edfaa3e4}{Optional}} (const std\+::string \&\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_a5421a6640265f6edad0b2a439bff7578}{name}}, const \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_adf60968c0145a676eff36af890f8b1be}{util\+::remove\+\_\+cref}}$<$ U $>$ \&\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_acfc5b6e73a51cda95698bfedb078a8a3}{default\+Value}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_a5421a6640265f6edad0b2a439bff7578}{name}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{Parameter}} name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_acbf365c4c5cb24d2f2c3c29f8b93f0ca}{has\+Default}}
+\begin{DoxyCompactList}\small\item\em Is default value allowed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ae06027b238685ca5e27e82723ce19285}{datatype\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_acfc5b6e73a51cda95698bfedb078a8a3}{default\+Value}}
+\begin{DoxyCompactList}\small\item\em Default value, that shall be used if \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_acbf365c4c5cb24d2f2c3c29f8b93f0ca}{has\+Default}} is true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_parameter_ae06027b238685ca5e27e82723ce19285}\label{structts7_1_1jsonrpc_1_1_parameter_ae06027b238685ca5e27e82723ce19285}} 
+\index{ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}!datatype\_t@{datatype\_t}}
+\index{datatype\_t@{datatype\_t}!ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{datatype\_t}{datatype\_t}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{ts7\+::jsonrpc\+::\+Parameter}}$<$ U $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ae06027b238685ca5e27e82723ce19285}{datatype\+\_\+t}} =  \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_adf60968c0145a676eff36af890f8b1be}{util\+::remove\+\_\+cref}}$<$U$>$}
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_parameter_ac60ddaa551822c3b29ad374285842ec0}\label{structts7_1_1jsonrpc_1_1_parameter_ac60ddaa551822c3b29ad374285842ec0}} 
+\index{ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}!maybe\_failed@{maybe\_failed}}
+\index{maybe\_failed@{maybe\_failed}!ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{maybe\_failed}{maybe\_failed}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{ts7\+::jsonrpc\+::\+Parameter}}$<$ U $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ac60ddaa551822c3b29ad374285842ec0}{maybe\+\_\+failed}} =  \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{error\+::maybe\+\_\+failed}}$<$\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ae06027b238685ca5e27e82723ce19285}{datatype\+\_\+t}}, \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}}$>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_parameter_a3594a75489e5ef086b24d0830c7b0a27}\label{structts7_1_1jsonrpc_1_1_parameter_a3594a75489e5ef086b24d0830c7b0a27}} 
+\index{ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}!Parameter@{Parameter}}
+\index{Parameter@{Parameter}!ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{Parameter()}{Parameter()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{ts7\+::jsonrpc\+::\+Parameter}}$<$ U $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{Parameter}} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{bool}]{has\+Default = {\ttfamily false},  }\item[{const U \&}]{default\+Value = {\ttfamily \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_adf60968c0145a676eff36af890f8b1be}{util\+::remove\+\_\+cref}}$<$U$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [constexpr]}}
+
+
+
+constructor 
+
+Creates a parameter with its type, name and the information if the parameter has a default value and what it is.
+
+\begin{DoxyNote}{Note}
+Perhaps it would be a good idea to use std\+::optional for the default value.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the parameter. \\
+\hline
+{\em has\+Default} & If the true, the parameter has a default value. The parameter does not have a default value, if it is false. \\
+\hline
+{\em default\+Value} & The provided default value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc_1_1_parameter_a3594a75489e5ef086b24d0830c7b0a27_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_parameter_af8a4c769d2e8b650358202ff26bc38c4}\label{structts7_1_1jsonrpc_1_1_parameter_af8a4c769d2e8b650358202ff26bc38c4}} 
+\index{ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}!load@{load}}
+\index{load@{load}!ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ac60ddaa551822c3b29ad374285842ec0}{maybe\+\_\+failed}} \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{ts7\+::jsonrpc\+::\+Parameter}}$<$ U $>$\+::load (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{o }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Call operator. 
+
+Retrieves the required parameter from the json object, if the json object contains it. Otherwise it is returning the default value, if the parameter has a default value.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]If the object does not contain the parameter and has no default value, there should be an error handling any how.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Json object that contains the provided parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the retrieved value, if the parameter was present in the json object. If not the default value will be returned, if available. Otherwise it will for now just return the default constructor.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_parameter_a6019cb23a07ccbc0d15b1ae8edfaa3e4}\label{structts7_1_1jsonrpc_1_1_parameter_a6019cb23a07ccbc0d15b1ae8edfaa3e4}} 
+\index{ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}!Optional@{Optional}}
+\index{Optional@{Optional}!ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{Optional()}{Optional()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+static constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{Parameter}} \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{ts7\+::jsonrpc\+::\+Parameter}}$<$ U $>$\+::Optional (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_adf60968c0145a676eff36af890f8b1be}{util\+::remove\+\_\+cref}}$<$ U $>$ \&}]{default\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc_1_1_parameter_a6019cb23a07ccbc0d15b1ae8edfaa3e4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_parameter_aea0b0f57883bb923315b1119b9a361cb}\label{structts7_1_1jsonrpc_1_1_parameter_aea0b0f57883bb923315b1119b9a361cb}} 
+\index{ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}!store@{store}}
+\index{store@{store}!ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ac60ddaa551822c3b29ad374285842ec0}{maybe\+\_\+failed}} \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{ts7\+::jsonrpc\+::\+Parameter}}$<$ U $>$\+::store (\begin{DoxyParamCaption}\item[{boost\+::json\+::object \&}]{o,  }\item[{\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ae06027b238685ca5e27e82723ce19285}{datatype\+\_\+t}}}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_parameter_acfc5b6e73a51cda95698bfedb078a8a3}\label{structts7_1_1jsonrpc_1_1_parameter_acfc5b6e73a51cda95698bfedb078a8a3}} 
+\index{ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}!defaultValue@{defaultValue}}
+\index{defaultValue@{defaultValue}!ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{defaultValue}{defaultValue}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_ae06027b238685ca5e27e82723ce19285}{datatype\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{ts7\+::jsonrpc\+::\+Parameter}}$<$ U $>$\+::default\+Value}
+
+
+
+Default value, that shall be used if \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter_acbf365c4c5cb24d2f2c3c29f8b93f0ca}{has\+Default}} is true. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_parameter_acbf365c4c5cb24d2f2c3c29f8b93f0ca}\label{structts7_1_1jsonrpc_1_1_parameter_acbf365c4c5cb24d2f2c3c29f8b93f0ca}} 
+\index{ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}!hasDefault@{hasDefault}}
+\index{hasDefault@{hasDefault}!ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{hasDefault}{hasDefault}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+bool \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{ts7\+::jsonrpc\+::\+Parameter}}$<$ U $>$\+::has\+Default}
+
+
+
+Is default value allowed. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_parameter_a5421a6640265f6edad0b2a439bff7578}\label{structts7_1_1jsonrpc_1_1_parameter_a5421a6640265f6edad0b2a439bff7578}} 
+\index{ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}!name@{name}}
+\index{name@{name}!ts7::jsonrpc::Parameter$<$ U $>$@{ts7::jsonrpc::Parameter$<$ U $>$}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+std\+::string \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{ts7\+::jsonrpc\+::\+Parameter}}$<$ U $>$\+::name}
+
+
+
+\mbox{\hyperlink{structts7_1_1jsonrpc_1_1_parameter}{Parameter}} name. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+jsonrpc/\mbox{\hyperlink{parameter_8hpp}{parameter.\+hpp}}\end{DoxyCompactItemize}

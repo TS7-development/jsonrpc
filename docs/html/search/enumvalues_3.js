@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['parameter_5fmissing_465',['PARAMETER_MISSING',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2a1973447772e5d96b2325f0e85cd2ce8a',1,'ts7::jsonrpc']]],
-  ['parameter_5fwrong_5ftype_466',['PARAMETER_WRONG_TYPE',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2a6eae8f65210600f05f84e61232359736',1,'ts7::jsonrpc']]],
-  ['params_5fmissing_467',['PARAMS_MISSING',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2a0d64c99346964a5d394d24ff32fafeea',1,'ts7::jsonrpc']]],
-  ['params_5fnot_5fan_5fobject_468',['PARAMS_NOT_AN_OBJECT',['../namespacets7_1_1jsonrpc.html#a901f4611d9f427175067ed6dab2f3dc2ac8d76f4e411486aa7d3f3ccec6f1bd92',1,'ts7::jsonrpc']]]
+  ['id_5fmissing_588',['ID_MISSING',['../namespacets7_1_1jsonrpc_1_1error.html#af4e364e1121411dd0c2d9fce053aeaa6a976ae9331ca74356a59cb2239111e4ee',1,'ts7::jsonrpc::error']]],
+  ['id_5fwrong_5ftype_589',['ID_WRONG_TYPE',['../namespacets7_1_1jsonrpc_1_1error.html#af4e364e1121411dd0c2d9fce053aeaa6a8fa870d3e5108f92e206f6e6bfc32c76',1,'ts7::jsonrpc::error']]],
+  ['internal_5ferror_590',['INTERNAL_ERROR',['../namespacets7_1_1jsonrpc_1_1error.html#af4e364e1121411dd0c2d9fce053aeaa6ae8c0c70879b5895c615677261d64a1ee',1,'ts7::jsonrpc::error']]],
+  ['invalid_5fparams_591',['INVALID_PARAMS',['../namespacets7_1_1jsonrpc_1_1error.html#af4e364e1121411dd0c2d9fce053aeaa6a23060c3a67b5a18ec0efb6382babc565',1,'ts7::jsonrpc::error']]],
+  ['invalid_5frequest_592',['INVALID_REQUEST',['../namespacets7_1_1jsonrpc_1_1error.html#af4e364e1121411dd0c2d9fce053aeaa6ab8c9d7ce4c399c56136475f36309020f',1,'ts7::jsonrpc::error']]]
 ];

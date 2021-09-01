@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['logging_2eh_243',['logging.h',['../logging_8h.html',1,'']]]
+  ['error_2ehpp_376',['error.hpp',['../error_2error_8hpp.html',1,'(Global Namespace)'],['../error_8hpp.html',1,'(Global Namespace)']]],
+  ['error_5fhandler_2ehpp_377',['error_handler.hpp',['../error__handler_8hpp.html',1,'']]],
+  ['errorcodes_2ehpp_378',['errorcodes.hpp',['../errorcodes_8hpp.html',1,'']]]
 ];

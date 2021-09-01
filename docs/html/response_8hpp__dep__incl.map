@@ -1,6 +1,4 @@
-<map id="lib/response.hpp" name="lib/response.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="51,5,181,32"/>
-<area shape="rect" id="node2" href="$jsonrpc_8hpp.html" title=" " alt="" coords="5,162,123,189"/>
-<area shape="rect" id="node3" href="$procedure_8hpp.html" title=" " alt="" coords="102,80,237,107"/>
-<area shape="rect" id="node4" href="$examples_2001-request-execution_2main_8cpp.html" title=" " alt="" coords="147,155,315,196"/>
+<map id="jsonrpc/response.hpp" name="jsonrpc/response.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,165,32"/>
+<area shape="rect" id="node2" href="$jsonrpc_8hpp.html" title=" " alt="" coords="11,80,159,107"/>
 </map>

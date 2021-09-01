@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['sock_353',['sock',['../classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection.html#a53006571064e15c01d345118b6427376',1,'ts7::jsonrpc_playground::echo::TcpConnection']]],
-  ['str_354',['Str',['../structts7_1_1jsonrpc__playground_1_1ini_1_1v2_1_1_test.html#aa09c29ece5088a24d55cd421aedddba1',1,'ts7::jsonrpc_playground::ini::v2::Test::Str()'],['../structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_test.html#a922f9b231ac2cf5f11c6c0947b156f8a',1,'ts7::jsonrpc_playground::ini::v3::Test::Str()']]],
-  ['strings_355',['strings',['../structts7_1_1jsonrpc__playground_1_1ini_1_1v2_1_1_configuration.html#a12cac0c8aacf75eec44c02e1276511e6',1,'ts7::jsonrpc_playground::ini::v2::Configuration']]]
+  ['sock_539',['sock',['../classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection.html#a53006571064e15c01d345118b6427376',1,'ts7::jsonrpc_playground::echo::TcpConnection']]],
+  ['str_540',['Str',['../structts7_1_1jsonrpc__playground_1_1ini_1_1v2_1_1_test.html#aa09c29ece5088a24d55cd421aedddba1',1,'ts7::jsonrpc_playground::ini::v2::Test::Str()'],['../structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_test.html#a922f9b231ac2cf5f11c6c0947b156f8a',1,'ts7::jsonrpc_playground::ini::v3::Test::Str()']]],
+  ['strings_541',['strings',['../structts7_1_1jsonrpc__playground_1_1ini_1_1v2_1_1_configuration.html#a12cac0c8aacf75eec44c02e1276511e6',1,'ts7::jsonrpc_playground::ini::v2::Configuration']]],
+  ['succeeded_542',['succeeded',['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed.html#a83d2b38875a9653625236828e9d368d4',1,'ts7::jsonrpc::error::maybe_failed::succeeded()'],['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed_3_01_t_success_00_01void_01_4.html#a0779b3722a423803611ffca309f4f7d7',1,'ts7::jsonrpc::error::maybe_failed&lt; TSuccess, void &gt;::succeeded()'],['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed_3_01void_00_01_t_failed_01_4.html#a1b5e8ffc7a98972dc7c58aa15984f8bb',1,'ts7::jsonrpc::error::maybe_failed&lt; void, TFailed &gt;::succeeded()']]],
+  ['success_543',['success',['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed.html#adc5db3b204b501975cf56b8f0454cc8f',1,'ts7::jsonrpc::error::maybe_failed::success()'],['../structts7_1_1jsonrpc_1_1error_1_1maybe__failed_3_01_t_success_00_01void_01_4.html#a278b67531cb3f95b81d1fb992b070d89',1,'ts7::jsonrpc::error::maybe_failed&lt; TSuccess, void &gt;::success()']]]
 ];
