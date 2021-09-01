@@ -2,7 +2,7 @@
 \label{structts7_1_1jsonrpc_1_1_call_from_json}\index{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$}}
 
 
-Test version 4.  
+Call from json object.  
 
 
 
@@ -11,7 +11,8 @@ Test version 4.
 
 
 
-Collaboration diagram for ts7\+::jsonrpc\+::Call\+From\+Json$<$ TReturn, T1, T2 $>$\+:\nopagebreak
+Collaboration diagram for ts7\+::jsonrpc\+::Call\+From\+Json$<$ TReturn, T1, T2 $>$\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -54,9 +55,9 @@ TReturn \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_a72f2fe729d0131
 \subsubsection*{template$<$typename TReturn, typename T1, typename T2$>$\newline
 struct ts7\+::jsonrpc\+::\+Call\+From\+Json$<$ TReturn, T1, T2 $>$}
 
-Test version 4. 
+Call from json object. 
 
-This test is now extending the parameter functionality to also provide default values, if the parameter is missing and if the parameter was not mandatory. Everything else is based on Test\+\_\+v3.
+This class provides a call operator that takes a json object which contains the required parameter to execute the provided callback. The result of the callback will then be returned as result of the whole call.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -67,9 +68,10 @@ This test is now extending the parameter functionality to also provide default v
 {\em T2} & Type of the second parameter.\\
 \hline
 \end{DoxyTemplParams}
-\begin{DoxySeeAlso}{See also}
-Test\+\_\+v3
-\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]This class needs to support a variadic template, instead of T1 and T2.\end{DoxyRefDesc}
+
+
 \begin{DoxySince}{Since}
 1.\+0
 \end{DoxySince}
@@ -116,11 +118,15 @@ Creates the test with the provided parameter.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
-{\em U1} & Type info to create the first parameter. This can be a string (name), a parameter or an optional parameter. \\
+{\em U1} & Type info to create the first parameter. This can be a string (name), a \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}} or an \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_optional_parameter}{Optional\+Parameter}}. \\
 \hline
 {\em U2} & Type info to create the second parameter, which behaves like {\ttfamily U1}.\\
 \hline
 \end{DoxyTemplParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]This should use a variadic template to support multiple amounts of arguments.\end{DoxyRefDesc}
+
+
 \begin{DoxySince}{Since}
 1.\+0
 \end{DoxySince}
@@ -151,6 +157,10 @@ Enables call operations on instances of this class. This will require a json obj
 \begin{DoxyReturn}{Returns}
 Returns whatever the callback returned.
 \end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]This should use the variadic template of the class to determine which and how many parameter are required.\end{DoxyRefDesc}
+
+
 \begin{DoxySince}{Since}
 1.\+0
 \end{DoxySince}
@@ -189,6 +199,8 @@ Provided callback.
 
 First parameter. 
 
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Create parameter based on the variadic class template. \end{DoxyRefDesc}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_call_from_json_a49fbc21dc39b6704295b7be23f325da4}\label{structts7_1_1jsonrpc_1_1_call_from_json_a49fbc21dc39b6704295b7be23f325da4}} 
 \index{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$}!p2@{p2}}
 \index{p2@{p2}!ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$@{ts7::jsonrpc::CallFromJson$<$ TReturn, T1, T2 $>$}}

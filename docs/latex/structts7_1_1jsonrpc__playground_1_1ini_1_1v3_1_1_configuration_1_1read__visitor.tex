@@ -1,0 +1,142 @@
+\hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::Configuration$<$ TData $>$\+::read\+\_\+visitor Struct Reference}
+\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor}\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor}}
+
+
+Read visitor.  
+
+
+
+
+Inheritance diagram for ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::Configuration$<$ TData $>$\+::read\+\_\+visitor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::Configuration$<$ TData $>$\+::read\+\_\+visitor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_ad90025eea12a22505603e59d3905aa45}{read\+\_\+visitor}} (boost\+::property\+\_\+tree\+::ptree \&\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a9de1519966b485d7cd97a4a3de68d5e7}{pt}}, TData \&\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a85695993a08ecd20f1fc8ebc35662f98}{data}})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a5b2406650b8e974bb410a3816dd7c1fc}{operator()}} (T \&t) const
+\begin{DoxyCompactList}\small\item\em Print call. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::property\+\_\+tree\+::ptree \& \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a9de1519966b485d7cd97a4a3de68d5e7}{pt}}
+\begin{DoxyCompactList}\small\item\em Property tree reference to read from. \end{DoxyCompactList}\item 
+TData \& \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a85695993a08ecd20f1fc8ebc35662f98}{data}}
+\begin{DoxyCompactList}\small\item\em Reference to the target data structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TData$>$\newline
+struct ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration$<$ TData $>$\+::read\+\_\+visitor}
+
+Read visitor. 
+
+Visits the configuration entry of the variant.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_ad90025eea12a22505603e59d3905aa45}\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_ad90025eea12a22505603e59d3905aa45}} 
+\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor}!read\_visitor@{read\_visitor}}
+\index{read\_visitor@{read\_visitor}!ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor}}
+\doxysubsubsection{\texorpdfstring{read\_visitor()}{read\_visitor()}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration}}$<$ TData $>$\+::read\+\_\+visitor\+::read\+\_\+visitor (\begin{DoxyParamCaption}\item[{boost\+::property\+\_\+tree\+::ptree \&}]{pt,  }\item[{TData \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+Creates a read visitor with references to a property tree and the final data structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & Reference to a property tree to read from. \\
+\hline
+{\em data} & Reference to the data structure to read to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a5b2406650b8e974bb410a3816dd7c1fc}\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a5b2406650b8e974bb410a3816dd7c1fc}} 
+\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor}!operator()@{operator()}}
+\index{operator()@{operator()}!ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+template$<$typename T $>$ \\
+void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration}}$<$ TData $>$\+::read\+\_\+visitor\+::operator() (\begin{DoxyParamCaption}\item[{T \&}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Print call. 
+
+Calls the \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1any__collection_acd713d39cdfb43fd28d8337aa7a58c44}{print()}} member function on the variant.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The original type of the stored variant.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a85695993a08ecd20f1fc8ebc35662f98}\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a85695993a08ecd20f1fc8ebc35662f98}} 
+\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor}!data@{data}}
+\index{data@{data}!ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+TData\& \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration}}$<$ TData $>$\+::read\+\_\+visitor\+::data}
+
+
+
+Reference to the target data structure. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a9de1519966b485d7cd97a4a3de68d5e7}\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor_a9de1519966b485d7cd97a4a3de68d5e7}} 
+\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor}!pt@{pt}}
+\index{pt@{pt}!ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$::read\_visitor}}
+\doxysubsubsection{\texorpdfstring{pt}{pt}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+boost\+::property\+\_\+tree\+::ptree\& \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration}}$<$ TData $>$\+::read\+\_\+visitor\+::pt}
+
+
+
+Property tree reference to read from. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/007-\/ini-\/files/\mbox{\hyperlink{03-structured-variant_8cpp}{03-\/structured-\/variant.\+cpp}}\end{DoxyCompactItemize}

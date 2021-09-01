@@ -1,0 +1,50 @@
+\hypertarget{02-function-call_8cpp}{}\doxysection{playground/08-\/variadic-\/members/02-\/function-\/call.cpp File Reference}
+\label{02-function-call_8cpp}\index{playground/08-\/variadic-\/members/02-\/function-\/call.cpp@{playground/08-\/variadic-\/members/02-\/function-\/call.cpp}}
+{\ttfamily \#include \char`\"{}variadic-\/members.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$boost/json.\+hpp$>$}\newline
+Include dependency graph for 02-\/function-\/call.cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{02-function-call_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_from_json}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+From\+Json$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Converts from JSON to T. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_from_json_3_01int_01_4}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+From\+Json$<$ int $>$}}
+\begin{DoxyCompactList}\small\item\em Converts from JSON to int. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+My\+Fn$<$ TRet, TArgs $>$}}
+\begin{DoxyCompactList}\small\item\em Function. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_1_1_parameter}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+My\+Fn$<$ TRet, TArgs $>$\+::\+Parameter$<$ U $>$}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_1_1_parameter}{Parameter}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacets7}{ts7}}
+\item 
+ \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground}{ts7\+::jsonrpc\+\_\+playground}}
+\item 
+ \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1variadic__member}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1variadic__member_aecc5fc37a13fd4f9dab1ca8fb3b3c025}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::sum1}} (int a)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_dummy}{Dummy}} function that sums up 1 integer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1variadic__member_a2f6dffd75e8c67e0607412a506b02987}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::sum2}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_dummy}{Dummy}} function that sums up 2 integers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1variadic__member_aec58bd5b99c3f9f02aec2015b67b2e48}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::sum3}} (int a, int b, int c)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_dummy}{Dummy}} function that sums up 3 integer. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\int \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1variadic__member_accad7f0fc933bfd815f1eacd14e8d646}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::sumN}} (T1 t1, T2 t2)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_dummy}{Dummy}} function that sums to operands. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename... TArgs$>$ }\\int \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1variadic__member_a098520d1a2630e7f2558884565f02b11}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::sumN}} (T t, TArgs... args)
+\begin{DoxyCompactList}\small\item\em DUmmy function that sums any amount of operands. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacets7_1_1jsonrpc__playground_1_1variadic__member_a17c060739d10a37e0967acdb33c44325}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::function\+Call}} ()
+\begin{DoxyCompactList}\small\item\em Function Call example. \end{DoxyCompactList}\end{DoxyCompactItemize}

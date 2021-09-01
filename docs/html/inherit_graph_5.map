@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter.html" title=" " alt="" coords="5,5,277,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,60,156,87"/>
+<area shape="rect" id="node2" href="$structts7_1_1jsonrpc__playground_1_1any__collection_1_1variant__visitor.html" title="variant_visitor" alt="" coords="204,5,383,61"/>
+<area shape="rect" id="node3" href="$structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor.html" title="Read visitor." alt="" coords="205,85,382,141"/>
 </map>

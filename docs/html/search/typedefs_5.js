@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['test_5fv5_453',['Test_v5',['../namespacets7_1_1jsonrpc__playground_1_1json__call.html#ae1682eae9b9c16f29382948a0f92f8e4',1,'ts7::jsonrpc_playground::json_call']]],
-  ['test_5fv6_454',['Test_v6',['../namespacets7_1_1jsonrpc__playground_1_1json__call.html#a0fbabbc0f445e11762b0f9f82f07f069',1,'ts7::jsonrpc_playground::json_call']]],
-  ['tuple_5ft_455',['tuple_t',['../structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn.html#af707fc59d2056e99c771fd956d314853',1,'ts7::jsonrpc_playground::variadic_member::MyFn']]]
+  ['remove_5fcref_373',['remove_cref',['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v2.html#aed5c18ddfe782c8c1ece0c95fc5b2e69',1,'ts7::jsonrpc_playground::json_call::Test_v2::remove_cref()'],['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3.html#a0b87233c094dc17f48f07e244d90ec18',1,'ts7::jsonrpc_playground::json_call::Test_v3::remove_cref()'],['../structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4.html#acbefee3f79edc5c1c99fcd3d044d6ac8',1,'ts7::jsonrpc_playground::json_call::Test_v4::remove_cref()']]]
 ];

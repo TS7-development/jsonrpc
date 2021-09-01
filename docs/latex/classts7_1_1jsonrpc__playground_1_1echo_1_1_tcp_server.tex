@@ -1,0 +1,167 @@
+\hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::echo\+::Tcp\+Server Class Reference}
+\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server}\index{ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}}
+
+
+TCP server.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a8fabdd632b62abba47836d8e6d59566a}{Tcp\+Server}} (boost\+::asio\+::io\+\_\+context \&\mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a6986bacad44fcebd41e031d9b5c9db40}{ctx}})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a87c19815598166551f50e721069b1bac}{start\+Accept}} ()
+\begin{DoxyCompactList}\small\item\em Start accept. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a37c0accfd7e5ff7ac233b0601e9faeeb}{handle\+Accept}} (\mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a9f40ef148fd6fcafee8b85afec4abb51}{Tcp\+Connection\+::\+Ptr}} conn, const boost\+::system\+::error\+\_\+code \&error)
+\begin{DoxyCompactList}\small\item\em Handle new client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::asio\+::io\+\_\+context \& \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a6986bacad44fcebd41e031d9b5c9db40}{ctx}}
+\begin{DoxyCompactList}\small\item\em IO context of the server. \end{DoxyCompactList}\item 
+boost\+::asio\+::ip\+::tcp\+::acceptor \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a6810ff34984b581de54fc16c30ebb8e7}{acceptor}}
+\begin{DoxyCompactList}\small\item\em Acceptor for new connections. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+TCP server. 
+
+Class that represents a TCP server that handles echo messages asynchronous.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a8fabdd632b62abba47836d8e6d59566a}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a8fabdd632b62abba47836d8e6d59566a}} 
+\index{ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}!TcpServer@{TcpServer}}
+\index{TcpServer@{TcpServer}!ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}}
+\doxysubsubsection{\texorpdfstring{TcpServer()}{TcpServer()}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Server\+::\+Tcp\+Server (\begin{DoxyParamCaption}\item[{boost\+::asio\+::io\+\_\+context \&}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+Creates a TCP server by a provided IO context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & IO context that shall be used by the server.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a37c0accfd7e5ff7ac233b0601e9faeeb}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a37c0accfd7e5ff7ac233b0601e9faeeb}} 
+\index{ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}!handleAccept@{handleAccept}}
+\index{handleAccept@{handleAccept}!ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}}
+\doxysubsubsection{\texorpdfstring{handleAccept()}{handleAccept()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Server\+::handle\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a9f40ef148fd6fcafee8b85afec4abb51}{Tcp\+Connection\+::\+Ptr}}}]{conn,  }\item[{const boost\+::system\+::error\+\_\+code \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Handle new client. 
+
+Handles a newly accepted client to the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & The connection pointer to the accepted client. \\
+\hline
+{\em error} & Error code, if accepting the client failed for any reason.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a37c0accfd7e5ff7ac233b0601e9faeeb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a37c0accfd7e5ff7ac233b0601e9faeeb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a87c19815598166551f50e721069b1bac}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a87c19815598166551f50e721069b1bac}} 
+\index{ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}!startAccept@{startAccept}}
+\index{startAccept@{startAccept}!ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}}
+\doxysubsubsection{\texorpdfstring{startAccept()}{startAccept()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Server\+::start\+Accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Start accept. 
+
+Starts accepting clients on the TCP server.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a87c19815598166551f50e721069b1bac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a87c19815598166551f50e721069b1bac_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a6810ff34984b581de54fc16c30ebb8e7}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a6810ff34984b581de54fc16c30ebb8e7}} 
+\index{ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}!acceptor@{acceptor}}
+\index{acceptor@{acceptor}!ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}}
+\doxysubsubsection{\texorpdfstring{acceptor}{acceptor}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::tcp\+::acceptor ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Server\+::acceptor\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Acceptor for new connections. 
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a6986bacad44fcebd41e031d9b5c9db40}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_server_a6986bacad44fcebd41e031d9b5c9db40}} 
+\index{ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}!ctx@{ctx}}
+\index{ctx@{ctx}!ts7::jsonrpc\_playground::echo::TcpServer@{ts7::jsonrpc\_playground::echo::TcpServer}}
+\doxysubsubsection{\texorpdfstring{ctx}{ctx}}
+{\footnotesize\ttfamily boost\+::asio\+::io\+\_\+context\& ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Server\+::ctx\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+IO context of the server. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/005-\/echo-\/server/\mbox{\hyperlink{playground_2005-echo-server_2main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

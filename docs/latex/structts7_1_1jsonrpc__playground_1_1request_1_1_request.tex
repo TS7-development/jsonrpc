@@ -1,0 +1,213 @@
+\hypertarget{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::request\+::Request$<$ TId, TArgs $>$ Struct Template Reference}
+\label{structts7_1_1jsonrpc__playground_1_1request_1_1_request}\index{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}}
+
+
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{Request}}.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_1_1_parameter}{Parameter}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{Request}} parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_ae759fe22a67b72ac897fd592e11eb4f4}{parameter\+\_\+tuple\+\_\+t}} = std\+::tuple$<$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_1_1_parameter}{Parameter}}$<$ TArgs $>$... $>$
+\begin{DoxyCompactList}\small\item\em Type definition of the parameter tuple. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... UArgs$>$ }\\\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_acbb489b97ff536ba363956a2d8e4aaf2}{Request}} (const std\+::string \&\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_ad4ea718a3e2af6e5ac8c8d4ed1d27043}{method}}, UArgs... args)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename TTuple , std\+::size\+\_\+t... Is$>$ }\\void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_a75721bf4246ccb8a3e983765202714fe}{apply\+\_\+args}} (boost\+::json\+::object \&o, const TTuple \&tuple, std\+::index\+\_\+sequence$<$ Is... $>$)
+\begin{DoxyCompactList}\small\item\em Store arguments. \end{DoxyCompactList}\item 
+boost\+::json\+::object \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_aa92e2a85dc7807fcd7127015a806fdda}{operator()}} (TArgs... args)
+\begin{DoxyCompactList}\small\item\em call operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_ad4ea718a3e2af6e5ac8c8d4ed1d27043}{method}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{Request}} method name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_ae759fe22a67b72ac897fd592e11eb4f4}{parameter\+\_\+tuple\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_abd367a92ffcd25da29aa65099b90daa7}{parameter}}
+\begin{DoxyCompactList}\small\item\em List of provided parameter information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TId, typename... TArgs$>$\newline
+struct ts7\+::jsonrpc\+\_\+playground\+::request\+::\+Request$<$ TId, TArgs $>$}
+
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{Request}}. 
+
+Stores the request information to generate a proper JSON-\/\+RPC request.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TId} & Structure to generate request ID\textquotesingle{}s. \\
+\hline
+{\em TArgs} & List of arguments that needs to be stored in the JSON-\/\+RPC request.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1request_1_1_request_ae759fe22a67b72ac897fd592e11eb4f4}\label{structts7_1_1jsonrpc__playground_1_1request_1_1_request_ae759fe22a67b72ac897fd592e11eb4f4}} 
+\index{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}!parameter\_tuple\_t@{parameter\_tuple\_t}}
+\index{parameter\_tuple\_t@{parameter\_tuple\_t}!ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{parameter\_tuple\_t}{parameter\_tuple\_t}}
+{\footnotesize\ttfamily template$<$typename TId , typename... TArgs$>$ \\
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{ts7\+::jsonrpc\+\_\+playground\+::request\+::\+Request}}$<$ TId, TArgs $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_ae759fe22a67b72ac897fd592e11eb4f4}{parameter\+\_\+tuple\+\_\+t}} =  std\+::tuple$<$\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_1_1_parameter}{Parameter}}$<$TArgs$>$...$>$}
+
+
+
+Type definition of the parameter tuple. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1request_1_1_request_acbb489b97ff536ba363956a2d8e4aaf2}\label{structts7_1_1jsonrpc__playground_1_1request_1_1_request_acbb489b97ff536ba363956a2d8e4aaf2}} 
+\index{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}!Request@{Request}}
+\index{Request@{Request}!ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily template$<$typename TId , typename... TArgs$>$ \\
+template$<$typename... UArgs$>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{ts7\+::jsonrpc\+\_\+playground\+::request\+::\+Request}}$<$ TId, TArgs $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{Request}} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{method,  }\item[{UArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+Constructs the request by its method name and the required parameter of the requests.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em UArgs} & \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_1_1_parameter}{Parameter}} list of the request.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method name of the request. \\
+\hline
+{\em args} & List of parameter that is required for the request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1request_1_1_request_a75721bf4246ccb8a3e983765202714fe}\label{structts7_1_1jsonrpc__playground_1_1request_1_1_request_a75721bf4246ccb8a3e983765202714fe}} 
+\index{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}!apply\_args@{apply\_args}}
+\index{apply\_args@{apply\_args}!ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{apply\_args()}{apply\_args()}}
+{\footnotesize\ttfamily template$<$typename TId , typename... TArgs$>$ \\
+template$<$typename TTuple , std\+::size\+\_\+t... Is$>$ \\
+void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{ts7\+::jsonrpc\+\_\+playground\+::request\+::\+Request}}$<$ TId, TArgs $>$\+::apply\+\_\+args (\begin{DoxyParamCaption}\item[{boost\+::json\+::object \&}]{o,  }\item[{const TTuple \&}]{tuple,  }\item[{std\+::index\+\_\+sequence$<$ Is... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Store arguments. 
+
+Stores the arguments in the request object.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TTuple} & Tuple with the provided request parameter values. \\
+\hline
+{\em Is} & Index sequence to iterate the tuple.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Object that shall be used to store the values. \\
+\hline
+{\em tuple} & The tuple that contains the values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1request_1_1_request_a75721bf4246ccb8a3e983765202714fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1request_1_1_request_aa92e2a85dc7807fcd7127015a806fdda}\label{structts7_1_1jsonrpc__playground_1_1request_1_1_request_aa92e2a85dc7807fcd7127015a806fdda}} 
+\index{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename TId , typename... TArgs$>$ \\
+boost\+::json\+::object \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{ts7\+::jsonrpc\+\_\+playground\+::request\+::\+Request}}$<$ TId, TArgs $>$\+::operator() (\begin{DoxyParamCaption}\item[{TArgs...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+call operator 
+
+Provides a function call like behavior to provide the values that shall be stored in a request. This generates the full JSON-\/\+RPC request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & List of arguments that shall be stored in the request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the fully generated JSON-\/\+RPC request.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1request_1_1_request_aa92e2a85dc7807fcd7127015a806fdda_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1request_1_1_request_ad4ea718a3e2af6e5ac8c8d4ed1d27043}\label{structts7_1_1jsonrpc__playground_1_1request_1_1_request_ad4ea718a3e2af6e5ac8c8d4ed1d27043}} 
+\index{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}!method@{method}}
+\index{method@{method}!ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily template$<$typename TId , typename... TArgs$>$ \\
+std\+::string \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{ts7\+::jsonrpc\+\_\+playground\+::request\+::\+Request}}$<$ TId, TArgs $>$\+::method}
+
+
+
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{Request}} method name. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1request_1_1_request_abd367a92ffcd25da29aa65099b90daa7}\label{structts7_1_1jsonrpc__playground_1_1request_1_1_request_abd367a92ffcd25da29aa65099b90daa7}} 
+\index{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}!parameter@{parameter}}
+\index{parameter@{parameter}!ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$@{ts7::jsonrpc\_playground::request::Request$<$ TId, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{parameter}{parameter}}
+{\footnotesize\ttfamily template$<$typename TId , typename... TArgs$>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request_ae759fe22a67b72ac897fd592e11eb4f4}{parameter\+\_\+tuple\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1request_1_1_request}{ts7\+::jsonrpc\+\_\+playground\+::request\+::\+Request}}$<$ TId, TArgs $>$\+::parameter}
+
+
+
+List of provided parameter information. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/09-\/create-\/request/\mbox{\hyperlink{playground_209-create-request_2main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

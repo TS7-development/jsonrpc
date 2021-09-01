@@ -1,0 +1,323 @@
+\hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::echo\+::Tcp\+Connection Class Reference}
+\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection}\index{ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}}
+
+
+TCP connection.  
+
+
+
+
+Inheritance diagram for ts7\+::jsonrpc\+\_\+playground\+::echo\+::Tcp\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ts7\+::jsonrpc\+\_\+playground\+::echo\+::Tcp\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection}{Tcp\+Connection}} $>$ \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a9f40ef148fd6fcafee8b85afec4abb51}{Ptr}}
+\begin{DoxyCompactList}\small\item\em Type definition of a connection pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::asio\+::ip\+::tcp\+::socket \& \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a0c13cbef4df18c4a3cd228f18a7d3384}{socket}} ()
+\begin{DoxyCompactList}\small\item\em socket \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_abcd73ccbdd326e369421c6711c4e42a3}{echo}} ()
+\begin{DoxyCompactList}\small\item\em echo \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a9f40ef148fd6fcafee8b85afec4abb51}{Ptr}} \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_addf462163bcc82803d76b76cad719ede}{Create}} (boost\+::asio\+::io\+\_\+context \&io\+\_\+context)
+\begin{DoxyCompactList}\small\item\em Create. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_ae047ede0cb3c11e1b1300907caf4bafa}{Tcp\+Connection}} (boost\+::asio\+::io\+\_\+context \&ctx)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_adf863ec54bb75e321d7280ca7d0d708e}{handle\+\_\+read}} (const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t bytes\+\_\+transferred)
+\begin{DoxyCompactList}\small\item\em read callback \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a92e5ff23daf0114f703e3dfbda8fb208}{handle\+\_\+write}} (const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t bytes\+\_\+transferred)
+\begin{DoxyCompactList}\small\item\em write callback \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::asio\+::ip\+::tcp\+::socket \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a53006571064e15c01d345118b6427376}{sock}}
+\begin{DoxyCompactList}\small\item\em Socket. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a01a67712968290ed96321edbb740e741}{msg}} \mbox{[}1024\mbox{]} = \{0\}
+\begin{DoxyCompactList}\small\item\em Message buffer for receiving. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+TCP connection. 
+
+Class that represents a TCP connection.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a9f40ef148fd6fcafee8b85afec4abb51}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a9f40ef148fd6fcafee8b85afec4abb51}} 
+\index{ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}}
+\doxysubsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef boost\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection}{Tcp\+Connection}}$>$ \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a9f40ef148fd6fcafee8b85afec4abb51}{ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Connection\+::\+Ptr}}}
+
+
+
+Type definition of a connection pointer. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_ae047ede0cb3c11e1b1300907caf4bafa}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_ae047ede0cb3c11e1b1300907caf4bafa}} 
+\index{ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}!TcpConnection@{TcpConnection}}
+\index{TcpConnection@{TcpConnection}!ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}}
+\doxysubsubsection{\texorpdfstring{TcpConnection()}{TcpConnection()}}
+{\footnotesize\ttfamily ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Connection\+::\+Tcp\+Connection (\begin{DoxyParamCaption}\item[{boost\+::asio\+::io\+\_\+context \&}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+constructor 
+
+Protected constructor to force usage for the Create factory method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & Provided IO context for the socket creation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_ae047ede0cb3c11e1b1300907caf4bafa_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_addf462163bcc82803d76b76cad719ede}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_addf462163bcc82803d76b76cad719ede}} 
+\index{ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}!Create@{Create}}
+\index{Create@{Create}!ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a9f40ef148fd6fcafee8b85afec4abb51}{Ptr}} ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Connection\+::\+Create (\begin{DoxyParamCaption}\item[{boost\+::asio\+::io\+\_\+context \&}]{io\+\_\+context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create. 
+
+Creates a TCP connection with the provided IO context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em io\+\_\+context} & Provided IO context.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retuns a shared pointer to the created TCP connection.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_addf462163bcc82803d76b76cad719ede_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_addf462163bcc82803d76b76cad719ede_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_abcd73ccbdd326e369421c6711c4e42a3}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_abcd73ccbdd326e369421c6711c4e42a3}} 
+\index{ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}!echo@{echo}}
+\index{echo@{echo}!ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}}
+\doxysubsubsection{\texorpdfstring{echo()}{echo()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Connection\+::echo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+echo 
+
+Initiates the echo server.
+
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_abcd73ccbdd326e369421c6711c4e42a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_abcd73ccbdd326e369421c6711c4e42a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_adf863ec54bb75e321d7280ca7d0d708e}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_adf863ec54bb75e321d7280ca7d0d708e}} 
+\index{ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}!handle\_read@{handle\_read}}
+\index{handle\_read@{handle\_read}!ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}}
+\doxysubsubsection{\texorpdfstring{handle\_read()}{handle\_read()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Connection\+::handle\+\_\+read (\begin{DoxyParamCaption}\item[{const boost\+::system\+::error\+\_\+code \&}]{error,  }\item[{size\+\_\+t}]{bytes\+\_\+transferred }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+read callback 
+
+This function gets called, when there are data got read from the socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Error code of reading data. \\
+\hline
+{\em bytes\+\_\+transferred} & Amount of bytes received.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function call write on the socket, which will cause {\ttfamily handle\+\_\+write} to be executed.
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_adf863ec54bb75e321d7280ca7d0d708e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_adf863ec54bb75e321d7280ca7d0d708e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a92e5ff23daf0114f703e3dfbda8fb208}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a92e5ff23daf0114f703e3dfbda8fb208}} 
+\index{ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}!handle\_write@{handle\_write}}
+\index{handle\_write@{handle\_write}!ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}}
+\doxysubsubsection{\texorpdfstring{handle\_write()}{handle\_write()}}
+{\footnotesize\ttfamily void ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Connection\+::handle\+\_\+write (\begin{DoxyParamCaption}\item[{const boost\+::system\+::error\+\_\+code \&}]{error,  }\item[{size\+\_\+t}]{bytes\+\_\+transferred }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+write callback 
+
+Callback, that is executed when data got written to the socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Error code, if an error occured while transferring the data. \\
+\hline
+{\em bytes\+\_\+transferred} & Amount of bytes transferred.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function will call {\ttfamily echo} to restart the echoing process.
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a92e5ff23daf0114f703e3dfbda8fb208_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a92e5ff23daf0114f703e3dfbda8fb208_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a0c13cbef4df18c4a3cd228f18a7d3384}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a0c13cbef4df18c4a3cd228f18a7d3384}} 
+\index{ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}!socket@{socket}}
+\index{socket@{socket}!ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}}
+\doxysubsubsection{\texorpdfstring{socket()}{socket()}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::tcp\+::socket\& ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Connection\+::socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+socket 
+
+\begin{DoxyReturn}{Returns}
+Returns the socket of the TCP connection.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a01a67712968290ed96321edbb740e741}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a01a67712968290ed96321edbb740e741}} 
+\index{ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}!msg@{msg}}
+\index{msg@{msg}!ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}}
+\doxysubsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily char ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Connection\+::msg\mbox{[}1024\mbox{]} = \{0\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Message buffer for receiving. 
+
+\mbox{\Hypertarget{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a53006571064e15c01d345118b6427376}\label{classts7_1_1jsonrpc__playground_1_1echo_1_1_tcp_connection_a53006571064e15c01d345118b6427376}} 
+\index{ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}!sock@{sock}}
+\index{sock@{sock}!ts7::jsonrpc\_playground::echo::TcpConnection@{ts7::jsonrpc\_playground::echo::TcpConnection}}
+\doxysubsubsection{\texorpdfstring{sock}{sock}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::tcp\+::socket ts7\+::jsonrpc\+\_\+playground\+::echo\+::\+Tcp\+Connection\+::sock\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Socket. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/005-\/echo-\/server/\mbox{\hyperlink{playground_2005-echo-server_2main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

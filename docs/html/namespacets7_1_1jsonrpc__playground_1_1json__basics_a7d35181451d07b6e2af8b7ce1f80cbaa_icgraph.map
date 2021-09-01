@@ -1,11 +1,10 @@
 <map id="ts7::jsonrpc_playground::json_basics::t2" name="ts7::jsonrpc_playground::json_basics::t2">
-<area shape="rect" id="node1" title="Requesting object reference." alt="" coords="483,160,660,201"/>
+<area shape="rect" id="node1" title="Requesting object reference." alt="" coords="483,129,660,171"/>
 <area shape="rect" id="node2" href="$namespacets7_1_1jsonrpc__playground_1_1json__call.html#a28ea9a0a22ef20cbce41627487fe05cf" title="example2" alt="" coords="251,5,428,47"/>
 <area shape="rect" id="node4" href="$playground_2001-json-basics_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="JSON basics." alt="" coords="312,71,367,98"/>
-<area shape="rect" id="node5" href="$structts7_1_1jsonrpc_1_1_call_from_json.html#a72f2fe729d0131dfd2bd7d4787382a55" title="Call operator." alt="" coords="244,123,435,164"/>
-<area shape="rect" id="node6" href="$structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3.html#a1ae617bf48c121c7c08658cc91092e1b" title="Call operator." alt="" coords="251,189,428,245"/>
-<area shape="rect" id="node7" href="$structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4.html#aaae823e2920b1b4bcc5e0b3e48983ead" title="Call operator." alt="" coords="251,269,428,325"/>
-<area shape="rect" id="node8" href="$namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#accad7f0fc933bfd815f1eacd14e8d646" title="Dummy function that sums to operands." alt="" coords="244,349,435,391"/>
+<area shape="rect" id="node5" href="$structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v3.html#a1ae617bf48c121c7c08658cc91092e1b" title="Call operator." alt="" coords="251,122,428,178"/>
+<area shape="rect" id="node6" href="$structts7_1_1jsonrpc__playground_1_1json__call_1_1_test__v4.html#aaae823e2920b1b4bcc5e0b3e48983ead" title="Call operator." alt="" coords="251,202,428,258"/>
+<area shape="rect" id="node7" href="$namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#accad7f0fc933bfd815f1eacd14e8d646" title="Dummy function that sums to operands." alt="" coords="244,283,435,324"/>
 <area shape="rect" id="node3" href="$playground_2003-json-call_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Json RPC call." alt="" coords="73,13,128,39"/>
-<area shape="rect" id="node9" href="$namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#a098520d1a2630e7f2558884565f02b11" title="DUmmy function that sums any amount of operands." alt="" coords="5,349,196,391"/>
+<area shape="rect" id="node8" href="$namespacets7_1_1jsonrpc__playground_1_1variadic__member.html#a098520d1a2630e7f2558884565f02b11" title="DUmmy function that sums any amount of operands." alt="" coords="5,283,196,324"/>
 </map>

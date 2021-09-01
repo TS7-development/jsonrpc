@@ -1,0 +1,219 @@
+\hypertarget{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::My\+Fn$<$ TRet, TArgs $>$ Struct Template Reference}
+\label{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}\index{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}}
+
+
+Function.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_1_1_parameter}{Parameter}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_1_1_parameter}{Parameter}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aad29a29bc9392b7422ec963c01af4cc7}{fn\+\_\+t}} = std\+::function$<$ TRet(TArgs...)$>$
+\begin{DoxyCompactList}\small\item\em Type definition for the function. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_af707fc59d2056e99c771fd956d314853}{tuple\+\_\+t}} = std\+::tuple$<$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_1_1_parameter}{Parameter}}$<$ TArgs $>$... $>$
+\begin{DoxyCompactList}\small\item\em Type definition of the parameter tuple. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_adb4e5a42c69edbc92f4b14e32af2cef8}{My\+Fn}} (\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aad29a29bc9392b7422ec963c01af4cc7}{fn\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_a5da73761f618f4aa8957cb70ca7bc8d0}{fn}}, const \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_af707fc59d2056e99c771fd956d314853}{tuple\+\_\+t}} \&\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_a7dfb41b4b3acfd898521d1f713eca8c0}{args}})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+{\footnotesize template$<$std\+::size\+\_\+t... Is$>$ }\\TRet \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aee446139ebf342fa4dfc05eb365030f6}{apply}} (const boost\+::json\+::object \&o, std\+::index\+\_\+sequence$<$ Is... $>$)
+\begin{DoxyCompactList}\small\item\em Function pointer execution. \end{DoxyCompactList}\item 
+TRet \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_ace69eca4c4b6cce0b10ac3982de1ac40}{operator()}} (const boost\+::json\+::object \&o)
+\begin{DoxyCompactList}\small\item\em Function call operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aad29a29bc9392b7422ec963c01af4cc7}{fn\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_a5da73761f618f4aa8957cb70ca7bc8d0}{fn}}
+\begin{DoxyCompactList}\small\item\em Function pointer to execute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_af707fc59d2056e99c771fd956d314853}{tuple\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_a7dfb41b4b3acfd898521d1f713eca8c0}{args}}
+\begin{DoxyCompactList}\small\item\em Tuple of parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TRet, typename... TArgs$>$\newline
+struct ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+My\+Fn$<$ TRet, TArgs $>$}
+
+Function. 
+
+Represents a function that takes any amount of parameter.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TRet} & Data type of the return type. \\
+\hline
+{\em TArgs} & \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_1_1_parameter}{Parameter}} list of the function.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aad29a29bc9392b7422ec963c01af4cc7}\label{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aad29a29bc9392b7422ec963c01af4cc7}} 
+\index{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}!fn\_t@{fn\_t}}
+\index{fn\_t@{fn\_t}!ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{fn\_t}{fn\_t}}
+{\footnotesize\ttfamily template$<$typename TRet , typename... TArgs$>$ \\
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+My\+Fn}}$<$ TRet, TArgs $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aad29a29bc9392b7422ec963c01af4cc7}{fn\+\_\+t}} =  std\+::function$<$TRet(TArgs...)$>$}
+
+
+
+Type definition for the function. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_af707fc59d2056e99c771fd956d314853}\label{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_af707fc59d2056e99c771fd956d314853}} 
+\index{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}!tuple\_t@{tuple\_t}}
+\index{tuple\_t@{tuple\_t}!ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{tuple\_t}{tuple\_t}}
+{\footnotesize\ttfamily template$<$typename TRet , typename... TArgs$>$ \\
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+My\+Fn}}$<$ TRet, TArgs $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_af707fc59d2056e99c771fd956d314853}{tuple\+\_\+t}} =  std\+::tuple$<$\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_1_1_parameter}{Parameter}}$<$TArgs$>$...$>$}
+
+
+
+Type definition of the parameter tuple. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_adb4e5a42c69edbc92f4b14e32af2cef8}\label{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_adb4e5a42c69edbc92f4b14e32af2cef8}} 
+\index{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}!MyFn@{MyFn}}
+\index{MyFn@{MyFn}!ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{MyFn()}{MyFn()}}
+{\footnotesize\ttfamily template$<$typename TRet , typename... TArgs$>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+My\+Fn}}$<$ TRet, TArgs $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}{My\+Fn}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aad29a29bc9392b7422ec963c01af4cc7}{fn\+\_\+t}}}]{fn,  }\item[{const \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_af707fc59d2056e99c771fd956d314853}{tuple\+\_\+t}} \&}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+Constructs the function by a function pointer and a list parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & Function pointer to be executed after parsing a JSON object. \\
+\hline
+{\em args} & List of parameter that need to be parsed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aee446139ebf342fa4dfc05eb365030f6}\label{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aee446139ebf342fa4dfc05eb365030f6}} 
+\index{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}!apply@{apply}}
+\index{apply@{apply}!ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily template$<$typename TRet , typename... TArgs$>$ \\
+template$<$std\+::size\+\_\+t... Is$>$ \\
+TRet \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+My\+Fn}}$<$ TRet, TArgs $>$\+::apply (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{o,  }\item[{std\+::index\+\_\+sequence$<$ Is... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function pointer execution. 
+
+Parses all parameter and executes the stored function pointer.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Is} & Index sequence.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Const reference to the JSON object that shall be parsed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the result of the stored function pointer.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aee446139ebf342fa4dfc05eb365030f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_ace69eca4c4b6cce0b10ac3982de1ac40}\label{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_ace69eca4c4b6cce0b10ac3982de1ac40}} 
+\index{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename TRet , typename... TArgs$>$ \\
+TRet \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+My\+Fn}}$<$ TRet, TArgs $>$\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::json\+::object \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function call operator. 
+
+Executes the stored function pointer and provides the parameter provided by a JSON object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & JSON object that contains the parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the result of the stored function pointer.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_ace69eca4c4b6cce0b10ac3982de1ac40_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_a7dfb41b4b3acfd898521d1f713eca8c0}\label{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_a7dfb41b4b3acfd898521d1f713eca8c0}} 
+\index{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}!args@{args}}
+\index{args@{args}!ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily template$<$typename TRet , typename... TArgs$>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_af707fc59d2056e99c771fd956d314853}{tuple\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+My\+Fn}}$<$ TRet, TArgs $>$\+::args}
+
+
+
+Tuple of parameter. 
+
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_a5da73761f618f4aa8957cb70ca7bc8d0}\label{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_a5da73761f618f4aa8957cb70ca7bc8d0}} 
+\index{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}!fn@{fn}}
+\index{fn@{fn}!ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$@{ts7::jsonrpc\_playground::variadic\_member::MyFn$<$ TRet, TArgs $>$}}
+\doxysubsubsection{\texorpdfstring{fn}{fn}}
+{\footnotesize\ttfamily template$<$typename TRet , typename... TArgs$>$ \\
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn_aad29a29bc9392b7422ec963c01af4cc7}{fn\+\_\+t}} \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1variadic__member_1_1_my_fn}{ts7\+::jsonrpc\+\_\+playground\+::variadic\+\_\+member\+::\+My\+Fn}}$<$ TRet, TArgs $>$\+::fn}
+
+
+
+Function pointer to execute. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/08-\/variadic-\/members/\mbox{\hyperlink{02-function-call_8cpp}{02-\/function-\/call.\+cpp}}\end{DoxyCompactItemize}

@@ -2,20 +2,41 @@
 \label{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4}\index{ts7::jsonrpc::AsJson$<$ int $>$@{ts7::jsonrpc::AsJson$<$ int $>$}}
 
 
+Convert int to json.  
+
+
+
+
 {\ttfamily \#include $<$asjson.\+hpp$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4_ace3dfa421c3e9c01f2b2dcbd37a7878c}{As\+Json}} (int n)
-\item 
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4_acde1d262285e8c79e2133da78eacbcb6}{operator boost\+::json\+::value}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Json value cast. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4_a37fe7540e67e4ea21c24c02561557f00}{value}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em THe stored value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Convert int to json. 
+
+Converts an integer to a json value.
+
+\begin{DoxyNote}{Note}
+This is the template specialization of \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_as_json}{As\+Json}}.
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -27,6 +48,17 @@ int \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4_a37fe7540e67e
 
 
 
+constructor 
+
+Stores the provided integer value for later conversion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The integer value that shall be converted. \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4_acde1d262285e8c79e2133da78eacbcb6}\label{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4_acde1d262285e8c79e2133da78eacbcb6}} 
 \index{ts7::jsonrpc::AsJson$<$ int $>$@{ts7::jsonrpc::AsJson$<$ int $>$}!operator boost::json::value@{operator boost::json::value}}
@@ -36,12 +68,20 @@ int \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4_a37fe7540e67e
 
 
 
+Json value cast. 
+
+Casts the instance to a json value. In this case to a number with the !value stored in \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4_a37fe7540e67e4ea21c24c02561557f00}{value}}. 
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4_a37fe7540e67e4ea21c24c02561557f00}\label{structts7_1_1jsonrpc_1_1_as_json_3_01int_01_4_a37fe7540e67e4ea21c24c02561557f00}} 
 \index{ts7::jsonrpc::AsJson$<$ int $>$@{ts7::jsonrpc::AsJson$<$ int $>$}!value@{value}}
 \index{value@{value}!ts7::jsonrpc::AsJson$<$ int $>$@{ts7::jsonrpc::AsJson$<$ int $>$}}
 \doxysubsubsection{\texorpdfstring{value}{value}}
 {\footnotesize\ttfamily int \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_as_json}{ts7\+::jsonrpc\+::\+As\+Json}}$<$ int $>$\+::value}
+
+
+
+THe stored value. 
 
 
 

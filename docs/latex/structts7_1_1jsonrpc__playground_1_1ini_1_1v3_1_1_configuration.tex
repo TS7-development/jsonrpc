@@ -1,0 +1,235 @@
+\hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{}\doxysection{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::Configuration$<$ TData $>$ Struct Template Reference}
+\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}}
+
+
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{Configuration}}.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{Configuration}} entry. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1read__visitor}{read\+\_\+visitor}}
+\begin{DoxyCompactList}\small\item\em Read visitor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a040810413345b017908412df151e2a98}{variant\+\_\+t}} = boost\+::variant$<$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}$<$ bool $>$, \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}$<$ int $>$, \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}$<$ float $>$, \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}$<$ std\+::string $>$ $>$
+\begin{DoxyCompactList}\small\item\em Variant data type for configuration entries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a4054a4171bd9335e8566f04c559cf336}{add}} (const char $\ast$identifier, T TData\+::$\ast$offset)
+\begin{DoxyCompactList}\small\item\em Add entry. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a67c0a21e4841cd3212ba3b23c72ff6e8}{add}} (const char $\ast$identifier, T TData\+::$\ast$offset, const T \&default\+Value)
+\begin{DoxyCompactList}\small\item\em Add entry. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_ac98c79e3d0d47643c3689d8d2cddce99}{add}} (const \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}$<$ T $>$ \&e)
+\begin{DoxyCompactList}\small\item\em add entry \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a746a5eac20020952231c2f22e1e13ade}{read}} (const char $\ast$filename, TData \&data)
+\begin{DoxyCompactList}\small\item\em read \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a040810413345b017908412df151e2a98}{variant\+\_\+t}} $>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_afb3dfa0cd8ca244ed8ce702392c23fcd}{values}}
+\begin{DoxyCompactList}\small\item\em List of configuration entries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TData$>$\newline
+struct ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration$<$ TData $>$}
+
+\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{Configuration}}. 
+
+Class that maps configuration values of a property tree to a named structure.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TData} & Data type of the structure that shall be used to store the read values.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a040810413345b017908412df151e2a98}\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a040810413345b017908412df151e2a98}} 
+\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}!variant\_t@{variant\_t}}
+\index{variant\_t@{variant\_t}!ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}}
+\doxysubsubsection{\texorpdfstring{variant\_t}{variant\_t}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+using \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration}}$<$ TData $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a040810413345b017908412df151e2a98}{variant\+\_\+t}} =  boost\+::variant$<$\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}$<$bool$>$, \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}$<$int$>$, \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}$<$float$>$, \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}$<$std\+::string$>$ $>$}
+
+
+
+Variant data type for configuration entries. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a4054a4171bd9335e8566f04c559cf336}\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a4054a4171bd9335e8566f04c559cf336}} 
+\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}!add@{add}}
+\index{add@{add}!ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+template$<$typename T $>$ \\
+void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration}}$<$ TData $>$\+::add (\begin{DoxyParamCaption}\item[{const char $\ast$}]{identifier,  }\item[{T TData\+::$\ast$}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add entry. 
+
+Adds a new entry without a default value.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Data type of the configuration entry.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & Identifier of the configuration entry. \\
+\hline
+{\em offset} & Pointer to the data member.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a4054a4171bd9335e8566f04c559cf336_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a67c0a21e4841cd3212ba3b23c72ff6e8}\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a67c0a21e4841cd3212ba3b23c72ff6e8}} 
+\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}!add@{add}}
+\index{add@{add}!ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+template$<$typename T $>$ \\
+void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration}}$<$ TData $>$\+::add (\begin{DoxyParamCaption}\item[{const char $\ast$}]{identifier,  }\item[{T TData\+::$\ast$}]{offset,  }\item[{const T \&}]{default\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add entry. 
+
+Adds a new entry with a default value.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Data type of the configuration entry.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & Identifier of the configuration entry. \\
+\hline
+{\em offset} & Pointer to the data member. \\
+\hline
+{\em default\+Value} & Default value, if the configuration entry can\textquotesingle{}t be found.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a67c0a21e4841cd3212ba3b23c72ff6e8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_ac98c79e3d0d47643c3689d8d2cddce99}\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_ac98c79e3d0d47643c3689d8d2cddce99}} 
+\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}!add@{add}}
+\index{add@{add}!ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+template$<$typename T $>$ \\
+void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration}}$<$ TData $>$\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_1_1_entry}{Entry}}$<$ T $>$ \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+add entry 
+
+Adds an entry.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Data type of the configuration value.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The entry that shall be created.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a746a5eac20020952231c2f22e1e13ade}\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a746a5eac20020952231c2f22e1e13ade}} 
+\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}!read@{read}}
+\index{read@{read}!ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+void \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration}}$<$ TData $>$\+::read (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{TData \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+read 
+
+Reads the INI file to a property tree and then transfers the values with the entries to the data structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file that shall be read. \\
+\hline
+{\em data} & Data that shall be filed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a746a5eac20020952231c2f22e1e13ade_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_afb3dfa0cd8ca244ed8ce702392c23fcd}\label{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_afb3dfa0cd8ca244ed8ce702392c23fcd}} 
+\index{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}!values@{values}}
+\index{values@{values}!ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$@{ts7::jsonrpc\_playground::ini::v3::Configuration$<$ TData $>$}}
+\doxysubsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily template$<$typename TData $>$ \\
+std\+::vector$<$\mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration_a040810413345b017908412df151e2a98}{variant\+\_\+t}}$>$ \mbox{\hyperlink{structts7_1_1jsonrpc__playground_1_1ini_1_1v3_1_1_configuration}{ts7\+::jsonrpc\+\_\+playground\+::ini\+::v3\+::\+Configuration}}$<$ TData $>$\+::values}
+
+
+
+List of configuration entries. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+playground/007-\/ini-\/files/\mbox{\hyperlink{03-structured-variant_8cpp}{03-\/structured-\/variant.\+cpp}}\end{DoxyCompactItemize}

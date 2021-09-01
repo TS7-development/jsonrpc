@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>JSON RPC: TS7 JSON-RPC</title>
+<title>JSON RPC: Main Page</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,22 +61,11 @@ $(function() {
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
   <div class="headertitle">
-<div class="title">TS7 JSON-RPC </div>  </div>
+<div class="title">JSON RPC Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="what"></a>
-What is it?</h1>
-<p>This is a boost based library to implement JSON based remote procedure calls (RPC). The two supported ways are using a TCP server or client, but the library can be used with any form of underlying communication.</p>
-<h1><a class="anchor" id="why"></a>
-Why did I made it?</h1>
-<p>I have started working a lot with JSON-RPC and it felt fine. My first iteration was just writing functions that take a JSON object as request and will provide q JSON object as result (response). This was working fine in the beginning, but has lead to problems in later implementations. At any point I have started adding sequences to my JSON-RPC server, which was meant as easy way to run a sequence of remote procedure calls in a row. This enabled the client to do certain things without knowing the technical details of how to do it. Now when this sequence handler wanted to call another procedure it had to create a JSON object and then it got a JSON object back as result. This brings several problems. First off we lose the original function signature, which leads to not getting informed by the compiler whenever it changes and the calling function did not adapted to it. Secondly we waste runtime for encoding and decoding those requests and responses. And the last problem was, that it was harder to debug. We alsways had to check the JSON object instead of having the arguments itself.</p>
-<p>In conclusion I was looking for a way to keep my original function signature, while still being able to register / bind those to my JSON-RPC server or client. Which this library now is about.</p>
-<h1><a class="anchor" id="license"></a>
-Do I need to pay for the library?</h1>
-<p>No the library is a free to use open source library licensed under the Boost License. </p>
-</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

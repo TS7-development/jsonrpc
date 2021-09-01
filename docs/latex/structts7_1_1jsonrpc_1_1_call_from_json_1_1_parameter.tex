@@ -34,7 +34,7 @@ struct ts7\+::jsonrpc\+::\+Call\+From\+Json$<$ TReturn, T1, T2 $>$\+::\+Paramete
 
 \mbox{\hyperlink{structts7_1_1jsonrpc_1_1_call_from_json_1_1_parameter}{Parameter}}. 
 
-Extended version of Test\+\_\+v3\+::\+Parameter. Now has the capability of storing a default value, if wished.
+Stores the type and name of a required parameter. In addition this class can store, if the the parameter has a default value that shall be used, if the parameter is missing in the json object.
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -99,9 +99,10 @@ Call operator.
 
 Retrieves the required parameter from the json object, if the json object contains it. Otherwise it is returning the default value, if the parameter has a default value.
 
-\begin{DoxyAttention}{Attention}
-If the object does not contain the parameter and has no default value, there should be an error handling any how. This was omitted to keep the example simple. There is still no type checking for the parameter.
-\end{DoxyAttention}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]If the object does not contain the parameter and has no default value, there should be an error handling any how.\end{DoxyRefDesc}
+
+
 
 \begin{DoxyParams}{Parameters}
 {\em o} & Json object that contains the provided parameter.\\
