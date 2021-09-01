@@ -2,51 +2,82 @@
 \label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}\index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
 
 
+Maybe failed.  
+
+
+
+
 {\ttfamily \#include $<$maybe\+\_\+failed.\+hpp$>$}
 
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
 using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a9eb62c119cd0bffae724ad3b489f9830}{success\+\_\+t}} = TSuccess
-\item 
+\begin{DoxyCompactList}\small\item\em Data type, if the function succeeded. \end{DoxyCompactList}\item 
 using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a74d2c3c7db8a3faf795165550730d6db}{failed\+\_\+t}} = TFailed
-\item 
+\begin{DoxyCompactList}\small\item\em Data type, if the function failed. \end{DoxyCompactList}\item 
 using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aad0835550d69afb460122a6459dc121b}{success\+\_\+fn}} = std\+::function$<$ void(const TSuccess \&)$>$
-\item 
+\begin{DoxyCompactList}\small\item\em Callback function, if succeeded. \end{DoxyCompactList}\item 
 using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a0ca9aa61ab8e114e03e851280e1b2da5}{failed\+\_\+fn}} = std\+::function$<$ void(const TFailed \&)$>$
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Callback function, if failed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a384b2deee80f5b8917535b9e802be6fb}{maybe\+\_\+failed}} (const TSuccess \&\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_adc5db3b204b501975cf56b8f0454cc8f}{success}})
-\item 
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aea570025004ec1e8ee9d1af4ad70e204}{maybe\+\_\+failed}} (const TFailed \&\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a438f4f734ccf6b075f096ade6837a878}{failed}})
-\item 
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aabb30676cc320694db58d7fcf0e4ca7a}{maybe\+\_\+failed}} (const \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} \&)=default
-\item 
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_ac309e77f48d48005d51c8231503bbd35}{maybe\+\_\+failed}} (\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} \&\&)=default
-\item 
+\begin{DoxyCompactList}\small\item\em move constructor \end{DoxyCompactList}\item 
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aea784b1a84762fbd8f3c56c5675378d9}{operator bool}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em operator bool \end{DoxyCompactList}\item 
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aff11c5504bca55408a20030cbc181fde}{operator const TSuccess \&}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Success cast operator. \end{DoxyCompactList}\item 
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_ac61b18062a8ae68539a036a88b50bbf1}{operator const TFailed \&}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Failure cast operator. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_ae0382b98526f6ed3d324b2f2a5b37940}{on\+Success}} (\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aad0835550d69afb460122a6459dc121b}{success\+\_\+fn}} fn) const
-\item 
+\begin{DoxyCompactList}\small\item\em On success. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a230416f139f22199e9283a438a7e4611}{on\+Failure}} (\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a0ca9aa61ab8e114e03e851280e1b2da5}{failed\+\_\+fn}} fn) const
-\item 
+\begin{DoxyCompactList}\small\item\em On failure. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a5579594ef25ae905e9e95133c1ae5b36}{evaluate}} (\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aad0835550d69afb460122a6459dc121b}{success\+\_\+fn}} s, \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a0ca9aa61ab8e114e03e851280e1b2da5}{failed\+\_\+fn}} f)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em evaluate \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 TSuccess \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_adc5db3b204b501975cf56b8f0454cc8f}{success}}
-\item 
+\begin{DoxyCompactList}\small\item\em Success instance. \end{DoxyCompactList}\item 
 TFailed \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a438f4f734ccf6b075f096ade6837a878}{failed}}
-\item 
+\begin{DoxyCompactList}\small\item\em Failure instance. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a83d2b38875a9653625236828e9d368d4}{succeeded}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em True, if succeeded. Otherwise false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TSuccess, typename TFailed$>$\newline
+struct ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed$<$ TSuccess, TFailed $>$}
+
+Maybe failed. 
+
+Class that represents a return type that maybe has failed. This stores the success value, if the function succeeded. Otherwise it stores the failed return type, if the function has failed.
+
+\begin{DoxyNote}{Note}
+TSuccess and TFailed need to support the default constructor.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TSuccess} & The return type, if the function succeeded. \\
+\hline
+{\em TFailed} & The return type, if the function failed.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 
 
 \doxysubsection{Member Typedef Documentation}
@@ -57,12 +88,20 @@ bool \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a83d2b38875
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a0ca9aa61ab8e114e03e851280e1b2da5}{failed\+\_\+fn}} =  std\+::function$<$void(const TFailed\&)$>$}
 
+
+
+Callback function, if failed. 
+
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a74d2c3c7db8a3faf795165550730d6db}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a74d2c3c7db8a3faf795165550730d6db}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!failed\_t@{failed\_t}}
 \index{failed\_t@{failed\_t}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
 \doxysubsubsection{\texorpdfstring{failed\_t}{failed\_t}}
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a74d2c3c7db8a3faf795165550730d6db}{failed\+\_\+t}} =  TFailed}
+
+
+
+Data type, if the function failed. 
 
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aad0835550d69afb460122a6459dc121b}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aad0835550d69afb460122a6459dc121b}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!success\_fn@{success\_fn}}
@@ -71,12 +110,20 @@ using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::js
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aad0835550d69afb460122a6459dc121b}{success\+\_\+fn}} =  std\+::function$<$void(const TSuccess\&)$>$}
 
+
+
+Callback function, if succeeded. 
+
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a9eb62c119cd0bffae724ad3b489f9830}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a9eb62c119cd0bffae724ad3b489f9830}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!success\_t@{success\_t}}
 \index{success\_t@{success\_t}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
 \doxysubsubsection{\texorpdfstring{success\_t}{success\_t}}
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a9eb62c119cd0bffae724ad3b489f9830}{success\+\_\+t}} =  TSuccess}
+
+
+
+Data type, if the function succeeded. 
 
 
 
@@ -88,6 +135,23 @@ using \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::js
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} (\begin{DoxyParamCaption}\item[{const TSuccess \&}]{success }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
 
+
+
+constructor 
+
+Creates the \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} object for a successful case and stores a copy of the success object inside.
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & Success instance that shall be copied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aea570025004ec1e8ee9d1af4ad70e204}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aea570025004ec1e8ee9d1af4ad70e204}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!maybe\_failed@{maybe\_failed}}
 \index{maybe\_failed@{maybe\_failed}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
@@ -95,6 +159,23 @@ constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} (\begin{DoxyParamCaption}\item[{const TFailed \&}]{failed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
 
+
+
+constructor 
+
+Creates the \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} object for a failed case and stores a copy of the failure object inside.
+
+
+\begin{DoxyParams}{Parameters}
+{\em failed} & Failure instance that shall be copied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aabb30676cc320694db58d7fcf0e4ca7a}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aabb30676cc320694db58d7fcf0e4ca7a}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!maybe\_failed@{maybe\_failed}}
 \index{maybe\_failed@{maybe\_failed}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
@@ -102,12 +183,20 @@ constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [default]}}
 
+
+
+copy constructor 
+
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_ac309e77f48d48005d51c8231503bbd35}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_ac309e77f48d48005d51c8231503bbd35}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!maybe\_failed@{maybe\_failed}}
 \index{maybe\_failed@{maybe\_failed}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
 \doxysubsubsection{\texorpdfstring{maybe\_failed()}{maybe\_failed()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [default]}}
+
+
+
+move constructor 
 
 
 
@@ -119,6 +208,25 @@ constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::evaluate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aad0835550d69afb460122a6459dc121b}{success\+\_\+fn}}}]{s,  }\item[{\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a0ca9aa61ab8e114e03e851280e1b2da5}{failed\+\_\+fn}}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+evaluate 
+
+Executes the success callback {\ttfamily s}, on success. Otherwise the failure callback {\ttfamily f} will be called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Success callback. \\
+\hline
+{\em f} & Failure callback.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a230416f139f22199e9283a438a7e4611}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a230416f139f22199e9283a438a7e4611}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!onFailure@{onFailure}}
 \index{onFailure@{onFailure}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
@@ -126,6 +234,23 @@ void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jso
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::on\+Failure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a0ca9aa61ab8e114e03e851280e1b2da5}{failed\+\_\+fn}}}]{fn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+On failure. 
+
+Provide a callback, if the \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} object was created as failure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & Callback, that shall be executed, if failure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_ae0382b98526f6ed3d324b2f2a5b37940}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_ae0382b98526f6ed3d324b2f2a5b37940}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!onSuccess@{onSuccess}}
 \index{onSuccess@{onSuccess}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
@@ -133,6 +258,23 @@ void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jso
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::on\+Success (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aad0835550d69afb460122a6459dc121b}{success\+\_\+fn}}}]{fn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+On success. 
+
+Provide a callback, if the \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} object was created as success.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & Callback, that shall be executed, if success.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aea784b1a84762fbd8f3c56c5675378d9}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aea784b1a84762fbd8f3c56c5675378d9}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!operator bool@{operator bool}}
 \index{operator bool@{operator bool}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
@@ -140,6 +282,19 @@ void \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jso
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
 
+
+
+operator bool 
+
+\begin{DoxyReturn}{Returns}
+Returns true, if a success instance is stored within. Otherwise it returns false.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_ac61b18062a8ae68539a036a88b50bbf1}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_ac61b18062a8ae68539a036a88b50bbf1}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!operator const TFailed \&@{operator const TFailed \&}}
 \index{operator const TFailed \&@{operator const TFailed \&}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
@@ -147,6 +302,22 @@ constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::operator const TFailed \& (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
 
+
+
+Failure cast operator. 
+
+\begin{DoxyReturn}{Returns}
+Returns the failure instance.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This should only be used, if the \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} object was created as failure.
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aff11c5504bca55408a20030cbc181fde}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_aff11c5504bca55408a20030cbc181fde}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!operator const TSuccess \&@{operator const TSuccess \&}}
 \index{operator const TSuccess \&@{operator const TSuccess \&}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
@@ -154,6 +325,22 @@ constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::operator const TSuccess \& (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
 
+
+
+Success cast operator. 
+
+\begin{DoxyReturn}{Returns}
+Returns the success instance.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This should only be used, if the the \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{maybe\+\_\+failed}} object was created as success.
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 
 
 \doxysubsection{Member Data Documentation}
@@ -164,6 +351,10 @@ constexpr \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 TFailed \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::failed}
 
+
+
+Failure instance. 
+
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a83d2b38875a9653625236828e9d368d4}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_a83d2b38875a9653625236828e9d368d4}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!succeeded@{succeeded}}
 \index{succeeded@{succeeded}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
@@ -171,12 +362,20 @@ TFailed \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 bool \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::succeeded}
 
+
+
+True, if succeeded. Otherwise false. 
+
 \mbox{\Hypertarget{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_adc5db3b204b501975cf56b8f0454cc8f}\label{structts7_1_1jsonrpc_1_1error_1_1maybe__failed_adc5db3b204b501975cf56b8f0454cc8f}} 
 \index{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}!success@{success}}
 \index{success@{success}!ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$@{ts7::jsonrpc::error::maybe\_failed$<$ TSuccess, TFailed $>$}}
 \doxysubsubsection{\texorpdfstring{success}{success}}
 {\footnotesize\ttfamily template$<$typename TSuccess , typename TFailed $>$ \\
 TSuccess \mbox{\hyperlink{structts7_1_1jsonrpc_1_1error_1_1maybe__failed}{ts7\+::jsonrpc\+::error\+::maybe\+\_\+failed}}$<$ TSuccess, TFailed $>$\+::success}
+
+
+
+Success instance. 
 
 
 
