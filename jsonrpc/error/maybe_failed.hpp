@@ -182,50 +182,146 @@ namespace ts7 {
         TSuccess success;
         /// Failure instance
         TFailed failed;
-        /// True, if succeeded. Otherwise false.
+        /// True, if succeeded. Otherwise false.´
         bool succeeded;
       };
 
+      /**
+       * @brief Maybe failed
+       *
+       * Represents a return type, that can fail or succeed. If succeeded the
+       * original return value of the function is accessable. There is no
+       * return value stored in case of failure.
+       *
+       * @tparam TSuccess Data type, if succeeded.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
       template <typename TSuccess>
       struct maybe_failed<TSuccess, void> {
+        /// Success data type
         using success_t = TSuccess;
+        /// Failed data type
         using failed_t = void;
+        /// Success callback
         using success_fn = std::function<void(const TSuccess&)>;
+        /// Failed callback
         using failed_fn = std::function<void()>;
 
+        /**
+         * @brief constructor
+         *
+         * Creates an return type, that can fail or succeed. In this case the
+         * return type is treated as failure.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         constexpr inline maybe_failed()
          : success(TSuccess()),
            succeeded(false)
         {}
 
+        /**
+         * @brief constructor
+         *
+         * Create a return type for the success case.
+         *
+         * @param success Success instance, that shall be copied and stored.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         constexpr inline maybe_failed(const TSuccess& success)
          : success(success),
            succeeded(true)
         {}
 
+        /// copy constructor
         constexpr inline maybe_failed(const maybe_failed&) = default;
+
+        /// move constructor
         constexpr inline maybe_failed(maybe_failed&&) = default;
 
+        /**
+         * @brief Success cast operator
+         *
+         * @return Returns true, if succeeded. Otherwise it returns false.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         constexpr inline operator bool() const {
           return succeeded;
         }
 
+        /**
+         * @brief Success cast operator
+         *
+         * @return Returns the success instance.
+         *
+         * @note This should be only used, in case of success.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         constexpr inline operator const TSuccess&() const {
           return success;
         }
 
+        /**
+         * @brief On success
+         *
+         * Executes the provided callback, if succeeded.
+         *
+         * @param fn Success callback.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         inline void onSuccess(success_fn fn) const {
           if (succeeded) {
             fn(success);
           }
         }
 
+        /**
+         * @brief On failure
+         *
+         * Executes the provided callback, if failed.
+         *
+         * @param fn Failure callback.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         inline void onFailure(failed_fn fn) const {
           if (!succeeded) {
             fn();
           }
         }
 
+        /**
+         * @brief evaluate
+         *
+         * Evaluates the state of the instance and executes either the
+         * success or failure callback.
+         *
+         * @param s Success callback.
+         * @param f Failure callback.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         inline void evaluate(success_fn s, failed_fn f) {
           if (succeeded) {
             s(success);
@@ -235,50 +331,144 @@ namespace ts7 {
           f();
         }
 
+        /// Success instance
         TSuccess success;
+        /// True if succeeded. Otherwise false.
         bool succeeded;
       };
 
+      /**
+       * @brief Maybe failed
+       *
+       * Represents a return type that can have maybe failed. This template
+       * specialization only supports failure information, but no success
+       * information.
+       *
+       * @tparam TFailed Data type of the failure information.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
       template <typename TFailed>
       struct maybe_failed<void, TFailed> {
+        /// Success type (void)
         using success_t = void;
+        /// Failure data type
         using failed_t = TFailed;
+        /// Success callback
         using success_fn = std::function<void()>;
+        /// Failure callback
         using failed_fn = std::function<void(const TFailed&)>;
 
+        /**
+         * @brief constructor
+         *
+         * Creates a success.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         constexpr inline maybe_failed()
          : failed(TFailed()),
            succeeded(true)
         {}
 
+          /**
+         * @brief constructor
+         *
+         * Creates a failure and stores the corresponding failure information.
+         *
+         * @param failed Instance of the failed information to copy.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         constexpr inline maybe_failed(const TFailed& failed)
          : failed(failed),
            succeeded(false)
         {}
 
+        /// copy constructor
         constexpr inline maybe_failed(const maybe_failed&) = default;
+        /// move constructor
         constexpr inline maybe_failed(maybe_failed&&) = default;
 
+        /**
+         * @brief Success cast operator
+         *
+         * @return Returns true, if succeeded. Otherwise it returns false.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         constexpr inline operator bool() const {
           return succeeded;
         }
 
+        /**
+         * @brief Failure cast operator
+         *
+         * @return Returns the stored failure instance.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         constexpr inline operator const TFailed&() const {
           return failed;
         }
 
+        /**
+         * @brief On success
+         *
+         * Executes the success callback, if succeeded.
+         *
+         * @param fn Success callback.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         inline void onSuccess(success_fn fn) const {
           if (succeeded) {
             fn();
           }
         }
 
+        /**
+         * @brief On failure
+         *
+         * Executes the failure callback, if failed.
+         *
+         * @param fn Failure callback.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         inline void onFailure(failed_fn fn) const {
           if (!succeeded) {
             fn(failed);
           }
         }
 
+        /**
+         * @brief evaluate
+         *
+         * Evaluates the result and executes the success callback, if
+         * succeeded. Otherwise it executes the failure callback.
+         *
+         * @param s Success callback.
+         * @param f Failure callback.
+         *
+         * @since 1.0
+         *
+         * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+         */
         inline void evaluate(success_fn s, failed_fn f) {
           if (succeeded) {
             s();
@@ -288,7 +478,10 @@ namespace ts7 {
           f(failed);
         }
 
+        /// Failure information
         TFailed failed;
+
+        /// Success state, which is true on success. Otherwise it is false.
         bool succeeded;
       };
     }
