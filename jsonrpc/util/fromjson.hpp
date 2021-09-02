@@ -49,12 +49,37 @@ namespace ts7 {
           }
       };
 
+      /**
+       * @brief std::int32_t from JSON
+       *
+       * Converts a boost::json::value to a std::int32_t.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
       template <>
       struct FromJson<std::int32_t> {
+          /// Conversion failure data type
           using conversion_failure = error::maybe_failed<std::int32_t, JsonType>;
 
+          /// default constructor
           inline FromJson() = default;
 
+          /**
+           * @brief Conversion
+           *
+           * Converts the boost::json::value to a std::int32_t.
+           *
+           * @param v The value that shall be converted.
+           *
+           * @return Returns the converted value, if successful. If the value
+           * has the wrong type, the actual type will be returned.
+           *
+           * @since 1.0
+           *
+           * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+           */
           conversion_failure operator()(const boost::json::value& v) const {
             if (!v.is_int64()) {
               return GetJsonType(v);
@@ -64,12 +89,37 @@ namespace ts7 {
           }
       };
 
+      /**
+       * @brief std::uint32_t from JSON
+       *
+       * Converts a boost::json::value to a std::uint32_t.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
       template <>
       struct FromJson<std::uint32_t> {
+          /// Conversion failure data type
           using conversion_failure = error::maybe_failed<std::uint32_t, JsonType>;
 
+          /// constructor
           inline FromJson() = default;
 
+          /**
+           * @brief Conversion
+           *
+           * Converts the boost::json::value to a std::uint32_t.
+           *
+           * @param v The value that shall be converted.
+           *
+           * @return Returns the converted value, if successful. If the value
+           * has the wrong data type, the actual data type is returned.
+           *
+           * @since 1.0
+           *
+           * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+           */
           conversion_failure operator()(const boost::json::value& v) const {
             if (!v.is_uint64()) {
               return GetJsonType(v);
@@ -82,14 +132,35 @@ namespace ts7 {
       /**
        * @brief Json value to String
        *
-       * Converts a json value to a string, if the provided content of the json::value was a string.
+       * Converts a json value to a string, if the provided content of
+       * the boost::json::value is a string.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
       template <>
       struct FromJson<std::string> {
+          /// Conversion failure data type
           using conversion_failure = error::maybe_failed<std::string, JsonType>;
 
+          /// default constructor
           inline FromJson() = default;
 
+          /**
+           * @brief Conversion
+           *
+           * Converts the boost::json::value to a std::string.
+           *
+           * @param v The value that shall be converted.
+           *
+           * @return Returns the converted value. If the provided value is
+           * not a string, its actual type will be returned.
+           *
+           * @since 1.0
+           *
+           * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+           */
           conversion_failure operator()(const boost::json::value& v) const {
             if (!v.is_string()) {
               return GetJsonType(v);

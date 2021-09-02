@@ -14,9 +14,9 @@ struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1util_1_1_as_json_3_01std_1_1stri
 struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1util_1_1_from_json}{From\+Json}}
 \begin{DoxyCompactList}\small\item\em From Json Converter. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1util_1_1_from_json_3_01std_1_1int32__t_01_4}{From\+Json$<$ std\+::int32\+\_\+t $>$}}
-\item 
+\begin{DoxyCompactList}\small\item\em std\+::int32\+\_\+t from JSON \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1util_1_1_from_json_3_01std_1_1uint32__t_01_4}{From\+Json$<$ std\+::uint32\+\_\+t $>$}}
-\item 
+\begin{DoxyCompactList}\small\item\em std\+::uint32\+\_\+t from JSON \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structts7_1_1jsonrpc_1_1util_1_1_from_json_3_01std_1_1string_01_4}{From\+Json$<$ std\+::string $>$}}
 \begin{DoxyCompactList}\small\item\em Json value to String. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
@@ -36,16 +36,16 @@ enum \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ec
 \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7a9fac10adb380314c33a01053c7094214}{OBJECT}}
 , \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7a83ed1944dbffd4b228390cfacc606250}{ARRAY}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em JSON data types. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{Json\+Type}} \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a05aff122cf7c75c32a09f34d755ce09b}{Get\+Json\+Type}} (const boost\+::json\+::value \&value)
-\item 
+\begin{DoxyCompactList}\small\item\em Get JSON type. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a3aecee64ab3938827ad3f9749ecad39d}{Get\+Json\+Type\+Name}} (\mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{Json\+Type}} t)
-\item 
+\begin{DoxyCompactList}\small\item\em Get JSON type name. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a366feb300bbb6cc4f5fca588fb860dd6}{Get\+Json\+Type\+Name}} (boost\+::json\+::value \&value)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get JSON type name. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -74,29 +74,33 @@ Const reference remover.
 \doxysubsubsection{\texorpdfstring{JsonType}{JsonType}}
 {\footnotesize\ttfamily enum \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{ts7\+::jsonrpc\+::util\+::\+Json\+Type}} \+: std\+::int32\+\_\+t}
 
+
+
+JSON data types. 
+
 \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!ts7::jsonrpc::util@{ts7::jsonrpc::util}}\index{ts7::jsonrpc::util@{ts7::jsonrpc::util}!NONE@{NONE}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7aef8049e4b92c794e7967f31a3060ff1f}\label{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7aef8049e4b92c794e7967f31a3060ff1f}} 
-NONE&\\
+NONE&Null. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{BOOL@{BOOL}!ts7::jsonrpc::util@{ts7::jsonrpc::util}}\index{ts7::jsonrpc::util@{ts7::jsonrpc::util}!BOOL@{BOOL}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7ae4425e0ca7e930de96053ea17c66bf28}\label{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7ae4425e0ca7e930de96053ea17c66bf28}} 
-BOOL&\\
+BOOL&Bool value. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{NUMBER@{NUMBER}!ts7::jsonrpc::util@{ts7::jsonrpc::util}}\index{ts7::jsonrpc::util@{ts7::jsonrpc::util}!NUMBER@{NUMBER}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7a641d016723b872949d13ff82d0bb70a9}\label{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7a641d016723b872949d13ff82d0bb70a9}} 
-NUMBER&\\
+NUMBER&Number value. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{STRING@{STRING}!ts7::jsonrpc::util@{ts7::jsonrpc::util}}\index{ts7::jsonrpc::util@{ts7::jsonrpc::util}!STRING@{STRING}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7af991fc05a967d4d18622313ce7d74f82}\label{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7af991fc05a967d4d18622313ce7d74f82}} 
-STRING&\\
+STRING&String value. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{OBJECT@{OBJECT}!ts7::jsonrpc::util@{ts7::jsonrpc::util}}\index{ts7::jsonrpc::util@{ts7::jsonrpc::util}!OBJECT@{OBJECT}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7a9fac10adb380314c33a01053c7094214}\label{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7a9fac10adb380314c33a01053c7094214}} 
-OBJECT&\\
+OBJECT&Object value. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{ARRAY@{ARRAY}!ts7::jsonrpc::util@{ts7::jsonrpc::util}}\index{ts7::jsonrpc::util@{ts7::jsonrpc::util}!ARRAY@{ARRAY}}}\mbox{\Hypertarget{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7a83ed1944dbffd4b228390cfacc606250}\label{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7a83ed1944dbffd4b228390cfacc606250}} 
-ARRAY&\\
+ARRAY&Array value. \\
 \hline
 
 \end{DoxyEnumFields}
@@ -109,7 +113,26 @@ ARRAY&\\
 \doxysubsubsection{\texorpdfstring{GetJsonType()}{GetJsonType()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{Json\+Type}} ts7\+::jsonrpc\+::util\+::\+Get\+Json\+Type (\begin{DoxyParamCaption}\item[{const boost\+::json\+::value \&}]{value }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+
+
+Get JSON type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value that shall be checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the current data type of the provided boost\+::json\+::value.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -122,7 +145,26 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{GetJsonTypeName()}{GetJsonTypeName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily std\+::string ts7\+::jsonrpc\+::util\+::\+Get\+Json\+Type\+Name (\begin{DoxyParamCaption}\item[{boost\+::json\+::value \&}]{value }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+
+
+Get JSON type name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value that shall be checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the JSON type name of the provided boost\+::json\+::value.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -135,7 +177,26 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{GetJsonTypeName()}{GetJsonTypeName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily std\+::string ts7\+::jsonrpc\+::util\+::\+Get\+Json\+Type\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacets7_1_1jsonrpc_1_1util_a340e286753cb116aa4195d4ecb25dff7}{Json\+Type}}}]{t }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+
+
+Get JSON type name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The JSON type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the name of the provided JSON type.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
