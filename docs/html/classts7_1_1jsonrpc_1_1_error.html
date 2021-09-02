@@ -74,16 +74,36 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="classts7_1_1jsonrpc_1_1_error.html" title="Error message.">Error</a> message.  
+ <a href="classts7_1_1jsonrpc_1_1_error.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="error_8hpp_source.html">error.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a37bbc37daf728b25294cd57892bc14d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_error.html#a37bbc37daf728b25294cd57892bc14d3">Error</a> ()=default</td></tr>
+<tr class="memdesc:a37bbc37daf728b25294cd57892bc14d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <a href="classts7_1_1jsonrpc_1_1_error.html#a37bbc37daf728b25294cd57892bc14d3">More...</a><br /></td></tr>
 <tr class="separator:a37bbc37daf728b25294cd57892bc14d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae52041b68561a1b94194d3139dccd06f"><td class="memItemLeft" align="right" valign="top">boost::json::object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_error.html#ae52041b68561a1b94194d3139dccd06f">operator()</a> (const TId &amp;id, const <a class="el" href="classts7_1_1jsonrpc_1_1error_1_1_error_code.html">error::ErrorCode</a> &amp;code) const</td></tr>
-<tr class="separator:ae52041b68561a1b94194d3139dccd06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0d0f0aa4bab0e921e511df3f6324ae"><td class="memItemLeft" align="right" valign="top">boost::json::object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classts7_1_1jsonrpc_1_1_error.html#a9d0d0f0aa4bab0e921e511df3f6324ae">operator()</a> (const TId &amp;id, const std::string &amp;method, const <a class="el" href="classts7_1_1jsonrpc_1_1error_1_1_error_code.html">error::ErrorCode</a> &amp;code) const</td></tr>
+<tr class="memdesc:a9d0d0f0aa4bab0e921e511df3f6324ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON object generation.  <a href="classts7_1_1jsonrpc_1_1_error.html#a9d0d0f0aa4bab0e921e511df3f6324ae">More...</a><br /></td></tr>
+<tr class="separator:a9d0d0f0aa4bab0e921e511df3f6324ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename TId&gt;<br />
+class ts7::jsonrpc::Error&lt; TId &gt;</h3>
+
+<p><a class="el" href="classts7_1_1jsonrpc_1_1_error.html" title="Error message.">Error</a> message. </p>
+<p>Represents an error message generator.</p>
+<dl class="section note"><dt>Note</dt><dd>According to the specification an error does not contain the method name. If the method name is wished, it can be enabled with the define TS7_JSONRPC_SUPPORT_RESPONSE_METHOD_NAME.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TId</td><td>Data type of the id field.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Tarek Schwarzinger <a href="#" onclick="location.href='mai'+'lto:'+'tar'+'ek'+'.sc'+'hw'+'arz'+'in'+'ger'+'@g'+'oog'+'le'+'mai'+'l.'+'com'; return false;">tarek<span style="display: none;">.nosp@m.</span>.sch<span style="display: none;">.nosp@m.</span>warzi<span style="display: none;">.nosp@m.</span>nger<span style="display: none;">.nosp@m.</span>@goog<span style="display: none;">.nosp@m.</span>lema<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a37bbc37daf728b25294cd57892bc14d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37bbc37daf728b25294cd57892bc14d3">&#9670;&nbsp;</a></span>Error()</h2>
 
@@ -109,11 +129,13 @@ template&lt;typename TId &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>default constructor </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae52041b68561a1b94194d3139dccd06f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae52041b68561a1b94194d3139dccd06f">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="a9d0d0f0aa4bab0e921e511df3f6324ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d0d0f0aa4bab0e921e511df3f6324ae">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,6 +150,12 @@ template&lt;typename TId &gt; </div>
           <td>(</td>
           <td class="paramtype">const TId &amp;&#160;</td>
           <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -147,6 +175,20 @@ template&lt;typename TId &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>JSON object generation. </p>
+<p>Generates the error JSON object by the provided <code>id</code> and error <code>code</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The id of the request, that has failed and requires an error response. </td></tr>
+    <tr><td class="paramname">method</td><td>The name of the method that failed. </td></tr>
+    <tr><td class="paramname">code</td><td>The error code that shall be responded.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the final error message JSON object.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.0</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Tarek Schwarzinger <a href="#" onclick="location.href='mai'+'lto:'+'tar'+'ek'+'.sc'+'hw'+'arz'+'in'+'ger'+'@g'+'oog'+'le'+'mai'+'l.'+'com'; return false;">tarek<span style="display: none;">.nosp@m.</span>.sch<span style="display: none;">.nosp@m.</span>warzi<span style="display: none;">.nosp@m.</span>nger<span style="display: none;">.nosp@m.</span>@goog<span style="display: none;">.nosp@m.</span>lema<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 
 </div>
 </div>

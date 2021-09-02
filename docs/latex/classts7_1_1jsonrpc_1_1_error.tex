@@ -2,15 +2,44 @@
 \label{classts7_1_1jsonrpc_1_1_error}\index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
 
 
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} message.  
+
+
+
+
 {\ttfamily \#include $<$error.\+hpp$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_a37bbc37daf728b25294cd57892bc14d3}{Error}} ()=default
-\item 
-boost\+::json\+::object \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_ae52041b68561a1b94194d3139dccd06f}{operator()}} (const TId \&id, const \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}} \&code) const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+boost\+::json\+::object \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_a9d0d0f0aa4bab0e921e511df3f6324ae}{operator()}} (const TId \&id, const std\+::string \&method, const \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}} \&code) const
+\begin{DoxyCompactList}\small\item\em JSON object generation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TId$>$\newline
+class ts7\+::jsonrpc\+::\+Error$<$ TId $>$}
+
+\mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{Error}} message. 
+
+Represents an error message generator.
+
+\begin{DoxyNote}{Note}
+According to the specification an error does not contain the method name. If the method name is wished, it can be enabled with the define TS7\+\_\+\+JSONRPC\+\_\+\+SUPPORT\+\_\+\+RESPONSE\+\_\+\+METHOD\+\_\+\+NAME.
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TId} & Data type of the id field.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -23,14 +52,42 @@ boost\+::json\+::object \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error_ae52041b6
 
 
 
+default constructor 
+
+
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_ae52041b68561a1b94194d3139dccd06f}\label{classts7_1_1jsonrpc_1_1_error_ae52041b68561a1b94194d3139dccd06f}} 
+\mbox{\Hypertarget{classts7_1_1jsonrpc_1_1_error_a9d0d0f0aa4bab0e921e511df3f6324ae}\label{classts7_1_1jsonrpc_1_1_error_a9d0d0f0aa4bab0e921e511df3f6324ae}} 
 \index{ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}!operator()@{operator()}}
 \index{operator()@{operator()}!ts7::jsonrpc::Error$<$ TId $>$@{ts7::jsonrpc::Error$<$ TId $>$}}
 \doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
 {\footnotesize\ttfamily template$<$typename TId $>$ \\
-boost\+::json\+::object \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::operator() (\begin{DoxyParamCaption}\item[{const TId \&}]{id,  }\item[{const \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}} \&}]{code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+boost\+::json\+::object \mbox{\hyperlink{classts7_1_1jsonrpc_1_1_error}{ts7\+::jsonrpc\+::\+Error}}$<$ TId $>$\+::operator() (\begin{DoxyParamCaption}\item[{const TId \&}]{id,  }\item[{const std\+::string \&}]{method,  }\item[{const \mbox{\hyperlink{classts7_1_1jsonrpc_1_1error_1_1_error_code}{error\+::\+Error\+Code}} \&}]{code }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+JSON object generation. 
+
+Generates the error JSON object by the provided {\ttfamily id} and error {\ttfamily code}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the request, that has failed and requires an error response. \\
+\hline
+{\em method} & The name of the method that failed. \\
+\hline
+{\em code} & The error code that shall be responded.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the final error message JSON object.
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Tarek Schwarzinger \href{mailto:tarek.schwarzinger@googlemail.com}{\texttt{ tarek.\+schwarzinger@googlemail.\+com}} 
+\end{DoxyAuthor}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
