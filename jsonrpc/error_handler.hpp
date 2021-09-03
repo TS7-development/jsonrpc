@@ -9,14 +9,40 @@
 
 namespace ts7 {
   namespace jsonrpc {
+    /**
+     * @brief Error handler
+     *
+     * Represents a class that handles received error repsonses on requests.
+     *
+     * @note Check the JSON-RPC specification for more detailed information
+     * on the error responses.
+     *
+     * @tparam TId Data type of the id field.
+     * @tparam TData Data type of the data field, that contains additional information.
+     *
+     * @since 1.0
+     *
+     * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+     */
     template <typename TId, typename TData = void>
     class ErrorHandler {
       public:
+        /// Error callback data type
         using callback_t = std::function<void(const TId&, std::int32_t, const std::string&, const TData&)>;
+        /// Maybe failed return type (contains only error information)
         using maybe_failed = error::maybe_failed<void, error::ErrorCode>;
+        /// Maybe failed for the specification (jsonrpc field)
         using spec_failure = error::maybe_failed<std::string, error::ErrorCode>;
+        /// Maybe failed for the id (id field)
         using id_failure = error::maybe_failed<TId, error::ErrorCode>;
 
+        /**
+         * @brief constructor
+         *
+         * Creates an error handler by a provided callback.
+         *
+         * @param callback
+         */
         constexpr explicit inline ErrorHandler(callback_t callback)
           : callback(callback)
         {}
