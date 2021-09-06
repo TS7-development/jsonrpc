@@ -6,8 +6,6 @@
 #include "error/error.hpp"
 #include "util/util.hpp"
 
-#define TS7_JSONRPC_SUPPORT_RESPONSE_METHOD_NAME
-
 namespace ts7 {
   namespace jsonrpc {
     /**
@@ -50,7 +48,8 @@ namespace ts7 {
           boost::json::object o;
           o["jsonrpc"] = "2.0";
           o["id"] = util::AsJson<TId>(id);
-          o["error"] = static_cast<boost::json::object>(code);
+          const boost::json::object e = code;
+          o["error"] = e;
 
           return o;
         }

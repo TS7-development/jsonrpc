@@ -41,8 +41,8 @@ int main()
   example4(test, test2);
 
   boost::json::object test3;
-  test3["a"] = AsJson{Vector3d{1,2,3}};
-  test3["b"] = AsJson{Vector3d{4,5,6}};
+  test3["a"] = AsJson<Vector3d>{Vector3d{1,2,3}};
+  test3["b"] = AsJson<Vector3d>{Vector3d{4,5,6}};
 
   example5(test3);
   example6(test3);

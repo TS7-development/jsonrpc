@@ -1,9 +1,9 @@
 TEMPLATE = app
-CONFIG += console c++11
+CONFIG += console c++17
 CONFIG -= app_bundle
 CONFIG -= qt
 
-INCLUDEPATH += ../../lib
+INCLUDEPATH += ../../
 
 SOURCES += \
         main.cpp

@@ -1,8 +1,10 @@
+#include <cstdint>
 #include <iostream>
 
-#include <util/callfromjson.hpp>
-#include <procedure.hpp>
-#include <request.hpp>
+#include <boost/json.hpp>
+
+#include <jsonrpc/request.hpp>
+#include <jsonrpc/request_handler.hpp>
 
 namespace ts7 {
   namespace jsonrpc_examples {
@@ -32,25 +34,25 @@ namespace ts7 {
 int main()
 { 
   // Create a json rpc request
-  ts7::jsonrpc::Request<int> request = ts7::jsonrpc::Request<int>::Create(
+  ts7::jsonrpc::Request<ts7::jsonrpc::RequestID<std::int32_t>, std::int32_t, std::int32_t> generator(
     "testFunc",
-    1,
-    "a", 3,
-    "b", 7
+    "a",
+    "b"
   );
 
-  // Create the procedure to handle the request
-  auto p = ts7::jsonrpc::make_request_handler<int>(
-    ts7::jsonrpc::CallFromJson<int, int, int>(
-      ts7::jsonrpc_examples::request_exexution::testFunc,
-      "a",
-      "b"
-    )
-  );
+  // Create a json rpc handler
+//  ts7::jsonrpc::RequestHandler<std::int32_t, std::int32_t, std::int32_t> handler(
+//    ts7::jsonrpc_examples::request_exexution::testFunc,
+//    "a",
+//    "b"
+//  );
+
+  boost::json::object request = generator(3, 7);
 
   // Dump the request and the corresponding result
   std::cout << "<- " << request << std::endl;
-  auto c = p.onRequest(request);
+  // auto c = handler(request);
+  auto c = 0;
   std::cout << "-> " << c << std::endl;
 
   return 0;

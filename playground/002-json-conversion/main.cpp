@@ -89,7 +89,7 @@ int main()
   using namespace ts7::jsonrpc_playground::json_conversion;
   boost::json::object test;
   test["message"] = "vector demo";
-  test["data"] = AsJson{Vector3d{1, 2, 3}};
+  test["data"] = AsJson<Vector3d>{Vector3d{1, 2, 3}};
 
   std::cout << test << std::endl;
 

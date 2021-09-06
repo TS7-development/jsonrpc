@@ -211,11 +211,6 @@ namespace ts7 {
             data = dataObject;
           }
 
-          /// Convert to JSON value
-          operator boost::json::value() const {
-            return static_cast<boost::json::object>(*this);
-          }
-
           /**
            * @brief Convert to JSON object
            *
@@ -451,7 +446,8 @@ namespace ts7 {
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
       [[maybe_unused]] static inline ErrorCode InvalidRequest(const ErrorCode& data) {
-        return ErrorCode(Code(ErrorCodes::INVALID_REQUEST), "Invalid request", static_cast<boost::json::value>(data));
+        const boost::json::object o = data;
+        return ErrorCode(Code(ErrorCodes::INVALID_REQUEST), "Invalid request", boost::json::value(o));
       }
 
       /**
@@ -487,7 +483,8 @@ namespace ts7 {
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
       [[maybe_unused]] static inline ErrorCode InvalidParams(const ErrorCode& data) {
-        return ErrorCode(Code(ErrorCodes::INVALID_PARAMS), "Invalid parameter", static_cast<boost::json::value>(data));
+        const boost::json::object o = data;
+        return ErrorCode(Code(ErrorCodes::INVALID_PARAMS), "Invalid parameter", boost::json::value(o));
       }
 
       /**

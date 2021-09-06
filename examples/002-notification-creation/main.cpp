@@ -4,7 +4,7 @@
 #include <jsonrpc/notification.hpp>
 #include <jsonrpc/notification_handler.hpp>
 
-using NotificationFailure = ts7::jsonrpc::util::maybe_failed<void, ts7::jsonrpc::util::ErrorCode>;
+using NotificationFailure = ts7::jsonrpc::error::maybe_failed<void, ts7::jsonrpc::error::ErrorCode>;
 
 // Real handler to execute when Notification received
 NotificationFailure test_callback(std::uint32_t code, std::string message) {
