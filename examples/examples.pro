@@ -6,4 +6,5 @@ SUBDIRS += \
     003-error-creation \
     004-procedure-usage \
     005-modules \
-    006-bind
+    006-bind \
+    007-sub-handler
