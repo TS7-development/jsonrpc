@@ -22,7 +22,7 @@ namespace ts7 {
             parameter(Parameter<TArgs>(args)...)
         {}
 
-        maybe_failed operator()(const boost::json::object& request) {
+        maybe_failed operator()(const boost::json::object& request, TId& parsedId) {
           if (!request.contains("jsonrpc")) {
             return error::JsonrpcMissing();
           }
@@ -47,6 +47,9 @@ namespace ts7 {
             return error::IdWrongType<TId>(id_type);
           }
 
+          util::FromJson<TId> id_value;
+          parsedId = id_value(id);
+
           if (!request.contains("method")){
             return error::MethodMissing();
           }
@@ -66,13 +69,17 @@ namespace ts7 {
           }
 
           const boost::json::object& paramsObj = params.as_object();
-          util::FromJson<TId> id_value;
-          maybe_failed applied = apply(id_value(id), paramsObj, std::make_index_sequence<std::tuple_size<tuple_t>::value>{});
+          maybe_failed applied = apply(parsedId, paramsObj, std::make_index_sequence<std::tuple_size<tuple_t>::value>{});
           if (!applied) {
             return applied;
           }
 
           return static_cast<TRet>(applied);
+        }
+
+        maybe_failed operator()(const boost::json::object& request) {
+          [[maybe_unused]] TId id;
+          return (*this)(request, id);
         }
 
       protected:

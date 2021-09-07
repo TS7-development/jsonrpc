@@ -30,6 +30,8 @@ HEADERS += \
     notification_handler.hpp \
     request_handler.hpp \
     response_handler.hpp \
+    procedure.hpp \
+    remote_procedure.hpp \
     jsonrpc.hpp
 
 # Default rules for deployment.
