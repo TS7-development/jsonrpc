@@ -14,6 +14,7 @@ namespace ts7 {
     template <typename TId>
     class Module {
       public:
+        using id_t = TId;
         using procedure_t = std::function<boost::json::object(const boost::json::object&)>;
 
         procedure_t& operator[](const std::string& method) {

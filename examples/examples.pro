@@ -5,4 +5,5 @@ SUBDIRS += \
     002-notification-creation \
     003-error-creation \
     004-procedure-usage \
-    005-modules
+    005-modules \
+    006-bind
