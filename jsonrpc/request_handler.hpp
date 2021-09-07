@@ -8,10 +8,10 @@
 
 namespace ts7 {
   namespace jsonrpc {
-    template <typename TId, typename... TArgs>
+    template <typename TId, typename TRet, typename... TArgs>
     class RequestHandler {
       public:
-        using maybe_failed = error::maybe_failed<void, error::ErrorCode>;
+        using maybe_failed = error::maybe_failed<TRet, error::ErrorCode>;
         using spec_failure = error::maybe_failed<std::string, error::ErrorCode>;
         using callback_t = std::function<maybe_failed(const TId& id, TArgs... args)>;
         using tuple_t = std::tuple<Parameter<TArgs>...>;
@@ -47,7 +47,7 @@ namespace ts7 {
             return error::IdWrongType<TId>(id_type);
           }
 
-          if (!request.contains("method")) {
+          if (!request.contains("method")){
             return error::MethodMissing();
           }
 
@@ -72,7 +72,7 @@ namespace ts7 {
             return applied;
           }
 
-          return maybe_failed();
+          return static_cast<TRet>(applied);
         }
 
       protected:

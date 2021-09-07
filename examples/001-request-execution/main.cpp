@@ -9,6 +9,8 @@
 namespace ts7 {
   namespace jsonrpc_examples {
     namespace request_exexution {
+      using RequestFailure = ts7::jsonrpc::RequestHandler<std::int32_t, std::int32_t, std::int32_t, std::int32_t>::maybe_failed;
+
       /**
        * @brief Test functions
        *
@@ -23,8 +25,8 @@ namespace ts7 {
        *
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
-      int testFunc(int a, int b) {
-        std::cout << a << " + " << b << " = " << (a+b) << std::endl;
+      RequestFailure testFunc(const std::int32_t& id, std::int32_t a, std::int32_t b) {
+        std::cout << id << ": " << a << " + " << b << " = " << (a+b) << std::endl;
         return a + b;
       }
     }
@@ -41,19 +43,18 @@ int main()
   );
 
   // Create a json rpc handler
-//  ts7::jsonrpc::RequestHandler<std::int32_t, std::int32_t, std::int32_t> handler(
-//    ts7::jsonrpc_examples::request_exexution::testFunc,
-//    "a",
-//    "b"
-//  );
+  ts7::jsonrpc::RequestHandler<std::int32_t, std::int32_t, std::int32_t, std::int32_t> handler(
+    ts7::jsonrpc_examples::request_exexution::testFunc,
+    "a",
+    "b"
+  );
 
   boost::json::object request = generator(3, 7);
 
   // Dump the request and the corresponding result
   std::cout << "<- " << request << std::endl;
-  // auto c = handler(request);
-  auto c = 0;
-  std::cout << "-> " << c << std::endl;
+  auto c = handler(request);
+  std::cout << "-> " << static_cast<std::int32_t>(c) << std::endl;
 
   return 0;
 }
