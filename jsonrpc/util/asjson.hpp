@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <experimental/source_location>
 
 #include "always_false.hpp"
 #include "jsontype.hpp"
@@ -171,6 +172,44 @@ namespace ts7 {
 
           /// THe stored value
           std::string value;
+      };
+
+      template<>
+      struct AsJson<std::experimental::source_location> {
+        static constexpr const JsonType type = JsonType::OBJECT;
+
+        static inline constexpr bool IsType(JsonType t) {
+          return type == t;
+        }
+
+        /**
+         * @brief constructor
+         *
+         * Stores the provided integer value for later conversion.
+         *
+         * @param n The integer value that shall be converted.
+         */
+        inline explicit AsJson(const std::experimental::source_location& value)
+          : value(value)
+        {}
+
+        /**
+         * @brief Json value cast
+         *
+         * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+         */
+        operator boost::json::value() const {
+          boost::json::object o;
+          o["file"] = value.file_name();
+          o["function"] = value.function_name();
+          o["line"] = value.line();
+          o["column"] = value.column();
+
+          return o;
+        }
+
+        /// THe stored value
+        std::experimental::source_location value;
       };
     }
   }

@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <cstring>
 #include <string>
+#include <experimental/source_location>
 
 #include <boost/format.hpp>
 #include <boost/json.hpp>
@@ -209,6 +210,15 @@ namespace ts7 {
             apply_args(dataObject, args...);
 
             data = dataObject;
+          }
+
+          void addData(const std::string& field, const boost::json::value& value) {
+            if (!data.is_object()) {
+              data = boost::json::object();
+            }
+
+            boost::json::object& d = data.as_object();
+            d[field] = value;
           }
 
           /**
@@ -872,6 +882,40 @@ namespace ts7 {
       [[maybe_unused]] static inline ErrorCode ResultWrongType(util::JsonType actual, util::JsonType expected = util::JsonType::OBJECT) {
         return ErrorCode::WrongType(Code(ErrorCodes::RESULT_WRONG_TYPE), "result", actual, expected);
       }
+
+      struct Exception : public std::runtime_error {
+        using source_location = std::experimental::source_location;
+
+        inline Exception(std::int32_t code, std::string&& message, const source_location& location = source_location::current())
+          : std::runtime_error(message),
+            ec(code, std::move(message), "location", location)
+        {}
+
+        inline Exception(std::int32_t code, std::string&& message, const boost::json::value& data, const source_location& location = source_location::current())
+          : std::runtime_error(message),
+            ec(code, std::move(message), data)
+        {
+          ec.addData("location", util::AsJson<source_location>(location));
+        }
+
+        template <typename... TArgs>
+        inline Exception(std::int32_t code, std::string&& message, const source_location& location, TArgs... args)
+          : std::runtime_error(message),
+            ec(code, std::move(message), "location", location, args...)
+        {}
+
+        template <typename... TArgs>
+        inline Exception(std::int32_t code, std::string&& message, TArgs... args)
+          : std::runtime_error(message),
+            ec(code, std::move(message), args...)
+        {}
+
+        operator boost::json::object() const {
+          return ec;
+        }
+
+        ErrorCode ec;
+      };
     }
   }
 }

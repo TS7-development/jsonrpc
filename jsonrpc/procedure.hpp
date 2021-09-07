@@ -18,6 +18,9 @@ namespace ts7 {
               try {
                 return callback(args...);
               }
+              catch(error::Exception& e) {
+                return e.ec;
+              }
               catch(std::exception& e) {
                 return error::ErrorCode(static_cast<std::int32_t>(error::ErrorCodes::INTERNAL_ERROR), e.what());
               }

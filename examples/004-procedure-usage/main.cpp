@@ -11,6 +11,10 @@ namespace ts7 {
         return a + b;
       }
 
+      std::int32_t sum_error(std::int32_t, std::int32_t) {
+        throw ts7::jsonrpc::error::Exception(static_cast<std::int32_t>(ts7::jsonrpc::error::ErrorCodes::INVALID_REQUEST), "Invalid Request");
+      }
+
       std::int32_t sum_failure(std::int32_t, std::int32_t) {
         throw std::runtime_error("Can't calculate the sum");
       }
@@ -34,6 +38,17 @@ int main()
   std::cout << "<- " << request << std::endl;
   boost::json::object response = success(request);
   std::cout << "-> " << response << std::endl << std::endl;
+
+  // Exception case
+  ts7::jsonrpc::Procedure<std::int32_t, std::int32_t, std::int32_t, std::int32_t> except(
+    ts7::jsonrpc_examples::procedure_usage::sum_error,
+    "a",
+    "b"
+  );
+
+  std::cout << "<- " << request << std::endl;
+  boost::json::object exception = except(request);
+  std::cout << "-> " << exception << std::endl << std::endl;
 
   // Failure case
   ts7::jsonrpc::Procedure<std::int32_t, std::int32_t, std::int32_t, std::int32_t> failure(
