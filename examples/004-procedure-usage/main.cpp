@@ -4,12 +4,18 @@
 #include <jsonrpc/request.hpp>
 #include <jsonrpc/procedure.hpp>
 
-std::int32_t sum_success(std::int32_t a, std::int32_t b) {
-  return a + b;
-}
+namespace ts7 {
+  namespace jsonrpc_examples {
+    namespace procedure_usage {
+      std::int32_t sum_success(std::int32_t a, std::int32_t b) {
+        return a + b;
+      }
 
-std::int32_t sum_failure(std::int32_t, std::int32_t) {
-  throw std::runtime_error("Can't calculate the sum");
+      std::int32_t sum_failure(std::int32_t, std::int32_t) {
+        throw std::runtime_error("Can't calculate the sum");
+      }
+    }
+  }
 }
 
 int main()
@@ -20,7 +26,7 @@ int main()
 
   // Success case
   ts7::jsonrpc::Procedure<std::int32_t, std::int32_t, std::int32_t, std::int32_t> success(
-    sum_success,
+    ts7::jsonrpc_examples::procedure_usage::sum_success,
     "a",
     "b"
   );
@@ -31,7 +37,7 @@ int main()
 
   // Failure case
   ts7::jsonrpc::Procedure<std::int32_t, std::int32_t, std::int32_t, std::int32_t> failure(
-    sum_failure,
+    ts7::jsonrpc_examples::procedure_usage::sum_failure,
     "a",
     "b"
   );
