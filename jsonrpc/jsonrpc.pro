@@ -31,7 +31,7 @@ HEADERS += \
     request_handler.hpp \
     response_handler.hpp \
     procedure.hpp \
-    remote_procedure.hpp \
+    module.hpp \
     jsonrpc.hpp
 
 # Default rules for deployment.

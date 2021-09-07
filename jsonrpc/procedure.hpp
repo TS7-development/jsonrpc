@@ -14,12 +14,12 @@ namespace ts7 {
 
         template <typename... UArgs>
         Procedure(callback_t callback, UArgs... args)
-          : handler([callback](const TId& id, TArgs... args) -> handler_failure {
+          : handler([callback](const TId&, TArgs... args) -> handler_failure {
               try {
                 return callback(args...);
               }
               catch(std::exception& e) {
-                return error::ErrorCode(static_cast<std::int32_t>(error::ErrorCodes::INTERNAL_ERROR), e.what(), "id", id);
+                return error::ErrorCode(static_cast<std::int32_t>(error::ErrorCodes::INTERNAL_ERROR), e.what());
               }
             }, args...)
         {}
