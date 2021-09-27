@@ -17,6 +17,8 @@ HEADERS += \
     util/always_false.hpp \
     util/remove_cref.hpp \
     util/jsontype.hpp \
+    util/jsonstreamer.hpp \
+    util/fsm.hpp \
     util/util.hpp \
     error/errorcodes.hpp \
     error/maybe_failed.hpp \
