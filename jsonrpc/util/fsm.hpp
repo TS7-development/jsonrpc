@@ -60,7 +60,7 @@ namespace ts7 {
               old->onLeave(owner);
             }
 
-            stack.push_back(state);
+            stack.push(state);
             state->onEnter(owner);
           }
 
