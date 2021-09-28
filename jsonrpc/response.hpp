@@ -34,5 +34,33 @@ namespace ts7 {
         }
 #endif
     };
+
+    template <typename TId>
+    class Response<TId, void> {
+      public:
+        Response() = default;
+
+#ifndef TS7_JSONRPC_SUPPORT_RESPONSE_METHOD_NAME
+        boost::json::object operator()(const TId& id) const {
+          boost::json::object o;
+          o["jsonrpc"] = "2.0";
+          //o["method"] = method;
+          o["id"] = util::AsJson<TId>(id);
+          o["result"] = boost::json::object();
+
+          return o;
+        }
+#else
+        boost::json::object operator()(const TId& id, const std::string& method) const {
+          boost::json::object o;
+          o["jsonrpc"] = "2.0";
+          o["method"] = method;
+          o["id"] = util::AsJson<TId>(id);
+          o["result"] = boost::json::object();
+
+          return o;
+        }
+#endif
+    };
   }
 }

@@ -23,6 +23,8 @@ HEADERS += \
     error/errorcodes.hpp \
     error/maybe_failed.hpp \
     error/error.hpp \
+    com/tcpserver.hpp \
+    com/tcpconnection.hpp \
     parameter.hpp \
     error.hpp \
     notification.hpp \
