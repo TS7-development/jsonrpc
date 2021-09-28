@@ -27,7 +27,7 @@ namespace ts7 {
     class Error {
       public:
         /// default constructor
-        Error() = default;
+        inline Error() = default;
 
 #ifndef TS7_JSONRPC_SUPPORT_RESPONSE_METHOD_NAME
         /**
@@ -44,7 +44,7 @@ namespace ts7 {
          *
          * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
          */
-        boost::json::object operator()(const TId& id, const error::ErrorCode& code) const {
+        inline boost::json::object operator()(const TId& id, const error::ErrorCode& code) const {
           boost::json::object o;
           o["jsonrpc"] = "2.0";
           o["id"] = util::AsJson<TId>(id);
@@ -69,7 +69,7 @@ namespace ts7 {
          *
          * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
          */
-        boost::json::object operator()(const TId& id, const std::string& method, const error::ErrorCode& code) const {
+        inline boost::json::object operator()(const TId& id, const std::string& method, const error::ErrorCode& code) const {
           boost::json::object o;
           o["jsonrpc"] = "2.0";
           o["method"] = method;

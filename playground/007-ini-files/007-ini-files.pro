@@ -9,7 +9,7 @@ SOURCES += \
         03-structured-variant.cpp \
         main.cpp
 
-LIBS += -lboost_filesystem
+LIBS += -static -lboost_filesystem
 
 HEADERS += \
     ini-files.h

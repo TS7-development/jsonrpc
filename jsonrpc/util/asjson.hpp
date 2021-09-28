@@ -42,6 +42,135 @@ namespace ts7 {
       };
 
       /**
+       * @brief Convert bool to json
+       *
+       * Converts a boolean to a json value.
+       *
+       * @note This is the template specialization of \ref AsJson.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template<>
+      struct AsJson<bool> {
+          static constexpr const JsonType type = JsonType::BOOL;
+
+          static inline constexpr bool IsType(JsonType t) {
+            return type == t;
+          }
+
+          /**
+           * @brief constructor
+           *
+           * Stores the provided integer value for later conversion.
+           *
+           * @param n The integer value that shall be converted.
+           */
+          constexpr inline explicit AsJson(bool n)
+            : value(n)
+          {}
+
+          /**
+           * @brief Json value cast
+           *
+           * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+           */
+          operator boost::json::value() const {
+            return value;
+          }
+
+          /// THe stored value
+          bool value;
+      };
+
+      /**
+       * @brief Convert int to json
+       *
+       * Converts an integer to a json value.
+       *
+       * @note This is the template specialization of \ref AsJson.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template<>
+      struct AsJson<std::int8_t> {
+          static constexpr const JsonType type = JsonType::NUMBER;
+
+          static inline constexpr bool IsType(JsonType t) {
+            return type == t;
+          }
+
+          /**
+           * @brief constructor
+           *
+           * Stores the provided integer value for later conversion.
+           *
+           * @param n The integer value that shall be converted.
+           */
+          constexpr inline explicit AsJson(std::int8_t n)
+            : value(n)
+          {}
+
+          /**
+           * @brief Json value cast
+           *
+           * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+           */
+          operator boost::json::value() const {
+            return value;
+          }
+
+          /// THe stored value
+          std::int8_t value;
+      };
+
+      /**
+       * @brief Convert int to json
+       *
+       * Converts an integer to a json value.
+       *
+       * @note This is the template specialization of \ref AsJson.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template<>
+      struct AsJson<std::int16_t> {
+          static constexpr const JsonType type = JsonType::NUMBER;
+
+          static inline constexpr bool IsType(JsonType t) {
+            return type == t;
+          }
+
+          /**
+           * @brief constructor
+           *
+           * Stores the provided integer value for later conversion.
+           *
+           * @param n The integer value that shall be converted.
+           */
+          constexpr inline explicit AsJson(std::int16_t n)
+            : value(n)
+          {}
+
+          /**
+           * @brief Json value cast
+           *
+           * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+           */
+          operator boost::json::value() const {
+            return value;
+          }
+
+          /// THe stored value
+          std::int16_t value;
+      };
+
+      /**
        * @brief Convert int to json
        *
        * Converts an integer to a json value.
@@ -96,6 +225,135 @@ namespace ts7 {
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
       template<>
+      struct AsJson<std::int64_t> {
+          static constexpr const JsonType type = JsonType::NUMBER;
+
+          static inline constexpr bool IsType(JsonType t) {
+            return type == t;
+          }
+
+          /**
+           * @brief constructor
+           *
+           * Stores the provided integer value for later conversion.
+           *
+           * @param n The integer value that shall be converted.
+           */
+          constexpr inline explicit AsJson(std::int64_t n)
+            : value(n)
+          {}
+
+          /**
+           * @brief Json value cast
+           *
+           * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+           */
+          operator boost::json::value() const {
+            return value;
+          }
+
+          /// THe stored value
+          std::int64_t value;
+      };
+
+      /**
+       * @brief Convert int to json
+       *
+       * Converts an integer to a json value.
+       *
+       * @note This is the template specialization of \ref AsJson.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template<>
+      struct AsJson<std::uint8_t> {
+          static constexpr const JsonType type = JsonType::NUMBER;
+
+          static inline constexpr bool IsType(JsonType t) {
+            return type == t;
+          }
+
+          /**
+           * @brief constructor
+           *
+           * Stores the provided integer value for later conversion.
+           *
+           * @param n The integer value that shall be converted.
+           */
+          constexpr inline explicit AsJson(std::uint8_t n)
+            : value(n)
+          {}
+
+          /**
+           * @brief Json value cast
+           *
+           * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+           */
+          operator boost::json::value() const {
+            return value;
+          }
+
+          /// THe stored value
+          std::uint8_t value;
+      };
+
+      /**
+       * @brief Convert int to json
+       *
+       * Converts an integer to a json value.
+       *
+       * @note This is the template specialization of \ref AsJson.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template<>
+      struct AsJson<std::uint16_t> {
+          static constexpr const JsonType type = JsonType::NUMBER;
+
+          static inline constexpr bool IsType(JsonType t) {
+            return type == t;
+          }
+
+          /**
+           * @brief constructor
+           *
+           * Stores the provided integer value for later conversion.
+           *
+           * @param n The integer value that shall be converted.
+           */
+          constexpr inline explicit AsJson(std::uint16_t n)
+            : value(n)
+          {}
+
+          /**
+           * @brief Json value cast
+           *
+           * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+           */
+          operator boost::json::value() const {
+            return value;
+          }
+
+          /// THe stored value
+          std::uint16_t value;
+      };
+
+      /**
+       * @brief Convert int to json
+       *
+       * Converts an integer to a json value.
+       *
+       * @note This is the template specialization of \ref AsJson.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template<>
       struct AsJson<std::uint32_t> {
           static constexpr const JsonType type = JsonType::NUMBER;
 
@@ -125,6 +383,49 @@ namespace ts7 {
 
           /// THe stored value
           std::uint32_t value;
+      };
+
+      /**
+       * @brief Convert int to json
+       *
+       * Converts an integer to a json value.
+       *
+       * @note This is the template specialization of \ref AsJson.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template<>
+      struct AsJson<std::uint64_t> {
+          static constexpr const JsonType type = JsonType::NUMBER;
+
+          static inline constexpr bool IsType(JsonType t) {
+            return type == t;
+          }
+
+          /**
+           * @brief constructor
+           *
+           * Stores the provided integer value for later conversion.
+           *
+           * @param n The integer value that shall be converted.
+           */
+          constexpr inline explicit AsJson(std::uint64_t n)
+            : value(n)
+          {}
+
+          /**
+           * @brief Json value cast
+           *
+           * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+           */
+          operator boost::json::value() const {
+            return value;
+          }
+
+          /// THe stored value
+          std::uint64_t value;
       };
 
       /**

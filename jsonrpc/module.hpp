@@ -17,11 +17,11 @@ namespace ts7 {
         using id_t = TId;
         using procedure_t = std::function<boost::json::object(const boost::json::object&)>;
 
-        procedure_t& operator[](const std::string& method) {
+        inline procedure_t& operator[](const std::string& method) {
           return procedures[method];
         }
 
-        boost::json::object operator()(const boost::json::object& request) {
+        inline boost::json::object operator()(const boost::json::object& request) {
           TId id;
 
           if (!request.contains("id")) {

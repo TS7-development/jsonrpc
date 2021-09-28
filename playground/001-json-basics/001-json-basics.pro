@@ -8,3 +8,5 @@ SOURCES += \
         t1.cpp \
         t2.cpp \
         t3.cpp
+
+LIBS += -static -lboost_json

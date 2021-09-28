@@ -12,3 +12,5 @@ SOURCES += \
         t3.cpp \
         t4.cpp \
         t5.cpp
+
+LIBS += -static -lboost_json

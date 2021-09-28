@@ -5,3 +5,5 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp
+
+LIBS += -static -lboost_json

@@ -11,4 +11,4 @@ SOURCES += \
 HEADERS += \
     variadic-members.h
 
-LIBS += -lboost_json
+LIBS += -static -lboost_json

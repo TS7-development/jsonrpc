@@ -10,7 +10,7 @@ namespace ts7 {
     struct RequestID {
       using type = TId;
 
-      static TId generate() {
+      static inline TId generate() {
         static TId id = TId();
         return ++id;
       }
@@ -22,7 +22,7 @@ namespace ts7 {
         using parameter_tuple_t = std::tuple<Parameter<TArgs>...>;
 
         template <typename... UArgs>
-        Request(const std::string& method, UArgs... args)
+        inline Request(const std::string& method, UArgs... args)
           : method(method),
             parameter(Parameter<TArgs>(args)...)
         {}
@@ -32,7 +32,7 @@ namespace ts7 {
 
         }
 
-        boost::json::object operator()(TArgs... args) const {
+        inline boost::json::object operator()(TArgs... args) const {
           boost::json::object notification;
           notification["jsonrpc"] = "2.0";
           notification["id"] = util::AsJson<typename TId::type>(TId::generate());
@@ -51,7 +51,7 @@ namespace ts7 {
         parameter_tuple_t parameter;
 
         template <typename TTuple, std::size_t... Is>
-        void apply_args(boost::json::object& o, const TTuple& tuple, std::index_sequence<Is...>) const {
+        inline void apply_args(boost::json::object& o, const TTuple& tuple, std::index_sequence<Is...>) const {
            ((std::get<Is>(parameter).store(o, std::get<Is>(tuple))), ... );
         }
     };

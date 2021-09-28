@@ -35,7 +35,7 @@ namespace ts7 {
        *
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
-      JsonType GetJsonType(const boost::json::value& value) {
+      [[maybe_unused]] static inline JsonType GetJsonType(const boost::json::value& value) {
         if (value.is_null())
           return JsonType::NONE;
 
@@ -68,7 +68,7 @@ namespace ts7 {
        *
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
-      std::string GetJsonTypeName(JsonType t) {
+      [[maybe_unused]] static inline std::string GetJsonTypeName(JsonType t) {
         switch(t) {
           case JsonType::NONE:
             return "null";
@@ -99,7 +99,7 @@ namespace ts7 {
        *
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
-      std::string GetJsonTypeName(boost::json::value& value) {
+      [[maybe_unused]] static inline std::string GetJsonTypeName(boost::json::value& value) {
         return GetJsonTypeName(GetJsonType(value));
       }
     }

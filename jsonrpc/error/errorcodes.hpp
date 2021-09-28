@@ -111,7 +111,7 @@ namespace ts7 {
       };
 
       /// Conversion from ErrorCode to std::int32_t
-      constexpr std::int32_t Code(ErrorCodes code) {
+      inline constexpr std::int32_t Code(ErrorCodes code) {
         return static_cast<std::int32_t>(code);
       }
 
@@ -230,7 +230,7 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          operator boost::json::object() const {
+          inline operator boost::json::object() const {
             boost::json::object o;
             o["code"] = code;
             o["message"] = message;
@@ -243,12 +243,12 @@ namespace ts7 {
           }
 
           /// Error code cast operator
-          operator std::int32_t() const {
+          inline operator std::int32_t() const {
             return code;
           }
 
           /// Error message cast operator
-          operator std::string() const {
+          inline operator std::string() const {
             return message;
           }
 
@@ -377,7 +377,7 @@ namespace ts7 {
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
           template <typename TData>
-          void apply(boost::json::object& o, const std::string& name, const TData& value) {
+          inline void apply(boost::json::object& o, const std::string& name, const TData& value) {
             o[name] = util::AsJson<TData>(value);
           }
 
@@ -401,7 +401,7 @@ namespace ts7 {
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
           template <typename TData, typename... TArgs>
-          void apply(boost::json::object& o, const std::string& name, const TData& value, TArgs... args) {
+          inline void apply(boost::json::object& o, const std::string& name, const TData& value, TArgs... args) {
             o[name] = value;
             apply(o, args...);
           }
@@ -421,7 +421,7 @@ namespace ts7 {
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
           template <typename... TArgs>
-          void apply_args(boost::json::object& o, TArgs... args) {
+          inline void apply_args(boost::json::object& o, TArgs... args) {
             apply(o, args...);
           }
       };
@@ -910,7 +910,7 @@ namespace ts7 {
             ec(code, std::move(message), args...)
         {}
 
-        operator boost::json::object() const {
+        inline operator boost::json::object() const {
           return ec;
         }
 

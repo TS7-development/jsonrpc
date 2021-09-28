@@ -5,5 +5,7 @@ CONFIG -= qt
 
 INCLUDEPATH += ../../
 
+LIBS += -static -lboost_json
+
 SOURCES += \
         main.cpp

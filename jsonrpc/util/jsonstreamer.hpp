@@ -24,7 +24,7 @@ namespace ts7 {
           return data;
         }
 
-        boost::json::value getNextChunk() {
+        inline boost::json::value getNextChunk() {
           Interface interface(this);
 
           while(!interface.found() && !interface.failed()) {
@@ -43,43 +43,44 @@ namespace ts7 {
         struct Interface;
 
         struct Initial : public DerivedState<Interface, Initial> {
-          virtual void onUpdate(Interface* i) const;
+          virtual inline void onUpdate(Interface* i) const;
         };
 
         struct Object : public DerivedState<Interface, Object> {
-          virtual void onUpdate(Interface* i) const;
+          virtual inline void onUpdate(Interface* i) const;
         };
 
         struct Key : public DerivedState<Interface, Key> {
-          virtual void onUpdate(Interface* i) const;
+          virtual inline void onUpdate(Interface* i) const;
         };
 
         struct Value : public DerivedState<Interface, Value> {
-          virtual void onUpdate(Interface* i) const;
+          virtual inline void onUpdate(Interface* i) const;
         };
 
         struct Array : public DerivedState<Interface, Array> {
-          virtual void onUpdate(Interface* i) const;
+          virtual inline void onEnter(Interface* i) const;
+          virtual inline void onUpdate(Interface* i) const;
         };
 
         struct Null : public DerivedState<Interface, Null> {
-          virtual void onEnter(Interface* i) const;
+          virtual inline void onEnter(Interface* i) const;
         };
 
         struct Number : public DerivedState<Interface, Number> {
-          virtual void onEnter(Interface* i) const;
+          virtual inline void onEnter(Interface* i) const;
         };
 
         struct String : public DerivedState<Interface, String> {
-          virtual void onUpdate(Interface* i) const;
+          virtual inline void onUpdate(Interface* i) const;
         };
 
         struct Bool : public DerivedState<Interface, Bool> {
-          virtual void onEnter(Interface* i) const;
+          virtual inline void onEnter(Interface* i) const;
         };
 
         struct Escape : public DerivedState<Interface, Escape> {
-          virtual void onUpdate(Interface* i) const;
+          virtual inline void onUpdate(Interface* i) const;
         };
 
         struct Interface {
@@ -92,11 +93,11 @@ namespace ts7 {
             fsm.pushState(Initial::Instance());
           }
 
-          std::string::iterator begin() {
+          inline std::string::iterator begin() {
             return parent->getData().begin();
           }
 
-          std::string::iterator end() {
+          inline std::string::iterator end() {
             return parent->getData().end();
           }
 
@@ -120,7 +121,7 @@ namespace ts7 {
             return fsm.size();
           }
 
-          Interface& operator++() {
+          inline Interface& operator++() {
             ++actual;
             return *this;
           }
@@ -170,7 +171,7 @@ namespace ts7 {
         std::string data;
       };
 
-      void JsonStreamer::Initial::onUpdate(Interface *i) const {
+      inline void JsonStreamer::Initial::onUpdate(Interface *i) const {
         if (*i == '{') {
           i->pop();
           i->saveStart();
@@ -183,7 +184,7 @@ namespace ts7 {
         }
       }
 
-      void JsonStreamer::Object::onUpdate(Interface *i) const {
+      inline void JsonStreamer::Object::onUpdate(Interface *i) const {
         if (*i == '"') {
           i->push(JsonStreamer::Key::Instance());
         }
@@ -195,16 +196,20 @@ namespace ts7 {
         }
       }
 
-      void JsonStreamer::Array::onUpdate(Interface *i) const {
+      inline void JsonStreamer::Array::onEnter(Interface *i) const {
+        if (*i == '[' || *i ==',') {
+          i->push(JsonStreamer::Value::Instance());
+        }
+      }
+
+      inline void JsonStreamer::Array::onUpdate(Interface *i) const {
         if (*i == ']') {
           i->pop();
           return;
         }
-
-        i->push(JsonStreamer::Value::Instance());
       }
 
-      void JsonStreamer::Value::onUpdate(Interface *i) const {
+      inline void JsonStreamer::Value::onUpdate(Interface *i) const {
         if (*i == '{') {
           i->push(JsonStreamer::Object::Instance());
         }
@@ -232,13 +237,16 @@ namespace ts7 {
         }
       }
 
-      void JsonStreamer::Key::onUpdate(Interface *i) const {
-        if (*i == '"') {
+      inline void JsonStreamer::Key::onUpdate(Interface *i) const {
+        if (*i == '\\') {
+          i->push(JsonStreamer::Escape::Instance());
+        }
+        else if (*i == '"') {
           i->pop();
         }
       }
 
-      void JsonStreamer::String::onUpdate(Interface *i) const {
+      inline void JsonStreamer::String::onUpdate(Interface *i) const {
         if (*i == '\\') {
           i->push(JsonStreamer::Escape::Instance());
         }
@@ -247,19 +255,19 @@ namespace ts7 {
         }
       }
 
-      void JsonStreamer::Number::onEnter(Interface *i) const {
+      inline void JsonStreamer::Number::onEnter(Interface *i) const {
         i->pop();
       }
 
-      void JsonStreamer::Bool::onEnter(Interface *i) const {
+      inline void JsonStreamer::Bool::onEnter(Interface *i) const {
         i->pop();
       }
 
-      void JsonStreamer::Null::onEnter(Interface *i) const {
+      inline void JsonStreamer::Null::onEnter(Interface *i) const {
         i->pop();
       }
 
-      void JsonStreamer::Escape::onUpdate(Interface *i) const {
+      inline void JsonStreamer::Escape::onUpdate(Interface *i) const {
         i->pop();
       }
     }

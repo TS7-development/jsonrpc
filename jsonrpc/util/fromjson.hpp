@@ -43,9 +43,129 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          constexpr FromJson() {
+          constexpr inline FromJson() {
             // Source: https://artificial-mind.net/blog/2020/10/03/always-false
             static_assert(always_false<T>, "Unsupported type");
+          }
+      };
+
+      /**
+       * @brief bool from JSON
+       *
+       * Converts a boost::json::value to a bool.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template <>
+      struct FromJson<bool> {
+          /// Conversion failure data type
+          using conversion_failure = error::maybe_failed<bool, JsonType>;
+
+          /// default constructor
+          inline FromJson() = default;
+
+          /**
+           * @brief Conversion
+           *
+           * Converts the boost::json::value to a std::int32_t.
+           *
+           * @param v The value that shall be converted.
+           *
+           * @return Returns the converted value, if successful. If the value
+           * has the wrong type, the actual type will be returned.
+           *
+           * @since 1.0
+           *
+           * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+           */
+          inline conversion_failure operator()(const boost::json::value& v) const {
+            if (!v.is_bool()) {
+              return GetJsonType(v);
+            }
+
+            return conversion_failure(v.as_bool());
+          }
+      };
+
+      /**
+       * @brief std::int32_t from JSON
+       *
+       * Converts a boost::json::value to a std::int32_t.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template <>
+      struct FromJson<std::int8_t> {
+          /// Conversion failure data type
+          using conversion_failure = error::maybe_failed<std::int8_t, JsonType>;
+
+          /// default constructor
+          inline FromJson() = default;
+
+          /**
+           * @brief Conversion
+           *
+           * Converts the boost::json::value to a std::int32_t.
+           *
+           * @param v The value that shall be converted.
+           *
+           * @return Returns the converted value, if successful. If the value
+           * has the wrong type, the actual type will be returned.
+           *
+           * @since 1.0
+           *
+           * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+           */
+          inline conversion_failure operator()(const boost::json::value& v) const {
+            if (!v.is_int64()) {
+              return GetJsonType(v);
+            }
+
+            return conversion_failure(static_cast<std::int8_t>(v.as_int64()));
+          }
+      };
+
+      /**
+       * @brief std::int32_t from JSON
+       *
+       * Converts a boost::json::value to a std::int32_t.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template <>
+      struct FromJson<std::int16_t> {
+          /// Conversion failure data type
+          using conversion_failure = error::maybe_failed<std::int16_t, JsonType>;
+
+          /// default constructor
+          inline FromJson() = default;
+
+          /**
+           * @brief Conversion
+           *
+           * Converts the boost::json::value to a std::int32_t.
+           *
+           * @param v The value that shall be converted.
+           *
+           * @return Returns the converted value, if successful. If the value
+           * has the wrong type, the actual type will be returned.
+           *
+           * @since 1.0
+           *
+           * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+           */
+          inline conversion_failure operator()(const boost::json::value& v) const {
+            if (!v.is_int64()) {
+              return GetJsonType(v);
+            }
+
+            return conversion_failure(static_cast<std::int16_t>(v.as_int64()));
           }
       };
 
@@ -80,12 +200,132 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          conversion_failure operator()(const boost::json::value& v) const {
+          inline conversion_failure operator()(const boost::json::value& v) const {
             if (!v.is_int64()) {
               return GetJsonType(v);
             }
 
             return conversion_failure(static_cast<std::int32_t>(v.as_int64()));
+          }
+      };
+
+      /**
+       * @brief std::int32_t from JSON
+       *
+       * Converts a boost::json::value to a std::int32_t.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template <>
+      struct FromJson<std::int64_t> {
+          /// Conversion failure data type
+          using conversion_failure = error::maybe_failed<std::int64_t, JsonType>;
+
+          /// default constructor
+          inline FromJson() = default;
+
+          /**
+           * @brief Conversion
+           *
+           * Converts the boost::json::value to a std::int32_t.
+           *
+           * @param v The value that shall be converted.
+           *
+           * @return Returns the converted value, if successful. If the value
+           * has the wrong type, the actual type will be returned.
+           *
+           * @since 1.0
+           *
+           * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+           */
+          inline conversion_failure operator()(const boost::json::value& v) const {
+            if (!v.is_int64()) {
+              return GetJsonType(v);
+            }
+
+            return conversion_failure(v.as_int64());
+          }
+      };
+
+      /**
+       * @brief std::uint32_t from JSON
+       *
+       * Converts a boost::json::value to a std::uint32_t.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template <>
+      struct FromJson<std::uint8_t> {
+          /// Conversion failure data type
+          using conversion_failure = error::maybe_failed<std::uint8_t, JsonType>;
+
+          /// constructor
+          inline FromJson() = default;
+
+          /**
+           * @brief Conversion
+           *
+           * Converts the boost::json::value to a std::uint32_t.
+           *
+           * @param v The value that shall be converted.
+           *
+           * @return Returns the converted value, if successful. If the value
+           * has the wrong data type, the actual data type is returned.
+           *
+           * @since 1.0
+           *
+           * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+           */
+          inline conversion_failure operator()(const boost::json::value& v) const {
+            if (!v.is_uint64()) {
+              return GetJsonType(v);
+            }
+
+            return conversion_failure(static_cast<std::uint8_t>(v.as_uint64()));
+          }
+      };
+
+      /**
+       * @brief std::uint32_t from JSON
+       *
+       * Converts a boost::json::value to a std::uint32_t.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template <>
+      struct FromJson<std::uint16_t> {
+          /// Conversion failure data type
+          using conversion_failure = error::maybe_failed<std::uint16_t, JsonType>;
+
+          /// constructor
+          inline FromJson() = default;
+
+          /**
+           * @brief Conversion
+           *
+           * Converts the boost::json::value to a std::uint32_t.
+           *
+           * @param v The value that shall be converted.
+           *
+           * @return Returns the converted value, if successful. If the value
+           * has the wrong data type, the actual data type is returned.
+           *
+           * @since 1.0
+           *
+           * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+           */
+          inline conversion_failure operator()(const boost::json::value& v) const {
+            if (!v.is_uint64()) {
+              return GetJsonType(v);
+            }
+
+            return conversion_failure(static_cast<std::uint16_t>(v.as_uint64()));
           }
       };
 
@@ -120,12 +360,52 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          conversion_failure operator()(const boost::json::value& v) const {
+          inline conversion_failure operator()(const boost::json::value& v) const {
             if (!v.is_uint64()) {
               return GetJsonType(v);
             }
 
             return conversion_failure(static_cast<std::uint32_t>(v.as_uint64()));
+          }
+      };
+
+      /**
+       * @brief std::uint32_t from JSON
+       *
+       * Converts a boost::json::value to a std::uint32_t.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template <>
+      struct FromJson<std::uint64_t> {
+          /// Conversion failure data type
+          using conversion_failure = error::maybe_failed<std::uint64_t, JsonType>;
+
+          /// constructor
+          inline FromJson() = default;
+
+          /**
+           * @brief Conversion
+           *
+           * Converts the boost::json::value to a std::uint32_t.
+           *
+           * @param v The value that shall be converted.
+           *
+           * @return Returns the converted value, if successful. If the value
+           * has the wrong data type, the actual data type is returned.
+           *
+           * @since 1.0
+           *
+           * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+           */
+          inline conversion_failure operator()(const boost::json::value& v) const {
+            if (!v.is_uint64()) {
+              return GetJsonType(v);
+            }
+
+            return conversion_failure(v.as_uint64());
           }
       };
 
@@ -161,7 +441,7 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          conversion_failure operator()(const boost::json::value& v) const {
+          inline conversion_failure operator()(const boost::json::value& v) const {
             if (!v.is_string()) {
               return GetJsonType(v);
             }

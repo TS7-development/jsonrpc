@@ -32,11 +32,11 @@ namespace ts7 {
 
           handler_failure state = handler(request, id);
           if (state) {
-            TRet result = static_cast<TRet>(state);
+            TRet result = state.getSuccess();
             return response(id, result);
           }
           else {
-            const error::ErrorCode ec = static_cast<error::ErrorCode>(state);
+            const error::ErrorCode ec = state.getFailed();
             return error(id, ec);
           }
         }
