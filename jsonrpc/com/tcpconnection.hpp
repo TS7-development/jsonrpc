@@ -25,12 +25,13 @@ namespace ts7 {
        *
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
-      template <typename TId>
-      class TcpConnection : public boost::enable_shared_from_this<TcpConnection<TId>>
+      template <typename TId, typename TOwner>
+      class TcpConnection : public boost::enable_shared_from_this<TcpConnection<TId, TOwner>>
       {
         public:
           /// Type definition of a connection pointer
           using Ptr = boost::shared_ptr<TcpConnection>;
+          using Weak = boost::weak_ptr<TcpConnection>;
           using module_t = ts7::jsonrpc::Module<TId>;
 
           /**
@@ -46,8 +47,8 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          inline static Ptr Create(boost::asio::io_context& io_context, module_t* procedures) {
-            return Ptr(new TcpConnection(io_context, procedures));
+          inline static Ptr Create(TOwner* owner, boost::asio::io_context& io_context, module_t* procedures) {
+            return Ptr(new TcpConnection(owner, io_context, procedures));
           }
 
           /**
@@ -86,6 +87,10 @@ namespace ts7 {
             );
           }
 
+          inline std::size_t getID() const {
+            return id;
+          }
+
         protected:
           /**
            * @brief constructor
@@ -98,8 +103,10 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          inline TcpConnection(boost::asio::io_context& ctx, ts7::jsonrpc::Module<std::int32_t>* procedures)
-            : sock(ctx),
+          inline TcpConnection(TOwner* owner, boost::asio::io_context& ctx, ts7::jsonrpc::Module<std::int32_t>* procedures)
+            : owner(owner),
+              id(++nextID),
+              sock(ctx),
               procedures(procedures)
           {}
 
@@ -171,20 +178,40 @@ namespace ts7 {
 
           void handleRequest(const boost::json::object& o) {
             BOOST_LOG_TRIVIAL(debug) << "Handling job";
-            if (procedures) {
-              boost::json::object response = (*procedures)(o);
+            std::future<void> f = std::async(std::launch::async, [this, o]() -> void {
+              // o needs to be copied!, because std::async could take longer
+              // than handleRequest(), which would end the lifetime of o
+              // otherwise. This can be avoided by copying o.
+              if (procedures) {
+                owner->registerCall(this->shared_from_this());
 
-              std::stringstream ss;
-              ss << response;
-              std::string s  = ss.str();
+                boost::json::object response = (*procedures)(o);
 
-              boost::asio::async_write(sock, boost::asio::buffer(s, s.length()), boost::asio::transfer_all(),
-                  boost::bind(&TcpConnection::handle_write, this->shared_from_this(),
-                    s,
-                    boost::asio::placeholders::error,
-                    boost::asio::placeholders::bytes_transferred));
-            }
+                std::stringstream ss;
+                ss << response;
+                std::string s  = ss.str();
+
+                boost::asio::async_write(sock, boost::asio::buffer(s, s.length()), boost::asio::transfer_all(),
+                    boost::bind(&TcpConnection::handle_write, this->shared_from_this(),
+                      s,
+                      boost::asio::placeholders::error,
+                      boost::asio::placeholders::bytes_transferred));
+
+                owner->releaseCall();
+              }
+            });
+
+            owner->addCallFuture(std::move(f));
           }
+
+          /// Next ID counter
+          static std::size_t nextID;
+
+          /// Owner
+          TOwner* owner;
+
+          /// Client ID
+          std::size_t id;
 
           /// Socket
           boost::asio::ip::tcp::socket sock;
@@ -198,6 +225,9 @@ namespace ts7 {
           /// Server RPC module
           module_t* procedures;
       };
+
+      template <typename TId, typename TOwner>
+      std::size_t TcpConnection<TId, TOwner>::nextID = 0;
     }
   }
 }

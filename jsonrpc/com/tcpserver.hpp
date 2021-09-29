@@ -26,7 +26,7 @@ namespace ts7 {
        *
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
-      template <typename TId>
+      template <typename TId, typename TOwner>
       class TcpServer {
         public:
           using module_t = ts7::jsonrpc::Module<TId>;
@@ -42,8 +42,9 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          inline TcpServer(boost::asio::io_context& ctx, uint16_t port = 9300)
-            : ctx(ctx),
+          inline TcpServer(TOwner* owner, boost::asio::io_context& ctx, uint16_t port = 9300)
+            : owner(owner),
+              ctx(ctx),
               acceptor(ctx, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), port))
           {}
 
@@ -59,7 +60,8 @@ namespace ts7 {
           inline void startAccept() {
             BOOST_LOG_TRIVIAL(info) << "Waiting for new client";
 
-            typename TcpConnection<TId>::Ptr new_conn = TcpConnection<TId>::Create(ctx, &procedures);
+            typename TcpConnection<TId, TOwner>::Ptr new_conn = TcpConnection<TId, TOwner>::Create(owner, ctx, &procedures);
+
             acceptor.async_accept(
                   new_conn->socket(),
                   boost::bind(&TcpServer::handle_accept, this, new_conn, boost::asio::placeholders::error)
@@ -84,7 +86,7 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          inline void handle_accept(typename TcpConnection<TId>::Ptr conn, const boost::system::error_code& error) {
+          inline void handle_accept(typename TcpConnection<TId, TOwner>::Ptr conn, const boost::system::error_code& error) {
             if (!error) {
               BOOST_LOG_TRIVIAL(info) << "Accepted new client";
               conn->waitForRequest();
@@ -92,6 +94,9 @@ namespace ts7 {
 
             startAccept();
           }
+
+          /// Owner of the server
+          TOwner* owner;
 
           /// IO context of the server
           boost::asio::io_context& ctx;
