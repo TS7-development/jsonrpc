@@ -141,7 +141,7 @@ namespace ts7 {
               waitForRequest();
             }
             else if (error) {
-              if (error.value() == boost::system::errc::no_such_file_or_directory) {
+              if (error.value() == boost::system::errc::no_such_file_or_directory || error.value() == boost::system::errc::connection_reset) {
                 BOOST_LOG_TRIVIAL(info) << "Client " << getID() << " connection closed by partner";
                 return;
               }

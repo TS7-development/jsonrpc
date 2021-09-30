@@ -69,12 +69,7 @@ namespace ts7 {
           }
 
           const boost::json::object& paramsObj = params.as_object();
-          maybe_failed applied = apply(parsedId, paramsObj, std::make_index_sequence<std::tuple_size<tuple_t>::value>{});
-          if (!applied) {
-            return applied;
-          }
-
-          return static_cast<TRet>(applied);
+          return apply(parsedId, paramsObj, std::make_index_sequence<std::tuple_size<tuple_t>::value>{});
         }
 
         maybe_failed operator()(const boost::json::object& request) {

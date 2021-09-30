@@ -11,7 +11,7 @@ namespace ts7 {
     class ResponseHandler {
       public:
         using maybe_failed = error::maybe_failed<void, error::ErrorCode>;
-        using callback_t = std::function<maybe_failed(const TId&, const TResult&)>;
+        using callback_t = std::function<void(const TId&, const TResult&)>;
 
         constexpr inline ResponseHandler(callback_t callback)
           : callback(callback)
@@ -50,7 +50,8 @@ namespace ts7 {
           util::FromJson<TId> id_value;
           util::FromJson<TResult> result_value;
 
-          return callback(id_value(id), result_value(result));
+          callback(id_value(id), result_value(result));
+          return maybe_failed();
         }
 
       protected:

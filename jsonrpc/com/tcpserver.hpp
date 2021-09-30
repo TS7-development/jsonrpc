@@ -42,11 +42,13 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          inline TcpServer(TOwner* owner, boost::asio::io_context& ctx, uint16_t port = 9300)
+          inline TcpServer(TOwner* owner, boost::asio::io_context& ctx, uint16_t port = 9200)
             : owner(owner),
               ctx(ctx),
               acceptor(ctx, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), port))
-          {}
+          {
+            BOOST_LOG_TRIVIAL(info) << "Listening on port " << port;
+          }
 
           /**
            * @brief Start accept
@@ -61,6 +63,7 @@ namespace ts7 {
             BOOST_LOG_TRIVIAL(info) << "Waiting for new client";
 
             typename TcpConnection<TId, TOwner>::Ptr new_conn = TcpConnection<TId, TOwner>::Create(owner, ctx, &procedures);
+            owner->newClientAccepted(new_conn);
 
             acceptor.async_accept(
                   new_conn->socket(),
