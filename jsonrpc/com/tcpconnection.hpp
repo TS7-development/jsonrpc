@@ -126,7 +126,7 @@ namespace ts7 {
            */
           void handle_read(const boost::system::error_code& error, size_t bytes_transferred) {
             if (!error && bytes_transferred > 0) {
-              BOOST_LOG_TRIVIAL(debug) << "<- " << msg << std::endl;
+              BOOST_LOG_TRIVIAL(debug) << "[Client " << getID() << "] <- " << msg << std::endl;
 
               streamer += msg;
               boost::json::value v = streamer.getNextChunk();
@@ -141,7 +141,12 @@ namespace ts7 {
               waitForRequest();
             }
             else if (error) {
-              BOOST_LOG_TRIVIAL(error) << "read error: " << error.message() << " (" << error.value() << ")";
+              if (error.value() == boost::system::errc::no_such_file_or_directory) {
+                BOOST_LOG_TRIVIAL(info) << "Client " << getID() << " connection closed by partner";
+                return;
+              }
+
+              BOOST_LOG_TRIVIAL(error) << "read error: " << error.message() << " (" << error.value() << ") for client " << getID();
               waitForRequest();
             }
           }
@@ -162,7 +167,7 @@ namespace ts7 {
            */
           void handle_write(std::string data, const boost::system::error_code& error, size_t bytes_transferred) {
             if (!error && bytes_transferred > 0) {
-              BOOST_LOG_TRIVIAL(debug) << "-> " << data;
+              BOOST_LOG_TRIVIAL(debug) << "[Client " << getID() << "] -> " << data;
             }
           }
 
