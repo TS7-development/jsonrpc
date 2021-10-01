@@ -7,6 +7,7 @@
 #include <boost/json.hpp>
 #include <boost/log/trivial.hpp>
 
+#include "notification.hpp"
 #include "request.hpp"
 #include "response_handler.hpp"
 #include "error_handler.hpp"
