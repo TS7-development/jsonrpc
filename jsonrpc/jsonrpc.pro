@@ -36,7 +36,9 @@ HEADERS += \
     response_handler.hpp \
     procedure.hpp \
     module.hpp \
-    jsonrpc.hpp
+    jsonrpc.hpp \
+    call.hpp \
+    notify.hpp
 
 # Default rules for deployment.
 unix {

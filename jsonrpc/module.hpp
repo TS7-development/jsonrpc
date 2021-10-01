@@ -29,7 +29,12 @@ namespace ts7 {
           }
 
           const boost::json::value& id_value = request.at("id");
-          id = id_conv(id_value);
+          typename util::FromJson<TId>::conversion_failure converted_id = id_conv(id_value);
+          if ( !converted_id ) {
+            return converted_id.getFailed();
+          }
+
+          id = converted_id.getSuccess();
 
           if (!request.contains("method")) {
             return error(id, error::MethodMissing());

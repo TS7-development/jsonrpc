@@ -103,7 +103,7 @@ namespace ts7 {
            *
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
-          inline TcpConnection(TOwner* owner, boost::asio::io_context& ctx, ts7::jsonrpc::Module<std::int32_t>* procedures)
+          inline TcpConnection(TOwner* owner, boost::asio::io_context& ctx, ts7::jsonrpc::Module<TId>* procedures)
             : owner(owner),
               id(++nextID),
               sock(ctx),
@@ -129,14 +129,17 @@ namespace ts7 {
               BOOST_LOG_TRIVIAL(debug) << "[Client " << getID() << "] <- " << msg << std::endl;
 
               streamer += msg;
-              boost::json::value v = streamer.getNextChunk();
+              boost::json::value v;
+              do {
+                v = streamer.getNextChunk();
 
-              if (v.is_object()) {
-                handleRequest(v.as_object());
-              }
-              else if (v.is_array()) {
-                handleRequests(v.as_array());
-              }
+                if (v.is_object()) {
+                  handleRequest(v.as_object());
+                }
+                else if (v.is_array()) {
+                  handleRequests(v.as_array());
+                }
+              } while ( !v.is_null() );
 
               waitForRequest();
             }

@@ -10,10 +10,10 @@ namespace ts7 {
     struct RequestID {
       using type = TId;
 
-      static inline TId generate() {
-        static TId id = TId();
-        return ++id;
-      }
+        static TId generate() {
+          static TId id = TId();
+          return ++id;
+        }
     };
 
     template <typename TId, typename... TArgs>

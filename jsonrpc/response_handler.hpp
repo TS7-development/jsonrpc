@@ -38,7 +38,7 @@ namespace ts7 {
 
           const boost::json::value& id = object.at("id");
           util::JsonType id_type = util::GetJsonType(id);
-          if (util::AsJson<TId>::IsType(id_type)) {
+          if (!util::AsJson<TId>::IsType(id_type)) {
             return error::IdWrongType<TId>(id_type);
           }
 

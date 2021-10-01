@@ -48,7 +48,11 @@ namespace ts7 {
           }
 
           util::FromJson<TId> id_value;
-          parsedId = id_value(id);
+          typename util::FromJson<TId>::conversion_failure converted_id = id_value(id);
+          if ( !converted_id ) {
+            return error::IdWrongType<TId>(converted_id.getFailed());
+          }
+          parsedId = converted_id.getSuccess();
 
           if (!request.contains("method")){
             return error::MethodMissing();
@@ -142,7 +146,12 @@ namespace ts7 {
           }
 
           util::FromJson<TId> id_value;
-          parsedId = id_value(id);
+          typename util::FromJson<TId>::conversion_failure converted_id = id_value(id);
+          if ( !converted_id ) {
+            return error::IdWrongType<TId>(converted_id.getFailed());
+          }
+
+          parsedId = converted_id.getSuccess();
 
           if (!request.contains("method")){
             return error::MethodMissing();

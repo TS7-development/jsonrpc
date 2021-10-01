@@ -36,6 +36,8 @@ namespace ts7 {
           }
 
           std::string content(interface.start, interface.actual+1);
+          data = std::string(interface.actual+1, data.end());
+
           return boost::json::parse(content);
         }
 

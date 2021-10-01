@@ -179,7 +179,7 @@ namespace ts7 {
             return static_cast<error::ErrorCode>(jsonrpc);
           }
 
-          id_failure id = checkJsonrpc(e);
+          id_failure id = checkId(e);
           if (!id) {
             return static_cast<error::ErrorCode>(id);
           }
@@ -216,11 +216,11 @@ namespace ts7 {
             return error::ErrorCallbackMissing();
           }
 
-          util::FromJson<TId> id_value;
           util::FromJson<std::int32_t> code;
           util::FromJson<std::string> message;
 
-          callback(id_value(id), code(errorCode), message(errorMessage));
+          callback(static_cast<TId>(id), code(errorCode), message(errorMessage));
+          return maybe_failed();
         }
 
       protected:
@@ -254,7 +254,7 @@ namespace ts7 {
           }
 
           util::FromJson<TId> value;
-          return value(id);
+          return static_cast<TId>(value(id));
         }
 
         callback_t callback;
