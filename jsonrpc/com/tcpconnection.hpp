@@ -99,6 +99,23 @@ namespace ts7 {
             );
           }
 
+          void write(const boost::json::value& response) {
+            if ( !response.is_null() ) {
+              std::stringstream ss;
+              ss << response;
+
+              write(ss.str());
+            }
+          }
+
+          void write(const std::string& s) {
+            boost::asio::async_write(sock, boost::asio::buffer(s, s.length()), boost::asio::transfer_all(),
+                boost::bind(&TcpConnection::handle_write, this->shared_from_this(),
+                  s,
+                  boost::asio::placeholders::error,
+                  boost::asio::placeholders::bytes_transferred));
+          }
+
           inline id_t getID() const {
             return id;
           }
@@ -213,18 +230,7 @@ namespace ts7 {
                 owner->registerCall(this->shared_from_this());
 
                 boost::json::value response = (*procedures)(o);
-
-                if ( !response.is_null() ) {
-                  std::stringstream ss;
-                  ss << response;
-                  std::string s  = ss.str();
-
-                  boost::asio::async_write(sock, boost::asio::buffer(s, s.length()), boost::asio::transfer_all(),
-                      boost::bind(&TcpConnection::handle_write, this->shared_from_this(),
-                        s,
-                        boost::asio::placeholders::error,
-                        boost::asio::placeholders::bytes_transferred));
-                }
+                write(response);
 
                 owner->releaseCall();
               }
