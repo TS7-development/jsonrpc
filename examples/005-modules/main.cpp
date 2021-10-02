@@ -36,7 +36,7 @@ namespace ts7 {
         boost::json::object in = request(args...);
         std::cout << "<- " << in << std::endl;
 
-        boost::json::object out = module(in);
+        boost::json::value out = module(in);
         std::cout << "-> " << out << std::endl << std::endl;
       }
     }

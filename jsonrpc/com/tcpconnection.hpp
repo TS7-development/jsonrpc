@@ -11,6 +11,7 @@
 #include <boost/log/trivial.hpp>
 
 #include "../util/jsonstreamer.hpp"
+#include "../util/observer.hpp"
 #include "../module.hpp"
 
 namespace ts7 {
@@ -29,10 +30,21 @@ namespace ts7 {
       class TcpConnection : public boost::enable_shared_from_this<TcpConnection<TId, TOwner>>
       {
         public:
+          /// Identifier type
+          using id_t = std::size_t;
+
           /// Type definition of a connection pointer
           using Ptr = boost::shared_ptr<TcpConnection>;
           using Weak = boost::weak_ptr<TcpConnection>;
           using module_t = ts7::jsonrpc::Module<TId>;
+
+          // Event
+          using connection_closed_t = util::Observer<id_t>;
+          using data_received_t = util::Observer<id_t, std::string>;
+          using data_received_info_t = util::Observer<id_t, const boost::system::error_code&, std::size_t>;
+          using data_written_t = util::Observer<id_t, std::string>;
+          using data_written_info_t = util::Observer<id_t, const boost::system::error_code&, std::size_t>;
+
 
           /**
            * @brief Create
@@ -87,7 +99,7 @@ namespace ts7 {
             );
           }
 
-          inline std::size_t getID() const {
+          inline id_t getID() const {
             return id;
           }
 
@@ -125,8 +137,11 @@ namespace ts7 {
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
           void handle_read(const boost::system::error_code& error, size_t bytes_transferred) {
+            data_received_info.notify(getID(), error, bytes_transferred);
+
             if (!error && bytes_transferred > 0) {
               BOOST_LOG_TRIVIAL(debug) << "[Client " << getID() << "] <- " << msg << std::endl;
+              data_received.notify(getID(), std::string(msg));
 
               streamer += msg;
               boost::json::value v;
@@ -146,6 +161,7 @@ namespace ts7 {
             else if (error) {
               if (error.value() == boost::system::errc::no_such_file_or_directory || error.value() == boost::system::errc::connection_reset) {
                 BOOST_LOG_TRIVIAL(info) << "Client " << getID() << " connection closed by partner";
+                connection_closed.notify(getID());
                 return;
               }
 
@@ -169,8 +185,11 @@ namespace ts7 {
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
           void handle_write(std::string data, const boost::system::error_code& error, size_t bytes_transferred) {
+            data_written_info.notify(getID(), error, bytes_transferred);
+
             if (!error && bytes_transferred > 0) {
               BOOST_LOG_TRIVIAL(debug) << "[Client " << getID() << "] -> " << data;
+              data_written.notify(getID(), data);
             }
           }
 
@@ -193,17 +212,19 @@ namespace ts7 {
               if (procedures) {
                 owner->registerCall(this->shared_from_this());
 
-                boost::json::object response = (*procedures)(o);
+                boost::json::value response = (*procedures)(o);
 
-                std::stringstream ss;
-                ss << response;
-                std::string s  = ss.str();
+                if ( !response.is_null() ) {
+                  std::stringstream ss;
+                  ss << response;
+                  std::string s  = ss.str();
 
-                boost::asio::async_write(sock, boost::asio::buffer(s, s.length()), boost::asio::transfer_all(),
-                    boost::bind(&TcpConnection::handle_write, this->shared_from_this(),
-                      s,
-                      boost::asio::placeholders::error,
-                      boost::asio::placeholders::bytes_transferred));
+                  boost::asio::async_write(sock, boost::asio::buffer(s, s.length()), boost::asio::transfer_all(),
+                      boost::bind(&TcpConnection::handle_write, this->shared_from_this(),
+                        s,
+                        boost::asio::placeholders::error,
+                        boost::asio::placeholders::bytes_transferred));
+                }
 
                 owner->releaseCall();
               }
@@ -212,14 +233,22 @@ namespace ts7 {
             owner->addCallFuture(std::move(f));
           }
 
+        public:
+          connection_closed_t connection_closed;
+          data_received_t data_received;
+          data_received_info_t data_received_info;
+          data_written_t data_written;
+          data_written_info_t data_written_info;
+
+        protected:
           /// Next ID counter
-          static std::size_t nextID;
+          static id_t nextID;
 
           /// Owner
           TOwner* owner;
 
           /// Client ID
-          std::size_t id;
+          id_t id;
 
           /// Socket
           boost::asio::ip::tcp::socket sock;
@@ -235,7 +264,7 @@ namespace ts7 {
       };
 
       template <typename TId, typename TOwner>
-      std::size_t TcpConnection<TId, TOwner>::nextID = 0;
+      typename TcpConnection<TId, TOwner>::id_t TcpConnection<TId, TOwner>::nextID = 0;
     }
   }
 }

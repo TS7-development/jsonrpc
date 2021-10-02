@@ -42,7 +42,7 @@ namespace ts7 {
             boost::json::object in = request(args...);
             std::cout << "<- " << in << std::endl;
 
-            boost::json::object out = Module::operator()(in);
+            boost::json::value out = Module::operator()(in);
             std::cout << "-> " << out << std::endl << std::endl;
           }
 

@@ -3,6 +3,7 @@
 #include "error.hpp"
 #include "response.hpp"
 #include "request_handler.hpp"
+#include "notification_handler.hpp"
 
 namespace ts7 {
   namespace jsonrpc {
@@ -27,7 +28,7 @@ namespace ts7 {
             }, args...)
         {}
 
-        boost::json::object operator()(const boost::json::object& request) {
+        boost::json::value operator()(const boost::json::object& request) {
           TId id;
 
           handler_failure state = handler(request, id);
@@ -69,7 +70,7 @@ namespace ts7 {
             }, args...)
         {}
 
-        boost::json::object operator()(const boost::json::object& request) {
+        boost::json::value operator()(const boost::json::object& request) {
           TId id;
 
           handler_failure state = handler(request, id);
@@ -86,6 +87,34 @@ namespace ts7 {
         RequestHandler<TId, void, TArgs...> handler;
         Response<TId, void> response;
         Error<TId> error;
+    };
+
+    template <typename... TArgs>
+    class NotificationProcedure {
+      public:
+        using callback_t = std::function<void(TArgs...)>;
+        using handler_failure = typename NotificationHandler<TArgs...>::maybe_failed;
+
+        template <typename... UArgs>
+        NotificationProcedure(callback_t callback, UArgs... args)
+          : handler([callback](TArgs... args) -> handler_failure {
+              callback(args...);
+              return handler_failure();
+            }, Parameter<TArgs>(args)...)
+        {}
+
+        boost::json::value operator()(const boost::json::object& notification) {
+          handler_failure succeeded = handler(notification);
+          if ( !succeeded ) {
+            const error::ErrorCode& ec = succeeded.getFailed();
+            throw error::Exception(static_cast<std::int32_t>(ec), static_cast<std::string>(ec));
+          }
+
+          return boost::json::value();
+        }
+
+      protected:
+        NotificationHandler<TArgs...> handler;
     };
   }
 }

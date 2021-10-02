@@ -20,6 +20,7 @@ HEADERS += \
     util/jsonstreamer.hpp \
     util/fsm.hpp \
     util/util.hpp \
+    util/observer.hpp \
     error/errorcodes.hpp \
     error/maybe_failed.hpp \
     error/error.hpp \

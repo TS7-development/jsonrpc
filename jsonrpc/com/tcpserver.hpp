@@ -11,6 +11,7 @@
 #include <boost/log/trivial.hpp>
 
 #include "../module.hpp"
+#include "../util/observer.hpp"
 
 #include "tcpconnection.hpp"
 
@@ -31,6 +32,10 @@ namespace ts7 {
         public:
           using module_t = ts7::jsonrpc::Module<TId>;
 
+          // Events
+          using server_started_t = util::Observer<std::uint16_t>;
+          using new_client_accepted_t = util::Observer<typename TcpConnection<TId, TOwner>::Ptr>;
+
           /**
            * @brief constructor
            *
@@ -48,6 +53,7 @@ namespace ts7 {
               acceptor(ctx, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), port))
           {
             BOOST_LOG_TRIVIAL(info) << "Listening on port " << port;
+            server_started.notify(port);
           }
 
           /**
@@ -63,7 +69,6 @@ namespace ts7 {
             BOOST_LOG_TRIVIAL(info) << "Waiting for new client";
 
             typename TcpConnection<TId, TOwner>::Ptr new_conn = TcpConnection<TId, TOwner>::Create(owner, ctx, &procedures);
-            owner->newClientAccepted(new_conn);
 
             acceptor.async_accept(
                   new_conn->socket(),
@@ -92,12 +97,19 @@ namespace ts7 {
           inline void handle_accept(typename TcpConnection<TId, TOwner>::Ptr conn, const boost::system::error_code& error) {
             if (!error) {
               BOOST_LOG_TRIVIAL(info) << "Accepted new client";
+              new_client_accepted.notify(conn);
               conn->waitForRequest();
             }
 
             startAccept();
           }
 
+        public:
+          /// Event Callbacks
+          server_started_t server_started;
+          new_client_accepted_t new_client_accepted;
+
+        protected:
           /// Owner of the server
           TOwner* owner;
 

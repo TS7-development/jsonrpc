@@ -15,13 +15,22 @@ namespace ts7 {
     class Module {
       public:
         using id_t = TId;
-        using procedure_t = std::function<boost::json::object(const boost::json::object&)>;
+        using procedure_t = std::function<boost::json::value(const boost::json::object&)>;
 
         inline procedure_t& operator[](const std::string& method) {
           return procedures[method];
         }
 
-        inline boost::json::object operator()(const boost::json::object& request) {
+        inline boost::json::value operator()(const boost::json::object& request) {
+          if ( request.contains("id") ) {
+            return handleRequest(request);
+          }
+
+          return handleNotification(request);
+        }
+
+      protected:
+        boost::json::value handleRequest(const boost::json::object& request) {
           TId id;
 
           if (!request.contains("id")) {
@@ -54,7 +63,28 @@ namespace ts7 {
           return procedure(request);
         }
 
-      protected:
+        boost::json::value handleNotification(const boost::json::object& notification) {
+          if ( !notification.contains("method") ) {
+            // Missing field method
+            return boost::json::value();
+          }
+
+          const boost::json::value& method_value = notification.at("method");
+          if (util::GetJsonType(method_value) != util::JsonType::STRING) {
+            // Method is not a string
+            return boost::json::value();
+          }
+
+          std::string method = method_conv(method_value);
+          if (procedures.find(method) == procedures.end()) {
+            // Method not found
+            return boost::json::value();
+          }
+
+          procedure_t procedure = procedures[method];
+          return procedure(notification);
+        }
+
         util::FromJson<TId> id_conv;
         util::FromJson<std::string> method_conv;
         Error<TId> error;

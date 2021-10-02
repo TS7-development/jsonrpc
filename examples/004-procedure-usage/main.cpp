@@ -36,7 +36,7 @@ int main()
   );
 
   std::cout << "<- " << request << std::endl;
-  boost::json::object response = success(request);
+  boost::json::value response = success(request);
   std::cout << "-> " << response << std::endl << std::endl;
 
   // Exception case
@@ -47,7 +47,7 @@ int main()
   );
 
   std::cout << "<- " << request << std::endl;
-  boost::json::object exception = except(request);
+  boost::json::value exception = except(request);
   std::cout << "-> " << exception << std::endl << std::endl;
 
   // Failure case
@@ -58,7 +58,7 @@ int main()
   );
 
   std::cout << "<- " << request << std::endl;
-  boost::json::object error = failure(request);
+  boost::json::value error = failure(request);
   std::cout << "-> " << error << std::endl << std::endl;
 
   return 0;
