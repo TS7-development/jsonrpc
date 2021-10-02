@@ -77,8 +77,18 @@ namespace ts7 {
           }
 
           template <typename T>
-          inline void registerProcedure(const std::string& name, const T& t) {
-            procedures[name] = t;
+          inline void registerRequest(const std::string& name, const T& t) {
+            procedures.addRequest(name, t);
+          }
+
+          template <typename T>
+          inline void registerNotification(const std::string& name, const T& t) {
+            procedures.addNotification(name, t);
+          }
+
+          template <typename T>
+          inline void registerFallback(const T& t) {
+            procedures.setFallback(t);
           }
 
         protected:

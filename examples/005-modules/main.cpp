@@ -57,10 +57,10 @@ int main()
 
   MathModule module;
 
-  module["sum"] = sum_procedure;
-  module["difference"] = difference_procedure;
-  module["product"] = product_procedure;
-  module["divide"] = div_procedure;
+  module.addRequest("sum", sum_procedure);
+  module.addRequest("difference", difference_procedure);
+  module.addRequest("product", product_procedure);
+  module.addRequest("divide", div_procedure);
 
 
   ts7::jsonrpc_examples::modules::test(module, sum_request, 3, 7);

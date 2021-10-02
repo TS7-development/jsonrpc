@@ -242,13 +242,21 @@ namespace ts7 {
             return o;
           }
 
+          inline std::int32_t getCode() const {
+            return code;
+          }
+
+          inline const std::string& getMessage() const {
+            return message;
+          }
+
           /// Error code cast operator
           inline operator std::int32_t() const {
             return code;
           }
 
           /// Error message cast operator
-          inline operator std::string() const {
+          inline operator const std::string&() const {
             return message;
           }
 
@@ -885,6 +893,11 @@ namespace ts7 {
 
       struct Exception : public std::runtime_error {
         using source_location = std::experimental::source_location;
+
+        inline Exception(const ErrorCode& ec, const source_location& location = source_location::current())
+          : std::runtime_error(ec),
+            ec(ec.getCode(), std::string(ec.getMessage()), "location", location)
+        {}
 
         inline Exception(std::int32_t code, std::string&& message, const source_location& location = source_location::current())
           : std::runtime_error(message),

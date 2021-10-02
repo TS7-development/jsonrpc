@@ -22,15 +22,15 @@ namespace ts7 {
           };
 
           inline Math() {
-            procedures["math.sum"] = Procedure(std::bind(&Math::sum, this, std::placeholders::_1, std::placeholders::_2), "a", "b");
-            procedures["math.difference"] = Procedure(std::bind(&Math::difference, this, std::placeholders::_1, std::placeholders::_2), "a", "b");
-            procedures["math.multiply"] = Procedure(std::bind(&Math::multiply, this, std::placeholders::_1, std::placeholders::_2), "a", "b");
-            procedures["math.divide"] = Procedure(std::bind(&Math::divide, this, std::placeholders::_1, std::placeholders::_2), "a", "b");
-            procedures["math.evaluate"] = ts7::jsonrpc::Procedure<id_t, result_t, std::int32_t, std::int32_t>(
+            addRequest("math.sum", Procedure(std::bind(&Math::sum, this, std::placeholders::_1, std::placeholders::_2), "a", "b"));
+            addRequest("math.difference", Procedure(std::bind(&Math::difference, this, std::placeholders::_1, std::placeholders::_2), "a", "b"));
+            addRequest("math.multiply", Procedure(std::bind(&Math::multiply, this, std::placeholders::_1, std::placeholders::_2), "a", "b"));
+            addRequest("math.divide", Procedure(std::bind(&Math::divide, this, std::placeholders::_1, std::placeholders::_2), "a", "b"));
+            addRequest("math.evaluate", ts7::jsonrpc::Procedure<id_t, result_t, std::int32_t, std::int32_t>(
               std::bind(&Math::evaluate, this, std::placeholders::_1, std::placeholders::_2),
               "a",
               "b"
-            );
+            ));
           }
 
           inline void request_sum(std::int32_t a, std::int32_t b) {
