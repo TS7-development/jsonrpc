@@ -281,8 +281,12 @@ namespace ts7 {
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
           inline conversion_failure operator()(const boost::json::value& v) const {
-            if (!v.is_uint64()) {
+            if ( !v.is_uint64() && !v.is_int64() ) {
               return GetJsonType(v);
+            }
+
+            if ( v.is_int64() ) {
+              return conversion_failure(static_cast<std::uint16_t>(v.as_int64()));
             }
 
             return conversion_failure(static_cast<std::uint8_t>(v.as_uint64()));
@@ -321,8 +325,12 @@ namespace ts7 {
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
           inline conversion_failure operator()(const boost::json::value& v) const {
-            if (!v.is_uint64()) {
+            if ( !v.is_uint64() && !v.is_int64() ) {
               return GetJsonType(v);
+            }
+
+            if ( v.is_int64() ) {
+              return conversion_failure(static_cast<std::uint16_t>(v.as_int64()));
             }
 
             return conversion_failure(static_cast<std::uint16_t>(v.as_uint64()));
@@ -361,8 +369,12 @@ namespace ts7 {
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
           inline conversion_failure operator()(const boost::json::value& v) const {
-            if (!v.is_uint64()) {
+            if ( !v.is_uint64() && !v.is_int64() ) {
               return GetJsonType(v);
+            }
+
+            if ( v.is_int64() ) {
+              return conversion_failure(static_cast<std::uint16_t>(v.as_int64()));
             }
 
             return conversion_failure(static_cast<std::uint32_t>(v.as_uint64()));
@@ -401,8 +413,12 @@ namespace ts7 {
            * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
            */
           inline conversion_failure operator()(const boost::json::value& v) const {
-            if (!v.is_uint64()) {
+            if ( !v.is_uint64() && !v.is_int64() ) {
               return GetJsonType(v);
+            }
+
+            if ( v.is_int64() ) {
+              return conversion_failure(static_cast<std::uint16_t>(v.as_int64()));
             }
 
             return conversion_failure(v.as_uint64());
