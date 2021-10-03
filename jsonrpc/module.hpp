@@ -118,7 +118,7 @@ namespace ts7 {
             }
 
             inline bool requiresID() const {
-              return requiresID();
+              return requires_id;
             }
 
             operator procedure_t() const {

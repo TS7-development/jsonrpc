@@ -108,6 +108,9 @@ namespace ts7 {
 
         /// Field result has the wrong type
         RESULT_WRONG_TYPE,
+
+        /// This procedure needs to be implemented
+        NOT_YET_IMPLEMENTED,
       };
 
       /// Conversion from ErrorCode to std::int32_t
@@ -870,6 +873,10 @@ namespace ts7 {
        */
       [[maybe_unused]] static inline ErrorCode ResultMissing() {
         return ErrorCode::MissingField(Code(ErrorCodes::RESULT_MISSING), "result");
+      }
+
+      [[maybe_unused]] static inline ErrorCode NotYetImplemented() {
+        return ErrorCode(Code(ErrorCodes::NOT_YET_IMPLEMENTED), "Not Yet Implemented");
       }
 
       /**

@@ -166,10 +166,25 @@ namespace ts7 {
                 v = streamer.getNextChunk();
 
                 if (v.is_object()) {
-                  handleRequest(v.as_object());
+                  const boost::json::object& o = v.as_object();
+                  if ( o.contains("params") ) {
+                    // Seems to be a request/notification
+                    handleRequest(o);
+                  }
+                  else if ( o.contains("result") ) {
+                    // Seesms to be a response
+                    handleResponse(o);
+                  }
+                  else if ( o.contains("error") ) {
+                    // Seems to be an error
+                    handleError(o);
+                  }
+                  else {
+                    BOOST_LOG_TRIVIAL(error) << "Unknown message type: " << o;
+                  }
                 }
                 else if (v.is_array()) {
-                  handleRequests(v.as_array());
+                  handleBatch(v.as_array());
                 }
               } while ( !v.is_null() );
 
@@ -210,18 +225,32 @@ namespace ts7 {
             }
           }
 
-          void handleRequests(const boost::json::array& a) {
+          void handleBatch(const boost::json::array& a) {
             BOOST_LOG_TRIVIAL(debug) << "Handling batch job";
             for (boost::json::array::const_iterator it = a.begin(); it != a.end(); ++it) {
               boost::json::value sv = *it;
               if (sv.is_object()) {
-                handleRequest(sv.as_object());
+                const boost::json::object& o = sv.as_object();
+                if ( o.contains("params") ) {
+                  // Seems to be a request/notification
+                  handleRequest(o);
+                }
+                else if ( o.contains("result") ) {
+                  // Seesms to be a response
+                  handleResponse(o);
+                }
+                else if ( o.contains("error") ) {
+                  // Seems to be an error
+                  handleError(o);
+                }
+                else {
+                  BOOST_LOG_TRIVIAL(error) << "Unknown message type: " << o;
+                }
               }
             }
           }
 
           void handleRequest(const boost::json::object& o) {
-            BOOST_LOG_TRIVIAL(debug) << "Handling job";
             std::future<void> f = std::async(std::launch::async, [this, o]() -> void {
               // o needs to be copied!, because std::async could take longer
               // than handleRequest(), which would end the lifetime of o
@@ -237,6 +266,14 @@ namespace ts7 {
             });
 
             owner->addCallFuture(std::move(f));
+          }
+
+          void handleResponse(const boost::json::object& o) {
+            owner->responseReceived(o);
+          }
+
+          void handleError(const boost::json::object& o) {
+            owner->errorReceived(o);
           }
 
         public:

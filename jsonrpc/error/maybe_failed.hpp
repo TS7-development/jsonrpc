@@ -74,6 +74,12 @@ namespace ts7 {
         /// move constructor
         constexpr inline maybe_failed(maybe_failed&&) = default;
 
+        /// assignment operator
+        constexpr maybe_failed& operator=(const maybe_failed&) = default;
+
+        /// assignment operator
+        constexpr maybe_failed& operator=(maybe_failed&&) = default;
+
         /**
          * @brief Success value
          *
@@ -273,6 +279,12 @@ namespace ts7 {
         /// move constructor
         constexpr inline maybe_failed(maybe_failed&&) = default;
 
+        /// assignment operator
+        constexpr maybe_failed& operator=(const maybe_failed&) = default;
+
+        /// assignment operator
+        constexpr maybe_failed& operator=(maybe_failed&&) = default;
+
         constexpr inline const TSuccess& getSuccess() const {
           return success;
         }
@@ -425,6 +437,12 @@ namespace ts7 {
         constexpr inline maybe_failed(const maybe_failed&) = default;
         /// move constructor
         constexpr inline maybe_failed(maybe_failed&&) = default;
+
+        /// assignment operator
+        constexpr maybe_failed& operator=(const maybe_failed&) = default;
+
+        /// assignment operator
+        constexpr maybe_failed& operator=(maybe_failed&&) = default;
 
         constexpr inline const TFailed& getFailed() const {
           return failed;
@@ -582,11 +600,23 @@ namespace ts7 {
            succeeded(false)
         {}
 
+        constexpr inline maybe_failed()
+          : success(true),
+            failed(TFailed()),
+            succeeded(true)
+        {}
+
         /// copy constructor
         constexpr inline maybe_failed(const maybe_failed&) = default;
 
         /// move constructor
         constexpr inline maybe_failed(maybe_failed&&) = default;
+
+        /// assignment operator
+        constexpr maybe_failed& operator=(const maybe_failed&) = default;
+
+        /// assignment operator
+        constexpr maybe_failed& operator=(maybe_failed&&) = default;
 
         /**
          * @brief Success value
@@ -778,6 +808,12 @@ namespace ts7 {
 
         /// move constructor
         constexpr inline maybe_failed(maybe_failed&&) = default;
+
+        /// assignment operator
+        constexpr maybe_failed& operator=(const maybe_failed&) = default;
+
+        /// assignment operator
+        constexpr maybe_failed& operator=(maybe_failed&&) = default;
 
         /**
          * @brief Success value
