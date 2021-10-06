@@ -32,6 +32,12 @@ namespace ts7 {
         /// Callback function, if failed
         using failed_fn = std::function<void(const TFailed&)>;
 
+        constexpr inline maybe_failed()
+          : success(),
+            failed(),
+            succeeded(false)
+        {}
+
         /**
          * @brief constructor
          *

@@ -99,7 +99,7 @@ namespace ts7 {
        *
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
-      [[maybe_unused]] static inline std::string GetJsonTypeName(boost::json::value& value) {
+      [[maybe_unused]] static inline std::string GetJsonTypeName(const boost::json::value& value) {
         return GetJsonTypeName(GetJsonType(value));
       }
     }

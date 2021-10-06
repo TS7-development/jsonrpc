@@ -60,7 +60,7 @@ namespace ts7 {
             error::maybe_failed<datatype_t, util::JsonType> value = v(o.at(name));
             if (value) {
               // Succeeded: Paramater has correct type
-              return static_cast<datatype_t>(value);
+              return value.getSuccess();
             }
 
             return error::ParameterWrongType(name, static_cast<util::JsonType>(value), util::AsJson<datatype_t>::type);

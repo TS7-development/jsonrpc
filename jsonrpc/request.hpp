@@ -29,7 +29,10 @@ namespace ts7 {
 
         const std::string& getMethod() const {
           return method;
+        }
 
+        void setMethod(const std::string& name) {
+          method = name;
         }
 
         inline boost::json::object operator()(TArgs... args) const {

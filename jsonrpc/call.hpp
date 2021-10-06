@@ -253,6 +253,11 @@ namespace ts7 {
         error::maybe_failed<TRet, error::ErrorCode> operator()(TArgs... args) {
           typename TId::type request_id;
 
+          if ( !request_action ) {
+            // Avoid running a new thread for a call that can't be finished
+            return error::NotYetImplemented();
+          }
+
           std::future<void> f = std::async(std::launch::async, [this, &request_id, args...]() {
             // Generate and transmit request
             boost::json::object requestObject = request(args...);
@@ -293,6 +298,18 @@ namespace ts7 {
           responses.erase(request_id);
 
           return result;
+        }
+
+        void setAction(request_action_t action) {
+          request_action = action;
+        }
+
+        const std::string& getMethod() const {
+          return request.getMethod();
+        }
+
+        void setMethod(const std::string& method) {
+          request.setMethod(method);
         }
 
       protected:

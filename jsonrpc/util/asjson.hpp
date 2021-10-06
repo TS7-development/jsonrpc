@@ -440,6 +440,92 @@ namespace ts7 {
        * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
        */
       template<>
+      struct AsJson<float> {
+          static constexpr const JsonType type = JsonType::NUMBER;
+
+          static inline constexpr bool IsType(JsonType t) {
+            return type == t;
+          }
+
+          /**
+           * @brief constructor
+           *
+           * Stores the provided integer value for later conversion.
+           *
+           * @param n The integer value that shall be converted.
+           */
+          constexpr inline explicit AsJson(float n)
+            : value(n)
+          {}
+
+          /**
+           * @brief Json value cast
+           *
+           * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+           */
+          operator boost::json::value() const {
+            return value;
+          }
+
+          /// THe stored value
+          float value;
+      };
+
+      /**
+       * @brief Convert int to json
+       *
+       * Converts an integer to a json value.
+       *
+       * @note This is the template specialization of \ref AsJson.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template<>
+      struct AsJson<double> {
+          static constexpr const JsonType type = JsonType::NUMBER;
+
+          static inline constexpr bool IsType(JsonType t) {
+            return type == t;
+          }
+
+          /**
+           * @brief constructor
+           *
+           * Stores the provided integer value for later conversion.
+           *
+           * @param n The integer value that shall be converted.
+           */
+          constexpr inline explicit AsJson(double n)
+            : value(n)
+          {}
+
+          /**
+           * @brief Json value cast
+           *
+           * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+           */
+          operator boost::json::value() const {
+            return value;
+          }
+
+          /// THe stored value
+          double value;
+      };
+
+      /**
+       * @brief Convert int to json
+       *
+       * Converts an integer to a json value.
+       *
+       * @note This is the template specialization of \ref AsJson.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template<>
       struct AsJson<std::string> {
           static constexpr const JsonType type = JsonType::STRING;
 
@@ -511,6 +597,55 @@ namespace ts7 {
 
         /// THe stored value
         std::experimental::source_location value;
+      };
+
+      /**
+       * @brief Convert int to json
+       *
+       * Converts an integer to a json value.
+       *
+       * @note This is the template specialization of \ref AsJson.
+       *
+       * @since 1.0
+       *
+       * @author Tarek Schwarzinger <tarek.schwarzinger@googlemail.com>
+       */
+      template<typename T>
+      struct AsJson<std::vector<T>> {
+          static constexpr const JsonType type = JsonType::ARRAY;
+
+          static inline constexpr bool IsType(JsonType t) {
+            return type == t;
+          }
+
+          /**
+           * @brief constructor
+           *
+           * Stores the provided integer value for later conversion.
+           *
+           * @param n The integer value that shall be converted.
+           */
+          constexpr inline explicit AsJson(const std::vector<T>& n)
+            : value(n)
+          {}
+
+          /**
+           * @brief Json value cast
+           *
+           * Casts the instance to a json value. In this case to a number with the !value stored in \ref value.
+           */
+          operator boost::json::value() const {
+            boost::json::array a;
+
+            std::transform(value.begin(), value.end(), a.begin(), [](const T& t) -> boost::json::value {
+              return AsJson<T>(t);
+            });
+
+            return a;
+          }
+
+          /// THe stored value
+          std::vector<T> value;
       };
     }
   }
