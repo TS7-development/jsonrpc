@@ -297,7 +297,7 @@ namespace ts7 {
           boost::asio::ip::tcp::socket sock;
 
           /// Message buffer for receiving
-          char msg[1024] = {0};
+          char msg[250*1024] = {0};
 
           /// JSON streamer
           ts7::jsonrpc::util::JsonStreamer streamer;
