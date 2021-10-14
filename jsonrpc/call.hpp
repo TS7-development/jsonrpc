@@ -243,10 +243,10 @@ namespace ts7 {
           : request(method, args...),
             request_action(request_action),
             responseHandler([this](const typename TId::type& id, const TRet& ret) -> void {
-              responses[id] = ret;
+              responses[id] = error::maybe_failed<TRet, error::ErrorCode>(ret);
             }),
             errorHandler([this](const typename TId::type& id, std::int32_t code, const std::string& message) -> void {
-              responses[id] = error::ErrorCode(code, std::string(message));
+              responses[id] = error::maybe_failed<TRet, error::ErrorCode>(error::ErrorCode(code, std::string(message)));
             })
         {}
 
