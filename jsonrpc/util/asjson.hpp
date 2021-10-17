@@ -637,9 +637,9 @@ namespace ts7 {
           operator boost::json::value() const {
             boost::json::array a;
 
-            std::transform(value.begin(), value.end(), a.begin(), [](const T& t) -> boost::json::value {
-              return AsJson<T>(t);
-            });
+            for (const T& t : value) {
+              a.push_back(AsJson<T>(t));
+            }
 
             return a;
           }
