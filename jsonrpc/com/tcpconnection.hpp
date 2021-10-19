@@ -167,24 +167,33 @@ namespace ts7 {
 
                 if (v.is_object()) {
                   const boost::json::object& o = v.as_object();
-                  if ( o.contains("params") ) {
-                    // Seems to be a request/notification
-                    handleRequest(o);
-                  }
-                  else if ( o.contains("result") ) {
-                    // Seesms to be a response
-                    handleResponse(o);
-                  }
-                  else if ( o.contains("error") ) {
-                    // Seems to be an error
-                    handleError(o);
-                  }
-                  else {
-                    BOOST_LOG_TRIVIAL(error) << "Unknown message type: " << o;
-                  }
+                  std::future<void> f = std::async(std::launch::async, [this, o]() -> void {
+                    if ( o.contains("params") ) {
+                      // Seems to be a request/notification
+                      handleRequest(o);
+                    }
+                    else if ( o.contains("result") ) {
+                      // Seesms to be a response
+                      handleResponse(o);
+                    }
+                    else if ( o.contains("error") ) {
+                      // Seems to be an error
+                      handleError(o);
+                    }
+                    else {
+                      BOOST_LOG_TRIVIAL(error) << "Unknown message type: " << o;
+                    }
+                  });
+
+                  owner->addCallFuture(std::move(f));
                 }
                 else if (v.is_array()) {
-                  handleBatch(v.as_array());
+                  const boost::json::array& a = v.as_array();
+                  std::future<void> f = std::async(std::launch::async, [this, a]() -> void {
+                    handleBatch(a);
+                  });
+
+                  owner->addCallFuture(std::move(f));
                 }
               } while ( !v.is_null() );
 
@@ -233,7 +242,7 @@ namespace ts7 {
                 const boost::json::object& o = sv.as_object();
                 if ( o.contains("params") ) {
                   // Seems to be a request/notification
-                  handleRequest(o, true);
+                  handleRequest(o);
                 }
                 else if ( o.contains("result") ) {
                   // Seesms to be a response
@@ -250,24 +259,14 @@ namespace ts7 {
             }
           }
 
-          void handleRequest(const boost::json::object& o, bool block = false) {
-            std::future<void> f = std::async(std::launch::async, [this, o]() -> void {
-              // o needs to be copied!, because std::async could take longer
-              // than handleRequest(), which would end the lifetime of o
-              // otherwise. This can be avoided by copying o.
-              if (procedures) {
-                owner->registerCall(this->shared_from_this());
+          void handleRequest(const boost::json::object& o) {
+            if (procedures) {
+              owner->registerCall(this->shared_from_this());
 
-                boost::json::value response = (*procedures)(o);
-                write(response);
+              boost::json::value response = (*procedures)(o);
+              write(response);
 
-                owner->releaseCall();
-              }
-            });
-
-            if ( false == block ) {
-              // Move future to avoid blocking
-              owner->addCallFuture(std::move(f));
+              owner->releaseCall();
             }
           }
 
